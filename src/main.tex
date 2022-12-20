@@ -1,18 +1,57 @@
-%! Author = gnom
-%! Date = 08.12.22
+% arara: xelatex: { shell: yes }
+% arara: biber
+% arara: nomencl
+% arara: xelatex: { shell: yes }
+% arara: xelatex: { shell: yes }
+\documentclass[english]{ttlab-qualify}
+% mgliche Optionen:
+% - ngerman
+% - english
+% - minted
+% - algorithm
+% - nomencl
+% - nolibertine
 
-% Preamble
-\documentclass[11pt]{article}
+% P A C K A G E S
+\usepackage[super]{nth}
 
-% Packages
-\usepackage{amsmath}
+\addbibresource{main.bib}
 
-% Document
+
 \begin{document}
+    \titlehead{
+        Ricardo Lukas Jung\\
+        6227492\\
+        Bachelor\\
+        Empirische Sprachwissenschaft (Phonetik \& Digital Humanities) \\
+        \nth{15} Semester\\
+        s2458588@stud.uni-frankfurt.de
+    }
+    \subject{Thesis submitted in fulfilment of the requirements for the degree of Bachelor of Arts}
+    \author{Ricardo Lukas Jung}
+    \title{Lexicalizing a BERT Tokenizer}
+    \subtitle{Building Open-End MLM for Morpho-Syntactically Similar Languages}
+    \date{Date of Submission: \\\today}
+    \publishers{Text Technology Lab\\Prof. Dr. Alexander Mehler\\Dr. Zakharia Pourtskhvanidze}
+
+    \maketitle
 
 
+    \tableofcontents
 
-    \bibliography{main}
-    \bibliographystyle{plain}
+    \chapter{Introduction}
 
+    The field of NLP \textit{natural language processing} (\cite{METZLER2016}) has been expanded ever since the emergence of the language models.
+    Natural language processing is understood as the
+    \\
+
+    cite (\cite{METZLER2016})\\
+    citeast (\cite*{METZLER2016})\\
+
+    cite (\cite{ONLINETEST})\\
+    citeast \cite*{ONLINETEST})\\
+    The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
+    This is done by altering the
+    \appendix
+    \printbibliography
 \end{document}
