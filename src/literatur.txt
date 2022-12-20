@@ -1,0 +1,17 @@
+@book{METZLER2016,
+  editor={Gl{\"u}ck, Helmut and R{\"o}del, Michael},
+  title={Metzler Lexikon Sprache},
+  edition={5},
+  publisher={J.B. Metzler},
+  address={Stuttgart},
+  year={2016},
+  pages={Online-Ressource (XXVI, 814 S. 64 Abb., 12 Abb. in Farbe, online resource)},
+  language={ger},
+  isbn={978-3-476-05486-9},
+  series={Springer eBook Collection},
+  doi={10.1007/978-3-476-05486-9},
+  keywords={Linguistik},
+  url={http://dx.doi.org/10.1007/978-3-476-05486-9},
+  library={UB},
+}
+
