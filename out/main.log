@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  20 DEC 2022 15:44
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  21 DEC 2022 02:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -998,22 +998,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
 
  []
 
 [4
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+[5]
 chapter without number
 LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
-(Font)              scaled to size 9.41345pt on input line 55.
-[5
+(Font)              scaled to size 9.41345pt on input line 90.
+[6
 
 ] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1021,12 +1021,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18859 strings out of 476156
- 409560 string characters out of 5814963
- 1330140 words of memory out of 5000000
- 39382 multiletter control sequences out of 15000+600000
+ 18872 strings out of 476156
+ 410036 string characters out of 5814963
+ 1337152 words of memory out of 5000000
+ 39395 multiletter control sequences out of 15000+600000
  476918 words of font info for 101 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 122i,7n,133p,10600b,4850s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,7n,133p,10600b,4800s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (5 pages).
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (6 pages).

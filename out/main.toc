@@ -1,4 +1,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{4}{}%
-\contentsline {chapter}{\nonumberline Bibliography}{5}{}%
+\contentsline {subsection}{\numberline {1.0.1}Background}{4}{}%
+\contentsline {subsection}{\numberline {1.0.2}Motivation}{4}{}%
+\contentsline {subsection}{\numberline {1.0.3}Explain the what and how}{5}{}%
+\contentsline {subsection}{\numberline {1.0.4}Scope of this Thesis}{5}{}%
+\contentsline {chapter}{\nonumberline Bibliography}{6}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
