@@ -2348,10 +2348,10 @@
     <bcf:citekey order="1">METZLER2016</bcf:citekey>
     <bcf:citekey order="2">METZLER2016</bcf:citekey>
     <bcf:citekey order="3">METZLER2016</bcf:citekey>
-    <bcf:citekey order="4">ONLINETEST</bcf:citekey>
-    <bcf:citekey order="5">ONLINETEST</bcf:citekey>
+    <bcf:citekey order="4">DEEPL</bcf:citekey>
+    <bcf:citekey order="5">DEEPL</bcf:citekey>
     <bcf:citekey order="6">METZLER2016</bcf:citekey>
-    <bcf:citekey order="7">ONLINETEST</bcf:citekey>
+    <bcf:citekey order="7">DEEPL</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

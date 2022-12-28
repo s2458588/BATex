@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{DEEPL}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=086b5407f3734e9b5c12a636fc131ba8}{%
+           family={DeepL},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {DeepL SE}%
+      }
+      \strng{namehash}{086b5407f3734e9b5c12a636fc131ba8}
+      \strng{fullhash}{086b5407f3734e9b5c12a636fc131ba8}
+      \strng{bibnamehash}{086b5407f3734e9b5c12a636fc131ba8}
+      \strng{authorbibnamehash}{086b5407f3734e9b5c12a636fc131ba8}
+      \strng{authornamehash}{086b5407f3734e9b5c12a636fc131ba8}
+      \strng{authorfullhash}{086b5407f3734e9b5c12a636fc131ba8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{Last accessed: 28.12.2022}
+      \field{journaltitle}{DeepL Translate: The world's most accurate translator}
+      \field{month}{11}
+      \field{title}{How does deepl work?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.deepl.com/en/blog/how-does-deepl-work
+      \endverb
+      \verb{url}
+      \verb https://www.deepl.com/en/blog/how-does-deepl-work
+      \endverb
+    \endentry
     \entry{METZLER2016}{book}{}
       \name{editor}{2}{}{%
         {{un=0,uniquepart=base,hash=6fed3d56e80d589d2182f09f1906f14b}{%
@@ -73,56 +106,6 @@
       \verb http://dx.doi.org/10.1007/978-3-476-05486-9
       \endverb
       \keyw{Linguistik}
-    \endentry
-    \entry{ONLINETEST}{article}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=446021522a3e2ddbddd6c58286054ae0}{%
-           family={Tenenbaum},
-           familyi={T\bibinitperiod},
-           given={Joshua},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3d5c11491b1f45f9d77946df28b87a9}{%
-           family={Kemp},
-           familyi={K\bibinitperiod},
-           given={Charles},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fd3b66b2b5eef2d1be0b8b540fecd15d}{%
-           family={Griffiths},
-           familyi={G\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d98a11597b0645b5e5c970ce0a562a96}{%
-           family={Goodman},
-           familyi={G\bibinitperiod},
-           given={Noah},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{9aa60c6df7febbd451b5fea2400b4d0e}
-      \strng{fullhash}{825ac274c7905bbd18043073e60ff157}
-      \strng{bibnamehash}{825ac274c7905bbd18043073e60ff157}
-      \strng{authorbibnamehash}{825ac274c7905bbd18043073e60ff157}
-      \strng{authornamehash}{9aa60c6df7febbd451b5fea2400b4d0e}
-      \strng{authorfullhash}{825ac274c7905bbd18043073e60ff157}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Science}
-      \field{number}{6022}
-      \field{title}{How to Grow a Mind: Statistics, Structure, and Abstraction}
-      \field{volume}{331}
-      \field{year}{2011}
-      \field{pages}{1279\bibrangedash 1285}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1126/science.1192788
-      \endverb
     \endentry
   \enddatalist
 \endrefsection

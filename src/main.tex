@@ -13,8 +13,9 @@
 % - nolibertine
 
 % P A C K A G E S
-\usepackage[super]{nth}
 
+\usepackage{acronym}
+\usepackage[super]{nth}
 \addbibresource{main.bib}
 
 
@@ -22,9 +23,9 @@
     \titlehead{
         Ricardo Lukas Jung\\
         6227492\\
-        Bachelor\\
-        Empirische Sprachwissenschaft (Phonetik \& Digital Humanities) \\
-        \nth{15} Semester\\
+        Empirische Sprachwissenschaft (B.A.)\\
+        Phonetik \& Digital Humanities \\
+        15\textsuperscript{th} Semester\\
         s2458588@stud.uni-frankfurt.de
     }
     \subject{Thesis submitted in fulfilment of the requirements for the degree of Bachelor of Arts}
@@ -39,17 +40,28 @@
 
     \tableofcontents
 
+    \listoffigures
+    \listoftables
+    \chapter*{List of Acronyms}
+    \begin{acronym}
+        \acro{ml}[ML]{Machine Learning}
+        \acro{cl}[CL]{Computational Linguistics}
+        \acro{mlm}[MLM]{Masked Language Model}
+        \acro{bert}[BERT]{Bidirectional Encoders from Transformers}
+    \end{acronym}
+
     \chapter{Introduction}
-    This chapter covers the background, intentions and scope of the thesis.
-    \subsection{Background}
+    This chapter covers the background, intentions and scope of the thesis. Explain what the thesis is about.
 
+    This work shows how crucial the intervention in subsystems of machine learning is.
+    Fundamental processes like tokenization carry
 
-    \subsection{Motivation}
-    There is an ongoing urge in the computational linguistics (\uppercase{CL}) community to understand natural language.
+    \section{Motivation}
+    There is an ongoing urge in the \acf{cl} community to understand natural language.
     Research in the past decades shows use of frequentist and statistical methods (such as \uppercase{ZITATION}) to their advantage, leading to the emergence of the first machine learning (ML) models.
     It became apparent that these ML models are the best currently available approach to an automated understanding of natural language.
-    The structural parallels of machine learning to human learning have often been drawn (\uppercase{zitation)}) to demonstrate how similar and more important: how different both can be.
-    A powerful feature of \uppercase{ML} (as opposed to human learning) is the possibility of actively controlling the the learning parameters in a supervised environment.
+    The structural parallels of machine learning to human learning have often been drawn (\uppercase{zitation)}) to demonstrate how similar and more importantly: how different both can be.
+    A powerful feature of \ac{ml} (as opposed to human learning) is the possibility of actively controlling the the learning parameters in a supervised environment.
     To test the efficiency of \uppercase{ML} parameters a variety of tasks (\uppercase{zitation}) are designed and applied.
     A trained model will yield performance scores based on the quality of its training, much like humans on language tests.
     But the automated modeling of language is not the first instance language modelling in a broader sense.
@@ -57,7 +69,7 @@
     While generic ML frameworks seem appealing in the presumption that they require less work to reach somewhat satisfactoy results,
     they are far from complete or perfect. The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
 
-    Language learners usually first learn a lexicon consisting of lexemes which they will have to analyze accurately in order to be productive in that target language.
+    Language learners usually build up a lexicon consisting of lexemes which they will have to analyze accurately in order to be productive in that target language.
     A ML model relies on a tokenizer to create such a vocabulary  (\textbf{ZITATION}).
     It is programmed to segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
     Ideally those subwords will be part of the functional vocabulary in the target language, so called morphemes \textbf{ERKLÄRUNG}.
@@ -67,11 +79,24 @@
     Following the guiding principle that \textbf{input quality is ouput quality} not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
     Note: explain why i use tokens and words, they are interchaneable right?
     holistic, need less attention to produce satisfactory
-    
-    \subsection{Explain the what and how}
-    lexicalization is stemming, what is it and how to achieve it
-    \subsection{Scope of this Thesis}
 
+
+    \section{Literature Review}
+    \section{Scope and Structure}
+
+    \section{Hypotheses}
+
+
+    \chapter{Methodoloy}
+
+    \section{Machine Learning Model}
+    Explain BERT and MLM
+    tweak des tokenizers
+    \section{Data}
+
+
+
+    
 
 
 
@@ -82,8 +107,12 @@
     cite (\cite{METZLER2016})\\
     citeast (\cite*{METZLER2016})\\
 
-    cite (\cite{ONLINETEST})\\
-    citeast \cite*{ONLINETEST})\\
+    cite (\cite{DEEPL})\\
+    citeast ()\cite*{DEEPL})\\
+
+    \begin{quote}
+        This is a quote
+    \end{quote}
     The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
     This is done by altering the
     \appendix
