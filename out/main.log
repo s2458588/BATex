@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  28 DEC 2022 20:58
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  2 JAN 2023 01:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1037,17 +1037,17 @@ although it is yet undefined on input line 64.
 ] [8]
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
@@ -1056,7 +1056,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--112
 ]
 chapter without number
 LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
-(Font)              scaled to size 9.41345pt on input line 119.
+(Font)              scaled to size 9.41345pt on input line 127.
 [10
 
 ] (/home/gnom/uni/bachelor/BATex/out/main.aux)
@@ -1065,12 +1065,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19494 strings out of 476156
- 418966 string characters out of 5814963
- 1349714 words of memory out of 5000000
- 39998 multiletter control sequences out of 15000+600000
+ 19506 strings out of 476156
+ 419274 string characters out of 5814963
+ 1349810 words of memory out of 5000000
+ 40010 multiletter control sequences out of 15000+600000
  476918 words of font info for 101 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 122i,7n,133p,10600b,4797s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,8n,133p,10600b,4797s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (10 pages).

@@ -52,6 +52,43 @@
       \verb https://www.deepl.com/en/blog/how-does-deepl-work
       \endverb
     \endentry
+    \entry{BPEGAGE}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a6903e11ebc9c55e0196fd12a3958990}{%
+           family={Gage},
+           familyi={G\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {R & D Publications, Inc.}%
+      }
+      \strng{namehash}{a6903e11ebc9c55e0196fd12a3958990}
+      \strng{fullhash}{a6903e11ebc9c55e0196fd12a3958990}
+      \strng{bibnamehash}{a6903e11ebc9c55e0196fd12a3958990}
+      \strng{authorbibnamehash}{a6903e11ebc9c55e0196fd12a3958990}
+      \strng{authornamehash}{a6903e11ebc9c55e0196fd12a3958990}
+      \strng{authorfullhash}{a6903e11ebc9c55e0196fd12a3958990}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0898-9788}
+      \field{journaltitle}{C Users J.}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{A New Algorithm for Data Compression}
+      \field{volume}{12}
+      \field{year}{1994}
+      \field{pages}{23\bibrangedash 38}
+      \range{pages}{16}
+    \endentry
     \entry{METZLER2016}{book}{}
       \name{editor}{2}{}{%
         {{un=0,uniquepart=base,hash=6fed3d56e80d589d2182f09f1906f14b}{%
@@ -106,6 +143,61 @@
       \verb http://dx.doi.org/10.1007/978-3-476-05486-9
       \endverb
       \keyw{Linguistik}
+    \endentry
+    \entry{BPE}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=dbb9225ae208939ef2c5eec31d16922a}{%
+           family={Sennrich},
+           familyi={S\bibinitperiod},
+           given={Rico},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34bf39cab57292ffa4ca1f5a851b64f0}{%
+           family={Haddow},
+           familyi={H\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf98d70c7173a46aa44c19b423633312}{%
+           family={Birch},
+           familyi={B\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Germany}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{fullhash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{bibnamehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authorbibnamehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authornamehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authorfullhash}{e309ceeb2dd0153b77437835a108df80}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}
+      \field{month}{8}
+      \field{title}{Neural Machine Translation of Rare Words with Subword Units}
+      \field{year}{2016}
+      \field{pages}{1715\bibrangedash 1725}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/P16-1162
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/P16-1162
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/P16-1162
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

@@ -1,17 +1,19 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[81] biber:340> INFO - === Mi Dez 28, 2022, 20:58:54
-[96] Biber.pm:418> INFO - Reading 'main.bcf'
-[169] Biber.pm:972> INFO - Found 2 citekeys in bib section 0
-[183] Biber.pm:4383> INFO - Processing section 0
-[195] Biber.pm:4574> INFO - Looking for bibtex file 'main.bib' for section 0
-[196] bibtex.pm:1713> INFO - LaTeX decoding ...
-[202] bibtex.pm:1518> INFO - Found BibTeX data source '/home/gnom/uni/bachelor/BATex/src/main.bib'
-[264] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[264] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[264] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[264] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[272] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[273] bbl.pm:757> INFO - Output to main.bbl
-[274] Biber.pm:130> WARN - legacy month field 'Nov' in entry 'DEEPL' is not an integer - this will probably not sort properly.
-[274] Biber.pm:132> INFO - WARNINGS: 1
+[94] biber:340> INFO - === Mo Jan  2, 2023, 01:44:41
+[113] Biber.pm:418> INFO - Reading 'main.bcf'
+[187] Biber.pm:972> INFO - Found 4 citekeys in bib section 0
+[201] Biber.pm:4383> INFO - Processing section 0
+[214] Biber.pm:4574> INFO - Looking for bibtex file 'main.bib' for section 0
+[216] bibtex.pm:1713> INFO - LaTeX decoding ...
+[234] bibtex.pm:1518> INFO - Found BibTeX data source '/home/gnom/uni/bachelor/BATex/src/main.bib'
+[315] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[315] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[315] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[315] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[326] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[329] bbl.pm:757> INFO - Output to main.bbl
+[329] Biber.pm:130> WARN - legacy month field 'Aug' in entry 'BPE' is not an integer - this will probably not sort properly.
+[329] Biber.pm:130> WARN - legacy month field 'feb' in entry 'BPEGAGE' is not an integer - this will probably not sort properly.
+[329] Biber.pm:130> WARN - legacy month field 'Nov' in entry 'DEEPL' is not an integer - this will probably not sort properly.
+[329] Biber.pm:132> INFO - WARNINGS: 3
