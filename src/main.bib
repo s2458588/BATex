@@ -54,3 +54,100 @@
     month={Nov},
     addendum = {Last accessed: 28.12.2022},
 }
+
+% ORIGINAL IDEA FOR WORDPIECE TOKENIZATION ALGORITHM
+@INPROCEEDINGS{WORDPIECEOG,
+    author={Schuster, Mike and Nakajima, Kaisuke},
+    booktitle={2012 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    title={Japanese and Korean voice search},
+    year={2012},
+    volume={},
+    number={},
+    pages={5149-5152},
+    doi={10.1109/ICASSP.2012.6289079}}
+
+% GOOGLE INTRODUING Neural Machine Translation (NMT) and WORDPIECE (FROM WORDPIECEOG)
+@misc{WORDPIECEGOOGLE,
+    doi = {10.48550/ARXIV.1609.08144},
+    url = {https://arxiv.org/abs/1609.08144},
+    author = {Wu, Yonghui and Schuster, Mike and Chen, Zhifeng and Le, Quoc V. and Norouzi, Mohammad and Macherey, Wolfgang and Krikun, Maxim and Cao, Yuan and Gao, Qin and Macherey, Klaus and Klingner, Jeff and Shah, Apurva and Johnson, Melvin and Liu, Xiaobing and Kaiser, Łukasz and Gouws, Stephan and Kato, Yoshikiyo and Kudo, Taku and Kazawa, Hideto and Stevens, Keith and Kurian, George and Patil, Nishant and Wang, Wei and Young, Cliff and Smith, Jason and Riesa, Jason and Rudnick, Alex and Vinyals, Oriol and Corrado, Greg and Hughes, Macduff and Dean, Jeffrey},
+    keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation},
+    publisher = {arXiv},
+    year = {2016},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+% BYTE PAIR ENCODING ORIGINAL PAPER
+@inproceedings{BPE,
+    title = {Neural Machine Translation of Rare Words with Subword Units},
+    author = {Sennrich, Rico  and Haddow, Barry  and Birch, Alexandra},
+    booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+    month = {Aug},
+    year = {2016},
+    address = {Berlin, Germany},
+    publisher = {Association for Computational Linguistics},
+    url = {https://aclanthology.org/P16-1162},
+    doi = {10.18653/v1/P16-1162},
+    pages = {1715--1725},
+}
+
+% MORPHOLOGY: POLYSYNTHETIC LANGUAGE MODELING (CONTAINS MORPHESSOR)
+@misc{POLYSYNTHLM,
+    doi = {10.48550/ARXIV.2005.05477},
+    url = {https://arxiv.org/abs/2005.05477},
+    author = {Schwartz, Lane and Tyers, Francis and Levin, Lori and Kirov, Christo and Littell, Patrick and Lo, Chi-kiu and Prud'hommeaux, Emily and Park, Hyunji Hayley and Steimel, Kenneth and Knowles, Rebecca and Micher, Jeffrey and Strunk, Lonny and Liu, Han and Haley, Coleman and Zhang, Katherine J. and Jimmerson, Robbie and Andriyanets, Vasilisa and Muis, Aldrian Obaja and Otani, Naoki and Park, Jong Hyuk and Zhang, Zhisong},
+    keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Neural Polysynthetic Language Modelling},
+    publisher = {arXiv},
+    year = {2020},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+% Base-Inflection Encoding: FUNCTIONAL MORPHEMES BECOME TOKENS
+@inproceedings{BITE,
+    title = {Mind Your Inflections! Improving NLP for Non-Standard Englishes with Base-Inflection Encoding},
+    author = {Tan, Samson  and
+      Joty, Shafiq  and
+      Varshney, Lav  and
+      Kan, Min-Yen},
+    booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+    month = {Nov},
+    year = {2020},
+    address = {Online},
+    publisher = {Association for Computational Linguistics},
+    url = {https://aclanthology.org/2020.emnlp-main.455},
+    doi = {10.18653/v1/2020.emnlp-main.455},
+    pages = {5647--5663},
+    abstract = {Inflectional variation is a common feature of World Englishes such as Colloquial Singapore English and African American Vernacular English. Although comprehension by human readers is usually unimpaired by non-standard inflections, current NLP systems are not yet robust. We propose Base-Inflection Encoding (BITE), a method to tokenize English text by reducing inflected words to their base forms before reinjecting the grammatical information as special symbols. Fine-tuning pretrained NLP models for downstream tasks using our encoding defends against inflectional adversaries while maintaining performance on clean data. Models using BITE generalize better to dialects with non-standard inflections without explicit training and translation models converge faster when trained with BITE. Finally, we show that our encoding improves the vocabulary efficiency of popular data-driven subword tokenizers. Since there has been no prior work on quantitatively evaluating vocabulary efficiency, we propose metrics to do so.},
+}
+
+@misc{MORPHEMEDISCOVERYUNSUPERVISED,
+    doi = {10.48550/ARXIV.CS/0205057},
+    url = {https://arxiv.org/abs/cs/0205057},
+    author = {Creutz, Mathias and Lagus, Krista},
+    keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences, I.2.7},
+    title = {Unsupervised Discovery of Morphemes},
+    publisher = {arXiv},
+    year = {2002},
+    copyright = {Assumed arXiv.org perpetual, non-exclusive license to distribute this article for submissions made before January 2004}
+}
+
+
+
+@article{IOINTERACTION,
+    author ={Gass, Susan M. and Mackey, Alison},
+    title ={Input, Interaction and Output: An Overview},
+    journal={AILA Review},
+    year ={2006},
+    volume ={19},
+    number ={1},
+    pages ={3-17},
+    doi ={https://doi.org/10.1075/aila.19.03gas},
+    url ={https://www.jbe-platform.com/content/journals/10.1075/aila.19.03gas},
+    publisher ={John Benjamins},
+    issn ={1461-0213},
+    type ={Journal Article},
+    abstract ={This paper presents an overview of what has come to be known as the Interaction Hypothesis, the basic tenet of which is that through input and interaction with interlocutors, language learners have opportunities to notice differences between their own formulations of the target language and the language of their conversational partners. They also receive feedback which both modifies the linguistic input they receive and pushes them to modify their output during conversation. This paper focuses on the major constructs of this approach to SLA, namely, input, interaction, feedback and output, and discusses recent literature that addresses these issues.},
+}
+
