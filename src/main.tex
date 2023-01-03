@@ -16,6 +16,9 @@
 
 \usepackage{acronym}
 \usepackage[super]{nth}
+\usepackage{framed, enumitem}
+\usepackage{textcomp}
+
 \addbibresource{main.bib}
 
 
@@ -46,16 +49,17 @@
     \begin{acronym}
         \acro{ml}[ML]{Machine Learning}
         \acro{cl}[CL]{Computational Linguistics}
+        \acro{lm}{LM}{Language Model}
         \acro{mlm}[MLM]{Masked Language Model}
         \acro{bert}[BERT]{Bidirectional Encoders from Transformers}
+
     \end{acronym}
 
     \chapter{Introduction}
+    This thesis shows the use of specific intervention in tokenization subsystems of machine learning.
+
+
     This chapter covers the background, intentions and scope of the thesis. Explain what the thesis is about.
-
-    This work shows how crucial the intervention in subsystems of machine learning is.
-    Fundamental processes like tokenization carry
-
     \section{Motivation}
     There is an ongoing urge in the \acf{cl} community to understand natural language.
     Research in the past decades shows use of frequentist and statistical methods (such as \uppercase{ZITATION}) to their advantage, leading to the emergence of the first machine learning (ML) models.
@@ -77,34 +81,47 @@
     The morphemes of a language and its generated tokenizer vocabulary rarely coincide.
     Typically, tokanizer vocabularies will contain a lot of noise and linguistically nonsensical segmentations or words.
     Following the guiding principle that \textbf{input quality is ouput quality} not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
-    Note: explain why i use tokens and words, they are interchaneable right?
+    Note: explain why i use tokens and words, they are interchangeable right?
     holistic, need less attention to produce satisfactory
-
-
-    \section{Overview}
-    This section provides an overview of the current state of the art and attempts that have been explored in the past.
-
-    The need for performant language models caused the modeling approaches to fan out, following previous findings of linguistics and computational sciences.
-    This part will focus on summarizing relevant findings concerning the most relevant part of this thesis: tokenization.
-    Tokenization is the process of splitting tokens into further segments.
-    Two main algorithms have emerged to tackle this task.
-    One being \textit{byte pair encoding} (\cite{BPE}; \cite{BPEGAGE}) and the other \textit{wordpiece tokenization} (\cite{WORDPIECEGOOGLE}; \cite{WORDPIECEOG}).
-    Both algorithms have proven their viability, performances depending on the implementation and use case.
-    Wordpiece is a part of the \textbf{BERT} architecture \cite{ATTENTION}
+    
+    \section{Hypotheses}
+    The following research questions will be formulated for testing:
+    \begin{framed}
+        \begin{itemize}[itemindent=1em]
+            \item[HYP1:] Adjustments to tokenization have significant impact on an \ac{lm}s performance.
+        \end{itemize}
+    \end{framed}
+    How to achieve this hypothesis?
+    \begin{framed}
+        \begin{itemize}[itemindent=1em]
+        \item[HYP2:] Providing lexical information to a tokenizer increases benchmark accuracy on MLM tasks.
+    \end{itemize}
+    \end{framed}
+    How to achieve this hypothesis?
 
     \section{Scope and Structure}
+    What is covered and what not?
+    What is the shape of this thesis and what order does it have?
 
-    \section{Hypotheses}
-
+    \chapter{Overview}
+    \section{State of the Art}
+    describe the most recent findings on morphologically pretrained models in machine learning literature
 
     \chapter{Methodoloy}
+    in this section the whole methodoloy is covered. what do i use in this thesis, why do i use it and lastly, how?
+    make sure the why covers methodological implications. (vergiss nicht alle pakete als quelle im Anhang)
 
-    \section{Machine Learning Model}
+    \section{Requirements}
+    \subsection{Machine Learning Model}
     Explain BERT and MLM
     tweak des tokenizers
-    \section{Data}
+    \subsection{Data}
+    explain the data that is used
+    \subsection{Benchmark}
+    explain olmpics
 
-
+    \section{Implementation}
+    Tatsächliche Anwendung der Methoden auf die Daten
 
     
 
