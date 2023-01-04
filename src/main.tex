@@ -47,11 +47,13 @@
     \listoftables
     \chapter*{List of Acronyms}
     \begin{acronym}
-        \acro{ml}[ML]{Machine Learning}
-        \acro{cl}[CL]{Computational Linguistics}
-        \acro{lm}{LM}{Language Model}
-        \acro{mlm}[MLM]{Masked Language Model}
         \acro{bert}[BERT]{Bidirectional Encoders from Transformers}
+        \acro{cl}[CL]{Computational Linguistics}
+        \acro{lm}[LM]{Language Model}
+        \acro{lstm}[LSTM]{Long Short-Term Memory}
+        \acro{ml}[ML]{Machine Learning}
+        \acro{mlm}[MLM]{Masked Language Model}
+        \acro{nlp}[NLP]{Natural Language Processing}
 
     \end{acronym}
 
@@ -112,9 +114,27 @@
     make sure the why covers methodological implications. (vergiss nicht alle pakete als quelle im Anhang)
 
     \section{Requirements}
+    A series of tools will help to achieve a lexicalized tokenization.
+    They will be explained in this chapter along with their methodological edge.
+
     \subsection{Machine Learning Model}
-    Explain BERT and MLM
-    tweak des tokenizers
+    \ac{bert} is a language learning transformer model designed for \ac{nlp} tasks (\cite{ATTENTION}).
+    Upon release it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{LSTM}).
+    Two main model characteristics can be observed for \ac{bert}.
+    Firstly, it is the first \ac{lm} to implement simultaneous attention heads, allowing for bidirectional reading.
+    The methodological implication of reading to the left and right of a token is to include more information about the language in single embeddings.
+    Secondly, \ac{bert} introduced the (at the time novel) \ac{mlm} method for training.
+    The method involves masking a specific amount of random tokens in the input sequence.
+    Masked tokens are then guessed by the model which can then update its weights according to success or failure.
+
+    The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (roberta, germanbert, mbert \uppercase{citation}).
+    Its wide support, comparability and versatility make \ac{bert} the model of choice for this thesis.
+    Another notable addition is \uppercase{bert}s implementation of the WordPiece tokenizer module (\uppercase{quelle?}).
+
+
+
+    tweak des tokenizers: segmentation ist eine frage der interpretation.
+    und bidirectional heißt mehr kontext, also auch vermutlich bessere embeddings durch die identifikation der lexeme
     \subsection{Data}
     explain the data that is used
     \subsection{Benchmark}
