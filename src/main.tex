@@ -60,11 +60,14 @@
     \end{acronym}
 
     \chapter{Introduction}
-    This thesis shows the use of specific intervention in tokenization subsystems of machine learning.
-
-
+    \label{ch:intro}
+    This thesis shows the use of specific intervention in tokenization subsystems of machine learning
+    The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
+    This is done by altering the \uppercase{Why is this subject relevant}
     This chapter covers the background, intentions and scope of the thesis. Explain what the thesis is about.
+
     \section{Motivation}
+    \label{sec:motivation}
     There is an ongoing urge in the \acf{cl} community to understand natural language.
     Research in the past decades shows use of frequentist and statistical methods (such as \uppercase{ZITATION}) to their advantage, leading to the emergence of the first machine learning (ML) models.
     It became apparent that these ML models are the best currently available approach to an automated understanding of natural language.
@@ -75,7 +78,8 @@
     But the automated modeling of language is not the first instance language modelling in a broader sense.
     Traditional linguistics (\uppercase{definition} has produced fundamental research the prior to the discovery of \uppercase{ML} architectures and their implementation.
     While generic ML frameworks seem appealing in the presumption that they require less work to reach somewhat satisfactoy results,
-    they are far from complete or perfect. The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
+    they are far from complete or perfect.
+    The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
 
     Language learners usually build up a lexicon consisting of lexemes which they will have to analyze accurately in order to be productive in that target language.
     A ML model relies on a tokenizer to create such a vocabulary  (\textbf{ZITATION}).
@@ -89,6 +93,8 @@
     holistic, need less attention to produce satisfactory
     
     \section{Hypotheses}
+    \label{sec:hypothesis}
+
     The following research questions will be formulated for testing:
     \begin{framed}
         \begin{itemize}[itemindent=1em]
@@ -104,23 +110,32 @@
     How to achieve this hypothesis?
 
     \section{Scope and Structure}
+    \label{sec:scope-and-structure}
     What is covered and what not?
     What is the shape of this thesis and what order does it have?
 
     \chapter{Overview}
+    \label{ch:overview}
+
+
     \section{State of the Art}
+    \label{sec:state-of-the-art}
     describe the most recent findings on morphologically pretrained models in machine learning literature
 
     \chapter{Methodoloy}
+    \label{ch:methodology}
     in this section the whole methodoloy is covered. what do i use in this thesis, why do i use it and lastly, how?
     make sure the why covers methodological implications. (vergiss nicht alle pakete als quelle im Anhang)
 
     \section{Requirements}
+    \label{sec:requirements}
     A series of tools will help to achieve lexicalized tokenization.
     They will be explained in this chapter along with their methodological edge.
 
+    % EVTL. MACHINE LEARNING MODEL AUFSPLITTEN IN MODEL, TOKENIZER VOCABULARY?
     \subsection{Machine Learning Model}
     \label{subsec:mlm}
+
     \ac{bert} is a language learning transformer model designed for \ac{nlp} tasks (\cite{ATTENTION}).
     Upon release it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{BERTHIGH1}).
     Two main model characteristics can be observed for \ac{bert}.
@@ -133,20 +148,54 @@
     The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (roberta, germanbert, mbert \uppercase{citation}).
     Its wide support, comparability and versatility make \ac{bert} the model of choice for this thesis.
     Another notable feature in \uppercase{bert} is the implementation of the WordPiece tokenizer module (\uppercase{\href{https://huggingface.co/course/chapter6/6?fw=pt}{quelle?}}).
+    Default BERT WordPiece tokenization is predominantly heuristic by combining strings based on a precalculated score.
+    A variety of pre-trained tokenizers are available, although they come with a caveat.
+    Once a tokenizer is trained on a dataset it is specific to that dataset.
+    This means the application of a tokenizer on another dataset may result in out-of-vocabulary issues and different token/subtoken distributions.
 
-    BERT WordPiece tokenization is purely heuristic by combining strings based on a precalculated score.
+    Particularly relevant to this thesis is the option to train an own tokenizer from the base module.
+    Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}.
+    Tokens are then \uppercase{WORDPIECE algorithmus erklären}
+    By providing an algorithmically generated vocabulary to WordPiece and then training it on a new dataset the tokenization behavior is changed.
 
-    und bidirectional heißt mehr kontext, also auch vermutlich bessere embeddings durch die identifikation der lexeme
+
+
+
     \subsection{Data}
+    \label{subsec:data}
     explain the data that is used
+
     \subsection{Benchmark}
+    \label{subsec:benchmark}
     explain olmpics
 
     \section{Implementation}
-    Tatsächliche Anwendung der Methoden auf die Daten
-    \subsection{Altering the BERT Tokenizer Pipeline}
-    tweak des tokenizers: segmentation ist eine frage der interpretation.
+    \label{sec:implementation}
 
+    Tatsächliche Anwendung der Methoden auf die Daten
+
+    \subsection{Tokenizer}
+    \label{subsec:tokenizer-training}
+
+    \subsubsection{Generating a custom pre-training vocabulary}
+    \label{subsubsec:generating-a-custom-pre-training-vocabulary}
+
+    \subsubsection{Tokenizer Training}
+    \label{subsubsec:tokenizer-training}
+    How did I train the tokenizer, how did it go?
+    Which problems arose? What went well?
+
+    \subsection{Masked Language Model}
+    \label{subsec:masked-language-model}
+    Model implementation and parameters, runtimes?
+
+    \subsection{oLMpics Benchmark}
+    \label{subsec:olmpics-benchmark}
+
+
+
+    tweak des tokenizers: segmentation ist eine frage der interpretation.
+    The
     Ultimately, segmentation is a matter of interpretation.
     As mentioned in \ref{subsec:mlm}, the default WordPiece Tokenizer lacks
     A linguistically informed
@@ -157,17 +206,26 @@
     Natural language processing is understood as the
     \\
 
+    \chapter{Results}
+    \label{ch:results}
+
+    \section{Tokenization}
+
+    \
+    \chapter{\latex Testchapter}
+    \section{Citing}
     cite (\cite{METZLER2016})\\
-    citeast (\cite*{METZLER2016})\\
+    cite asterisk (\cite*{METZLER2016})\\
 
-    cite (\cite{DEEPL})\\
-    citeast ()\cite*{DEEPL})\\
-
+    \section{Quoting}
     \begin{quote}
         This is a quote
     \end{quote}
-    The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
-    This is done by altering the
+
+    \section{Referencing}
+    Short reference \ref{subsec:mlm}\\
+    Long reference \autoref{subsec:mlm}\\
+
     \appendix
     \printbibliography
 \end{document}
