@@ -18,6 +18,7 @@
 \usepackage[super]{nth}
 \usepackage{framed, enumitem}
 \usepackage{textcomp}
+\usepackage{hyperref}
 
 \addbibresource{main.bib}
 
@@ -31,7 +32,8 @@
         15\textsuperscript{th} Semester\\
         s2458588@stud.uni-frankfurt.de
     }
-    \subject{Thesis submitted in fulfilment of the requirements for the degree of Bachelor of Arts}
+    %\subject{Thesis submitted in fulfilment of the requirements for the degree of Bachelor of Arts}
+    \subject{Bachelor Thesis}
     \author{Ricardo Lukas Jung}
     \title{Lexicalizing a BERT Tokenizer}
     \subtitle{Building Open-End MLM for Morpho-Syntactically Similar Languages}
@@ -114,26 +116,26 @@
     make sure the why covers methodological implications. (vergiss nicht alle pakete als quelle im Anhang)
 
     \section{Requirements}
-    A series of tools will help to achieve a lexicalized tokenization.
+    A series of tools will help to achieve lexicalized tokenization.
     They will be explained in this chapter along with their methodological edge.
 
     \subsection{Machine Learning Model}
+    \label{subsec:mlm}
     \ac{bert} is a language learning transformer model designed for \ac{nlp} tasks (\cite{ATTENTION}).
-    Upon release it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{LSTM}).
+    Upon release it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{BERTHIGH1}).
     Two main model characteristics can be observed for \ac{bert}.
     Firstly, it is the first \ac{lm} to implement simultaneous attention heads, allowing for bidirectional reading.
     The methodological implication of reading to the left and right of a token is to include more information about the language in single embeddings.
     Secondly, \ac{bert} introduced the (at the time novel) \ac{mlm} method for training.
-    The method involves masking a specific amount of random tokens in the input sequence.
-    Masked tokens are then guessed by the model which can then update its weights according to success or failure.
+    The method involves masking a specified (default 15\%) amount of random tokens in the input sequence.
+    Masked tokens are guessed by the model which can then update its weights according to success or failure.
 
     The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (roberta, germanbert, mbert \uppercase{citation}).
     Its wide support, comparability and versatility make \ac{bert} the model of choice for this thesis.
-    Another notable addition is \uppercase{bert}s implementation of the WordPiece tokenizer module (\uppercase{quelle?}).
+    Another notable feature in \uppercase{bert} is the implementation of the WordPiece tokenizer module (\uppercase{\href{https://huggingface.co/course/chapter6/6?fw=pt}{quelle?}}).
 
+    BERT WordPiece tokenization is purely heuristic by combining strings based on a precalculated score.
 
-
-    tweak des tokenizers: segmentation ist eine frage der interpretation.
     und bidirectional heißt mehr kontext, also auch vermutlich bessere embeddings durch die identifikation der lexeme
     \subsection{Data}
     explain the data that is used
@@ -142,8 +144,12 @@
 
     \section{Implementation}
     Tatsächliche Anwendung der Methoden auf die Daten
+    \subsection{Altering the BERT Tokenizer Pipeline}
+    tweak des tokenizers: segmentation ist eine frage der interpretation.
 
-    
+    Ultimately, segmentation is a matter of interpretation.
+    As mentioned in \ref{subsec:mlm}, the default WordPiece Tokenizer lacks
+    A linguistically informed
 
 
 
