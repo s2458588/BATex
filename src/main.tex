@@ -60,11 +60,13 @@
     \end{acronym}
 
     \chapter{Introduction}
-    \label{ch:intro}
+    \label{ch:introduction}
     This thesis shows the use of specific intervention in tokenization subsystems of machine learning
     The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
     This is done by altering the \uppercase{Why is this subject relevant}
-    This chapter covers the background, intentions and scope of the thesis. Explain what the thesis is about.
+    This chapter covers the background, intentions and scope of the thesis.
+    Explain what the thesis is about.
+
 
     \section{Motivation}
     \label{sec:motivation}
@@ -91,7 +93,8 @@
     Following the guiding principle that \textbf{input quality is ouput quality} not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
     Note: explain why i use tokens and words, they are interchangeable right?
     holistic, need less attention to produce satisfactory
-    
+    \uppercase{not just to push F, but to find a viable method of morphemic tokenization}
+
     \section{Hypotheses}
     \label{sec:hypothesis}
 
@@ -111,6 +114,15 @@
 
     \section{Scope and Structure}
     \label{sec:scope-and-structure}
+
+    The following chapters are sorted into three parts.
+    To outline the research domain, a brief summary of the current state of morphological language modeling is given.
+    Next, german is described paying special attention to its morphological complexity and peer languages.
+    This serves as preface to the methodology, connecting characteristically matching languages to form a pool of possible  target languages.
+
+    As main part of this thesis, the methodology is layed out.
+    It is sectioned into a theoretical part which focuses on what implements are used and the value they hold towards lexicalizing a tokenizer
+
     What is covered and what not?
     What is the shape of this thesis and what order does it have?
 
@@ -121,6 +133,12 @@
     \section{State of the Art}
     \label{sec:state-of-the-art}
     describe the most recent findings on morphologically pretrained models in machine learning literature
+
+    \section{Target Languages}
+    \label{sec:target-languages}
+    Describe german (ISO639-3: ger)and its morphological state.
+    Describe what morphological complexity is.
+    Describe what similar languages exist (typological vs topological)
 
     \chapter{Methodoloy}
     \label{ch:methodology}
@@ -142,7 +160,7 @@
     Firstly, it is the first \ac{lm} to implement simultaneous attention heads, allowing for bidirectional reading.
     The methodological implication of reading to the left and right of a token is to include more information about the language in single embeddings.
     Secondly, \ac{bert} introduced the (at the time novel) \ac{mlm} method for training.
-    The method involves masking a specified (default 15\%) amount of random tokens in the input sequence.
+    The method involves masking a specified amount (default 15\%) of random tokens in the input sequence.
     Masked tokens are guessed by the model which can then update its weights according to success or failure.
 
     The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (roberta, germanbert, mbert \uppercase{citation}).
@@ -175,6 +193,7 @@
     Tatsächliche Anwendung der Methoden auf die Daten
 
     \subsection{Tokenizer}
+    \uppercase{essentially deriving sensible subtokens to represent lexemes}
     \label{subsec:tokenizer-training}
 
     \subsubsection{Generating a custom pre-training vocabulary}
@@ -209,7 +228,12 @@
     \chapter{Results}
     \label{ch:results}
 
+    \section{Benchmark}
+    \label{sec:benchmark}
+
+
     \section{Tokenization}
+    \label{sec:tokenization}
 
     \
     \chapter{\latex Testchapter}
