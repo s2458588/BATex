@@ -18,7 +18,11 @@
 \usepackage[super]{nth}
 \usepackage{framed, enumitem}
 \usepackage{textcomp}
-\usepackage[hidelinks=true]{hyperref}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{gb4e} %interlinear glossing
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
 
 \addbibresource{main.bib}
@@ -144,10 +148,20 @@
     A morpheme is defined as the \textquote{smallest distinctive unit of a language having a definite grammatical function} (\cite{morpheme}).
     It is a west-germanic language and the official language of Germany, Austria, Switzerland, Liechtenstein and Luxemburg (\cite{METZLER2016}).
     Approximately 130 million speakers\footnote{https://de.statista.com/statistik/daten/studie/1119851/umfrage/deutschsprachige-menschen-weltweit/}
-    The morphosyntactic type can be defined as mixed fusional and agglutinative.
+    German can be defined as fusional on morphemic level and agglutivation
 
 
     Describe what morphological complexity is.
+
+    \begin{exe}
+    \ex
+    \gll  My s Marko poexa-l-i avtobus-om v Peredelkino \\
+    1\textsc{pl} \textsc{com} Marko go-\textsc{pst}-\textsc{pl} bus-\textsc{ins} \textsc{all} Peredelkino \\
+    \glt  `Marko and I went to Perdelkino by bus.'
+    \end{exe}
+
+
+
     Describe what similar languages exist (typological vs topological)
 
     \chapter{Methodoloy}
@@ -209,6 +223,27 @@
     \subsubsection{Generating a custom pre-training vocabulary}
     \label{subsubsec:generating-a-custom-pre-training-vocabulary}
 
+    Algorithm for the pre-training vocabulary:
+    \begin{document}
+        \begin{algorithm}
+            \caption{An algorithm with caption}\label{alg:cap}
+            \begin{algorithmic}
+                \Require $n \geq 0$
+                \Ensure $y = x^n$
+                \State $y \gets 1$
+                \State $X \gets x$
+                \State $N \gets n$
+                \While{$N \neq 0$}
+                    \If{$N$ is even}
+                        \State $X \gets X \times X$
+                        \State $N \gets \frac{N}{2}$  \Comment{This is a comment}
+                    \ElsIf{$N$ is odd}
+                    \State $y \gets y \times X$
+                    \State $N \gets N - 1$
+                    \EndIf
+                \EndWhile
+            \end{algorithmic}
+        \end{algorithm}
     \subsubsection{Tokenizer Training}
     \label{subsubsec:tokenizer-training}
     How did I train the tokenizer, how did it go?
@@ -256,6 +291,13 @@
     What was learned from this?
     What are future applications?
 
+    In almost all statistical modeling the goal is to model reality as precisely as feasible.
+    Language models are no exception.
+    The accuracy of a model should increase with the number of functional components of natural language being integrated into the model.
+    This is seen in e.g.\ the implementation of vocabularies, just one of many attempts to automatically identify meaningful units in language.
+    Even higher levels of language found in domains from ordinary pragmatics to scientific reasoning are sought after in language modeling.
+    While languages are observed to change slowly over time, sometimes dropping and adding features of their inventory, computational linguistics has to keep producing models that keep up with the reality of language.
+    The supervised tokenization in this thesis illustrates just a small part of the potential in tailored modeling.
     \chapter{\latex Testchapter}
     \section{Citing}
     cite (\cite{METZLER2016})\\

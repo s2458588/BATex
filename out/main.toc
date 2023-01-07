@@ -16,13 +16,14 @@
 \contentsline {subsubsection}{\nonumberline Generating a custom pre-training vocabulary}{11}{subsubsection*.13}%
 \contentsline {subsubsection}{\nonumberline Tokenizer Training}{11}{subsubsection*.15}%
 \contentsline {subsection}{\numberline {3.2.2}Masked Language Model}{11}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}oLMpics Benchmark}{11}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Results}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Benchmark}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Tokenization}{12}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Testchapter}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Citing}{13}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Quoting}{13}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Referencing}{13}{section.5.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{14}{chapter*.16}%
+\contentsline {subsection}{\numberline {3.2.3}oLMpics Benchmark}{12}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Benchmark}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tokenization}{13}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{14}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Testchapter}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Citing}{15}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Quoting}{15}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Referencing}{15}{section.6.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{16}{chapter*.16}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

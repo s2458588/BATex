@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  7 JAN 2023 01:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  7 JAN 2023 20:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -882,10 +882,6 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 )
-
-Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 4018.
-
 Package hyperref Info: Hyper figures OFF on input line 4137.
 Package hyperref Info: Link nesting OFF on input line 4142.
 Package hyperref Info: Hyper index ON on input line 4145.
@@ -896,6 +892,7 @@ Package hyperref Info: Bookmarks ON on input line 4390.
 \c@Hy@tempcnt=\count436
 LaTeX Info: Redefining \url on input line 4749.
 \XeTeXLinkMargin=\dimen186
+
 (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -955,6 +952,66 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip98
 )
+(/usr/share/texmf-dist/tex/latex/gb4e/gb4e.sty
+(/usr/share/texmf-dist/tex/latex/gb4e/cgloss4e.sty
+\lineone=\box64
+\linetwo=\box65
+\linethree=\box66
+\wordone=\box67
+\wordtwo=\box68
+\wordthree=\box69
+\gline=\box70
+\glossglue=\skip99
+)
+\c@fnx=\count445
+\@xnumdepth=\count446
+\c@xnumi=\count447
+\c@xnumii=\count448
+\c@xnumiii=\count449
+\c@xnumiv=\count450
+\c@exx=\count451
+\c@rxnumi=\count452
+\c@rxnumii=\count453
+\c@rxnumiii=\count454
+\c@rxnumiv=\count455
+\lcommentsep=\skip100
+)
+(/usr/share/texmf-dist/tex/latex/algorithms/algorithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count456
+\float@exts=\toks29
+\float@box=\box71
+\@float@everytoks=\toks30
+\@floatcapt=\box72
+)
+\@float@every@algorithm=\toks31
+\c@algorithm=\count457
+)
+(/usr/share/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count458
+\c@ALG@rem=\count459
+\c@ALG@nested=\count460
+\ALG@tlm=\skip101
+\ALG@thistlm=\skip102
+\c@ALG@Lnr=\count461
+\c@ALG@blocknr=\count462
+\c@ALG@storecount=\count463
+\c@ALG@tmpcounter=\count464
+\ALG@tmplength=\skip103
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
@@ -965,102 +1022,102 @@ LaTeX Warning: Unused global option(s):
 (/home/gnom/uni/bachelor/BATex/out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+1.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-Package scrbase Info: activating english \contentsname on input line 27.
-Package scrbase Info: activating english \listfigurename on input line 27.
-Package scrbase Info: activating english \listtablename on input line 27.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+Package scrbase Info: activating english \contentsname on input line 31.
+Package scrbase Info: activating english \listfigurename on input line 31.
+Package scrbase Info: activating english \listtablename on input line 31.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 27.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 27.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 27.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 27.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 27.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 27.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 27.
-LaTeX Font Info:    Redeclaring math accent \check on input line 27.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 27.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 27.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 27.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 27.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 31.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 31.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 31.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 31.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 31.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 31.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 31.
+LaTeX Font Info:    Redeclaring math accent \check on input line 31.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 31.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 31.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 31.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 27.
+(Font)              `operators' in the math version `normal' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LinuxLibertineO(0)/m/n on input line
- 27.
+ 31.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 27.
+(Font)              `operators' in the math version `bold' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LinuxLibertineO(0)/m/n on input lin
-e 27.
+e 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/m/n
- on input line 27.
+ on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/LinuxLibertineO(0)/m/it on input li
-ne 27.
+ne 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/LinuxLibertineO(0)/b/n on input lin
-e 27.
+e 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/LinuxBiolinumO(0)/m/n on input line
- 27.
+ 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/m/n on input line
- 27.
+ 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/b/n
- on input line 27.
+ on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/LinuxLibertineO(0)/b/it on input l
-ine 27.
+ine 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/LinuxBiolinumO(0)/b/n on input lin
-e 27.
+e 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/b/n on input line
- 27.
+ 31.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1077,9 +1134,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (/home/gnom/uni/bachelor/BATex/out/main.bbl)
-Package biblatex Info: Reference section=0 on input line 27.
-Package biblatex Info: Reference segment=0 on input line 27.
-Package hyperref Info: Link coloring OFF on input line 27.
+Package biblatex Info: Reference section=0 on input line 31.
+Package biblatex Info: Reference segment=0 on input line 31.
+Package hyperref Info: Link coloring OFF on input line 31.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1090,11 +1147,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count445
+\c@section@level=\count465
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (/home/gnom/uni/bachelor/BATex/out/main.out)
 (/home/gnom/uni/bachelor/BATex/out/main.out)
@@ -1108,14 +1165,14 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 27.
+(scrreprt)           before \begin{document} on input line 31.
 
 (/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
-\BKM@id=\count446
+\BKM@id=\count466
 ))
 
 Package fontspec Info: Font family 'LinuxLibertineO(1)' created for font
@@ -1155,13 +1212,13 @@ ext;"
 (fontspec)             O/BI/OT:script=latn;language=dflt;+sups;+smcp;mapping=te
 x-text;"
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1199,19 +1256,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface.
+
 Package acronym Info: Label `acro:cl' newly defined as it shall be overridden
-although it is yet undefined on input line 74.
-Package acronym Info: Label `acro:ml' newly defined as it shall be overridden
 although it is yet undefined on input line 78.
+Package acronym Info: Label `acro:ml' newly defined as it shall be overridden
+although it is yet undefined on input line 82.
 [7
 
 ]
 Package acronym Info: Label `acro:lm' newly defined as it shall be overridden
-although it is yet undefined on input line 105.
+although it is yet undefined on input line 109.
  [8]
 chapter 2.
 
-LaTeX Warning: Citation 'morpheme' on page 9 undefined on input line 144.
+LaTeX Warning: Citation 'morpheme' on page 9 undefined on input line 148.
 
 [9
 
@@ -1219,31 +1291,51 @@ LaTeX Warning: Citation 'morpheme' on page 9 undefined on input line 144.
 chapter 3.
 Package acronym Info: Label `acro:bert' newly defined as it shall be overridden
 
-although it is yet undefined on input line 167.
+although it is yet undefined on input line 181.
 Package acronym Info: Label `acro:nlp' newly defined as it shall be overridden
-although it is yet undefined on input line 167.
+although it is yet undefined on input line 181.
 Package acronym Info: Label `acro:lstm' newly defined as it shall be overridden
 
-although it is yet undefined on input line 168.
+although it is yet undefined on input line 182.
 Package acronym Info: Label `acro:mlm' newly defined as it shall be overridden
-although it is yet undefined on input line 172.
+although it is yet undefined on input line 186.
 [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 234--237
+
+./main.tex:227: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227     \begin{document}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 229.
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 269--272
 
  []
 
-[11]
+[12]
 chapter 4.
-[12
+[13
 
 ]
 chapter 5.
-./main.tex:249: Undefined control sequence.
+[14
+
+]
+chapter 6.
+./main.tex:301: Undefined control sequence.
 \@currenttocentry ->\latex 
                            Testchapter
-l.249     \chapter{\latex Testchapter}
+l.301     \chapter{\latex Testchapter}
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1251,10 +1343,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:249: Undefined control sequence.
+./main.tex:301: Undefined control sequence.
 \@currenttocentry ->\latex 
                            Testchapter
-l.249     \chapter{\latex Testchapter}
+l.301     \chapter{\latex Testchapter}
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1262,10 +1354,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:249: Undefined control sequence.
+./main.tex:301: Undefined control sequence.
 <argument> \interlinepenalty \@M \latex 
                                         Testchapter\@@par 
-l.249     \chapter{\latex Testchapter}
+l.301     \chapter{\latex Testchapter}
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1274,32 +1366,35 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
 
  []
 
-[13
+[15
 
 ]
 chapter without number
 LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
-(Font)              scaled to size 9.41345pt on input line 265.
+(Font)              scaled to size 9.41345pt on input line 317.
 
-Overfull \hbox (4.08003pt too wide) in paragraph at lines 266--266
+Overfull \hbox (4.08003pt too wide) in paragraph at lines 318--318
 [][]\TU/LinuxLibertineO(0)/m/n/12 Devlin, Jacob, Ming-Wei Chang, Kenton Lee, an
 d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
  []
 
-[14
+[16
 
 ] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1311,14 +1406,18 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- ) 
-Here is how much of TeX's memory you used:
- 26444 strings out of 476156
- 528947 string characters out of 5814963
- 1455671 words of memory out of 5000000
- 46845 multiletter control sequences out of 15000+600000
- 477473 words of font info for 105 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 122i,7n,133p,10600b,4833s stack positions out of 5000i,500n,10000p,200000b,80000s
+ )
+(\end occurred inside a group at level 1)
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (14 pages).
+### semi simple group (level 1) entered at line 227 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 27293 strings out of 476156
+ 541397 string characters out of 5814963
+ 1467756 words of memory out of 5000000
+ 47672 multiletter control sequences out of 15000+600000
+ 477697 words of font info for 106 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 122i,7n,133p,10600b,4948s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (16 pages).
