@@ -18,7 +18,8 @@
 \usepackage[super]{nth}
 \usepackage{framed, enumitem}
 \usepackage{textcomp}
-\usepackage{hyperref}
+\usepackage[hidelinks=true]{hyperref}
+
 
 \addbibresource{main.bib}
 
@@ -60,7 +61,7 @@
     \end{acronym}
 
     \chapter{Introduction}
-    \label{ch:introduction}
+
     This thesis shows the use of specific intervention in tokenization subsystems of machine learning
     The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
     This is done by altering the \uppercase{Why is this subject relevant}
@@ -136,7 +137,16 @@
 
     \section{Target Languages}
     \label{sec:target-languages}
-    Describe german (ISO639-3: ger)and its morphological state.
+    Describe german (ISO639-3: deu) and its morphological state.
+
+    German (ISO639-3: deu) will be the exemplary target language for the experimental setup.
+    German is an inflectional language making use of composition and derivation.
+    A morpheme is defined as the \textquote{smallest distinctive unit of a language having a definite grammatical function} (\cite{morpheme}).
+    It is a west-germanic language and the official language of Germany, Austria, Switzerland, Liechtenstein and Luxemburg (\cite{METZLER2016}).
+    Approximately 130 million speakers\footnote{https://de.statista.com/statistik/daten/studie/1119851/umfrage/deutschsprachige-menschen-weltweit/}
+    The morphosyntactic type can be defined as mixed fusional and agglutinative.
+
+
     Describe what morphological complexity is.
     Describe what similar languages exist (typological vs topological)
 
@@ -230,12 +240,22 @@
 
     \section{Benchmark}
     \label{sec:benchmark}
-
+    How did the model Perform in the benchmark test? Report the performance for different tasks and visualize it
 
     \section{Tokenization}
     \label{sec:tokenization}
+    Show specific examples of tokenization and analyze the qualitatively (maybe quantitatively)
 
-    \
+    \chapter{Conclusion}
+    \label{ch:conclusion}
+
+    What was done?
+    How did it go?
+    What went wrong?
+    What went well?
+    What was learned from this?
+    What are future applications?
+
     \chapter{\latex Testchapter}
     \section{Citing}
     cite (\cite{METZLER2016})\\
@@ -243,7 +263,8 @@
 
     \section{Quoting}
     \begin{quote}
-        This is a quote
+        \textquote[{\cite{DEEPL}}]{This is a quote by textquote}
+        \enquote{This is a quote by enquote}
     \end{quote}
 
     \section{Referencing}
