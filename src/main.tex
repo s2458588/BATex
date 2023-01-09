@@ -18,7 +18,7 @@
 \usepackage[super]{nth}
 \usepackage{framed, enumitem}
 \usepackage{textcomp}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref} %[hidelinks] option for final compile
 
 \usepackage{gb4e} %interlinear glossing
 \usepackage{algorithm}
@@ -92,7 +92,9 @@
     \section{Citing}
     cite (\cite{METZLER2016})\\
     cite asterisk (\cite*{METZLER2016})\\
-
+    ~\cite{WORDTYPOLOGY}\\
+    ~\cite{LINGUISTICTYPOLOGY}\\
+    ~\cite{MMM4}\\
     \section{Quoting}
     \begin{quote}
         \textquote[{\cite{DEEPL}}]{This is a quote by textquote}
@@ -100,7 +102,7 @@
     \end{quote}
 
     \section{Referencing}
-    Short reference \ref{subsec:mlm}\\
+    Short reference ~\ref{subsec:mlm}\\
     Long reference \autoref{subsec:mlm}\\
 
     \appendix

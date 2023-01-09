@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  9 JAN 2023 14:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  9 JAN 2023 22:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1284,12 +1284,10 @@ although it is yet undefined on input line 42.
 ) [8]
 chapter 2.
 (./overview.tex
-
-LaTeX Warning: Citation 'morpheme' on page 9 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'MORPHOLOGICALCOMPLEXITY' on page 9 undefined on input 
-line 18.
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+  [][][]\TU/LinuxLibertineO(0)/m/n/10 https://de.statista.com/statistik/daten/s
+tudie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last
+ []
 
 ) [9
 
@@ -1334,10 +1332,10 @@ chapter 5.
 
 ]
 chapter 6.
-./main.tex:91: Undefined control sequence.
+./main.tex:92: Undefined control sequence.
 \@currenttocentry ->\latex 
                            Testchapter
-l.91     \chapter{\latex Testchapter}
+l.92     \chapter{\latex Testchapter}
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1345,10 +1343,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:91: Undefined control sequence.
+./main.tex:92: Undefined control sequence.
 \@currenttocentry ->\latex 
                            Testchapter
-l.91     \chapter{\latex Testchapter}
+l.92     \chapter{\latex Testchapter}
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1356,10 +1354,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:91: Undefined control sequence.
+./main.tex:92: Undefined control sequence.
 <argument> \interlinepenalty \@M \latex 
                                         Testchapter\@@par 
-l.91     \chapter{\latex Testchapter}
+l.92     \chapter{\latex Testchapter}
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1368,12 +1366,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
@@ -1382,9 +1380,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--105
 ]
 chapter without number
 LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
-(Font)              scaled to size 9.41345pt on input line 107.
+(Font)              scaled to size 9.41345pt on input line 110.
 
-Overfull \hbox (4.08003pt too wide) in paragraph at lines 108--108
+Overfull \hbox (5.99193pt too wide) in paragraph at lines 111--111
+\TU/LinuxLibertineO(0)/m/it/12 plexity\TU/LinuxLibertineO(0)/m/n/12 . Cambridge
+ studies in Linguistics 153. Cambridge University Press. \TU/LinuxLibertineO(0)
+/m/sc/12 isbn\TU/LinuxLibertineO(0)/m/n/12 : 1107120640.
+ []
+
+
+Overfull \hbox (4.08003pt too wide) in paragraph at lines 111--111
 [][]\TU/LinuxLibertineO(0)/m/n/12 Devlin, Jacob, Ming-Wei Chang, Kenton Lee, an
 d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
  []
@@ -1392,16 +1397,8 @@ d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
 [16
 
 ] (/home/gnom/uni/bachelor/BATex/out/main.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -1411,10 +1408,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 ### semi simple group (level 1) entered at line 59 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27325 strings out of 476156
- 541934 string characters out of 5814963
- 1467811 words of memory out of 5000000
- 47689 multiletter control sequences out of 15000+600000
+ 27354 strings out of 476156
+ 542806 string characters out of 5814963
+ 1472080 words of memory out of 5000000
+ 47718 multiletter control sequences out of 15000+600000
  477697 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,7n,133p,10600b,4972s stack positions out of 5000i,500n,10000p,200000b,80000s

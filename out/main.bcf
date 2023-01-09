@@ -2354,13 +2354,19 @@
     <bcf:citekey order="7">METZLER2016</bcf:citekey>
     <bcf:citekey order="8">METZLER2016</bcf:citekey>
     <bcf:citekey order="9">METZLER2016</bcf:citekey>
-    <bcf:citekey order="10">DEEPL</bcf:citekey>
-    <bcf:citekey order="11">morpheme</bcf:citekey>
-    <bcf:citekey order="12">METZLER2016</bcf:citekey>
-    <bcf:citekey order="13">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
-    <bcf:citekey order="14">ATTENTION</bcf:citekey>
-    <bcf:citekey order="15">BERTHIGH1</bcf:citekey>
-    <bcf:citekey order="16">DEEPL</bcf:citekey>
+    <bcf:citekey order="10">WORDTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="11">LINGUISTICTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="12">MMM4</bcf:citekey>
+    <bcf:citekey order="13">DEEPL</bcf:citekey>
+    <bcf:citekey order="14">morpheme</bcf:citekey>
+    <bcf:citekey order="15">METZLER2016</bcf:citekey>
+    <bcf:citekey order="16">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
+    <bcf:citekey order="17">ATTENTION</bcf:citekey>
+    <bcf:citekey order="18">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="19">WORDTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="20">LINGUISTICTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="21">MMM4</bcf:citekey>
+    <bcf:citekey order="22">DEEPL</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
