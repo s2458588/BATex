@@ -23,10 +23,12 @@
 \usepackage{gb4e} %interlinear glossing
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{algorithmicx}
 
 
 \addbibresource{main.bib}
 
+\includeonly{methodology.tex} % input control
 
 \begin{document}
     \titlehead{
@@ -65,239 +67,27 @@
     \end{acronym}
 
     \chapter{Introduction}
-
-    This thesis shows the use of specific intervention in tokenization subsystems of machine learning
-    The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
-    This is done by altering the \uppercase{Why is this subject relevant}
-    This chapter covers the background, intentions and scope of the thesis.
-    Explain what the thesis is about.
-
-
-    \section{Motivation}
-    \label{sec:motivation}
-    There is an ongoing urge in the \acf{cl} community to understand natural language.
-    Research in the past decades shows use of frequentist and statistical methods (such as \uppercase{ZITATION}) to their advantage, leading to the emergence of the first machine learning (ML) models.
-    It became apparent that these ML models are the best currently available approach to an automated understanding of natural language.
-    The structural parallels of machine learning to human learning have often been drawn (\uppercase{zitation)}) to demonstrate how similar and more importantly: how different both can be.
-    A powerful feature of \ac{ml} (as opposed to human learning) is the possibility of actively controlling the the learning parameters in a supervised environment.
-    To test the efficiency of \uppercase{ML} parameters a variety of tasks (\uppercase{zitation}) are designed and applied.
-    A trained model will yield performance scores based on the quality of its training, much like humans on language tests.
-    But the automated modeling of language is not the first instance language modelling in a broader sense.
-    Traditional linguistics (\uppercase{definition} has produced fundamental research the prior to the discovery of \uppercase{ML} architectures and their implementation.
-    While generic ML frameworks seem appealing in the presumption that they require less work to reach somewhat satisfactoy results,
-    they are far from complete or perfect.
-    The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
-
-    Language learners usually build up a lexicon consisting of lexemes which they will have to analyze accurately in order to be productive in that target language.
-    A ML model relies on a tokenizer to create such a vocabulary  (\textbf{ZITATION}).
-    It is programmed to segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
-    Ideally those subwords will be part of the functional vocabulary in the target language, so called morphemes \textbf{ERKLÄRUNG}.
-    A morpheme is defined as the smallest unit carrying meaning in a language.
-    The morphemes of a language and its generated tokenizer vocabulary rarely coincide.
-    Typically, tokanizer vocabularies will contain a lot of noise and linguistically nonsensical segmentations or words.
-    Following the guiding principle that \textbf{input quality is ouput quality} not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
-    Note: explain why i use tokens and words, they are interchangeable right?
-    holistic, need less attention to produce satisfactory
-    \uppercase{not just to push F, but to find a viable method of morphemic tokenization}
-
-    \section{Hypotheses}
-    \label{sec:hypothesis}
-
-    The following research questions will be formulated for testing:
-    \begin{framed}
-        \begin{itemize}[itemindent=1em]
-            \item[HYP1:] Adjustments to tokenization have significant impact on an \ac{lm}s performance.
-        \end{itemize}
-    \end{framed}
-    How to achieve this hypothesis?
-    \begin{framed}
-        \begin{itemize}[itemindent=1em]
-        \item[HYP2:] Providing lexical information to a tokenizer increases benchmark accuracy on MLM tasks.
-    \end{itemize}
-    \end{framed}
-    How to achieve this hypothesis?
-
-    \section{Scope and Structure}
-    \label{sec:scope-and-structure}
-
-    The following chapters are sorted into three parts.
-    To outline the research domain, a brief summary of the current state of morphological language modeling is given.
-    Next, german is described paying special attention to its morphological complexity and peer languages.
-    This serves as preface to the methodology, connecting characteristically matching languages to form a pool of possible  target languages.
-
-    As main part of this thesis, the methodology is layed out.
-    It is sectioned into a theoretical part which focuses on what implements are used and the value they hold towards lexicalizing a tokenizer
-
-    What is covered and what not?
-    What is the shape of this thesis and what order does it have?
+    \input{introduction}
 
     \chapter{Overview}
     \label{ch:overview}
+    \input{overview}
 
-
-    \section{State of the Art}
-    \label{sec:state-of-the-art}
-    describe the most recent findings on morphologically pretrained models in machine learning literature
-
-    \section{Target Languages}
-    \label{sec:target-languages}
-    Describe german (ISO639-3: deu) and its morphological state.
-
-    German (ISO639-3: deu) will be the exemplary target language for the experimental setup.
-    German is an inflectional language making use of composition and derivation.
-    A morpheme is defined as the \textquote{smallest distinctive unit of a language having a definite grammatical function} (\cite{morpheme}).
-    It is a west-germanic language and the official language of Germany, Austria, Switzerland, Liechtenstein and Luxemburg (\cite{METZLER2016}).
-    Approximately 130 million speakers\footnote{https://de.statista.com/statistik/daten/studie/1119851/umfrage/deutschsprachige-menschen-weltweit/}
-    German can be defined as fusional on morphemic level and agglutivation
-
-
-    Describe what morphological complexity is.
-
-    \begin{exe}
-    \ex
-    \gll  My s Marko poexa-l-i avtobus-om v Peredelkino \\
-    1\textsc{pl} \textsc{com} Marko go-\textsc{pst}-\textsc{pl} bus-\textsc{ins} \textsc{all} Peredelkino \\
-    \glt  `Marko and I went to Perdelkino by bus.'
-    \end{exe}
-
-
-
-    Describe what similar languages exist (typological vs topological)
 
     \chapter{Methodoloy}
     \label{ch:methodology}
-    in this section the whole methodoloy is covered. what do i use in this thesis, why do i use it and lastly, how?
-    make sure the why covers methodological implications. (vergiss nicht alle pakete als quelle im Anhang)
+    \input{methodology}
 
-    \section{Requirements}
-    \label{sec:requirements}
-    A series of tools will help to achieve lexicalized tokenization.
-    They will be explained in this chapter along with their methodological edge.
-
-    % EVTL. MACHINE LEARNING MODEL AUFSPLITTEN IN MODEL, TOKENIZER VOCABULARY?
-    \subsection{Machine Learning Model}
-    \label{subsec:mlm}
-
-    \ac{bert} is a language learning transformer model designed for \ac{nlp} tasks (\cite{ATTENTION}).
-    Upon release it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{BERTHIGH1}).
-    Two main model characteristics can be observed for \ac{bert}.
-    Firstly, it is the first \ac{lm} to implement simultaneous attention heads, allowing for bidirectional reading.
-    The methodological implication of reading to the left and right of a token is to include more information about the language in single embeddings.
-    Secondly, \ac{bert} introduced the (at the time novel) \ac{mlm} method for training.
-    The method involves masking a specified amount (default 15\%) of random tokens in the input sequence.
-    Masked tokens are guessed by the model which can then update its weights according to success or failure.
-
-    The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (roberta, germanbert, mbert \uppercase{citation}).
-    Its wide support, comparability and versatility make \ac{bert} the model of choice for this thesis.
-    Another notable feature in \uppercase{bert} is the implementation of the WordPiece tokenizer module (\uppercase{\href{https://huggingface.co/course/chapter6/6?fw=pt}{quelle?}}).
-    Default BERT WordPiece tokenization is predominantly heuristic by combining strings based on a precalculated score.
-    A variety of pre-trained tokenizers are available, although they come with a caveat.
-    Once a tokenizer is trained on a dataset it is specific to that dataset.
-    This means the application of a tokenizer on another dataset may result in out-of-vocabulary issues and different token/subtoken distributions.
-
-    Particularly relevant to this thesis is the option to train an own tokenizer from the base module.
-    Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}.
-    Tokens are then \uppercase{WORDPIECE algorithmus erklären}
-    By providing an algorithmically generated vocabulary to WordPiece and then training it on a new dataset the tokenization behavior is changed.
-
-
-
-
-    \subsection{Data}
-    \label{subsec:data}
-    explain the data that is used
-
-    \subsection{Benchmark}
-    \label{subsec:benchmark}
-    explain olmpics
-
-    \section{Implementation}
-    \label{sec:implementation}
-
-    Tatsächliche Anwendung der Methoden auf die Daten
-
-    \subsection{Tokenizer}
-    \uppercase{essentially deriving sensible subtokens to represent lexemes}
-    \label{subsec:tokenizer-training}
-
-    \subsubsection{Generating a custom pre-training vocabulary}
-    \label{subsubsec:generating-a-custom-pre-training-vocabulary}
-
-    Algorithm for the pre-training vocabulary:
-    \begin{document}
-        \begin{algorithm}
-            \caption{An algorithm with caption}\label{alg:cap}
-            \begin{algorithmic}
-                \Require $n \geq 0$
-                \Ensure $y = x^n$
-                \State $y \gets 1$
-                \State $X \gets x$
-                \State $N \gets n$
-                \While{$N \neq 0$}
-                    \If{$N$ is even}
-                        \State $X \gets X \times X$
-                        \State $N \gets \frac{N}{2}$  \Comment{This is a comment}
-                    \ElsIf{$N$ is odd}
-                    \State $y \gets y \times X$
-                    \State $N \gets N - 1$
-                    \EndIf
-                \EndWhile
-            \end{algorithmic}
-        \end{algorithm}
-    \subsubsection{Tokenizer Training}
-    \label{subsubsec:tokenizer-training}
-    How did I train the tokenizer, how did it go?
-    Which problems arose? What went well?
-
-    \subsection{Masked Language Model}
-    \label{subsec:masked-language-model}
-    Model implementation and parameters, runtimes?
-
-    \subsection{oLMpics Benchmark}
-    \label{subsec:olmpics-benchmark}
-
-
-
-    tweak des tokenizers: segmentation ist eine frage der interpretation.
-    The
-    Ultimately, segmentation is a matter of interpretation.
-    As mentioned in \ref{subsec:mlm}, the default WordPiece Tokenizer lacks
-    A linguistically informed
-
-
-
-    The field of NLP  (\cite{METZLER2016}) has been expanded ever since the emergence of the language models.
-    Natural language processing is understood as the
-    \\
 
     \chapter{Results}
     \label{ch:results}
+    \input{results}
 
-    \section{Benchmark}
-    \label{sec:benchmark}
-    How did the model Perform in the benchmark test? Report the performance for different tasks and visualize it
-
-    \section{Tokenization}
-    \label{sec:tokenization}
-    Show specific examples of tokenization and analyze the qualitatively (maybe quantitatively)
 
     \chapter{Conclusion}
     \label{ch:conclusion}
+    \input{conclusion}
 
-    What was done?
-    How did it go?
-    What went wrong?
-    What went well?
-    What was learned from this?
-    What are future applications?
-
-    In almost all statistical modeling the goal is to model reality as precisely as feasible.
-    Language models are no exception.
-    The accuracy of a model should increase with the number of functional components of natural language being integrated into the model.
-    This is seen in e.g.\ the implementation of vocabularies, just one of many attempts to automatically identify meaningful units in language.
-    Even higher levels of language found in domains from ordinary pragmatics to scientific reasoning are sought after in language modeling.
-    While languages are observed to change slowly over time, sometimes dropping and adding features of their inventory, computational linguistics has to keep producing models that keep up with the reality of language.
-    The supervised tokenization in this thesis illustrates just a small part of the potential in tailored modeling.
     \chapter{\latex Testchapter}
     \section{Citing}
     cite (\cite{METZLER2016})\\
