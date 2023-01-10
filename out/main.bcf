@@ -2345,28 +2345,26 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">main.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">morpheme</bcf:citekey>
-    <bcf:citekey order="2">METZLER2016</bcf:citekey>
-    <bcf:citekey order="3">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
+    <bcf:citekey order="1">METZLER2016</bcf:citekey>
+    <bcf:citekey order="2">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
+    <bcf:citekey order="3">LINGUISTICTYPOLOGY</bcf:citekey>
     <bcf:citekey order="4">ATTENTION</bcf:citekey>
-    <bcf:citekey order="5">ATTENTION</bcf:citekey>
-    <bcf:citekey order="6">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="5">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="6">METZLER2016</bcf:citekey>
     <bcf:citekey order="7">METZLER2016</bcf:citekey>
     <bcf:citekey order="8">METZLER2016</bcf:citekey>
-    <bcf:citekey order="9">METZLER2016</bcf:citekey>
-    <bcf:citekey order="10">WORDTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="11">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="12">MMM4</bcf:citekey>
-    <bcf:citekey order="13">DEEPL</bcf:citekey>
-    <bcf:citekey order="14">morpheme</bcf:citekey>
-    <bcf:citekey order="15">METZLER2016</bcf:citekey>
-    <bcf:citekey order="16">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
-    <bcf:citekey order="17">ATTENTION</bcf:citekey>
-    <bcf:citekey order="18">BERTHIGH1</bcf:citekey>
-    <bcf:citekey order="19">WORDTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="20">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="21">MMM4</bcf:citekey>
-    <bcf:citekey order="22">DEEPL</bcf:citekey>
+    <bcf:citekey order="9">WORDTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="10">LINGUISTICTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="11">MMM4</bcf:citekey>
+    <bcf:citekey order="12">DEEPL</bcf:citekey>
+    <bcf:citekey order="13">METZLER2016</bcf:citekey>
+    <bcf:citekey order="14">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
+    <bcf:citekey order="15">LINGUISTICTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="16">ATTENTION</bcf:citekey>
+    <bcf:citekey order="17">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="18">WORDTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="19">MMM4</bcf:citekey>
+    <bcf:citekey order="20">DEEPL</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
