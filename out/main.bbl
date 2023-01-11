@@ -19,6 +19,64 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{GERPARCOR}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1f970c6339b72bcc374db38655f50a89}{%
+           family={Abrami},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c75ddc5b4375e1b0a0d5b85acc5e2c4}{%
+           family={Bagci},
+           familyi={B\bibinitperiod},
+           given={Mevlüt},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ee8cafc259ef3bf9fb4e63107dda119}{%
+           family={Hammerla},
+           familyi={H\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68f914358faa4cd8d65fa016e18be344}{%
+           family={Mehler},
+           familyi={M\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Marseille, France}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association}%
+      }
+      \strng{namehash}{4fdd1f5b21dcb32cedc3056a663fc316}
+      \strng{fullhash}{b90feb65e4419d16f53bee09a7bb7d7d}
+      \strng{bibnamehash}{b90feb65e4419d16f53bee09a7bb7d7d}
+      \strng{authorbibnamehash}{b90feb65e4419d16f53bee09a7bb7d7d}
+      \strng{authornamehash}{4fdd1f5b21dcb32cedc3056a663fc316}
+      \strng{authorfullhash}{b90feb65e4419d16f53bee09a7bb7d7d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Language Resources and Evaluation Conference}
+      \field{month}{06}
+      \field{title}{German Parliamentary Corpus (GerParCor)}
+      \field{year}{2022}
+      \field{pages}{1900\bibrangedash 1906}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.lrec-1.202
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.lrec-1.202
+      \endverb
+    \endentry
     \entry{LINGUISTICTYPOLOGY}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=73c9b25feb75c3dfcd54f7c661cecaee}{%
@@ -110,92 +168,6 @@
       \verb www.cambridge.org/9781107120648
       \endverb
     \endentry
-    \entry{MMM4}{book}{}
-      \name{editor}{5}{}{%
-        {{un=0,uniquepart=base,hash=8dbba0f49bbf9f3cd05efb0384352079}{%
-           family={Booij},
-           familyi={B\bibinitperiod},
-           given={Geert},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=464f0744f22950e04f20e6e67f3e4da7}{%
-           family={Guevara},
-           familyi={G\bibinitperiod},
-           given={Emiliano},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f28d590c9eebb8f25e6a6bba65594af3}{%
-           family={Ralli},
-           familyi={R\bibinitperiod},
-           given={Angeliki},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=089a6beffd5afe87a0e9813fb1d884e5}{%
-           family={Sgroi},
-           familyi={S\bibinitperiod},
-           given={Salvatore},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=afc56b8a70c3501e08af3b0e84819e23}{%
-           family={Scalise},
-           familyi={S\bibinitperiod},
-           given={Sergio},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{20555b24a469d33f1420dc3ae5268483}
-      \strng{fullhash}{c4ff3543f0b5931a8414a97ccc7e6e92}
-      \strng{bibnamehash}{c4ff3543f0b5931a8414a97ccc7e6e92}
-      \strng{editorbibnamehash}{c4ff3543f0b5931a8414a97ccc7e6e92}
-      \strng{editornamehash}{20555b24a469d33f1420dc3ae5268483}
-      \strng{editorfullhash}{c4ff3543f0b5931a8414a97ccc7e6e92}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{month}{09}
-      \field{title}{Morphology and linguistic typology. On-line Proceedings of the Fourth Mediterranean Morphology Meeting MMM4}
-      \field{year}{2003}
-    \endentry
-    \entry{morpheme}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d7de38851cb1b5976201981eaf304eb5}{%
-           family={Colman},
-           familyi={C\bibinitperiod},
-           given={Andrew\bibnamedelima M.},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{d7de38851cb1b5976201981eaf304eb5}
-      \strng{fullhash}{d7de38851cb1b5976201981eaf304eb5}
-      \strng{bibnamehash}{d7de38851cb1b5976201981eaf304eb5}
-      \strng{authorbibnamehash}{d7de38851cb1b5976201981eaf304eb5}
-      \strng{authornamehash}{d7de38851cb1b5976201981eaf304eb5}
-      \strng{authorfullhash}{d7de38851cb1b5976201981eaf304eb5}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780191726828}
-      \field{title}{morpheme}
-      \field{year}{2009}
-      \verb{doi}
-      \verb 10.1093/acref/9780199534067.013.5219
-      \endverb
-      \verb{urlraw}
-      \verb https://www.oxfordreference.com/view/10.1093/acref/9780199534067.001.0001/acref-9780199534067-e-5219
-      \endverb
-      \verb{url}
-      \verb https://www.oxfordreference.com/view/10.1093/acref/9780199534067.001.0001/acref-9780199534067-e-5219
-      \endverb
-    \endentry
     \entry{DEEPL}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=086b5407f3734e9b5c12a636fc131ba8}{%
@@ -283,41 +255,6 @@
       \verb https://arxiv.org/abs/1810.04805
       \endverb
       \keyw{Computation and Language (cs.CL),FOS: Computer and information sciences,FOS: Computer and information sciences}
-    \endentry
-    \entry{WORDTYPOLOGY}{article}{}
-      \name{author}{2}{}{%
-        {{un=2,uniquepart=given,hash=0aec6b7efb4e2447447ab4c4a519a11f}{%
-           family={Dixon},
-           familyi={D\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=73c9b25feb75c3dfcd54f7c661cecaee}{%
-           family={Aikhenvald},
-           familyi={A\bibinitperiod},
-           given={Alexandra},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3f8602f696b59a6a0f91172811dc0d3b}
-      \strng{fullhash}{3f8602f696b59a6a0f91172811dc0d3b}
-      \strng{bibnamehash}{3f8602f696b59a6a0f91172811dc0d3b}
-      \strng{authorbibnamehash}{3f8602f696b59a6a0f91172811dc0d3b}
-      \strng{authornamehash}{3f8602f696b59a6a0f91172811dc0d3b}
-      \strng{authorfullhash}{3f8602f696b59a6a0f91172811dc0d3b}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780521818995}
-      \field{month}{01}
-      \field{title}{Word: A cross - linguistic typology}
-      \field{year}{2002}
-      \verb{doi}
-      \verb 10.1017/CBO9780511486241
-      \endverb
     \endentry
     \entry{METZLER2016}{book}{}
       \name{editor}{2}{}{%

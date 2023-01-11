@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[57] biber:340> INFO - === Mo Jan  9, 2023, 22:35:34
-[68] Biber.pm:418> INFO - Reading 'main.bcf'
-[115] Biber.pm:972> INFO - Found 9 citekeys in bib section 0
-[124] Biber.pm:4383> INFO - Processing section 0
-[132] Biber.pm:4574> INFO - Looking for bibtex file 'main.bib' for section 0
-[133] bibtex.pm:1713> INFO - LaTeX decoding ...
+[55] biber:340> INFO - === Mi Jan 11, 2023, 13:43:38
+[66] Biber.pm:418> INFO - Reading 'main.bcf'
+[113] Biber.pm:972> INFO - Found 7 citekeys in bib section 0
+[123] Biber.pm:4383> INFO - Processing section 0
+[131] Biber.pm:4574> INFO - Looking for bibtex file 'main.bib' for section 0
+[132] bibtex.pm:1713> INFO - LaTeX decoding ...
 [153] bibtex.pm:1518> INFO - Found BibTeX data source '/home/gnom/uni/bachelor/BATex/src/main.bib'
-[235] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[235] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[235] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[235] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[246] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[252] bbl.pm:757> INFO - Output to main.bbl
+[233] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[233] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[233] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[233] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[243] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[248] bbl.pm:757> INFO - Output to main.bbl

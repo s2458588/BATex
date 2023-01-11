@@ -2351,20 +2351,15 @@
     <bcf:citekey order="4">ATTENTION</bcf:citekey>
     <bcf:citekey order="5">BERTHIGH1</bcf:citekey>
     <bcf:citekey order="6">METZLER2016</bcf:citekey>
-    <bcf:citekey order="7">METZLER2016</bcf:citekey>
-    <bcf:citekey order="8">METZLER2016</bcf:citekey>
-    <bcf:citekey order="9">WORDTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="10">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="11">MMM4</bcf:citekey>
-    <bcf:citekey order="12">DEEPL</bcf:citekey>
-    <bcf:citekey order="13">METZLER2016</bcf:citekey>
-    <bcf:citekey order="14">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
-    <bcf:citekey order="15">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="16">ATTENTION</bcf:citekey>
-    <bcf:citekey order="17">BERTHIGH1</bcf:citekey>
-    <bcf:citekey order="18">WORDTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="19">MMM4</bcf:citekey>
-    <bcf:citekey order="20">DEEPL</bcf:citekey>
+    <bcf:citekey order="7">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="8">DEEPL</bcf:citekey>
+    <bcf:citekey order="9">METZLER2016</bcf:citekey>
+    <bcf:citekey order="10">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
+    <bcf:citekey order="11">LINGUISTICTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="12">ATTENTION</bcf:citekey>
+    <bcf:citekey order="13">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="14">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="15">DEEPL</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
