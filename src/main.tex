@@ -25,6 +25,8 @@
 \usepackage{algpseudocode}
 \usepackage{algorithmicx}
 
+\KOMAoptions{listof=totoc}
+
 
 \addbibresource{main.bib}
 
@@ -54,29 +56,43 @@
     \input{00abstract}
 
 
+
+    \cleardoubleoddpage
+    \pagenumbering{Roman}
+    \setcounter{page}{0}
     \tableofcontents
-
-    \cleardoublepage
-    \phantomchapter
-
+    \newpage
     \listoffigures
-    \addcontentsline{toc}{chapter}{List of Figures}
+    \newpage
     \listoftables
-    \addcontentsline{toc}{chapter}{List of Tables}
+    \newpage
+
+    \newcommand{\sectionnumbering}[1]{%
+        \setcounter{section}{0}%
+        \renewcommand{\thesection}{\csname #1\endcsname{section}}%
+    }
+
 
     \chapter*{List of Acronyms}
     \addcontentsline{toc}{chapter}{List of Acronyms}
     \begin{acronym}
         \acro{bert}[BERT]{Bidirectional Encoders from Transformers}
         \acro{cl}[CL]{Computational Linguistics}
+        \acro{gerparcor}[GerParCor]{German Parliamentary Corpus}
         \acro{lm}[LM]{Language Model}
         \acro{lstm}[LSTM]{Long Short-Term Memory}
         \acro{ml}[ML]{Machine Learning}
         \acro{mlm}[MLM]{Masked Language Model}
         \acro{nlp}[NLP]{Natural Language Processing}
+        \acro{pos}[POS]{Part of Speech}
 
     \end{acronym}
 
+    \cleardoubleoddpage
+    \pagenumbering{arabic}
+    \sectionnumbering{arabic}
+
+    % BEGINNING OF BODY
 
     \chapter{Introduction}
     \input{01introduction}
