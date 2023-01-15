@@ -2345,21 +2345,23 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">main.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">METZLER2016</bcf:citekey>
-    <bcf:citekey order="2">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
-    <bcf:citekey order="3">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="4">ATTENTION</bcf:citekey>
-    <bcf:citekey order="5">BERTHIGH1</bcf:citekey>
-    <bcf:citekey order="6">METZLER2016</bcf:citekey>
-    <bcf:citekey order="7">GERPARCOR</bcf:citekey>
-    <bcf:citekey order="8">DEEPL</bcf:citekey>
-    <bcf:citekey order="9">METZLER2016</bcf:citekey>
-    <bcf:citekey order="10">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
-    <bcf:citekey order="11">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="12">ATTENTION</bcf:citekey>
-    <bcf:citekey order="13">BERTHIGH1</bcf:citekey>
-    <bcf:citekey order="14">GERPARCOR</bcf:citekey>
-    <bcf:citekey order="15">DEEPL</bcf:citekey>
+    <bcf:citekey order="1">FLOTA</bcf:citekey>
+    <bcf:citekey order="2">METZLER2016</bcf:citekey>
+    <bcf:citekey order="3">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
+    <bcf:citekey order="4">LINGUISTICTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="5">ATTENTION</bcf:citekey>
+    <bcf:citekey order="6">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="7">METZLER2016</bcf:citekey>
+    <bcf:citekey order="8">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="9">DEEPL</bcf:citekey>
+    <bcf:citekey order="10">FLOTA</bcf:citekey>
+    <bcf:citekey order="11">METZLER2016</bcf:citekey>
+    <bcf:citekey order="12">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
+    <bcf:citekey order="13">LINGUISTICTYPOLOGY</bcf:citekey>
+    <bcf:citekey order="14">ATTENTION</bcf:citekey>
+    <bcf:citekey order="15">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="16">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="17">DEEPL</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

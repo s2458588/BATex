@@ -49,33 +49,51 @@ explain olmpics
 Tatsächliche Anwendung der Methoden auf die Daten
 
 \subsection{Tokenizer}
+\label{subsec:tokenizer}
 \uppercase{essentially deriving sensible subtokens to represent lexemes}
-\label{subsec:tokenizer-training}
 
 \subsubsection{Generating a custom pre-training vocabulary}
 \label{subsubsec:generating-a-custom-pre-training-vocabulary}
 
 Algorithm for the pre-training vocabulary:
-\begin{document}
-    \begin{algorithm}
-        \caption{Generate }\label{alg:cap}
-        \begin{algorithmic}
-            \Require $n \geq 0$
-            \Ensure $y = x^n$
-            \State $y \gets 1$
-            \State $X \gets x$
-            \State $N \gets n$
-            \While{$N \neq 0$}
-                \If{$N$ is even}
-                    \State $X \gets X \times X$
-                    \State $N \gets \frac{N}{2}$  \Comment{This is a comment}
-                \ElsIf{$N$ is odd}
-                \State $y \gets y \times X$
-                \State $N \gets N - 1$
+
+\algrenewcommand\algorithmicrequire{\textbf{Input:}}
+\algrenewcommand\algorithmicensure{\textbf{Output:}}
+\begin{algorithm}
+    \caption{Generate wordmap}\label{alg:wordmap}
+    \begin{algorithmic}
+        \Require $verbs = \{v : v \in C \wedge v_{\uppercase{POS}}\}, target$ \Comment{Set of single-\uppercase{POS} lexemic tokens}
+        \Ensure $maps = (map_{1}, \ldots, map_{|verbs|})$
+        \State $pair = (target, v)$
+        \State $case = \textsc{match\_ends}(pair)$ \Comment{Returns if strings match in the last or first position}
+        \State $s = \textsc{shorter}(pair)$
+        \State $l = \textsc{longer}(pair)$
+        \State $len = \textsc{len}(l)$
+        \State $\delta = \Delta(len - \textsc{len}(s))$
+        \\
+
+        \If{$\textit{any ends match}$}
+            \If{$\delta$}
+                \If{$\textit{case: left match}$}
+                    \For{$i = 0$ \textbf{to} $len$}
+                        \State $map[i] = f: (s[i], l[i]) \mapsto s[i] == l[i])$
+                    \EndFor
+                    \State Pad map from right side with 0s to match $\delta$
                 \EndIf
-            \EndWhile
-        \end{algorithmic}
-    \end{algorithm}
+                \If{$\textit{case: right match}$}
+                    \For{$i = 0$ \textbf{to} $len$}
+                        \State $map[i] = f: (s[i+\delta], l[i]) \mapsto s[i+\delta] == l[i])$
+                    \EndFor
+                    \State Pad map from left side with 0s to match $\delta$
+                \EndIf
+            \Else
+                \State $map[i] = f: (s[i], l[i]) \mapsto s[i] == l[i])$
+            \EndIf
+        \EndIf
+
+    \end{algorithmic}
+\end{algorithm}
+
     \subsubsection{Tokenizer Training}
     \label{subsubsec:tokenizer-training}
     How did I train the tokenizer, how did it go?
