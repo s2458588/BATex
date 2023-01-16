@@ -26,12 +26,14 @@
 \usepackage{algorithmicx}
 \usepackage{amsmath}
 
+\newcommand{\algorithmautorefname}{Algorithm} % full algorithm references
+
 \KOMAoptions{listof=totoc}
 
 
 \addbibresource{main.bib}
 
-\includeonly{03methodology.tex} % input control
+\includeonly{03methodology} % input control
 
 \begin{document}
     \titlehead{
@@ -96,11 +98,12 @@
     % BEGINNING OF BODY
 
     \chapter{Introduction}
-    \input{01introduction}
+    \label{ch:introduction}
+    %\input{01introduction}
 
     \chapter{Overview}
     \label{ch:overview}
-    \input{02overview}
+    %\input{02overview}
 
 
     \chapter{Methodoloy}
@@ -110,16 +113,16 @@
 
     \chapter{Results}
     \label{ch:results}
-    \input{04results}
+    %\input{04results}
 
 
     \chapter{Discussion}
     \label{ch:discussion}
-    \input{05discussion}
+    %\input{05discussion}
 
     \chapter{Conclusion}
     \label{ch:conclusion}
-    \input{06conclusion}
+    %\input{06conclusion}
 
     \chapter{\latex Testchapter}
     \section{Citing}
@@ -138,6 +141,7 @@
     \section{Referencing}
     Short reference ~\ref{subsec:mlm}\\
     Long reference \autoref{subsec:mlm}\\
+    monofont for code or string \texttt{monofont}
 
     \appendix
     \printbibliography

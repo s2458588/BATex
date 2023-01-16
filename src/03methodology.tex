@@ -55,49 +55,92 @@ Tatsächliche Anwendung der Methoden auf die Daten
 \subsubsection{Generating a custom pre-training vocabulary}
 \label{subsubsec:generating-a-custom-pre-training-vocabulary}
 
-Algorithm for the pre-training vocabulary:
+The Wordmap algorithm as shown in \autoref{alg:wordmap} is the first step to extracting morphemes from a token.
+Its purpose is to compare two strings and store their intersections in a map of boolean values.
+
 
 \algrenewcommand\algorithmicrequire{\textbf{Input:}}
 \algrenewcommand\algorithmicensure{\textbf{Output:}}
 \begin{algorithm}
-    \caption{Generate wordmap}\label{alg:wordmap}
-    \begin{algorithmic}
+    \caption{Wordmap generation}\label{alg:wordmap}
+    \begin{algorithmic}[1]
         \Require $verbs = \{v : v \in C \wedge v_{\uppercase{POS}}\}, target$ \Comment{Set of single-\uppercase{POS} lexemic tokens}
         \Ensure $maps = (map_{1}, \ldots, map_{|verbs|})$
         \State $pair = (target, v)$
-        \State $case = \textsc{match\_ends}(pair)$ \Comment{Returns if strings match in the last or first position}
         \State $s = \textsc{shorter}(pair)$
         \State $l = \textsc{longer}(pair)$
+        \State $case = \textsc{match\_ends}(pair)$ \Comment{Returns if strings match in the last or first position}
         \State $len = \textsc{len}(l)$
         \State $\delta = \Delta(len - \textsc{len}(s))$
         \\
 
-        \If{$\textit{any ends match}$}
+        \Function{wordmap}{w1, w2, \*d=0}
+            \State $f_{1}: c1, c2 \mapsto c1 == c2$
+            \State $f_{2}: \left(\sum_{i=0+d}^{\mid w1 \mid} w1[i], w2[i] \mapsto f_{1}(w1[i], w2[i])\right)$
+            \State \textbf{return} $f_{2}$
+        \EndFunction
+        \\
+        \If{$\textit{case: any match}$}
             \If{$\delta$}
                 \If{$\textit{case: left match}$}
-                    \For{$i = 0$ \textbf{to} $len$}
-                        \State $map[i] = f: (s[i], l[i]) \mapsto s[i] == l[i])$
-                    \EndFor
-                    \State Pad map from right side with 0s to match $\delta$
+                        \State $\textsc{wordmap}(l, s)$
+                    \State Pad map from right side with 0s to match $len$
                 \EndIf
                 \If{$\textit{case: right match}$}
-                    \For{$i = 0$ \textbf{to} $len$}
-                        \State $map[i] = f: (s[i+\delta], l[i]) \mapsto s[i+\delta] == l[i])$
-                    \EndFor
-                    \State Pad map from left side with 0s to match $\delta$
+                        \State $\textsc{wordmap}(l, s, \delta)$
+                    \State Pad map from left side with 0s to match $len$
                 \EndIf
             \Else
-                \State $map[i] = f: (s[i], l[i]) \mapsto s[i] == l[i])$
+                \State $\textsc{wordmap}(l, s)$
             \EndIf
         \EndIf
 
     \end{algorithmic}
 \end{algorithm}
 
+% DESCRIPTION OF ALGORITHM 1
+
+Wordmap requires two \textbf{inputs} $verbs$ and $target$.
+The resulting wordmap will be generated for $target$, while $verbs$ serves as comparison.
+$verbs$ is a set of tokens pertaining to the same \ac{pos} category.
+Note that $verbs$ should only contain those POS-tagged tokens that are expected to carry lexical information (e.g.\ verbs, adjectives, etc.).
+The set is previously extracted from the corpus by \ac{pos}\hyphen tagging.
+Optionally, the set can be augmented by manually adding \ac{pos} matching tokens from external sources.
+The 2-tuple $pair$ are the strings to be compared.
+It is passed on to (1) \textsc{shorter}, a function returning the shorter of both strings (2) \textsc{longer}, expectedly returning the longer of both strings (3) \textsc{match\_case}, a function to determine the behavior of the algorithm later on.
+As two strings are compared \textsc{match\_case} captures three cases: $pair$ matches in the first, last or both positions.
+Finally $len$ denotes the length of the longest string and $\delta$ difference in length between $s$ and $l$.
+$\delta$ functions as an offset for index-based comparisons in \textsc{wordmap}.
+
+\textsc{wordmap} is the function responsible for generating the wordmaps.
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{llll}
+        \toprule
+        \textbf{string} & \textbf{wordmap} & \textbf{case} & \textbf{padding} \\
+        \midrule
+        \texttt{verarbeiten} & 111000000 & left match & Yes \\
+         & 001000011 & right match & Yes \\
+        \texttt{variiert} & 101001000 & left match & Yes \\
+        \texttt{vormachen} & 101000111 & any match & No \\
+        \texttt{anstrebtest} &  & no match &   \\
+        (...) &  &  &  \\
+        \bottomrule
+    \end{tabular}
+    \caption{Example wordmaps for $target = \texttt{verstehen}$}
+    \label{tab:}
+\end{table}
+
+Once every $v$ has been compared to $target$, $maps$  of characters occurring in their respective positions in $target$.
+
+
+
     \subsubsection{Tokenizer Training}
     \label{subsubsec:tokenizer-training}
     How did I train the tokenizer, how did it go?
-    Which problems arose? What went well?
+    Which problems arose? What went well? What happened?
 
     \subsection{Masked Language Model}
     \label{subsec:masked-language-model}
