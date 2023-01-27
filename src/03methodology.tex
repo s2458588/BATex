@@ -7,7 +7,7 @@ A series of tools will help to achieve lexicalized tokenization.
 They will be explained in this chapter along with their methodological edge.
 
 % EVTL. MACHINE LEARNING MODEL AUFSPLITTEN IN MODEL, TOKENIZER VOCABULARY?
-\subsection{Machine Learning Model}
+\subsection{Learning Architecture \& Tokenizer}
 \label{subsec:mlm}
 
 \ac{bert} is a language learning transformer model designed for \ac{nlp} tasks (\cite{ATTENTION}).
@@ -124,7 +124,8 @@ $\delta$ functions as an offset for index-based comparisons in \textsc{wordmap}.
         \texttt{verarbeiten} & 111000000 & left match & Yes \\
          & 001000011 & right match & Yes \\
         \texttt{variiert} & 101001000 & left match & Yes \\
-        \texttt{vormachen} & 101000111 & any match & No \\
+        \texttt{vormachen} & 101000111 & left match & No \\
+        & 101000111 & right match & No \\
         \texttt{anstrebtest} &  & no match &   \\
         (...) &  &  &  \\
         \bottomrule
@@ -133,8 +134,17 @@ $\delta$ functions as an offset for index-based comparisons in \textsc{wordmap}.
     \label{tab:}
 \end{table}
 
-Once every $v$ has been compared to $target$, $maps$  of characters occurring in their respective positions in $target$.
-
+Once every $v$ has been compared to $target$, $maps$ boolean counts of characters occurring in their respective positions in $target$.
+Every map is cleaned with a regular expression to reduce noice caused by natural character occurrence.
+Continuous concatenations of leading or trailing matches stay, while every match with the word enclosed by $0$ will be replaced the latter.
+As an example, $wordmap = 11101100101$ contains three matches on the inside which will result in $11100000001$ as final output.
+In the penultimate stage of mapping $target$, all maps are summed up to receive the number of absolute positional occurrences of every character in $target$.
+This positional mapping allows for detecting relevant segments in a token based on a threshold.
+Characters in range of the predefined threshold are selected for the mapping of a target token.
+Functional morphemes (morphemes that are carriers of grammatical features) are typically much more frequent than their lexical counterparts.
+Consequently, lexical morphemes in the family of inflectional languages are - by definition - modified by functional morphemes, they occur much less frequently.
+In this case, the activation function for a concatenation of same boolean values to be selected as segment is the normalizing z-score function defined as: $z_{i} = \frac{x_{i} - \overline{x}}{S}$,
+where $z$ is the z-score, $\overline{x}$ and $S$ are the sample mean and the sample standard deviation.
 
 
     \subsubsection{Tokenizer Training}
