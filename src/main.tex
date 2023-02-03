@@ -3,7 +3,7 @@
 % arara: nomencl
 % arara: xelatex: { shell: yes }
 % arara: xelatex: { shell: yes }
-\documentclass[english]{ttlab-qualify}
+\documentclass[a4paper, english]{ttlab-qualify}
 % mgliche Optionen:
 % - ngerman
 % - english
@@ -20,6 +20,10 @@
 \usepackage{textcomp}
 \usepackage{hyperref} %[hidelinks] option for final compile
 
+
+% Class scrreprt Warning fix
+\usepackage{scrhack}
+
 \usepackage{gb4e} %interlinear glossing
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -33,7 +37,7 @@
 
 \addbibresource{main.bib}
 
-\includeonly{03methodology} % input control
+%\includeonly{02overview.tex} % input control
 
 \begin{document}
     \titlehead{
@@ -98,12 +102,12 @@
     % BEGINNING OF BODY
 
     \chapter{Introduction}
-    \label{ch:introduction}
+    %\label{ch:introduction}
     %\input{01introduction}
 
     \chapter{Overview}
     \label{ch:overview}
-    %\input{02overview}
+    \input{02overview}
 
 
     \chapter{Methodoloy}

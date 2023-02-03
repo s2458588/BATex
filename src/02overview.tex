@@ -1,20 +1,32 @@
-\section{State of the Art}
-\label{sec:state-of-the-art}
+\section{Related Works}
+\label{sec:related-works}
+
 describe the most recent findings on morphologically pretrained models in machine learning literature
 findings on POS effect on ML
+
+The problem of captchuring lexical morphemes at the tokenization level is a problem of morphological analysis.
+A standard approach implemented in the BERT architecture is WordPiece tokenization, which takes pairs of ngrams and calculates a score based on the overall frequency in the text as well as cooccurrences.
+This was idea pioneered by Schuster and Nakajima (\citeyear{WORDPIECEOG}) to deal with the problem of near infinite vocabularies and was later adopted in a google research project designing the final WordPiece algorithm ~\cite{WORDPIECEGOOGLE}.
+In the past, many efforts towards morphological tokenization have been made.
+This thesis was mainly inspired by the FLOTA
+
+flota and wordpiece tokenizer themselves are crude shot
 
 
 \section{Target Languages}
 \label{sec:target-languages}
+This section identifies target languages that share common morphological features with German.
+It is assumed that languages of the same morphological type will behave similarly when analyzed morphologically.
+German was selected to serve as example language within the family of fusional languages.
+The aim is not to propose yet another case study of German, but to introduce German as a surrogate to further the scope of application on similar languages.
 
 Describe german (ISO639-3: deu) and its morphological state. Compare to other languages with interlinear glossing.
 
-This section identifies target languages that share common morphological features with German.
+
 German (ISO639-3: \texttt{deu}) is a west-germanic language and the official language of Germany, Austria, Switzerland, Liechtenstein and Luxemburg (\cite{METZLER2016}).
 It is an inflectional synthetic language with approximately 130 million speakers\footnote{https://de.statista.com/statistik/daten/studie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last accessed: 09.01.23}.
-German is largely researched and is still paid much attention to in the scientific community.
-The aim is not to propose yet another case study of German, but to introduce German as a surrogate to further the scope of application on similar languages.
-Presumably those languages behave similarly when analyzed morphologically.
+German is largely researched and is still paid much attention to in the domain of (computational) linguistics.
+
 
 \subsection{Pooling similar languages}
 \label{subsec:german-as-example}
@@ -49,12 +61,12 @@ Bearman, Brown and Corbett
 
 \begin{figure}
     \label{fig:glossing}
-\begin{exe}
-\ex
-\gll  My s Marko poexa-l-i avtobus-om v Peredelkino \\
-1\textsc{pl} \textsc{com} Marko go-\textsc{pst}-\textsc{pl} bus-\textsc{ins} \textsc{all} Peredelkino \\
-\glt  `Marko and I went to Perdelkino by bus.'
-\end{exe}
+    \begin{exe}
+        \ex
+        \gll  My s Marko poexa-l-i avtobus-om v Peredelkino \\
+        1\textsc{pl} \textsc{com} Marko go-\textsc{pst}-\textsc{pl} bus-\textsc{ins} \textsc{all} Peredelkino \\
+        \glt  `Marko and I went to Perdelkino by bus.'
+    \end{exe}
 \end{figure}
 
 
