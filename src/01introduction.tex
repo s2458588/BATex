@@ -14,19 +14,27 @@ The structural parallels of machine learning to human learning have often been d
 A powerful feature of \ac{ml} (as opposed to human learning) is the possibility of actively controlling the the learning parameters in a supervised environment.
 To test the efficiency of \uppercase{ML} parameters a variety of tasks (\uppercase{zitation}) are designed and applied.
 A trained model will yield performance scores based on the quality of its training, much like humans on language tests.
-But the automated modeling of language is not the first instance language modelling in a broader sense.
+But the automated modeling of language is not the first instance of language modelling in a broader sense.
 Traditional linguistics (\uppercase{definition} has produced fundamental research the prior to the discovery of \uppercase{ML} architectures and their implementation.
 While generic ML frameworks seem appealing in the presumption that they require less work to reach somewhat satisfactoy results,
-they are far from complete or perfect.
+their performance is still incomplete.
 The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
+
+
 \textbf{flota} \cite{FLOTA}
 Language learners usually build up a lexicon consisting of lexemes which they will have to analyze accurately in order to be productive in that target language.
 A ML model relies on a tokenizer to create such a vocabulary  (\textbf{ZITATION}).
 It is programmed to segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
-Ideally those subwords will be part of the functional vocabulary in the target language, so called morphemes \textbf{ERKLÄRUNG}.
-A morpheme is defined as the smallest unit carrying meaning in a language.
-The morphemes of a language and its generated tokenizer vocabulary rarely coincide.
-Typically, tokanizer vocabularies will contain a lot of noise and linguistically nonsensical segmentations or words.
+Ideally those subwords will be part of the functional vocabulary in the target language, which would make them a morphemes \textbf{ERKLÄRUNG}.
+A morpheme is canonically defined as the smallest unit carrying meaning in a language \cite{morpheme}.
+The problem of captchuring lexical morphemes at the tokenization level is a problem of morphological analysis.
+A standard approach implemented in the BERT architecture is WordPiece tokenization, which takes pairs of ngrams and calculates a score based on the overall frequency in the text as well as cooccurrences.
+This was idea pioneered by Schuster and Nakajima (\citeyear{WORDPIECEOG}) to deal with the problem of near infinite vocabularies and was later adopted in a google research project designing the final WordPiece algorithm ~\cite{WORDPIECEGOOGLE}.
+WordPiece is designed to find the most effective pairs of subwords in a corpus to optimize vocabulary size.
+Subwords however are not necessarily a productive component of inventory that is used for inflectional morphology.
+In fact, the morphemes of a language and its generated tokenizer vocabulary  coincide.
+
+
 Following the guiding principle that \textbf{input quality is ouput quality} not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
 Note: explain why i use tokens and words, they are interchangeable right?
 holistic, need less attention to produce satisfactory

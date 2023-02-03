@@ -1,15 +1,23 @@
-\section{Related Works}
-\label{sec:related-works}
+define morpheme vs subword
+define morphological tokenization
 
+Morphological tokenization can be understood as the process of identifying segments in text that are a productive in a given language, carrying meaning and hence also fitting the definition of a morpheme.
 describe the most recent findings on morphologically pretrained models in machine learning literature
 findings on POS effect on ML
 
-The problem of captchuring lexical morphemes at the tokenization level is a problem of morphological analysis.
-A standard approach implemented in the BERT architecture is WordPiece tokenization, which takes pairs of ngrams and calculates a score based on the overall frequency in the text as well as cooccurrences.
-This was idea pioneered by Schuster and Nakajima (\citeyear{WORDPIECEOG}) to deal with the problem of near infinite vocabularies and was later adopted in a google research project designing the final WordPiece algorithm ~\cite{WORDPIECEGOOGLE}.
+\section{Related Works}
+\label{sec:related-works}
+
+
+
 In the past, many efforts towards morphological tokenization have been made.
 This thesis was mainly inspired by the FLOTA
 
+Well known attempts like morfessor \cite{morfessor} have been outperformed by Sequence based models that also use linguistic morphology.
+Notably, top-down generation of subword vocabularies has shown promising results for tokenization in fusional languages ~\cite{subwordvsmorfessor}.
+This aligns with the notion that standard BPE or WordPiece tokenization effectivity suffers from complex morphology causing a big vocabulary.
+The overall comparison ~\cite[134]{subwordvsmorfessor} shows an increase in performance for languages of similar morphological complexity.
+It is interesting to see that this form of tokenization performs less well for English, compared to languages  in morphology than its agglutinative fusional peers, e.g. Italian, Latin, Spanish, Russian
 flota and wordpiece tokenizer themselves are crude shot
 
 
@@ -18,7 +26,7 @@ flota and wordpiece tokenizer themselves are crude shot
 This section identifies target languages that share common morphological features with German.
 It is assumed that languages of the same morphological type will behave similarly when analyzed morphologically.
 German was selected to serve as example language within the family of fusional languages.
-The aim is not to propose yet another case study of German, but to introduce German as a surrogate to further the scope of application on similar languages.
+The aim is not to propose yet another case study of German, but to introduce German as a surrogate to further the scope of application on other languages of similar morphological complexity.
 
 Describe german (ISO639-3: deu) and its morphological state. Compare to other languages with interlinear glossing.
 
