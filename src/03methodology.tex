@@ -147,27 +147,61 @@ In this case, the activation function for a concatenation of same boolean values
 where $z$ is the z-score, $\overline{x}$ and $S$ are the sample mean and the sample standard deviation.
 
 
-    \subsubsection{Tokenizer Modification}
-    \label{subsubsec:tokenizer-modification}
-    How did I train the tokenizer, how did it go?
-    Which problems arose? What went well? What happened?
-
-    \subsection{Masked Language Model}
-    \label{subsec:masked-language-model}
-    Model implementation and parameters, runtimes?
-
-    \subsection{oLMpics Benchmark}
-    \label{subsec:olmpics-benchmark}
+\subsubsection{BERT Tokenizer Modification}
+\label{subsubsec:tokenizer-modification}
+What is the model tokenizer mod
+Which problems arose? What went well? What happened?
 
 
 
-    tweak des tokenizers: segmentation ist eine frage der interpretation.
-    The
-    Ultimately, segmentation is a matter of interpretation.
-    As mentioned in~\ref{subsec:mlm}, the default WordPiece Tokenizer lacks
-    A linguistically informed
+\subsection{Masked Language Model}
+\label{subsec:masked-language-model}
+Model implementation and parameters, runtimes?
+
+\subsection{oLMpics Benchmark}
+\label{subsec:olmpics-benchmark}
+
+\begin{algorithm}
+    \caption{Target Segmentation}\label{alg:segmenter}
+    \begin{algorithmic}[2]
+        \Require $target,pos\_vocab$ \Comment{short comment}
+        \Ensure $\{(tuples\:of\:subwords)\} \approx \{ t \in \mathcal{P} (target \cap pos\_vocab) : t \equiv target\}$
+        \\
+        \State $segmentations = ()$
+        \\
+
+        \Function{segmenter}{token, stop, start=0, segments}
+        \If{$start = stop$}
+            \State Add $segments$ to $segmentations$
+        \Else
+            \State $morphemes = (m : m \in pos\_vocab \wedge target \textsc{startswith}(m))$
+            \For{$m \in morphemes$}
+                \State $start += \textsc{len}(m)$
+                \State Add $m$ to $segments$
+                \State $rest = target[\textsc{len}(m):]$
+                \If{$\textsc{len}(rest)==1$}
+                    \State $start = stop$
+                    \State Add $rest$ to $segments$
+                    \State Add $segments$ to $segmentations$
+                    \State Decrement $start$, crop $segments$
+                \Else
+                    \State $\textsc{segmenter}(target=rest, stop, start=start, segments)$
+                    \State Decrement $start$, crop $segments$
+                \EndIf
+            \EndFor
+        \EndIf
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
+
+
+tweak des tokenizers: segmentation ist eine frage der interpretation.
+The
+Ultimately, segmentation is a matter of interpretation.
+As mentioned in~\ref{subsec:mlm}, the default WordPiece Tokenizer lacks
+A linguistically informed
 
 
 
-    The field of NLP  (\cite{METZLER2016}) has been expanded ever since the emergence of the language models.
-    Natural language processing is understood as the
+The field of NLP  (\cite{METZLER2016}) has been expanded ever since the emergence of the language models.
+Natural language processing is understood as the
