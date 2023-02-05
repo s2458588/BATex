@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  4 FEB 2023 05:07
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  5 FEB 2023 04:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1376,18 +1376,28 @@ although it is yet undefined on input line 18.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 65.
 Package acronym Info: Label `acro:pos' newly defined as it shall be overridden
-although it is yet undefined on input line 105.
- [6] [7] [8]) [9]
-chapter 4.
-[10
+although it is yet undefined on input line 110.
+ [6] [7]
+Package acronym Info: Label `acro:POS' newly defined as it shall be overridden
+although it is yet undefined on input line 205.
 
-]
-chapter 5.
+
+Package acronym Warning: Acronym `POS' is not defined on input line 205.
+
+
+Package acronym Warning: Acronym `POS' is not defined on input line 205.
+
+[8] [9]) [10]
+chapter 4.
 [11
 
 ]
-chapter 6.
+chapter 5.
 [12
+
+]
+chapter 6.
+[13
 
 ]
 chapter 7.
@@ -1424,7 +1434,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[13
+[14
 
 ]
 chapter without number
@@ -1447,11 +1457,14 @@ Overfull \hbox (4.08003pt too wide) in paragraph at lines 153--153
 d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
  []
 
-[14
+[15
 
 ] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1465,12 +1478,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27637 strings out of 476156
- 549643 string characters out of 5814963
- 1482208 words of memory out of 5000000
- 47987 multiletter control sequences out of 15000+600000
+ 27643 strings out of 476156
+ 549715 string characters out of 5814963
+ 1483252 words of memory out of 5000000
+ 47993 multiletter control sequences out of 15000+600000
  477859 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,9n,133p,10600b,4831s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (21 pages).
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (22 pages).

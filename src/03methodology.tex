@@ -66,20 +66,24 @@ Its purpose is to compare two strings and store their intersections in a map of 
     \begin{algorithmic}[1]
         \Require $verbs = \{v : v \in C \wedge v_{\uppercase{POS}}\}, target$ \Comment{Set of single-\uppercase{POS} lexemic tokens}
         \Ensure $maps = (map_{1}, \ldots, map_{|verbs|})$
-        \State $pair = (target, v)$
-        \State $s = \textsc{shorter}(pair)$
-        \State $l = \textsc{longer}(pair)$
-        \State $case = \textsc{match\_ends}(pair)$ \Comment{Returns if strings match in the last or first position}
-        \State $len = \textsc{len}(l)$
-        \State $\delta = \Delta(len - \textsc{len}(s))$
-        \\
-
         \Function{wordmap}{w1, w2, \*d=0}
             \State $f_{1}: c1, c2 \mapsto c1 == c2$
             \State $f_{2}: \left(\sum_{i=0+d}^{\mid w1 \mid} w1[i], w2[i] \mapsto f_{1}(w1[i], w2[i])\right)$
             \State \textbf{return} $f_{2}$
         \EndFunction
         \\
+
+        \For{$v \in verbs$}
+        \State $pair = (target, v)$
+        \State $s = \textsc{shorter}(pair)$
+        \State $l = \textsc{longer}(pair)$
+        \State $case = \textsc{match\_ends}(pair)$ \Comment{Returns if strings match in the last or first position}
+        \State $len = \textsc{len}(l)$
+        \State $\delta = \Delta(len, \textsc{len}(s))$
+        \\
+
+
+        
         \If{$\textit{case: any match}$}
             \If{$\delta$}
                 \If{$\textit{case: left match}$}
@@ -94,6 +98,7 @@ Its purpose is to compare two strings and store their intersections in a map of 
                 \State $\textsc{wordmap}(l, s)$
             \EndIf
         \EndIf
+        \EndFor
 
     \end{algorithmic}
 \end{algorithm}
@@ -110,9 +115,9 @@ The 2-tuple $pair$ are the strings to be compared.
 It is passed on to (1) \textsc{shorter}, a function returning the shorter of both strings (2) \textsc{longer}, expectedly returning the longer of both strings (3) \textsc{match\_case}, a function to determine the behavior of the algorithm later on.
 As two strings are compared \textsc{match\_case} captures three cases: $pair$ matches in the first, last or both positions.
 Finally $len$ denotes the length of the longest string and $\delta$ difference in length between $s$ and $l$.
-$\delta$ functions as an offset for index-based comparisons in \textsc{wordmap}.
+$\delta$ functions as an offset for index-based comparisons \textsc{wordmap}.
 
-\textsc{wordmap} is the function responsible for generating the wordmaps.
+\textsc{wordmap} is a naive mapping function generating the wordmaps.
 
 
 \begin{table}
@@ -163,9 +168,9 @@ Model implementation and parameters, runtimes?
 
 \begin{algorithm}
     \caption{Target Segmentation}\label{alg:segmenter}
-    \begin{algorithmic}[2]
+    \begin{algorithmic}[1]
         \Require $target,pos\_vocab$ \Comment{short comment}
-        \Ensure $\{(tuples\:of\:subwords)\} \approx \{ t \in \mathcal{P} (target \cap pos\_vocab) : t \equiv target\}$
+        \Ensure $\{(tuples\:of\:subwords)\} \approx \{ t \in \mathcal{P} (s \in pos\_vocab : s \in target) : t \equiv target\}$
         \\
         \State $segmentations = ()$
         \\
@@ -174,9 +179,9 @@ Model implementation and parameters, runtimes?
         \If{$start = stop$}
             \State Add $segments$ to $segmentations$
         \Else
-            \State $morphemes = (m : m \in pos\_vocab \wedge target \textsc{startswith}(m))$
+            \State $morphemes = (m \in pos\_vocab : target. \textsc{startswith}(m) \wedge |m|>1)$
             \For{$m \in morphemes$}
-                \State $start += \textsc{len}(m)$
+                \State $start \mathrel{+}= \textsc{len}(m)$
                 \State Add $m$ to $segments$
                 \State $rest = target[\textsc{len}(m):]$
                 \If{$\textsc{len}(rest)==1$}
@@ -193,6 +198,21 @@ Model implementation and parameters, runtimes?
         \EndFunction
     \end{algorithmic}
 \end{algorithm}
+
+\autoref{alg:segmenter} recursively computes every possible segmentation for a string $target$ from a given vocabulary $pos\_vocab$ from left to right.
+The vocabulary contains all the segments that were identified in the previous step by \autoref{alg:wordmap}.
+Every segmentation has to be complete so that its segments corresponds to non overlapping substrings of $target$.
+For every $target$ a subvocabulary $morpheme$ is defined, containing all strings that are in the vocabulary of \ac{POS} \- members.
+To reduce the number of possible permutations unary morphemes are not part of $morphemes$.
+The recursion can be seen as n-ary a trees containing every permutation of the set $morphemes$ where the sum of branches all satisfy $target$.
+
+First, all morphemes that $targets$ starts with are stored to form the first nodes of the permutation trees.
+Each time a morpheme is selected the index $start$ is incremented by the length of the morpheme to indicate when the string has been completely segmented.
+The new recursion is called with the updated index and $target$ sliced by the morpheme contained in the parent node.
+Incomplete segmentations that miss exactly one character to the right are accepted with the missing string.
+If the vocabulary cannot satisfy a segmentation by missing the necessary strings segmentation is omitted.
+
+The set of segmentations is then looked up in the hashable vocabulary containing weights for every substring.
 
 
 tweak des tokenizers: segmentation ist eine frage der interpretation.
