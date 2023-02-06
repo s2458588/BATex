@@ -38,6 +38,10 @@ By providing an algorithmically generated vocabulary to WordPiece and then train
 \subsection{Data}
 \label{subsec:data}
 explain the data that is used
+wiktionary verbs
+hanta-crawled verbs of gerparcor
+oscar de
+gerparcor bundestag subset
 
 \subsection{Benchmark}
 \label{subsec:benchmark}
@@ -51,7 +55,11 @@ Tatsächliche Anwendung der Methoden auf die Daten
 \subsection{Tokenizer}
 \label{subsec:tokenizer}
 \uppercase{essentially deriving sensible subtokens to represent lexemes}
+The methods of tokenization is explained in the following.
+This is the main part of the thesis
 
+Throughout this section, the words $target$ and $token$ are used to describe a word that is analyzed.
+One denotes the argument of the wordmapping and segmenter function ($target$), the other describes a word occurring in the corpus ($token$).
 \subsubsection{Generating a custom pre-training vocabulary}
 \label{subsubsec:generating-a-custom-pre-training-vocabulary}
 
@@ -64,7 +72,7 @@ Its purpose is to compare two strings and store their intersections in a map of 
 \begin{algorithm}
     \caption{Wordmap generation}\label{alg:wordmap}
     \begin{algorithmic}[1]
-        \Require $verbs = \{v : v \in C \wedge v_{\uppercase{POS}}\}, target$ \Comment{Set of single-\uppercase{POS} lexemic tokens}
+        \Require $verbs = \{v : v  v_{\uppercase{POS}}\}, target$ \Comment{Set of single-\uppercase{POS} lexemic tokens}
         \Ensure $maps = (map_{1}, \ldots, map_{|verbs|})$
         \Function{wordmap}{w1, w2, \*d=0}
             \State $f_{1}: c1, c2 \mapsto c1 == c2$
@@ -107,6 +115,7 @@ Its purpose is to compare two strings and store their intersections in a map of 
 
 Wordmap requires two \textbf{inputs} $verbs$ and $target$.
 The resulting wordmap will be generated for $target$, while $verbs$ serves as comparison.
+Any map generated from this also has the same length as $target$.
 $verbs$ is a set of tokens pertaining to the same \ac{pos} category.
 Note that $verbs$ should only contain those POS-tagged tokens that are expected to carry lexical information (e.g.\ verbs, adjectives, etc.).
 The set is previously extracted from the corpus by \ac{pos}\hyphen tagging.
@@ -196,6 +205,7 @@ Model implementation and parameters, runtimes?
             \EndFor
         \EndIf
         \EndFunction
+        \State $\textsc{maximize\_segments}(segmentations)$
     \end{algorithmic}
 \end{algorithm}
 
@@ -203,21 +213,75 @@ Model implementation and parameters, runtimes?
 The vocabulary contains all the segments that were identified in the previous step by \autoref{alg:wordmap}.
 Every segmentation has to be complete so that its segments corresponds to non overlapping substrings of $target$.
 For every $target$ a subvocabulary $morpheme$ is defined, containing all strings that are in the vocabulary of \ac{POS} \- members.
-To reduce the number of possible permutations unary morphemes are not part of $morphemes$.
+This task is a weighted coverage problem in the \uppercase{NP}-hard domain.
+Unary morphemes to the left are excluded from the pre-selected subvocabulary to drastically reduce the number of possible permutations , as they can be embedded in n-ary tokens as well.
 The recursion can be seen as n-ary a trees containing every permutation of the set $morphemes$ where the sum of branches all satisfy $target$.
 
 First, all morphemes that $targets$ starts with are stored to form the first nodes of the permutation trees.
 Each time a morpheme is selected the index $start$ is incremented by the length of the morpheme to indicate when the string has been completely segmented.
-The new recursion is called with the updated index and $target$ sliced by the morpheme contained in the parent node.
-Incomplete segmentations that miss exactly one character to the right are accepted with the missing string.
-If the vocabulary cannot satisfy a segmentation by missing the necessary strings segmentation is omitted.
+The new recursion is called with the updated index $start$ and $target$ sliced by the legnth of the morpheme contained in the parent node.
+Incomplete segmentations that miss exactly one character to the right are accepted with the added missing string.
+If the vocabulary cannot satisfy a segmentation by missing the necessary strings segmentation is omitted and the original input token is returned as such.
 
-The set of segmentations is then looked up in the hashable vocabulary containing weights for every substring.
+
+\begin{figure}\label{fig:segmentationtree}
+\centering
+\begin{forest}
+    for tree={
+        grow=south,
+        minimum size=3ex, inner sep=1pt,
+        s sep=7mm
+    }
+    [$\mathbb{P}$\{versteh, vers, ver, ve\}
+
+    [\texttt{versteh}
+    [\texttt{en}]
+    ]
+    [\texttt{vers}
+    [\texttt{teh} [\texttt{en}]]
+    [\texttt{te}
+        \texttt{he}
+        [\texttt{n}]]]
+
+    [\texttt{ver}
+    [\texttt{steh}
+    [\texttt{en}]]
+    [\texttt{ste}
+    [\texttt{he} [\texttt{n}]]]
+    [\texttt{st}
+    [\texttt{ehe} [\texttt{n}]]
+    [\texttt{eh} [\texttt{en}]]]
+    ]
+    [\texttt{ve}
+    [\texttt{rsteh} [\texttt{en}]]
+    [\texttt{rst}
+    [\texttt{eh} [\texttt{en}]]
+    [\texttt{ehe} [\texttt{n}]]
+    ]
+    [ \texttt{rste} [\texttt{he} [\texttt{n}]]]
+    ]
+    ]
+
+
+
+\end{forest}
+\end{figure}
+
+Then, of all $segmentations$ a single segmentation is selected by a maximization function \textsc{maximize\_segments} calculating weights for every segment.
+The maximization function for one segment is the defined as:
+
+\begin{equation}\label{eq:maximization}
+    \underset{s \in S}{\arg\max} f(x) \coloneqq  \lbrace \sum_{i=1}^{|s|} \sqrt[m]{\frac{s_{i}}{t} \div |s|}\rbrace
+\end{equation}
+
+Where $s$ is a segmentation tuple, $|s|$ is the length of the tuple (read: number of segments) and $s_{i}$ indicates the segment of the tuple at position $i$.
+For every segment (vertex) in a segmentation tuple (branch)  the segment's coverage length is divided by the token length $t$ to get the coverage of the morpheme
 
 
 tweak des tokenizers: segmentation ist eine frage der interpretation.
 The
 Ultimately, segmentation is a matter of interpretation.
+If there are several possible interpretations by wich to segment a word this tokenization method relies on the assumption that the comparison with \ac{pos}\hypen members displays the probable shape of segmentation for a token.
 As mentioned in~\ref{subsec:mlm}, the default WordPiece Tokenizer lacks
 A linguistically informed
 
