@@ -20,9 +20,17 @@
 \usepackage{textcomp}
 \usepackage{hyperref} %[hidelinks] option for final compile
 \usepackage[edges]{forest}
+\usepackage{tikz}
 
 % Class scrreprt Warning fix
 \usepackage{scrhack}
+
+% Continuous figure numbering
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\counterwithout{algorithm}{chapter}
+
+
 
 \usepackage{gb4e} %interlinear glossing
 \usepackage{algorithm}
@@ -60,8 +68,15 @@
 
     \maketitle
 
+    \cleardoublepage
+    \addtocounter{page}{-1}
+    \thispagestyle{empty}
+    I thank my supervisors Prof. Dr. Alexander Mehler and Dr. Zakharia Pourtskhvanidze for their competence and professionalism, without whom this thesis would not have happened.
+    My explicit thanks go to Manuel Stoeckel and Guiseppe Abrami for their valuable patience, advice and encouragement.
+    Thanks to my close ones for your trust and support.
 
     \chapter*{Abstract}
+    \thispagestyle{empty}
     \input{00abstract}
 
 
@@ -94,6 +109,7 @@
         \acro{mlm}[MLM]{Masked Language Model}
         \acro{nlp}[NLP]{Natural Language Processing}
         \acro{pos}[POS]{Part of Speech}
+        \acro{hanta}[HanTa]{Hanover Tagger}
 
     \end{acronym}
 
@@ -105,14 +121,14 @@
 
     \chapter{Introduction}
     %\label{ch:introduction}
-    \input{01introduction}
+    %\input{01introduction}
 
     \chapter{Overview}
     \label{ch:overview}
-    \input{02overview}
+    %\input{02overview}
 
 
-    \chapter{Methodoloy}
+    \chapter{Methodology}
     \label{ch:methodology}
     \input{03methodology}
 

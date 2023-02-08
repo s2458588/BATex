@@ -7,8 +7,8 @@ A series of tools will help to achieve lexicalized tokenization.
 They will be explained in this chapter along with their methodological edge.
 
 % EVTL. MACHINE LEARNING MODEL AUFSPLITTEN IN MODEL, TOKENIZER VOCABULARY?
-\subsection{Learning Architecture \& Tokenizer}
-\label{subsec:mlm}
+\subsection{Pipeline Structure \& Transformers Library}
+\label{subsec:architecture}
 
 \ac{bert} is a language learning transformer model designed for \ac{nlp} tasks (\cite{ATTENTION}).
 Upon release it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{BERTHIGH1}).
@@ -28,16 +28,105 @@ Once a tokenizer is trained on a dataset it is specific to that dataset.
 This means the application of a tokenizer on another dataset may result in out-of-vocabulary issues and different token/subtoken distributions.
 
 Particularly relevant to this thesis is the option to train an own tokenizer from the base module.
-Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}.
-Tokens are then \uppercase{WORDPIECE algorithmus erklären}
-By providing an algorithmically generated vocabulary to WordPiece and then training it on a new dataset the tokenization behavior is changed.
+Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}, which is used by the standard tokenizer to generate unique input numerical IDs.
+These identifiers correspond to tokens or parts of tokens found in the original dataset that the model was trained on.
+Wordmap partly takes over the tokenization depending on the the type of input it receives, the exact process is given in \autoref{subsec:tokenizer}.
+Once a string is tokenized it gets passed on to the transformer model for contextualized embedding.
+Schematic \autoref{fig:pipeline} shows the processing of data up until token encoding.
 
+\begin{figure}
+    \centering
 
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
 
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+        \draw   (40,98) .. controls (40,93.58) and (43.58,90) .. (48,90) -- (172,90) .. controls (176.42,90) and (180,93.58) .. (180,98) -- (180,130) .. controls (180,130) and (180,130) .. (180,130) -- (40,130) .. controls (40,130) and (40,130) .. (40,130) -- cycle ;
+        \draw   (210,98) .. controls (210,93.58) and (213.58,90) .. (218,90) -- (352,90) .. controls (356.42,90) and (360,93.58) .. (360,98) -- (360,130) .. controls (360,130) and (360,130) .. (360,130) -- (210,130) .. controls (210,130) and (210,130) .. (210,130) -- cycle ;
+        \draw   (210,150) -- (360,150) -- (360,210) -- (210,210) -- cycle ;
+        \draw   (210,230) -- (360,230) -- (360,270) -- (210,270) -- cycle ;
+        \draw   (40,150) -- (180,150) -- (180,270) -- (40,270) -- cycle ;
+        \draw   (40,290) -- (180,290) -- (180,340) -- (40,340) -- cycle ;
+        \draw   (210,290) -- (360,290) -- (360,340) -- (210,340) -- cycle ;
+        \draw   (210,360) -- (360,360) -- (360,400) -- (210,400) -- cycle ;
+        \draw [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (390,110) -- (362,110) ;
+        \draw [shift={(360,110)}, rotate = 360] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12,-3) -- (0,0) -- (12,3) -- cycle    ;
+        \draw    (285,130) -- (285,147) ;
+        \draw [shift={(285,150)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw    (110,130) -- (110,147) ;
+        \draw [shift={(110,150)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw    (110,270) -- (110,287) ;
+        \draw [shift={(110,290)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw    (285,210) -- (285,227) ;
+        \draw [shift={(285,230)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw    (285,270) -- (285,287) ;
+        \draw [shift={(285,290)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw    (285,340) -- (285,357) ;
+        \draw [shift={(285,360)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw    (180,310) -- (207,310) ;
+        \draw [shift={(210,310)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (180,110) -- (208,110) ;
+        \draw [shift={(210,110)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12,-3) -- (0,0) -- (12,3) -- cycle    ;
+        \draw   (40,360) -- (180,360) -- (180,400) -- (40,400) -- cycle ;
+        \draw    (210,380) -- (183,380) ;
+        \draw [shift={(180,380)}, rotate = 360] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw [fill={rgb, 255:red, 65; green, 183; blue, 159 }  ,fill opacity=0.79 ]   (110,400) -- (110,417) ;
+        \draw [shift={(110,420)}, rotate = 270] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+        \draw  [dash pattern={on 0.84pt off 2.51pt}]  (390,250) -- (390,380) ;
+        \draw [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (390,380) -- (362,380) ;
+        \draw [shift={(360,380)}, rotate = 360] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12,-3) -- (0,0) -- (12,3) -- cycle    ;
+        \draw [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (390,250) -- (360,250) ;
+        \draw (111.6,209) node   [align=left] {\begin{minipage}[lt]{83.78pt}\setlength\topsep{0pt}
+        \begin{center}
+            \textbf{Datasets}\\GerParCor (500k)\\\&\\Oscar (500k)
+        \end{center}
+        \end{minipage}};
+        \draw (113.27,110.5) node   [align=left] {\textbf{Datafiles}};
+        \draw (284.19,110.5) node   [align=left] {\textbf{POS Datafiles}};
+        \draw (283.62,180) node   [align=left] {\begin{minipage}[lt]{55.24pt}\setlength\topsep{0pt}
+        \begin{center}
+            \textbf{Wordmaps}
+        \end{center}
+        Generation
+        \end{minipage}};
+        \draw (284.8,250.5) node   [align=left] {\textbf{POS Vocabulary}};
+        \draw (286.7,316) node   [align=left] {\begin{minipage}[lt]{88.34pt}\setlength\topsep{0pt}
+        \begin{center}
+            \textbf{WMTokenizer}\\POS segmenting
+        \end{center}
+        \end{minipage}};
+        \draw (286.87,380.5) node   [align=left] {\textbf{BERT Tokenizer}};
+        \draw (111.37,316) node   [align=left] {\begin{minipage}[lt]{56.94pt}\setlength\topsep{0pt}
+        \begin{center}
+            \textbf{HanTa}\\ i/o
+        \end{center}
+        \end{minipage}};
+        \draw (110.34,380.5) node   [align=left] {\textbf{Encodings}};
+
+    \end{tikzpicture}
+    \caption{Schematic integration of Wordmap segmentation into the BERT architecture. Continuous lines show non-selective channels, while dotted lines only pass data selectively}
+    \label{fig:pipeline}
+\end{figure}
+
+In \autoref{fig:pipeline}, Datafiles contains the raw unprocessed data coming from corpora.
+The input is provided in txt-files holding sentences line by line.
+Two datasets are generated from this input, each amounting to 500000 sentences per corpus for fine-tuning.
+POS Datafiles ideally contains only words that are identified as the same \ac{pos} category.
+To increase the resulting POS vocabulary, POS Datafiles can be augmented by two channels: input can come from the corpus itself, but would need to be tagged first.
+Otherwise a predefined list of words can be used as an external and generic source for Wordmap generation.
+In POS Vocabulary, naive adjustments like removing outliers and interferences are performed on the set of subwords yielded by Wordmap generation.
+It is important to note that the POS vocabulary is separate from the the tokenizer vocabulary.
+This serves the specific purpose of keeping the vocabulary on which the model is trained clean from unwanted or unused subwords.
+Machine learning practice generally points to the trade-off between vocabulary size and model performance, hence the addition of POS Vocabulary to the BERT Tokenizer vocabulary is used only when necessary.
+Datasets are then passed through \ac{hanta} to provide WMTokenizer with flagged data to tokenize only selected tokens.
+Lastly BERT Tokenizer returns the canonical encodings known from language modeling.
 
 \subsection{Data}
 \label{subsec:data}
-explain the data that is used
+Two corpora where selected for fine-tuning: \ac{gerparcor} and oscar ~\cite{oscar}.
+Since both are considerably large
+FLOTA was trained on 10000 samples ~\cite[]{FLOTA}, which why for this fine-tuning a sample size of 500000 seems sufficient.
+
+
 wiktionary verbs
 hanta-crawled verbs of gerparcor
 oscar de
@@ -45,7 +134,7 @@ gerparcor bundestag subset
 
 \subsection{Benchmark}
 \label{subsec:benchmark}
-explain olmpics
+The benchmark used on the model is oLMpics (\cite{olmpics})
 
 \section{Implementation}
 \label{sec:implementation}
@@ -56,12 +145,22 @@ Tatsächliche Anwendung der Methoden auf die Daten
 \label{subsec:tokenizer}
 \uppercase{essentially deriving sensible subtokens to represent lexemes}
 The methods of tokenization is explained in the following.
-This is the main part of the thesis
+This is the main part of the thesis containing two algorithms for vocabulary generation and token segmentation.
+Once the two algorithms have been explained, the last section of this chapter features the
 
+
+Languages, as consistent form of communication, always
 Throughout this section, the words $target$ and $token$ are used to describe a word that is analyzed.
 One denotes the argument of the wordmapping and segmenter function ($target$), the other describes a word occurring in the corpus ($token$).
+
 \subsubsection{Generating a custom pre-training vocabulary}
 \label{subsubsec:generating-a-custom-pre-training-vocabulary}
+
+Embedding those subwords which take part in inflectional processes essentially means deriving sensible subwords to represent actual morphemes.
+
+The vocabulary generated for this chapter is a list of inflected and non-inflected verbs (as to state the example) provided by two sources: (1) the german verb wiktionary \cite(wiktionary) and (2) a crawl of the GerParCor corpus with the HanTa tagger \cite(hanta).
+Initial experiments where done only with the wiktionary verb list since it provided sanitized input for the algorithm in development.
+Later, when the verbs where extracted \ac{gerparcor} from gerparcor
 
 The Wordmap algorithm as shown in \autoref{alg:wordmap} is the first step to extracting morphemes from a token.
 Its purpose is to compare two strings and store their intersections in a map of boolean values.
@@ -72,7 +171,7 @@ Its purpose is to compare two strings and store their intersections in a map of 
 \begin{algorithm}
     \caption{Wordmap generation}\label{alg:wordmap}
     \begin{algorithmic}[1]
-        \Require $verbs = \{v : v  v_{\uppercase{POS}}\}, target$ \Comment{Set of single-\uppercase{POS} lexemic tokens}
+        \Require $verbs = \{v : \uppercase{POS}\}, target$ \Comment{\textit{verbs}: set of single-\uppercase{POS} lexemic tokens}
         \Ensure $maps = (map_{1}, \ldots, map_{|verbs|})$
         \Function{wordmap}{w1, w2, \*d=0}
             \State $f_{1}: c1, c2 \mapsto c1 == c2$
@@ -91,7 +190,7 @@ Its purpose is to compare two strings and store their intersections in a map of 
         \\
 
 
-        
+
         \If{$\textit{case: any match}$}
             \If{$\delta$}
                 \If{$\textit{case: left match}$}
@@ -131,6 +230,8 @@ $\delta$ functions as an offset for index-based comparisons \textsc{wordmap}.
 
 \begin{table}
     \centering
+    \caption{Example wordmaps for $target = \texttt{verstehen}$}
+    \label{tab:wordmaps}
     \begin{tabular}{llll}
         \toprule
         \textbf{String} & \textbf{Wordmap} & \textbf{Case} & \textbf{Padding} \\
@@ -144,13 +245,11 @@ $\delta$ functions as an offset for index-based comparisons \textsc{wordmap}.
         (...) &  &  &  \\
         \bottomrule
     \end{tabular}
-    \caption{Example wordmaps for $target = \texttt{verstehen}$}
-    \label{tab:}
 \end{table}
 
-Once every $v$ has been compared to $target$, $maps$ boolean counts of characters occurring in their respective positions in $target$.
-Every map is cleaned with a regular expression to reduce noice caused by natural character occurrence.
-Continuous concatenations of leading or trailing matches stay, while every match with the word enclosed by $0$ will be replaced the latter.
+Once every $v$ has been compared to $target$, $maps$ stores boolean counts of characters occurring in their respective positions in $target$.
+Every map is cleaned with a regular expression to reduce noise caused by natural character occurrence (some characters like \textless n\textgreater, \textless s\textgreater ~will be more frequent than others).
+Continuous concatenations of leading or trailing matches stay, while every match enclosed by $0$ will be replaced the $0$.
 As an example, $wordmap = 11101100101$ contains three matches on the inside which will result in $11100000001$ as final output.
 In the penultimate stage of mapping $target$, all maps are summed up to receive the number of absolute positional occurrences of every character in $target$.
 This positional mapping allows for detecting relevant segments in a token based on a threshold.
@@ -163,17 +262,7 @@ where $z$ is the z-score, $\overline{x}$ and $S$ are the sample mean and the sam
 
 \subsubsection{BERT Tokenizer Modification}
 \label{subsubsec:tokenizer-modification}
-What is the model tokenizer mod
-Which problems arose? What went well? What happened?
 
-
-
-\subsection{Masked Language Model}
-\label{subsec:masked-language-model}
-Model implementation and parameters, runtimes?
-
-\subsection{oLMpics Benchmark}
-\label{subsec:olmpics-benchmark}
 
 \begin{algorithm}
     \caption{Target Segmentation}\label{alg:segmenter}
@@ -217,35 +306,33 @@ This task is a weighted coverage problem in the \uppercase{NP}-hard domain.
 Unary morphemes to the left are excluded from the pre-selected subvocabulary to drastically reduce the number of possible permutations , as they can be embedded in n-ary tokens as well.
 The recursion can be seen as n-ary a trees containing every permutation of the set $morphemes$ where the sum of branches all satisfy $target$.
 
-First, all morphemes that $targets$ starts with are stored to form the first nodes of the permutation trees.
-Each time a morpheme is selected the index $start$ is incremented by the length of the morpheme to indicate when the string has been completely segmented.
-The new recursion is called with the updated index $start$ and $target$ sliced by the legnth of the morpheme contained in the parent node.
-Incomplete segmentations that miss exactly one character to the right are accepted with the added missing string.
-If the vocabulary cannot satisfy a segmentation by missing the necessary strings segmentation is omitted and the original input token is returned as such.
-
-
-\begin{figure}\label{fig:segmentationtree}
+\begin{figure}
 \centering
 \begin{forest}
     for tree={
         grow=south,
-        minimum size=3ex, inner sep=1pt,
+        minimum size=2ex, inner sep=1pt,
         s sep=7mm
     }
-    [$\mathbb{P}$\{versteh, vers, ver, ve\}
-
+    [Call: & \textsc{segmenter}(\texttt{"verstehen"})\\\hline
+    Subvocab: & \{\texttt{versteh\, vers\, ver\, ve\, en\, teh\, \, steh\, ste\, st\, rsteh\, rst\, rste\, ehe\, he\, n\}}\\
+    ,align=11,draw
+    [{\texttt{verstehen}}
     [\texttt{versteh}
     [\texttt{en}]
     ]
     [\texttt{vers}
-    [\texttt{teh} [\texttt{en}]]
-    [\texttt{te}
-        \texttt{he}
-        [\texttt{n}]]]
-
-    [\texttt{ver}
-    [\texttt{steh}
+    [\texttt{teh}
     [\texttt{en}]]
+    [\texttt{te}
+        [\texttt{he}
+        [\texttt{n}]]]]
+
+    [\texttt{ver}, draw, dotted
+    [\texttt{steh}, draw, dotted
+    [\texttt{en}, draw, dotted
+    ]
+    ]
     [\texttt{ste}
     [\texttt{he} [\texttt{n}]]]
     [\texttt{st}
@@ -261,27 +348,40 @@ If the vocabulary cannot satisfy a segmentation by missing the necessary strings
     [ \texttt{rste} [\texttt{he} [\texttt{n}]]]
     ]
     ]
-
+    ]
 
 
 \end{forest}
+\caption{Permutations \textsc{segmenter} generates from target i.e. \texttt{verstehen}. Dotted segments mark the segmentation chosen later by the maximization function during tokenization.}
+\label{fig:segmentationtree}
 \end{figure}
+
+As shown in \autoref{fig:segmentationtree}, all morphemes that $target$ starts with are stored to form the first nodes of the permutation tree.
+Each time a morpheme is selected the index $start$ is incremented by the length of the morpheme to indicate when the string has been completely segmented.
+The new recursion is called with the updated index $start$ and $target$ sliced by the length of the morpheme contained in the parent node.
+Incomplete segmentations that miss exactly one character to the right are accepted with the added missing string.
+If the vocabulary cannot satisfy a segmentation because it is missing the necessary strings, segmentation is omitted and the original input token is returned as such.
 
 Then, of all $segmentations$ a single segmentation is selected by a maximization function \textsc{maximize\_segments} calculating weights for every segment.
 The maximization function for one segment is the defined as:
 
 \begin{equation}\label{eq:maximization}
-    \underset{s \in S}{\arg\max} f(x) \coloneqq  \lbrace \sum_{i=1}^{|s|} \sqrt[m]{\frac{s_{i}}{t} \div |s|}\rbrace
+    \underset{s \in S}{\arg\max} f(s) \coloneqq  \Bigl\{ s \in S : \sum_{i=1}^{|s|} \sqrt[s_{i}]{\frac{s_{i}}{t} \div |s|}\Bigr\}
 \end{equation}
 
-Where $s$ is a segmentation tuple, $|s|$ is the length of the tuple (read: number of segments) and $s_{i}$ indicates the segment of the tuple at position $i$.
-For every segment (vertex) in a segmentation tuple (branch)  the segment's coverage length is divided by the token length $t$ to get the coverage of the morpheme
+Where $S$ is a set of segmentation tuples $s$, $|s|$ is the length of the tuple (read: number of segments) and $s_{i}$ indicates the length of the segment at position $i$ in tuple $s$.
+For every segment (vertex) in a segmentation tuple (branch)  the segment's length is divided by the token length $t$ to get the coverage the morpheme provides towards the target string.
+The number of segments $|s|$ is a divisor meant to cap the number of segments in a segmentation.
+It prevents choosing a segmentation overflowing with too many short segments.
+Short segments are convenient for completing a segmentation, but will increase the chance of slicing a token where it linguistically lacks sense to do so.
+Lastly the $s_{i}$^{\text{th}} root implements a bias against segments that are too long.
+While the accuracy decreases for longer words, this method of maximization performs reasonably well in the range of 1--4 syllable tokens, which make up around 87\% of the verb vocabulary.
 
 
 tweak des tokenizers: segmentation ist eine frage der interpretation.
-The
+
 Ultimately, segmentation is a matter of interpretation.
-If there are several possible interpretations by wich to segment a word this tokenization method relies on the assumption that the comparison with \ac{pos}\hypen members displays the probable shape of segmentation for a token.
+If there are several possible interpretations by wich to segment a word this tokenization method relies on the assumption that the comparison with \ac{pos}- members displays the probable shape of segmentation for a token.
 As mentioned in~\ref{subsec:mlm}, the default WordPiece Tokenizer lacks
 A linguistically informed
 
@@ -289,3 +389,12 @@ A linguistically informed
 
 The field of NLP  (\cite{METZLER2016}) has been expanded ever since the emergence of the language models.
 Natural language processing is understood as the
+
+
+
+\subsection{Masked Language Model}
+\label{subsec:masked-language-model}
+Model implementation and parameters, runtimes?
+
+\subsection{oLMpics Benchmark}
+\label{subsec:olmpics-benchmark}

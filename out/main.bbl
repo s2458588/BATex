@@ -168,6 +168,43 @@
       \verb www.cambridge.org/9781107120648
       \endverb
     \endentry
+    \entry{morpheme}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d7de38851cb1b5976201981eaf304eb5}{%
+           family={Colman},
+           familyi={C\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d7de38851cb1b5976201981eaf304eb5}
+      \strng{fullhash}{d7de38851cb1b5976201981eaf304eb5}
+      \strng{bibnamehash}{d7de38851cb1b5976201981eaf304eb5}
+      \strng{authorbibnamehash}{d7de38851cb1b5976201981eaf304eb5}
+      \strng{authornamehash}{d7de38851cb1b5976201981eaf304eb5}
+      \strng{authorfullhash}{d7de38851cb1b5976201981eaf304eb5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780191726828}
+      \field{title}{morpheme}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1093/acref/9780199534067.013.5219
+      \endverb
+      \verb{urlraw}
+      \verb https://www.oxfordreference.com/view/10.1093/acref/9780199534067.001.0001/acref-9780199534067-e-5219
+      \endverb
+      \verb{url}
+      \verb https://www.oxfordreference.com/view/10.1093/acref/9780199534067.001.0001/acref-9780199534067-e-5219
+      \endverb
+    \endentry
     \entry{DEEPL}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=086b5407f3734e9b5c12a636fc131ba8}{%
@@ -311,6 +348,112 @@
       \endverb
       \keyw{Linguistik}
     \endentry
+    \entry{FLOTA}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e6ae2f6a24120872e3f543ced226aad2}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Valentin},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=649b7399037d78a25778825cfd63a4ba}{%
+           family={Schuetze},
+           familyi={S\bibinitperiod},
+           given={Hinrich},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d40ef94e4050e51ca57b7b0bb029f724}{%
+           family={Pierrehumbert},
+           familyi={P\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dublin, Ireland}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{1f591956b7a8d099df0fb2e82ddd0d8c}
+      \strng{fullhash}{1f591956b7a8d099df0fb2e82ddd0d8c}
+      \strng{bibnamehash}{1f591956b7a8d099df0fb2e82ddd0d8c}
+      \strng{authorbibnamehash}{1f591956b7a8d099df0fb2e82ddd0d8c}
+      \strng{authornamehash}{1f591956b7a8d099df0fb2e82ddd0d8c}
+      \strng{authorfullhash}{1f591956b7a8d099df0fb2e82ddd0d8c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce FLOTA (Few Longest Token Approximation), a simple yet effective method to improve the tokenization of pretrained language models (PLMs). FLOTA uses the vocabulary of a standard tokenizer but tries to preserve the morphological structure of words during tokenization. We evaluate FLOTA on morphological gold segmentations as well as a text classification task, using BERT, GPT-2, and XLNet as example PLMs. FLOTA leads to performance gains, makes inference more efficient, and enhances the robustness of PLMs with respect to whitespace noise.}
+      \field{booktitle}{Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)}
+      \field{month}{5}
+      \field{title}{An Embarrassingly Simple Method to Mitigate Undesirable Properties of Pretrained Language Model Tokenizers}
+      \field{year}{2022}
+      \field{pages}{385\bibrangedash 393}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.18653/v1/2022.acl-short.43
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.acl-short.43
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.acl-short.43
+      \endverb
+    \endentry
+    \entry{subwordvsmorfessor}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c5d967fd93e7b18f947bcc25ac7d7496}{%
+           family={Peters},
+           familyi={P\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d118d1e0be44acd0e761fcd0c3b254a1}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={Andre\bibnamedelimb F.\bibnamedelimi T.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Seattle, Washington}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{e2d437955faf96382f7fe3ae66504bac}
+      \strng{fullhash}{e2d437955faf96382f7fe3ae66504bac}
+      \strng{bibnamehash}{e2d437955faf96382f7fe3ae66504bac}
+      \strng{authorbibnamehash}{e2d437955faf96382f7fe3ae66504bac}
+      \strng{authornamehash}{e2d437955faf96382f7fe3ae66504bac}
+      \strng{authorfullhash}{e2d437955faf96382f7fe3ae66504bac}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents DeepSPIN{'}s submissions to the SIGMORPHON 2022 Shared Task on Morpheme Segmentation. We make three submissions, all to the word-level subtask. First, we show that entmax-based sparse sequence-tosequence models deliver large improvements over conventional softmax-based models, echoing results from other tasks. Then, we challenge the assumption that models for morphological tasks should be trained at the character level by building a transformer that generates morphemes as sequences of unigram language model-induced subwords. This subword transformer outperforms all of our character-level models and wins the word-level subtask. Although we do not submit an official submission to the sentence-level subtask, we show that this subword-based approach is highly effective there as well.}
+      \field{booktitle}{Proceedings of the 19th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology}
+      \field{month}{7}
+      \field{title}{Beyond Characters: Subword-level Morpheme Segmentation}
+      \field{year}{2022}
+      \field{pages}{131\bibrangedash 138}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.18653/v1/2022.sigmorphon-1.14
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.sigmorphon-1.14
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.sigmorphon-1.14
+      \endverb
+    \endentry
     \entry{WORDPIECEOG}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=29ea22df63f174ac629e9ef100b40484}{%
@@ -345,6 +488,67 @@
       \range{pages}{4}
       \verb{doi}
       \verb 10.1109/ICASSP.2012.6289079
+      \endverb
+    \endentry
+    \entry{olmpics}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=eaeb4f4d1c9de15f9f24f31ff59dd392}{%
+           family={Talmor},
+           familyi={T\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecf6844c3c1983ee94c878e2b9625fb8}{%
+           family={Elazar},
+           familyi={E\bibinitperiod},
+           given={Yanai},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33b00f3e2f4f1bb310f1cf8d4a4c500a}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={Yoav},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59365fb6f8cc1328f2453e8fb33dfba4}{%
+           family={Berant},
+           familyi={B\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d4b06c00ba85e003d76e070706757927}
+      \strng{fullhash}{3d62beeb6843dbe60e08700440bb685a}
+      \strng{bibnamehash}{3d62beeb6843dbe60e08700440bb685a}
+      \strng{authorbibnamehash}{3d62beeb6843dbe60e08700440bb685a}
+      \strng{authornamehash}{d4b06c00ba85e003d76e070706757927}
+      \strng{authorfullhash}{3d62beeb6843dbe60e08700440bb685a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{Recent success of pre-trained language models (LMs) has spurred widespread interest in the language capabilities that they possess. However, efforts to understand whether LM representations are useful for symbolic reasoning tasks have been limited and scattered. In this work, we propose eight reasoning tasks, which conceptually require operations such as comparison, conjunction, and composition. A fundamental challenge is to understand whether the performance of a LM on a task should be attributed to the pre-trained representations or to the process of fine-tuning on the task data. To address this, we propose an evaluation protocol that includes both zero-shot evaluation (no fine-tuning), as well as comparing the learning curve of a fine-tuned LM to the learning curve of multiple controls, which paints a rich picture of the LM capabilities. Our main findings are that: (a) different LMs exhibit qualitatively different reasoning abilities, e.g., RoBERTa succeeds in reasoning tasks where BERT fails completely; (b) LMs do not reason in an abstract manner and are context-dependent, e.g., while RoBERTa can compare ages, it can do so only when the ages are in the typical range of human ages; (c) On half of our reasoning tasks all models fail completely. Our findings and infrastructure can help future work on designing new datasets, models, and objective functions for pre-training.}}
+      \field{issn}{2307-387X}
+      \field{journaltitle}{Transactions of the Association for Computational Linguistics}
+      \field{month}{12}
+      \field{title}{{oLMpics-On What Language Model Pre-training Captures}}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{743\bibrangedash 758}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1162/tacl_a_00342
+      \endverb
+      \verb{eprint}
+      \verb https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00342/1923716/tacl\_a\_00342.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/tacl\_a\_00342
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/tacl%5C_a%5C_00342
       \endverb
     \endentry
     \entry{ATTENTION}{misc}{}
@@ -426,7 +630,225 @@
       \endverb
       \keyw{Computation and Language (cs.CL),Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
+    \entry{WORDPIECEGOOGLE}{misc}{}
+      \name{author}{31}{}{%
+        {{un=0,uniquepart=base,hash=1fc7a40d6072b1bb1d4e56d14ef88e2f}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yonghui},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29ea22df63f174ac629e9ef100b40484}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0d10aaf985cebf8d0497e1828f9313f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhifeng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c636f146591d51579a8119b777394878}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V.},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e34c5aa67281924804d54d88e58ca38a}{%
+           family={Norouzi},
+           familyi={N\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e02b95f1e35ef8d397835766063a915}{%
+           family={Macherey},
+           familyi={M\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c2ce3e06666676855e01e5bb2466d92}{%
+           family={Krikun},
+           familyi={K\bibinitperiod},
+           given={Maxim},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2923de2da7f9b32b957552e414b6bc16}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=841cd6340c46b48aff116aaace5177f6}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Qin},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15662c2bdf7c38938fe27c84d2f821fe}{%
+           family={Macherey},
+           familyi={M\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76d78fa8d6bcc0a03c768f284b7445b2}{%
+           family={Klingner},
+           familyi={K\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f77a417cb674d5f294913225ae20e42}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Apurva},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b76c4102bf39f677ea9c0f7c2a5f236a}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Melvin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6026405c5af9112230e8ff8bf18dd043}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaobing},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Łukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=353c4a3aa4878af27170be1cfd53bd8a}{%
+           family={Gouws},
+           familyi={G\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc6590b280716ad064718f8d18f2a53f}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={Yoshikiyo},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea1d04e9781edc1ab4ccafb0d8ff5179}{%
+           family={Kudo},
+           familyi={K\bibinitperiod},
+           given={Taku},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc6dcce1f2845b14d1315cb56f430b85}{%
+           family={Kazawa},
+           familyi={K\bibinitperiod},
+           given={Hideto},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7970dc920ecd23f635158e89bed903aa}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d115e2de1127519c117a7252205efcdb}{%
+           family={Kurian},
+           familyi={K\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98e48fd2ef83c15cb4e696e6243eef05}{%
+           family={Patil},
+           familyi={P\bibinitperiod},
+           given={Nishant},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f27ec46ccd272a021fd78bdac92dd490}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b3412c48bab46f41faab78455fce0e1}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Cliff},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd794e3fc42625216f13506936f9efea}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b137e608b42835dfb224061b97b8aba4}{%
+           family={Riesa},
+           familyi={R\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbb9f043628eafbecb00f2bfc6ae71bf}{%
+           family={Rudnick},
+           familyi={R\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=494b568c5dc85ba8f3f409635f9c5f25}{%
+           family={Vinyals},
+           familyi={V\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d11e6f2a0d0a1183b2cf62996525afc}{%
+           family={Corrado},
+           familyi={C\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc840f3c806989f01823d8e1ef19c2e7}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Macduff},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5e7ea1b72e68507bb740c6a9bec1477a}
+      \strng{fullhash}{60578079489d2f4fd3110ab834fa69f3}
+      \strng{bibnamehash}{5e7ea1b72e68507bb740c6a9bec1477a}
+      \strng{authorbibnamehash}{5e7ea1b72e68507bb740c6a9bec1477a}
+      \strng{authornamehash}{5e7ea1b72e68507bb740c6a9bec1477a}
+      \strng{authorfullhash}{60578079489d2f4fd3110ab834fa69f3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.48550/ARXIV.1609.08144
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1609.08144
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1609.08144
+      \endverb
+      \keyw{Computation and Language (cs.CL),Artificial Intelligence (cs.AI),Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
   \enddatalist
+  \missing{morfessor}
 \endrefsection
 \endinput
 

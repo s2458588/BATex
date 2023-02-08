@@ -2,6 +2,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Schematic integration of Wordmap segmentation into the BERT architecture. Continuous lines show non-selective channels, while dotted lines only pass data selectively}}{4}{figure.3.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Permutations \textsc {segmenter} generates from target i.e. \texttt {verstehen}. Dotted segments mark the segmentation chosen later by the maximization function during tokenization.}}{9}{figure.3.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
