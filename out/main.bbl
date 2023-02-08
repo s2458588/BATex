@@ -205,6 +205,44 @@
       \verb https://www.oxfordreference.com/view/10.1093/acref/9780199534067.001.0001/acref-9780199534067-e-5219
       \endverb
     \endentry
+    \entry{morfessor}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a6af88e5a21c6356fd0a33920cdad575}{%
+           family={Creutz},
+           familyi={C\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=491e69d2b8077514e7e64621fb9a290c}{%
+           family={Lagus},
+           familyi={L\bibinitperiod},
+           given={Krista},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51c61eb98d1e20a8fa0fb7d057fd886b}
+      \strng{fullhash}{51c61eb98d1e20a8fa0fb7d057fd886b}
+      \strng{bibnamehash}{51c61eb98d1e20a8fa0fb7d057fd886b}
+      \strng{authorbibnamehash}{51c61eb98d1e20a8fa0fb7d057fd886b}
+      \strng{authornamehash}{51c61eb98d1e20a8fa0fb7d057fd886b}
+      \strng{authorfullhash}{51c61eb98d1e20a8fa0fb7d057fd886b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{Unsupervised Discovery of Morphemes}
+      \field{volume}{cs.CL/0205057}
+      \field{year}{2002}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/cs/0205057
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/cs/0205057
+      \endverb
+    \endentry
     \entry{DEEPL}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=086b5407f3734e9b5c12a636fc131ba8}{%
@@ -404,6 +442,188 @@
       \verb https://aclanthology.org/2022.acl-short.43
       \endverb
     \endentry
+    \entry{oscarsub1}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=de8a1afa4d6c3ef36542e1087a509982}{%
+           family={Ortiz\bibnamedelima Su{'a}rez},
+           familyi={O\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Pedro\bibnamedelima Javier},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1d6926babb0baaf7da478b412d14d9b}{%
+           family={Romary},
+           familyi={R\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0daac6b47944815fd5cce4da0b2d9b8}{%
+           family={Sagot},
+           familyi={S\bibinitperiod},
+           given={Benoit},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Online}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{373a1c60d3ddbaf79723d2e4b604cf21}
+      \strng{fullhash}{373a1c60d3ddbaf79723d2e4b604cf21}
+      \strng{bibnamehash}{373a1c60d3ddbaf79723d2e4b604cf21}
+      \strng{authorbibnamehash}{373a1c60d3ddbaf79723d2e4b604cf21}
+      \strng{authornamehash}{373a1c60d3ddbaf79723d2e4b604cf21}
+      \strng{authorfullhash}{373a1c60d3ddbaf79723d2e4b604cf21}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics}
+      \field{month}{6}
+      \field{title}{A Monolingual Approach to Contextualized Word Embeddings for Mid-Resource Languages}
+      \field{year}{2020}
+      \field{pages}{1703\bibrangedash 1714}
+      \range{pages}{12}
+      \verb{urlraw}
+      \verb https://www.aclweb.org/anthology/2020.acl-main.156
+      \endverb
+      \verb{url}
+      \verb https://www.aclweb.org/anthology/2020.acl-main.156
+      \endverb
+    \endentry
+    \entry{oscarsub2}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=de8a1afa4d6c3ef36542e1087a509982}{%
+           family={{Ortiz Su{'a}rez}},
+           familyi={O\bibinitperiod},
+           given={Pedro\bibnamedelima Javier},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0daac6b47944815fd5cce4da0b2d9b8}{%
+           family={Sagot},
+           familyi={S\bibinitperiod},
+           given={Benoit},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1d6926babb0baaf7da478b412d14d9b}{%
+           family={Romary},
+           familyi={R\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{8}{}{%
+        {{hash=389b1bac60cc6a2a776e1200dd0b5e19}{%
+           family={Bański},
+           familyi={B\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=29fc00eae874b61c649a86abbf310f25}{%
+           family={Barbaresi},
+           familyi={B\bibinitperiod},
+           given={Adrien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aa03bc730ae30d3367e3e944fd8167db}{%
+           family={Biber},
+           familyi={B\bibinitperiod},
+           given={Hanno},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4c35776023c06dc6f1143a500d7db3f6}{%
+           family={Breiteneder},
+           familyi={B\bibinitperiod},
+           given={Evelyn},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a1c92fbbec61bf5cea271bf9725dea77}{%
+           family={Clematide},
+           familyi={C\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4dc1ed6bb6a8d910ee8c09cd1ed8ec58}{%
+           family={Kupietz},
+           familyi={K\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5769d3a251f35a13c573db269b15bc1d}{%
+           family={L{"u}ngen},
+           familyi={L\bibinitperiod},
+           given={Harald},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bb27bdd3075f871beba4ef33d6f67d28}{%
+           family={Iliadi},
+           familyi={I\bibinitperiod},
+           given={Caroline},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Mannheim}%
+      }
+      \list{publisher}{1}{%
+        {Leibniz-Institut f{"u}r Deutsche Sprache}%
+      }
+      \strng{namehash}{d9e5e6e58fac2801b1edc6825df633f3}
+      \strng{fullhash}{d9e5e6e58fac2801b1edc6825df633f3}
+      \strng{bibnamehash}{d9e5e6e58fac2801b1edc6825df633f3}
+      \strng{authorbibnamehash}{d9e5e6e58fac2801b1edc6825df633f3}
+      \strng{authornamehash}{d9e5e6e58fac2801b1edc6825df633f3}
+      \strng{authorfullhash}{d9e5e6e58fac2801b1edc6825df633f3}
+      \strng{editorbibnamehash}{bef46dbb881e037406a1a44edcaf21f8}
+      \strng{editornamehash}{bef46dbb881e037406a1a44edcaf21f8}
+      \strng{editorfullhash}{008469f82fb473624565c615ef088c78}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Proceedings of the Workshop on Challenges in the Management of Large Corpora (CMLC-7) 2019. Cardiff, 22nd July 2019}
+      \field{title}{Asynchronous pipelines for processing huge corpora on medium to low resource infrastructures}
+      \field{year}{2019}
+      \field{pages}{9\bibrangedash 16}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.14618/ids-pub-9021
+      \endverb
+      \verb{urlraw}
+      \verb http://nbn-resolving.de/urn:nbn:de:bsz:mh39-90215
+      \endverb
+      \verb{url}
+      \verb http://nbn-resolving.de/urn:nbn:de:bsz:mh39-90215
+      \endverb
+    \endentry
+    \entry{oscar}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c96159b9c3d328ce9311ee32577f1251}{%
+           family={OSCAR},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{c96159b9c3d328ce9311ee32577f1251}
+      \strng{fullhash}{c96159b9c3d328ce9311ee32577f1251}
+      \strng{bibnamehash}{c96159b9c3d328ce9311ee32577f1251}
+      \strng{authorbibnamehash}{c96159b9c3d328ce9311ee32577f1251}
+      \strng{authornamehash}{c96159b9c3d328ce9311ee32577f1251}
+      \strng{authorfullhash}{c96159b9c3d328ce9311ee32577f1251}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{The OSCAR project (Open Super-large Crawled Aggregated coRpus)}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://oscar-project.org/
+      \endverb
+      \verb{url}
+      \verb https://oscar-project.org/
+      \endverb
+    \endentry
     \entry{subwordvsmorfessor}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c5d967fd93e7b18f947bcc25ac7d7496}{%
@@ -529,11 +749,11 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{{Recent success of pre-trained language models (LMs) has spurred widespread interest in the language capabilities that they possess. However, efforts to understand whether LM representations are useful for symbolic reasoning tasks have been limited and scattered. In this work, we propose eight reasoning tasks, which conceptually require operations such as comparison, conjunction, and composition. A fundamental challenge is to understand whether the performance of a LM on a task should be attributed to the pre-trained representations or to the process of fine-tuning on the task data. To address this, we propose an evaluation protocol that includes both zero-shot evaluation (no fine-tuning), as well as comparing the learning curve of a fine-tuned LM to the learning curve of multiple controls, which paints a rich picture of the LM capabilities. Our main findings are that: (a) different LMs exhibit qualitatively different reasoning abilities, e.g., RoBERTa succeeds in reasoning tasks where BERT fails completely; (b) LMs do not reason in an abstract manner and are context-dependent, e.g., while RoBERTa can compare ages, it can do so only when the ages are in the typical range of human ages; (c) On half of our reasoning tasks all models fail completely. Our findings and infrastructure can help future work on designing new datasets, models, and objective functions for pre-training.}}
+      \field{abstract}{Recent success of pre-trained language models (LMs) has spurred widespread interest in the language capabilities that they possess. However, efforts to understand whether LM representations are useful for symbolic reasoning tasks have been limited and scattered. In this work, we propose eight reasoning tasks, which conceptually require operations such as comparison, conjunction, and composition. A fundamental challenge is to understand whether the performance of a LM on a task should be attributed to the pre-trained representations or to the process of fine-tuning on the task data. To address this, we propose an evaluation protocol that includes both zero-shot evaluation (no fine-tuning), as well as comparing the learning curve of a fine-tuned LM to the learning curve of multiple controls, which paints a rich picture of the LM capabilities. Our main findings are that: (a) different LMs exhibit qualitatively different reasoning abilities, e.g., RoBERTa succeeds in reasoning tasks where BERT fails completely; (b) LMs do not reason in an abstract manner and are context-dependent, e.g., while RoBERTa can compare ages, it can do so only when the ages are in the typical range of human ages; (c) On half of our reasoning tasks all models fail completely. Our findings and infrastructure can help future work on designing new datasets, models, and objective functions for pre-training.}
       \field{issn}{2307-387X}
       \field{journaltitle}{Transactions of the Association for Computational Linguistics}
       \field{month}{12}
-      \field{title}{{oLMpics-On What Language Model Pre-training Captures}}
+      \field{title}{oLMpics-On What Language Model Pre-training Captures}
       \field{volume}{8}
       \field{year}{2020}
       \field{pages}{743\bibrangedash 758}
@@ -629,6 +849,78 @@
       \verb https://arxiv.org/abs/1706.03762
       \endverb
       \keyw{Computation and Language (cs.CL),Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{hanta}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=78fb074dbffdb11eb11f2c4e1074354b}{%
+           family={Wartena},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{78fb074dbffdb11eb11f2c4e1074354b}
+      \strng{fullhash}{78fb074dbffdb11eb11f2c4e1074354b}
+      \strng{bibnamehash}{78fb074dbffdb11eb11f2c4e1074354b}
+      \strng{authorbibnamehash}{78fb074dbffdb11eb11f2c4e1074354b}
+      \strng{authornamehash}{78fb074dbffdb11eb11f2c4e1074354b}
+      \strng{authorfullhash}{78fb074dbffdb11eb11f2c4e1074354b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Lemmatization is a central task in many NLP applications. Despite this importance, the number of (freely) available and easy to use tools for German is very limited. To fill this gap, we developed a simple lemmatizer that can be trained on any lemmatized corpus. For a full form word the tagger tries to find the sequence of morphemes that is most likely to generate that word. From this sequence of tags we can easily derive the stem, the lemma and the part of speech (PoS) of the word. We show (i) that the quality of this approach is comparable to state of the art methods and (ii) that we can improve the results of Part-of-Speech (PoS) tagging when we include the morphological analysis of each word.}
+      \field{series}{Proceedings of the 15th Conference on Natural Language Processing (KONVENS 2019)}
+      \field{title}{A Probabilistic Morphology Model for German Lemmatization}
+      \field{year}{2019}
+      \field{pages}{40\bibrangedash 49}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.25968/opus-1527
+      \endverb
+      \verb{urlraw}
+      \verb http://nbn-resolving.de/urn:nbn:de:bsz:960-opus4-15271
+      \endverb
+      \verb{url}
+      \verb http://nbn-resolving.de/urn:nbn:de:bsz:960-opus4-15271
+      \endverb
+    \endentry
+    \entry{wiktionary}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36a2f44a1571fb830ae3831e14e508d0}{%
+           family={Wiktionary},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Creative Commons}%
+      }
+      \strng{namehash}{36a2f44a1571fb830ae3831e14e508d0}
+      \strng{fullhash}{36a2f44a1571fb830ae3831e14e508d0}
+      \strng{bibnamehash}{36a2f44a1571fb830ae3831e14e508d0}
+      \strng{authorbibnamehash}{36a2f44a1571fb830ae3831e14e508d0}
+      \strng{authornamehash}{36a2f44a1571fb830ae3831e14e508d0}
+      \strng{authorfullhash}{36a2f44a1571fb830ae3831e14e508d0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wiktionary - das freie Wörterbuch}
+      \field{month}{9}
+      \field{title}{Verzeichnis: Deutsch}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://de.wiktionary.org/wiki/Verzeichnis:Deutsch
+      \endverb
+      \verb{url}
+      \verb https://de.wiktionary.org/wiki/Verzeichnis:Deutsch
+      \endverb
     \endentry
     \entry{WORDPIECEGOOGLE}{misc}{}
       \name{author}{31}{}{%
@@ -848,7 +1140,6 @@
       \keyw{Computation and Language (cs.CL),Artificial Intelligence (cs.AI),Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
   \enddatalist
-  \missing{morfessor}
 \endrefsection
 \endinput
 

@@ -417,13 +417,13 @@
 
 @article{olmpics,
     author = {Talmor, Alon and Elazar, Yanai and Goldberg, Yoav and Berant, Jonathan},
-    title = "{oLMpics-On What Language Model Pre-training Captures}",
+    title = {oLMpics-On What Language Model Pre-training Captures},
     journal = {Transactions of the Association for Computational Linguistics},
     volume = {8},
     pages = {743-758},
     year = {2020},
     month = {12},
-    abstract = "{Recent success of pre-trained language models (LMs) has spurred widespread interest in the language capabilities that they possess. However, efforts to understand whether LM representations are useful for symbolic reasoning tasks have been limited and scattered. In this work, we propose eight reasoning tasks, which conceptually require operations such as comparison, conjunction, and composition. A fundamental challenge is to understand whether the performance of a LM on a task should be attributed to the pre-trained representations or to the process of fine-tuning on the task data. To address this, we propose an evaluation protocol that includes both zero-shot evaluation (no fine-tuning), as well as comparing the learning curve of a fine-tuned LM to the learning curve of multiple controls, which paints a rich picture of the LM capabilities. Our main findings are that: (a) different LMs exhibit qualitatively different reasoning abilities, e.g., RoBERTa succeeds in reasoning tasks where BERT fails completely; (b) LMs do not reason in an abstract manner and are context-dependent, e.g., while RoBERTa can compare ages, it can do so only when the ages are in the typical range of human ages; (c) On half of our reasoning tasks all models fail completely. Our findings and infrastructure can help future work on designing new datasets, models, and objective functions for pre-training.}",
+    abstract = {Recent success of pre-trained language models (LMs) has spurred widespread interest in the language capabilities that they possess. However, efforts to understand whether LM representations are useful for symbolic reasoning tasks have been limited and scattered. In this work, we propose eight reasoning tasks, which conceptually require operations such as comparison, conjunction, and composition. A fundamental challenge is to understand whether the performance of a LM on a task should be attributed to the pre-trained representations or to the process of fine-tuning on the task data. To address this, we propose an evaluation protocol that includes both zero-shot evaluation (no fine-tuning), as well as comparing the learning curve of a fine-tuned LM to the learning curve of multiple controls, which paints a rich picture of the LM capabilities. Our main findings are that: (a) different LMs exhibit qualitatively different reasoning abilities, e.g., RoBERTa succeeds in reasoning tasks where BERT fails completely; (b) LMs do not reason in an abstract manner and are context-dependent, e.g., while RoBERTa can compare ages, it can do so only when the ages are in the typical range of human ages; (c) On half of our reasoning tasks all models fail completely. Our findings and infrastructure can help future work on designing new datasets, models, and objective functions for pre-training.},
     issn = {2307-387X},
     doi = {10.1162/tacl_a_00342},
     url = {https://doi.org/10.1162/tacl\_a\_00342},
@@ -431,4 +431,72 @@
 }
 
 
+@misc{oscar,
+    author = {OSCAR},
+    title = {The OSCAR project (Open Super-large Crawled Aggregated coRpus)},
+    year = {2022},
+    month = {1},
+    url = {https://oscar-project.org/},
+    comment = {Hosted on {https://huggingface.co/datasets/oscar}, last visited 08.02.2023}
+}
 
+@inproceedings{oscarsub1,
+    title = {A Monolingual Approach to Contextualized Word Embeddings for Mid-Resource Languages},
+    author = {Ortiz Su{'a}rez, Pedro Javier  and
+      Romary, Laurent  and
+      Sagot, Benoit},
+    booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+    month = {6},
+    year = {2020},
+    address = {Online},
+    publisher = {Association for Computational Linguistics},
+    url = {https://www.aclweb.org/anthology/2020.acl-main.156},
+    pages = {1703--1714}
+}
+
+@inproceedings{oscarsub2,
+    author    = {Pedro Javier {Ortiz Su{'a}rez} and Benoit Sagot and Laurent Romary},
+    title     = {Asynchronous pipelines for processing huge corpora on medium to low resource infrastructures},
+    series = {Proceedings of the Workshop on Challenges in the Management of Large Corpora (CMLC-7) 2019. Cardiff, 22nd July 2019},
+    editor    = {Piotr Bański and Adrien Barbaresi and Hanno Biber and Evelyn Breiteneder and Simon Clematide and Marc Kupietz and Harald L{"u}ngen and Caroline Iliadi},
+    publisher = {Leibniz-Institut f{"u}r Deutsche Sprache},
+    address   = {Mannheim},
+    doi       = {10.14618/ids-pub-9021},
+    url       = {http://nbn-resolving.de/urn:nbn:de:bsz:mh39-90215},
+    pages     = {9 -- 16},
+    year      = {2019},
+    language  = {en}
+}
+
+@article{morfessor,
+    author    = {Mathias Creutz and
+               Krista Lagus},
+    title     = {Unsupervised Discovery of Morphemes},
+    journal   = {CoRR},
+    volume    = {cs.CL/0205057},
+    year      = {2002},
+    url       = {https://arxiv.org/abs/cs/0205057},
+    timestamp = {Fri, 10 Jan 2020 12:58:28 +0100},
+    biburl    = {https://dblp.org/rec/journals/corr/cs-CL-0205057.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{wiktionary,
+    title={Verzeichnis: Deutsch},
+    url={https://de.wiktionary.org/wiki/Verzeichnis:Deutsch},
+    journal={Wiktionary - das freie Wörterbuch},
+    publisher={Creative Commons}, author={Wiktionary},
+    year={2022},
+    month={9}}
+
+@inproceedings{hanta,
+    author    = {Christian Wartena},
+    title     = {A Probabilistic Morphology Model for German Lemmatization},
+    series = {Proceedings of the 15th Conference on Natural Language Processing (KONVENS 2019)},
+    doi       = {10.25968/opus-1527},
+    url       = {http://nbn-resolving.de/urn:nbn:de:bsz:960-opus4-15271},
+    pages     = {40 -- 49},
+    year      = {2019},
+    abstract  = {Lemmatization is a central task in many NLP applications. Despite this importance, the number of (freely) available and easy to use tools for German is very limited. To fill this gap, we developed a simple lemmatizer that can be trained on any lemmatized corpus. For a full form word the tagger tries to find the sequence of morphemes that is most likely to generate that word. From this sequence of tags we can easily derive the stem, the lemma and the part of speech (PoS) of the word. We show (i) that the quality of this approach is comparable to state of the art methods and (ii) that we can improve the results of Part-of-Speech (PoS) tagging when we include the morphological analysis of each word.},
+    language  = {en}
+}

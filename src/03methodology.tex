@@ -1,5 +1,7 @@
-in this section the whole methodoloy is covered. what do i use in this thesis, why do i use it and lastly, how?
-make sure the why covers methodological implications. (vergiss nicht alle pakete als quelle im Anhang)
+in this section the whole methodoloy is covered.
+what do i use in this thesis, why do i use it and lastly, how?
+make sure the why covers methodological implications.
+(vergiss nicht alle pakete als quelle im Anhang)
 
 \section{Requirements}
 \label{sec:requirements}
@@ -122,15 +124,17 @@ Lastly BERT Tokenizer returns the canonical encodings known from language modeli
 
 \subsection{Data}
 \label{subsec:data}
-Two corpora where selected for fine-tuning: \ac{gerparcor} and oscar ~\cite{oscar}.
-Since both are considerably large
-FLOTA was trained on 10000 samples ~\cite[]{FLOTA}, which why for this fine-tuning a sample size of 500000 seems sufficient.
+Two corpora where selected for fine-tuning: \ac{gerparcor} and oscar (\cite{oscar}).
+FLOTA was trained on 12000 samples per  category ~\cite{FLOTA}, which is why for this fine-tuning a sample size of 500000 seems sufficient.
+GerParCor is a \enquote{GerParCor genre-specific corpus of (predominantly historical) German-language parliamentary protocols from three centuries and four countries, including state and federal level data.} (\cite[1]{GERPARCOR}).
+Of all subcorpora included in \ac{gerparcor}, one specifically texts and transcripts of the german parliament.
+All 500k samples in the \ac{gerparcor} dataset used for this thesis is found in the \texttt{Bundestag} subcorpus of \ac{gerparcor}.
+Oscar offers other subcorpora partly hosted on huggingface.
+In this case, a web-crawled german corpus called \texttt{unshuffled\_deduplicated\_de} was chosen, as introduced by its curators \textcite{oscarsub2}; (\citeyear{oscarsub1}).
 
+The POS vocabulary comes from ~\cite{wiktionary}
+hanta-crawled verbs of gerparcor ~\cite{hanta}
 
-wiktionary verbs
-hanta-crawled verbs of gerparcor
-oscar de
-gerparcor bundestag subset
 
 \subsection{Benchmark}
 \label{subsec:benchmark}
@@ -158,9 +162,9 @@ One denotes the argument of the wordmapping and segmenter function ($target$), t
 
 Embedding those subwords which take part in inflectional processes essentially means deriving sensible subwords to represent actual morphemes.
 
-The vocabulary generated for this chapter is a list of inflected and non-inflected verbs (as to state the example) provided by two sources: (1) the german verb wiktionary \cite(wiktionary) and (2) a crawl of the GerParCor corpus with the HanTa tagger \cite(hanta).
+The vocabulary generated for this chapter is a list of inflected and non-inflected verbs (as to state the example) provided by two sources: (1) the german verb wiktionary and (2) a crawl of the GerParCor corpus with the HanTa tagger \cite{hanta}.
 Initial experiments where done only with the wiktionary verb list since it provided sanitized input for the algorithm in development.
-Later, when the verbs where extracted \ac{gerparcor} from gerparcor
+As soon as the verbs where extracted from \ac{gerparcor} via \ac{hanta}
 
 The Wordmap algorithm as shown in \autoref{alg:wordmap} is the first step to extracting morphemes from a token.
 Its purpose is to compare two strings and store their intersections in a map of boolean values.
@@ -188,8 +192,6 @@ Its purpose is to compare two strings and store their intersections in a map of 
         \State $len = \textsc{len}(l)$
         \State $\delta = \Delta(len, \textsc{len}(s))$
         \\
-
-
 
         \If{$\textit{case: any match}$}
             \If{$\delta$}
@@ -267,7 +269,7 @@ where $z$ is the z-score, $\overline{x}$ and $S$ are the sample mean and the sam
 \begin{algorithm}
     \caption{Target Segmentation}\label{alg:segmenter}
     \begin{algorithmic}[1]
-        \Require $target,pos\_vocab$ \Comment{short comment}
+        \Require $target,pos\_vocab$ \Comment{Vocabulary consisting of verbs only}
         \Ensure $\{(tuples\:of\:subwords)\} \approx \{ t \in \mathcal{P} (s \in pos\_vocab : s \in target) : t \equiv target\}$
         \\
         \State $segmentations = ()$
@@ -382,7 +384,7 @@ tweak des tokenizers: segmentation ist eine frage der interpretation.
 
 Ultimately, segmentation is a matter of interpretation.
 If there are several possible interpretations by wich to segment a word this tokenization method relies on the assumption that the comparison with \ac{pos}- members displays the probable shape of segmentation for a token.
-As mentioned in~\ref{subsec:mlm}, the default WordPiece Tokenizer lacks
+As mentioned in~\ref{subsec:masked-language-model}, the default WordPiece Tokenizer lacks
 A linguistically informed
 
 
