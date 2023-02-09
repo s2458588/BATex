@@ -15,9 +15,20 @@ This thesis was mainly inspired by the FLOTA
 
 Earlier attempts like morfessor ~\cite{morfessor} have been outperformed by Sequence based models that also use linguistic morphology ~\cite{subwordvsmorfessor} .
 Notably, top-down generation of subword vocabularies has shown promising results for tokenization in fusional languages.
-This aligns with the notion that standard BPE or WordPiece tokenization effectivity suffers from complex morphology causing a big vocabulary.
+This aligns with the notion that standard BPE \cite{BPE} or WordPiece \cite{WORDPIECEGOOGLE} tokenization effectivity suffers from complex morphology causing a big vocabulary.
 The overall comparison ~\cite[134]{subwordvsmorfessor} shows an increase in performance for languages of similar morphological complexity.
-It is interesting to see that this form of tokenization performs less well for English, compared to languages  in morphology than its agglutinative fusional peers, e.g. Italian, Latin, Spanish, Russian
+It is interesting to see that this form of tokenization performs less well for English, a language that has seen a decline in morphology.
+Much better benchmarks are reached applying  its agglutinative fusional peers, e.g.\ Italian, Latin, Spanish, Russian
+\citeauthor{TOKENIZATIONIMPACT} find that the vocabulary size plays a special role in morphological tokenization and even define a ratio vocabulary size ratio between 20 to 40\% to the number of model parameters depending on the type of tokenizer ~\cite[11--12]{TOKENIZATIONIMPACT}.
+Since tokenization and vocabulary are obviously interdependent, the vast amount of typological variety seen in languages raises the question: is there a right way of tokenizing?
+This issue is addressed by \citeauthor{MONOLINGUAL}, where a mid-scale investigation was done to see whether different languages actually need more specific tokenizers compared to generalized tokenizers.
+They report an improvement of model accuracy and F-score across all tasks and languages \cite{MONOLINGUAL}.
+While this sketches a commission for \ac{nlp} to always consider choosing a method tailored for single languages, the answer to the problem of performance versus maintenance in models might not be as elaborate as treating every language singularly.
+Every language is undoubtedly unique, but that does not rule out simplification by means of further classifying and grouping target languages.
+In an effort to explain the provenience and relatedness of languages many tools in the domain of typology, \ac{nlp} and indo-european studies have been constructed.
+Whether it be identification of morphological features \cite[42--56]{comrie_1989}, complexity measures (\cite{measuresofMC}) or connection through reconstruction (\cite{INDOEUROPE}), the different linguistic disciplines suggest observable regularities by which to morphologically group languages.
+The options seem to branch out quickly, but coming back to \cite{POLYSYNTHLM} (https://arxiv.org/abs/2005.05477)
+
 flota and wordpiece tokenizer themselves are crude shot
 
 
