@@ -1,7 +1,103 @@
 \section{Benchmark}
 \label{sec:benchmark}
-How did the model Perform in the benchmark test? Report the performance for different tasks and visualize it
+
+\begin{table}
+    \centering
+    \begin{tabular}{lrrlr}
+        \toprule
+        \textbf{mlm\_wmt\_oscar500k} & \textbf{Epoch 1} & \textbf{Epoch 2} & \textbf{Epoch 3} & \textbf{Test score} \\
+        \midrule
+        Precision & 0.292614 & 0.446338 & 0.71387 & 0.449735 \\
+        Recall & 0.329531 & 0.552598 & 0.73384 & 0.474525 \\
+        F1 & 0.242739 & 0.473851 & 0.69194 & 0.442827 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Metrics for masked language model trained on the Oscar dataset with Wordmap infused  tokenization. Evaluated on sequence classification task.}
+    \label{tab:mlm-wmt-oscar500k}
+\end{table}
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+        \textbf{mlm\_wmt\_gpc500k} & \textbf{Epoch 1} & \textbf{Epoch 2} & \textbf{Epoch 3} & \textbf{Test score} \\
+        \midrule
+        Precision & 0.237664 & 0.399781 & 0.603534 & 0.441891 \\
+        Recall & 0.244613 & 0.463878 & 0.637516 & 0.440304 \\
+        F1 & 0.163024 & 0.389905 & 0.590542 & 0.389116 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Metrics for masked language model trained on the GerParCor dataset with Wordmap infused tokenization. Evaluated on sequence classification task.}
+    \label{tab:mlm-wmt-gpc500k}
+\end{table}
+
+\begin{table}
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+        \textbf{mlm\_std\_oscar500k} & \textbf{Epoch 1} & \textbf{Epoch 2} & \textbf{Epoch 3} & \textbf{Test scores} \\
+        \midrule
+        Precision & 0.269615 & 0.422096 & 0.596987 & 0.395879 \\
+        Recall & 0.351077 & 0.501901 & 0.657795 & 0.446388 \\
+        F1 & 0.266260 & 0.412598 & 0.604824 & 0.405168 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Metrics for masked language model trained on the GerParCor dataset with \ac{bbgc} tokenization. Evaluated on sequence classification task.}
+    \label{tab:mlm-std-oscar500k}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{lrrrr}
+    \toprule
+    \textbf{mlm\_std\_gpc500k} & \textbf{Epoch 1} & \textbf{Epoch 2} & \textbf{Epoch 3} & \textbf{Test scores} \\
+    \midrule
+    Precision & 0.297466 & 0.517110 & 0.656808 & 0.439873 \\
+    Recall & 0.359949 & 0.544994 & 0.676806 & 0.439924 \\
+    F1 & 0.267111 & 0.480420 & 0.626593 & 0.392490 \\
+    \bottomrule
+\end{tabular}
+\caption{Metrics for masked language model trained on the GerParCor dataset with \ac{bbgc} tokenization. Evaluated on sequence classification task.}
+\label{tab:mlm-std-gpc500k}
+\end{table}
+
+\begin{table}
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+        \textbf{bbgc} & \textbf{Epoch 1} & \textbf{Epoch 2} & \textbf{Epoch 3} & \textbf{Test scores} \\
+        \midrule
+        Precision & 0.646150 & 0.768675 & 0.860180 & 0.622436 \\
+        Recall & 0.709759 & 0.804816 & 0.883397 & 0.637262 \\
+        F1 & 0.660588 & 0.778371 & 0.868166 & 0.624789 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Metrics for masked language model baseline bert-base-german-cased\footnote{\href{https://huggingface.co/bert-base-german-cased}{bert-base-german-cased}}. Evaluated on sequence classification task.}
+    \label{tab:bert-base-german-cased}
+\end{table}
+
+\begin{table}
+    \centering
+    \begin{tabular}{lrrrrr}
+        \toprule
+        \textbf{Summary} & \textbf{bbgc} & \textbf{std+oscar} & \textbf{std+gpc} & \textbf{wmt+oscar} & \textbf{wmt+gpc} \\
+        \midrule
+        Precision & 0.622436 & 0.395879 & 0.439873 & 0.441891 & 0.449735 \\
+        Recall & 0.637262 & 0.446388 & 0.439924 & 0.440304 & 0.474525 \\
+        F1 & 0.624789 & 0.405168 & 0.392490 & 0.389116 & 0.442827 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Test score summary for all evaluated models.}
+    \label{tab:test-summary}
+\end{table}
+
+
 
 \section{Tokenization}
 \label{sec:tokenization}
 Show specific examples of tokenization and analyze the qualitatively (maybe quantitatively)
+
+
+
+

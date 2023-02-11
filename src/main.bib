@@ -89,7 +89,19 @@
     lastchecked = {2023-02-09}
 }
 
-@inbook{comrie_1989,
+@misc{mixednoiseinterlanguage,
+    doi = {10.48550/ARXIV.2109.06772},
+    url = {https://arxiv.org/abs/2109.06772},
+    author = {Aepli, Noëmi and Sennrich, Rico},
+    keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences, I.2.7},
+    title = {Improving Zero-shot Cross-lingual Transfer between Closely Related Languages by injecting Character-level Noise},
+    publisher = {arXiv},
+    year = {2021},
+    copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+@inbook{comrie1989,
     place={Chicago},
     edition={2},
     title={Morphological Typology},
@@ -97,7 +109,8 @@
     publisher={University of Chicago Press},
     author={Comrie, Bernard},
     year={1989},
-    pages={42–56}}
+    pages={42–56}
+}
 
 @article{INDOEUROPE,
     author = {Remco Bouckaert  and Philippe Lemey  and Michael Dunn  and Simon J. Greenhill  and Alexander V. Alekseyenko  and Alexei J. Drummond  and Russell D. Gray  and Marc A. Suchard  and Quentin D. Atkinson },
@@ -112,6 +125,21 @@
     eprint = {https://www.science.org/doi/pdf/10.1126/science.1219669},
     abstract = {English is part of the large Indo-European language family, which includes Celtic, Germanic, Italic, Balto-Slavic, and Indo-Iranian languages. The origin of this family is hotly debated: one hypothesis places the origin north of the Caspian Sea in the Pontic steppes, from where it was disseminated by Kurgan semi-nomadic pastoralists; a second suggests that Anatolia, in modern-day Turkey, is the source, and the language radiated with the spread of agriculture. Bouckaert et al. (p. 957) used phylogenetic methods and modeling to assess the geographical spread of the Indo-European language group. The findings support the suggestion that the origin of the language family was indeed Anatolia 7 to 10 thousand years ago—contemporaneous with the spread of agriculture. Spatial models of language lineage evolution support an Anatolian homeland for Indo-European languages. There are two competing hypotheses for the origin of the Indo-European language family. The conventional view places the homeland in the Pontic steppes about 6000 years ago. An alternative hypothesis claims that the languages spread from Anatolia with the expansion of farming 8000 to 9500 years ago. We used Bayesian phylogeographic approaches, together with basic vocabulary data from 103 ancient and contemporary Indo-European languages, to explicitly model the expansion of the family and test these hypotheses. We found decisive support for an Anatolian origin over a steppe origin. Both the inferred timing and root location of the Indo-European language trees fit with an agricultural expansion from Anatolia beginning 8000 to 9500 years ago. These results highlight the critical role that phylogeographic inference can play in resolving debates about human prehistory.}}
 
+@inproceedings{bentz-etal-2016-comparison,
+    title = "A Comparison Between Morphological Complexity Measures: Typological Data vs. Language Corpora",
+    author = "Bentz, Christian  and
+      Ruzsics, Tatyana  and
+      Koplenig, Alexander  and
+      Samard{\v{z}}i{\'c}, Tanja",
+    booktitle = "Proceedings of the Workshop on Computational Linguistics for Linguistic Complexity ({CL}4{LC})",
+    month = dec,
+    year = "2016",
+    address = "Osaka, Japan",
+    publisher = "The COLING 2016 Organizing Committee",
+    url = "https://aclanthology.org/W16-4117",
+    pages = "142--153",
+    abstract = "Language complexity is an intriguing phenomenon argued to play an important role in both language learning and processing. The need to compare languages with regard to their complexity resulted in a multitude of approaches and methods, ranging from accounts targeting specific structural features to global quantification of variation more generally. In this paper, we investigate the degree to which morphological complexity measures are mutually correlated in a sample of more than 500 languages of 101 language families. We use human expert judgements from the World Atlas of Language Structures (WALS), and compare them to four quantitative measures automatically calculated from language corpora. These consist of three previously defined corpus-derived measures, which are all monolingual, and one new measure based on automatic word-alignment across pairs of languages. We find strong correlations between all the measures, illustrating that both expert judgements and automated approaches converge to similar complexity ratings, and can be used interchangeably.",
+}
 @ARTICLE{MORPHOSYNTAXCOMPLEXITY1,
     AUTHOR={Ehret, Katharina and Blumenthal-Dramé, Alice and Bentz, Christian and Berdicevskis, Aleksandrs},
     TITLE={Meaning and Measures: Interpreting and Evaluating Complexity Metrics},
@@ -172,8 +200,11 @@
     title = {Neural Polysynthetic Language Modelling},
     publisher = {arXiv},
     year = {2020},
-    copyright = {arXiv.org perpetual, non-exclusive license}
+    copyright = {arXiv.org perpetual, non-exclusive license},
+    pages = {51--53},
 }
+
+
 
 % Base-Inflection Encoding: FUNCTIONAL MORPHEMES BECOME TOKENS
 @inproceedings{BITE,
@@ -472,6 +503,12 @@
     pages = {131--138},
     abstract = {This paper presents DeepSPIN{'}s submissions to the SIGMORPHON 2022 Shared Task on Morpheme Segmentation. We make three submissions, all to the word-level subtask. First, we show that entmax-based sparse sequence-tosequence models deliver large improvements over conventional softmax-based models, echoing results from other tasks. Then, we challenge the assumption that models for morphological tasks should be trained at the character level by building a transformer that generates morphemes as sequences of unigram language model-induced subwords. This subword transformer outperforms all of our character-level models and wins the word-level subtask. Although we do not submit an official submission to the sentence-level subtask, we show that this subword-based approach is highly effective there as well.},
 }
+@article{gpt,
+    author = {Radford, Alec and Narasimhan, Karthik and Salimans, Tim and Sutskever, Ilya},
+    url = {https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf},
+    title = {Improving language understanding by generative pre-training},
+    year = {2018}
+}
 
 @article{olmpics,
     author = {Talmor, Alon and Elazar, Yanai and Goldberg, Yoav and Berant, Jonathan},
@@ -495,7 +532,17 @@
     year = {2022},
     month = {1},
     url = {https://oscar-project.org/},
-    comment = {Hosted on {https://huggingface.co/datasets/oscar}, last visited 08.02.2023}
+    comment = {Hosted on {https://huggingface.co/datasets/oscar}, last visited 08.02.2023},
+    lastchecked = {09-02-2023}
+}
+
+@MISC{lehmann,
+author = {Lehman, Christian W.},
+title = {Indogermanisch},
+month = {08},
+year = {2022},
+url={https://www.christianlehmann.eu/ling/sprachen/indogermania/RomGesch/idg.php},
+lastchecked = {09-02-2022}
 }
 
 @inproceedings{oscarsub1,

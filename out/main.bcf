@@ -2345,49 +2345,10 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">main.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">FLOTA</bcf:citekey>
-    <bcf:citekey order="2">morpheme</bcf:citekey>
-    <bcf:citekey order="3">WORDPIECEOG</bcf:citekey>
-    <bcf:citekey order="4">WORDPIECEGOOGLE</bcf:citekey>
-    <bcf:citekey order="5">morfessor</bcf:citekey>
-    <bcf:citekey order="6">subwordvsmorfessor</bcf:citekey>
-    <bcf:citekey order="7">subwordvsmorfessor</bcf:citekey>
-    <bcf:citekey order="8">METZLER2016</bcf:citekey>
-    <bcf:citekey order="9">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
-    <bcf:citekey order="10">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="11">ATTENTION</bcf:citekey>
-    <bcf:citekey order="12">BERTHIGH1</bcf:citekey>
-    <bcf:citekey order="13">oscar</bcf:citekey>
-    <bcf:citekey order="14">FLOTA</bcf:citekey>
-    <bcf:citekey order="15">GERPARCOR</bcf:citekey>
-    <bcf:citekey order="16">oscarsub2</bcf:citekey>
-    <bcf:citekey order="17">oscarsub1</bcf:citekey>
-    <bcf:citekey order="18">wiktionary</bcf:citekey>
-    <bcf:citekey order="19">hanta</bcf:citekey>
-    <bcf:citekey order="20">olmpics</bcf:citekey>
-    <bcf:citekey order="21">hanta</bcf:citekey>
-    <bcf:citekey order="22">METZLER2016</bcf:citekey>
-    <bcf:citekey order="23">GERPARCOR</bcf:citekey>
-    <bcf:citekey order="24">DEEPL</bcf:citekey>
-    <bcf:citekey order="25">FLOTA</bcf:citekey>
-    <bcf:citekey order="26">morpheme</bcf:citekey>
-    <bcf:citekey order="27">WORDPIECEOG</bcf:citekey>
-    <bcf:citekey order="28">WORDPIECEGOOGLE</bcf:citekey>
-    <bcf:citekey order="29">morfessor</bcf:citekey>
-    <bcf:citekey order="30">subwordvsmorfessor</bcf:citekey>
-    <bcf:citekey order="31">METZLER2016</bcf:citekey>
-    <bcf:citekey order="32">MORPHOLOGICALCOMPLEXITY</bcf:citekey>
-    <bcf:citekey order="33">LINGUISTICTYPOLOGY</bcf:citekey>
-    <bcf:citekey order="34">ATTENTION</bcf:citekey>
-    <bcf:citekey order="35">BERTHIGH1</bcf:citekey>
-    <bcf:citekey order="36">oscar</bcf:citekey>
-    <bcf:citekey order="37">GERPARCOR</bcf:citekey>
-    <bcf:citekey order="38">oscarsub2</bcf:citekey>
-    <bcf:citekey order="39">oscarsub1</bcf:citekey>
-    <bcf:citekey order="40">wiktionary</bcf:citekey>
-    <bcf:citekey order="41">hanta</bcf:citekey>
-    <bcf:citekey order="42">olmpics</bcf:citekey>
-    <bcf:citekey order="43">DEEPL</bcf:citekey>
+    <bcf:citekey order="1">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="2">DEEPL</bcf:citekey>
+    <bcf:citekey order="3">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="4">DEEPL</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

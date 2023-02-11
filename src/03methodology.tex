@@ -261,6 +261,7 @@ Consequently, lexical morphemes in the family of inflectional languages are - by
 In this case, the activation function for a concatenation of same boolean values to be selected as segment is the normalizing z-score function defined as: $z_{i} = \frac{x_{i} - \overline{x}}{S}$,
 where $z$ is the z-score, $\overline{x}$ and $S$ are the sample mean and the sample standard deviation.
 
+%TODO: this makes it robust against spelling errors because they cant durchsetz
 
 \subsubsection{BERT Tokenizer Modification}
 \label{subsubsec:tokenizer-modification}
@@ -379,8 +380,6 @@ Short segments are convenient for completing a segmentation, but will increase t
 Lastly the $s_{i}$^{\text{th}} root implements a bias against segments that are too long.
 While the accuracy decreases for longer words, this method of maximization performs reasonably well in the range of 1--4 syllable tokens, which make up around 87\% of the verb vocabulary.
 
-
-tweak des tokenizers: segmentation ist eine frage der interpretation.
 
 Ultimately, segmentation is a matter of interpretation.
 If there are several possible interpretations by wich to segment a word this tokenization method relies on the assumption that the comparison with \ac{pos}- members displays the probable shape of segmentation for a token.

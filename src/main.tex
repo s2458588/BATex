@@ -3,7 +3,7 @@
 % arara: nomencl
 % arara: xelatex: { shell: yes }
 % arara: xelatex: { shell: yes }
-\documentclass[a4paper, english]{ttlab-qualify}
+\documentclass[12pt, a4paper, english]{ttlab-qualify}
 % mgliche Optionen:
 % - ngerman
 % - english
@@ -13,7 +13,7 @@
 % - nolibertine
 
 % P A C K A G E S
-
+\usepackage[onehalfspacing]{setspace}
 \usepackage{acronym}
 \usepackage[super]{nth}
 \usepackage{framed, enumitem}
@@ -100,17 +100,18 @@
     \chapter*{List of Acronyms}
     \addcontentsline{toc}{chapter}{List of Acronyms}
     \begin{acronym}
+        \acro{bbgc}[bbgc]{bert-base-german-cased}
         \acro{bert}[BERT]{Bidirectional Encoders from Transformers}
+        \acro{bpe}[BPE]{Byte Pair Encoding}
         \acro{cl}[CL]{Computational Linguistics}
         \acro{gerparcor}[GerParCor]{German Parliamentary Corpus}
+        \acro{hanta}[HanTa]{Hanover Tagger}
         \acro{lm}[LM]{Language Model}
         \acro{lstm}[LSTM]{Long Short-Term Memory}
         \acro{ml}[ML]{Machine Learning}
         \acro{mlm}[MLM]{Masked Language Model}
         \acro{nlp}[NLP]{Natural Language Processing}
         \acro{pos}[POS]{Part of Speech}
-        \acro{hanta}[HanTa]{Hanover Tagger}
-
     \end{acronym}
 
     \cleardoubleoddpage
@@ -120,12 +121,12 @@
     % BEGINNING OF BODY
 
     \chapter{Introduction}
-    %\label{ch:introduction}
-    \input{01introduction}
+    \label{ch:introduction}
+    %\input{01introduction}
 
     \chapter{Overview}
     \label{ch:overview}
-    \input{02overview}
+    %\input{02overview}
 
 
     \chapter{Methodology}
@@ -135,7 +136,7 @@
 
     \chapter{Results}
     \label{ch:results}
-    %\input{04results}
+    \input{04results}
 
 
     \chapter{Discussion}
