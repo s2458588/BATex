@@ -2345,10 +2345,34 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">main.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">GERPARCOR</bcf:citekey>
-    <bcf:citekey order="2">DEEPL</bcf:citekey>
-    <bcf:citekey order="3">GERPARCOR</bcf:citekey>
-    <bcf:citekey order="4">DEEPL</bcf:citekey>
+    <bcf:citekey order="1">ATTENTION</bcf:citekey>
+    <bcf:citekey order="2">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="3">oscar</bcf:citekey>
+    <bcf:citekey order="4">FLOTA</bcf:citekey>
+    <bcf:citekey order="5">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="6">oscarsub2</bcf:citekey>
+    <bcf:citekey order="7">oscarsub1</bcf:citekey>
+    <bcf:citekey order="8">wiktionary</bcf:citekey>
+    <bcf:citekey order="9">hanta</bcf:citekey>
+    <bcf:citekey order="10">olmpics</bcf:citekey>
+    <bcf:citekey order="11">hanta</bcf:citekey>
+    <bcf:citekey order="12">METZLER2016</bcf:citekey>
+    <bcf:citekey order="13">bertbasegermancased</bcf:citekey>
+    <bcf:citekey order="14">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="15">DEEPL</bcf:citekey>
+    <bcf:citekey order="16">ATTENTION</bcf:citekey>
+    <bcf:citekey order="17">BERTHIGH1</bcf:citekey>
+    <bcf:citekey order="18">oscar</bcf:citekey>
+    <bcf:citekey order="19">FLOTA</bcf:citekey>
+    <bcf:citekey order="20">GERPARCOR</bcf:citekey>
+    <bcf:citekey order="21">oscarsub2</bcf:citekey>
+    <bcf:citekey order="22">oscarsub1</bcf:citekey>
+    <bcf:citekey order="23">wiktionary</bcf:citekey>
+    <bcf:citekey order="24">hanta</bcf:citekey>
+    <bcf:citekey order="25">olmpics</bcf:citekey>
+    <bcf:citekey order="26">METZLER2016</bcf:citekey>
+    <bcf:citekey order="27">bertbasegermancased</bcf:citekey>
+    <bcf:citekey order="28">DEEPL</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

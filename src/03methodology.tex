@@ -1,4 +1,5 @@
-in this section the whole methodoloy is covered.
+\usepackage{biblatex}
+\usepackage{booktabs}in this section the whole methodoloy is covered.
 what do i use in this thesis, why do i use it and lastly, how?
 make sure the why covers methodological implications.
 (vergiss nicht alle pakete als quelle im Anhang)
@@ -395,7 +396,48 @@ Natural language processing is understood as the
 
 \subsection{Masked Language Model}
 \label{subsec:masked-language-model}
-Model implementation and parameters, runtimes?
+All fine-tuned models use the \ac{bbgc} baseline by \textcite{bertbasegermancased}.
+For reference and readability they are given shortened IDs as follows:\\
 
-\subsection{oLMpics Benchmark}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{ID} & \textbf{Full name} \\
+        \midrule
+        mwg5 & mlm\_wmt\_gpc500k \\
+        mwo5 & mlm\_wmt\_oscar500k \\
+        msg5 & mlm\_std\_gpc500k \\
+        mso5 & mlm\_std\_oscar500k \\
+        bbgc & bert-base-german-cased \\
+        \bottomrule
+    \end{tabular}
+    \caption{ID references assigned to full model names}
+    \label{tab:modelids}
+\end{table}
+
+The full model names in \autoref{tab:modelids} captures broad characteristics of the model.
+For example, mwo5 is the \textbf{m}asked language model using \textbf{W}ordmap tokenization fine-tuned on the \textbf{O}scar dataset of \textbf{5}00000 samples, while msg5 is the the \textbf{m}asked language model using \textbf{s}tandard BERT wordpiece tokenization fine-tuned on the \textbf{G}erParCor dataset of \textbf{5}00000 samples.
+All models except for bbgc were trained on the same parameters as seen in table \autoref{tab:modelshyper}.\\
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lllrrrrl}
+        \toprule
+        \textbf{ID} & \textbf{Corpus} & \textbf{Tokenization} & \textbf{LR} & \textbf{Steps} & \textbf{Batchsize} & \textbf{WU} & \textbf{Base} \\
+        \midrule
+        mwg5 & GerParCor & BWP + WM & 0.0003 & 31250 & 16 & 500 & bbgc \\
+        mwo5 & Oscar & BWP + WM & 0.0003 & 31250 & 16 & 500 &  bbgc \\
+        msg5 & Gerparcor & BWP & 0.0003 & 31250 & 16 & 500 &  bbgc \\
+        mso5 & Oscar & BWP & 0.0003 & 31250 & 16 & 500 &  bbgc \\
+        bbgc & Mixed\footnote{bert-base-german-cased} & BWP & 0.0001 & 810000 & 1024 & 10000 & - \\
+        \bottomrule
+    \end{tabular}
+    \caption{List of all used models and their hyperparameters. LR = learning rate, WU = warmup steps.}
+    \label{tab:modelshyper}
+\end{table}
+
+
+
+\subsection{Benchmark}
 \label{subsec:olmpics-benchmark}
