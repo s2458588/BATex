@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  12 FEB 2023 02:44
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  12 FEB 2023 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1480,102 +1480,102 @@ LaTeX Warning: Unused global option(s):
 (/home/gnom/uni/bachelor/BATex/out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-2.
+3.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-Package scrbase Info: activating english \contentsname on input line 52.
-Package scrbase Info: activating english \listfigurename on input line 52.
-Package scrbase Info: activating english \listtablename on input line 52.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+Package scrbase Info: activating english \contentsname on input line 53.
+Package scrbase Info: activating english \listfigurename on input line 53.
+Package scrbase Info: activating english \listtablename on input line 53.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 52.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 52.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 52.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 52.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 52.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 52.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 52.
-LaTeX Font Info:    Redeclaring math accent \check on input line 52.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 52.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 52.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 52.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 52.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 53.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 53.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 53.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 53.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 53.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 53.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 53.
+LaTeX Font Info:    Redeclaring math accent \check on input line 53.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 53.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 53.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 53.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 53.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 52.
+(Font)              `operators' in the math version `normal' on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LinuxLibertineO(0)/m/n on input line
- 52.
+ 53.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 52.
+(Font)              `operators' in the math version `bold' on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LinuxLibertineO(0)/m/n on input lin
-e 52.
+e 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/m/n
- on input line 52.
+ on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/LinuxLibertineO(0)/m/it on input li
-ne 52.
+ne 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/LinuxLibertineO(0)/b/n on input lin
-e 52.
+e 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/LinuxBiolinumO(0)/m/n on input line
- 52.
+ 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/m/n on input line
- 52.
+ 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/b/n
- on input line 52.
+ on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/LinuxLibertineO(0)/b/it on input l
-ine 52.
+ine 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/LinuxBiolinumO(0)/b/n on input lin
-e 52.
+e 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/b/n on input line
- 52.
+ 53.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1592,9 +1592,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (/home/gnom/uni/bachelor/BATex/out/main.bbl)
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
-Package hyperref Info: Link coloring OFF on input line 52.
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
+Package hyperref Info: Link coloring OFF on input line 53.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1607,9 +1607,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count515
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
 
 (/home/gnom/uni/bachelor/BATex/out/main.out)
 (/home/gnom/uni/bachelor/BATex/out/main.out)
@@ -1623,7 +1623,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 52.
+(scrreprt)           before \begin{document} on input line 53.
 
 (/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1670,20 +1670,20 @@ ext;"
 (fontspec)             O/BI/OT:script=latn;language=dflt;+sups;+smcp;mapping=te
 x-text;"
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 7
-0.
+1.
 
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
@@ -1705,69 +1705,239 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 7
 
 
 
-] [2]
-(/home/gnom/uni/bachelor/BATex/out/main.lof
-LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
-(Font)              scaled to size 9.41345pt on input line 6.
-)
+]
+(/home/gnom/uni/bachelor/BATex/out/main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
+
+ [2
+
+]
+(/home/gnom/uni/bachelor/BATex/out/main.lot
+Runaway argument?
+{\numberline {1}{\ignorespaces Listing of languages similar to German\ETC.
+/home/gnom/uni/bachelor/BATex/out/main.lot:4: Paragraph ended before \contentsl
+ine was complete.
+<to be read again> 
+                   \par 
+l.4 ...rovided at WALS\let \reserved@d =[\def \par
+                                                   }}{5}{table.2.1}%
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:4: Extra }, or forgotten \endgroup.
+l.4 ...vided at WALS\let \reserved@d =[\def \par }
+                                                  }{5}{table.2.1}%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:4: Extra }, or forgotten \endgroup.
+l.4 ...ided at WALS\let \reserved@d =[\def \par }}
+                                                  {5}{table.2.1}%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:5: LaTeX Error: Something's wrong--p
+erhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \addvspace {10\p@ }
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:6: LaTeX Error: Something's wrong--p
+erhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \addvspace {10\p@ }
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:7: LaTeX Error: Something's wrong--p
+erhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \addvspace {10\p@ }
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:8: LaTeX Error: Something's wrong--p
+erhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \addvspace {10\p@ }
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:9: LaTeX Error: Something's wrong--p
+erhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \addvspace {10\p@ }
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/home/gnom/uni/bachelor/BATex/out/main.lot:10: LaTeX Error: Something's wrong--
+perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \addvspace {10\p@ }
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+\tf@lot=\write9
+\openout9 = `main.lot'.
 
  [3
 
 ]
-(/home/gnom/uni/bachelor/BATex/out/main.lot)
-\tf@lot=\write9
-\openout9 = `main.lot'.
 
- [4
+LaTeX Warning: Hyper reference `acro:bbgc' on page IV undefined on input line 1
+04.
+
+
+LaTeX Warning: Hyper reference `acro:bbgc' on page IV undefined on input line 1
+04.
+
+
+LaTeX Warning: Hyper reference `acro:bert' on page IV undefined on input line 1
+05.
+
+
+LaTeX Warning: Hyper reference `acro:bert' on page IV undefined on input line 1
+05.
+
+
+LaTeX Warning: Hyper reference `acro:bpe' on page IV undefined on input line 10
+6.
+
+
+LaTeX Warning: Hyper reference `acro:bpe' on page IV undefined on input line 10
+6.
+
+
+LaTeX Warning: Hyper reference `acro:bwe' on page IV undefined on input line 10
+7.
+
+
+LaTeX Warning: Hyper reference `acro:bwe' on page IV undefined on input line 10
+7.
+
+
+LaTeX Warning: Hyper reference `acro:cl' on page IV undefined on input line 108
+.
+
+
+LaTeX Warning: Hyper reference `acro:cl' on page IV undefined on input line 108
+.
+
+
+LaTeX Warning: Hyper reference `acro:gerparcor' on page IV undefined on input l
+ine 109.
+
+
+LaTeX Warning: Hyper reference `acro:gerparcor' on page IV undefined on input l
+ine 109.
+
+
+LaTeX Warning: Hyper reference `acro:hanta' on page IV undefined on input line 
+110.
+
+
+LaTeX Warning: Hyper reference `acro:hanta' on page IV undefined on input line 
+110.
+
+
+LaTeX Warning: Hyper reference `acro:lm' on page IV undefined on input line 111
+.
+
+
+LaTeX Warning: Hyper reference `acro:lm' on page IV undefined on input line 111
+.
+
+
+LaTeX Warning: Hyper reference `acro:lstm' on page IV undefined on input line 1
+12.
+
+
+LaTeX Warning: Hyper reference `acro:lstm' on page IV undefined on input line 1
+12.
+
+
+LaTeX Warning: Hyper reference `acro:ml' on page IV undefined on input line 113
+.
+
+
+LaTeX Warning: Hyper reference `acro:ml' on page IV undefined on input line 113
+.
+
+
+LaTeX Warning: Hyper reference `acro:mlm' on page IV undefined on input line 11
+4.
+
+
+LaTeX Warning: Hyper reference `acro:mlm' on page IV undefined on input line 11
+4.
+
+
+LaTeX Warning: Hyper reference `acro:ttl' on page IV undefined on input line 11
+7.
+
+
+LaTeX Warning: Hyper reference `acro:ttl' on page IV undefined on input line 11
+7.
+
+
+LaTeX Warning: Hyper reference `acro:wm' on page IV undefined on input line 118
+.
+
+
+LaTeX Warning: Hyper reference `acro:wm' on page IV undefined on input line 118
+.
+
+[4
 
 ]
-
-LaTeX Warning: Hyper reference `acro:bpe' on page V undefined on input line 105
-.
-
-
-LaTeX Warning: Hyper reference `acro:bpe' on page V undefined on input line 105
-.
-
-
-LaTeX Warning: Hyper reference `acro:bwe' on page V undefined on input line 106
-.
-
-
-LaTeX Warning: Hyper reference `acro:bwe' on page V undefined on input line 106
-.
-
-
-LaTeX Warning: Hyper reference `acro:cl' on page V undefined on input line 107.
-
-
-
-LaTeX Warning: Hyper reference `acro:cl' on page V undefined on input line 107.
-
-
-
-LaTeX Warning: Hyper reference `acro:ml' on page V undefined on input line 112.
-
-
-
-LaTeX Warning: Hyper reference `acro:ml' on page V undefined on input line 112.
-
-
-
-LaTeX Warning: Hyper reference `acro:wm' on page V undefined on input line 117.
-
-
-
-LaTeX Warning: Hyper reference `acro:wm' on page V undefined on input line 117.
-
-
-[5
-
-]
-./main.tex:123: Undefined control sequence.
-l.123     \sectionnumbering
+./main.tex:124: Undefined control sequence.
+l.124     \sectionnumbering
                            {arabic}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1784,238 +1954,69 @@ chapter 1.
 
 ]
 chapter 2.
-[3
-
-]
-chapter 3.
-(./03methodology.tex
-
-./03methodology.tex:1: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \usepackage
-               {biblatex}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./03methodology.tex:2: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \usepackage
-               {booktabs}in this section the whole methodoloy is covered.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package acronym Info: Label `acro:bert' newly defined as it shall be overridden
-
-although it is yet undefined on input line 16.
+(./02overview.tex
 Package acronym Info: Label `acro:nlp' newly defined as it shall be overridden
-although it is yet undefined on input line 16.
-Package acronym Info: Label `acro:lstm' newly defined as it shall be overridden
-
-although it is yet undefined on input line 17.
-Package acronym Info: Label `acro:lm' newly defined as it shall be overridden
-although it is yet undefined on input line 19.
-Package acronym Info: Label `acro:mlm' newly defined as it shall be overridden
-although it is yet undefined on input line 21.
-[4
+although it is yet undefined on input line 25.
+ [3
 
 ]
 Package acronym Info: Label `acro:pos' newly defined as it shall be overridden
-although it is yet undefined on input line 116.
-Package acronym Info: Label `acro:hanta' newly defined as it shall be overridde
-n
-although it is yet undefined on input line 123.
- [5]
-Package acronym Info: Label `acro:gerparcor' newly defined as it shall be overr
-idden
-although it is yet undefined on input line 128.
+although it is yet undefined on input line 31.
+LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
+(Font)              scaled to size 9.41345pt on input line 44.
 
-Overfull \hbox (12.1961pt too wide) in paragraph at lines 136--138
-[]\TU/LinuxLibertineO(0)/m/n/12 The POS vocabulary comes from  []Wiktionary []2
-022[] hanta-crawled verbs of gerparcor  []Wartena
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+  [][][]\TU/LinuxLibertineO(0)/m/n/10 https://de.statista.com/statistik/daten/s
+tudie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last
  []
 
-[6]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 177.
- [7] [8]
-Package acronym Info: Label `acro:POS' newly defined as it shall be overridden
-although it is yet undefined on input line 308.
-
-
-Package acronym Warning: Acronym `POS' is not defined on input line 308.
-
-
-Package acronym Warning: Acronym `POS' is not defined on input line 308.
+[4]
+./02overview.tex:81: Argument of \@tempf has an extra }.
+<inserted text> 
+                \par 
+l.81 ...ALS\footnote{https://wals.info/languoid}.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
 Runaway argument?
-{,afterthought={ 
-./03methodology.tex:358: Paragraph ended before \forestOappto was complete.
+\@captype {\@xfootnote }\def \reserved@b {\stepcounter \@mpfn \protected@xdef \
+ETC.
+./02overview.tex:81: Paragraph ended before \@tempf was complete.
 <to be read again> 
                    \par 
-l.358 \end{forest}
-                  
+l.81 ...ALS\footnote{https://wals.info/languoid}.}
+                                                  
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./03methodology.tex:358: Extra }, or forgotten \endgroup.
-<argument> ...iven options}{,afterthought={ \par }
-                                                  }
-l.358 \end{forest}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+[5] [6]) [7]
+chapter 3.
+[8
 
-./03methodology.tex:358: Extra }, or forgotten \endgroup.
-<argument> ...ven options}{,afterthought={ \par }}
-                                                  
-l.358 \end{forest}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-Runaway argument?
-{,afterthought={\unexpanded { 
-./03methodology.tex:358: Paragraph ended before \forestOeappto was complete.
-<to be read again> 
-                   \par 
-l.358 \end{forest}
-                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-./03methodology.tex:358: Extra }, or forgotten \endgroup.
-<argument> ...erthought={\unexpanded { \par \par }
-                                                  }}
-l.358 \end{forest}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./03methodology.tex:358: Extra }, or forgotten \endgroup.
-<argument> ...rthought={\unexpanded { \par \par }}
-                                                  }
-l.358 \end{forest}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./03methodology.tex:358: Extra }, or forgotten \endgroup.
-<argument> ...thought={\unexpanded { \par \par }}}
-                                                  
-l.358 \end{forest}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-./03methodology.tex:358: Package array Error:  Illegal pream-token (1): `c' use
-d.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.358 \end{forest}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./03methodology.tex:358: Package array Error:  Illegal pream-token (1): `c' use
-d.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.358 \end{forest}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (17.31955pt too wide) in paragraph at lines 358--359
- [][] 
- []
-
-[9] [10] [11]
-Package acronym Info: Label `acro:bbgc' newly defined as it shall be overridden
-
-although it is yet undefined on input line 399.
-
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--422
-
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package acronym Info: Label `acro:ttl' newly defined as it shall be overridden
-although it is yet undefined on input line 444.
-[12]) [13]
+]
 chapter 4.
-(./04results.tex
+[9
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [14
-
-] [15] [16]
+]
 chapter 5.
-[17
+[10
 
 ]
 chapter 6.
-[18
+[11
 
 ]
 chapter 7.
-./main.tex:154: Undefined control sequence.
+./main.tex:155: Undefined control sequence.
 \@currenttocentry ->\latex 
                            Testchapter
-l.154     \chapter{\latex Testchapter}
+l.155     \chapter{\latex Testchapter}
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2023,10 +2024,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:154: Undefined control sequence.
+./main.tex:155: Undefined control sequence.
 \@currenttocentry ->\latex 
                            Testchapter
-l.154     \chapter{\latex Testchapter}
+l.155     \chapter{\latex Testchapter}
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2034,10 +2035,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:154: Undefined control sequence.
+./main.tex:155: Undefined control sequence.
 <argument> \interlinepenalty \@M \latex 
                                         Testchapter\@@par 
-l.154     \chapter{\latex Testchapter}
+l.155     \chapter{\latex Testchapter}
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2046,65 +2047,54 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `subsec:mlm' on page 19 undefined on input line 169.
+LaTeX Warning: Reference `subsec:mlm' on page 12 undefined on input line 170.
 
 
-LaTeX Warning: Reference `subsec:mlm' on page 19 undefined on input line 170.
+LaTeX Warning: Reference `subsec:mlm' on page 12 undefined on input line 171.
 
-[19
+[12
 
 ]
 chapter without number
 
-Overfull \hbox (18.97603pt too wide) in paragraph at lines 175--175
+Overfull \hbox (18.97603pt too wide) in paragraph at lines 176--176
 \TU/LinuxLibertineO(0)/m/it/12 Evaluation Conference\TU/LinuxLibertineO(0)/m/n/
 12 . Marseille, France: European Language Resources Association, pp. 1900–
  []
 
 
-Overfull \hbox (4.08003pt too wide) in paragraph at lines 175--175
-[][]\TU/LinuxLibertineO(0)/m/n/12 Devlin, Jacob, Ming-Wei Chang, Kenton Lee, an
-d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
+Overfull \hbox (5.99193pt too wide) in paragraph at lines 176--176
+\TU/LinuxLibertineO(0)/m/it/12 plexity\TU/LinuxLibertineO(0)/m/n/12 . Cambridge
+ studies in Linguistics 153. Cambridge University Press. \TU/LinuxLibertineO(0)
+/m/sc/12 isbn\TU/LinuxLibertineO(0)/m/n/12 : 1107120640.
  []
 
+[13
 
-Overfull \hbox (1.02866pt too wide) in paragraph at lines 175--175
-\TU/LinuxLibertineO(0)/m/n/12 guistics, pp. 385–393. \TU/LinuxLibertineO(0)/m/s
-c/12 doi\TU/LinuxLibertineO(0)/m/n/12 : []$[][] [] [][][][][] [] [][] [] [][][]
-[] [] [][][] [][] [][][][][] [] [][]$[]. \TU/LinuxLibertineO(0)/m/sc/12 url\TU/
-LinuxLibertineO(0)/m/n/12 : []$[][][][][] [] [] [] [][][][][][][][][][][][] []
+]
+Overfull \hbox (0.36623pt too wide) in paragraph at lines 176--176
+\TU/LinuxLibertineO(0)/m/it/12 Mediterranean Morphology Meeting (MMM5)\TU/Linux
+LibertineO(0)/m/n/12 . Università degli Studi di Bologna. \TU/LinuxLibertineO(0
+)/m/sc/12 url\TU/LinuxLibertineO(0)/m/n/12 : []$[][][][][] []
  []
 
-
-Overfull \hbox (4.87605pt too wide) in paragraph at lines 175--175
-[][]\TU/LinuxLibertineO(0)/m/n/12 Ortiz Su’arez, Pedro Javier, Benoit Sagot, an
-d Laurent Romary (2019). “  Asynchronous pipelines
- []
-
-[20
-
-] [21] (/home/gnom/uni/bachelor/BATex/out/main.aux)
+[14] [15] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51855 strings out of 476156
- 1136399 string characters out of 5814963
- 1992646 words of memory out of 5000000
- 71900 multiletter control sequences out of 15000+600000
- 478879 words of font info for 117 fonts, out of 8000000 for 9000
+ 47805 strings out of 476156
+ 1065756 string characters out of 5814963
+ 1990653 words of memory out of 5000000
+ 67859 multiletter control sequences out of 15000+600000
+ 478717 words of font info for 111 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 146i,12n,134p,10600b,4998s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,10n,133p,10600b,5006s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (29 pages).
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (22 pages).

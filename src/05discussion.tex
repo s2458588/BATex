@@ -1,10 +1,3 @@
-Method: tokenizer threshold.
-Interestingly, there are many segment thresholds to choose from
-
-there should be a filter to mitigate the natural distribution of common characters like s, n to be detected as  part of a morpheme
-
-whole integrated system with overhead pos for all lexical categories
-scaled with the degree of fusion and inflection that language has
 
 algorithm doesnt see circumfixes like ge---t) but only affixes, this could be possible with better noise control and map interpolation
 
@@ -14,3 +7,12 @@ it is hard to tell if the results are good without combining further metrics lik
 
 "A low precision score (<0.5) means your classifier has a high number of False positives which can be an outcome of imbalanced class or untuned model hyperparameters. In an imbalanced class problem"
 -> unbalanced sampling
+
+
+
+spelling errors: oscar > gpc (effekt?)
+
+learning the set != better performance (standard different learning, similar performance)
+mw test scores > ms test scores (in precision + recall, but not in f1 -> imbalance?)
+
+jitter due to small sample size may distort how conclusive the final scores are

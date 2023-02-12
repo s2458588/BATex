@@ -8,9 +8,9 @@ F1 is a score compromising precision and recall through the \textit{harmonic mea
 
 There is a common trend in all runs displaying a growth in precision, recall and F1.
 This means that all models have continously improved predicting the class of a news title.
-The highest F1 in the last epoch achieved for any of the smaller models (mso5, msg5, mwo5, mwg5) is mwo5 with a score of 0.69194.
-Meanwhile the lowest F1 is found in \autoref{tab:mwg5} at 0.590542 mwg5.
-Similar arrangement is found when comparing final test scores in the set of smaller models: mwo5 > mso5 > msg5 > mwg5 ($0.442827 > 0.405168 > 0.392490 > 0.389116$).
+The highest F1 in the last epoch achieved for any of the smaller models (mso5, msg5, mwo5, mwg5) is mwo5 with a score of 0.69194 (\autoref{tab:mwo5}).
+Meanwhile, the lowest F1 is found in \autoref{tab:mwg5} at 0.590542 mwg5.
+A similar arrangement is found when comparing final test scores in the set of smaller models: mwo5 > mso5 > msg5 > mwg5 ($0.442827 > 0.405168 > 0.392490 > 0.389116$).
 
 \begin{table}[h]
     \centering
@@ -27,9 +27,8 @@ Similar arrangement is found when comparing final test scores in the set of smal
     \label{tab:mwo5}
 \end{table}
 
-Of all small models, mwo5 has the best results for all three metrics precision recall and F1.
+Of all small models, mwo5 has the best results for all three metrics precision, recall and F1.
 It seemingly learns the fastest out of the four, starting with a recall of 0.329521  and ending on 0.73384 on the last epoch, overtaking its standard counterpart mso5 at the second epoch.
-
 
 \begin{table}[h]
     \centering
@@ -64,6 +63,10 @@ None of the predictions keep up with the accuracy of the other small model at an
     \caption[Metrics for model mso5]{Metrics for masked language model trained on the GerParCor dataset with \ac{bbgc} tokenization. Evaluated on sequence classification task.}
     \label{tab:mso5}
 \end{table}
+
+With an F1 of 0.604824 at the final epoch mso5 is the lowest scoring standard model, despite starting with similar scores in epoch 1 (\autoref{tab:mso5} vs. \autoref{tab:msg5}).
+The standard F1 test scores are close to each other, deviating only by one second decimal point indicating comparable benchmark performance.
+
 
 \begin{table}[h]
 \centering
@@ -115,8 +118,8 @@ All small model scores are relatively close to each other, but ultimately outper
 
 \section{Tokenization}
 \label{sec:tokenization}
-Show specific examples of tokenization and analyze the qualitatively (maybe quantitatively)
+Show specific examples of tokenization and analyze them qualitatively (maybe quantitatively)
 
 
-
+wordmap: range around the median but
 

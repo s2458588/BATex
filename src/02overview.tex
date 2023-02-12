@@ -45,8 +45,6 @@ German (ISO639-3: \texttt{deu}) is a west-germanic language and the official lan
 It is an inflectional synthetic language with approximately 130 million speakers\footnote{https://de.statista.com/statistik/daten/studie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last accessed: 09.01.23}.
 German is largely researched and is still paid much attention to in the domain of (computational) linguistics.
 
-\subsection{Pooling similar languages}
-\label{subsec:german-as-example}
 
 On one side, linguistic typology has come up with many useful classifications for languages.
 On the other, in the pursuit of reconstructing languages Indo-European studies have established a widely accepted phylogenetic model of the diachronic dependecy of Indo-European languages.
@@ -80,26 +78,73 @@ There still is no universally accepted measure the complexity of a language due 
         Hungarian & Morphology & hun \\
         \bottomrule
     \end{tabular}
-    \caption{Listing of languages similar to German given the type of similarity based off \textcite{lehmann} and \textcite{MORPHOSYNTAXCOMPLEXITY1}.}
+    \caption{Listing of languages similar to German given the type of similarity based off \textcite{lehmann} and \textcite{MORPHOSYNTAXCOMPLEXITY1}. ISO identifiers provided at WALS\footnote{https://wals.info/languoid}.}
     \label{tab:similarity}
 \end{table}
 
 There have been interpolations between human judgements and statistical measures (on similarity of languages) which can be taken into consideration (\cite{bentz-etal-2016-comparison}).
 The point to be taken is that while there is no definite proof of concept for tokenizations being effective when connecting target languages through morphological parameters, there is a strong suggestion in data and intuition of researchers that tokenization for morphologically similar languages should profit from these similarities.
 
-Reviewing the literature for \ac{NLP} in downstream tasks for language modeling,
-Considering the following interlinear glossing
-
+With an arguable exception to English, the languages in \autoref{tab:similarity} treat their lexemes with similar morphological processes.
+The upcoming interlinear glossings (as per Leipzig Glossing Rules\footnote{https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf}) provide examples for inflectional morphology in verbs within this group of languages.
+To outline word formation processes, a glossing from \textcite[71]{finverbs} is considered:
 
 \begin{figure}[h]
-    \label{fig:glossing}
+\centering
+    \label{fig:fin}
     \begin{exe}
         \ex
-        \gll  My s Marko poexa-l-i avtobus-om v Peredelkino \\
-        1\textsc{pl} \textsc{com} Marko go-\textsc{pst}-\textsc{pl} bus-\textsc{ins} \textsc{all} Peredelkino \\
-        \glt  `Marko and I went to Perdelkino by bus.'
+        \gll  Tytöt istu-i-vat tuolilla \\
+            girls sit-\textsc{pst}-3\textsc{pl} chair.\textsc{ade}\\
+        \glt  `The girls sat on the chair.'
     \end{exe}
 \end{figure}
 
+This Finnish sentence is a textbook example of agglutinative inflectional morphology.
+The verb \{istu\} is inflected by suffixing two morphemes marking the past tense \{i\} and the third person plural \{vat\} (curled brackets denote morpheme boundaries).
+In this case every morpheme expresses one grammatical function, apart from \{istu\} which contains the lexical information for the verb \textquotedblleft to sit \textquotedblright.
+The functional morphemes in example (1) follow the word to be inflected.
+With many more functional morphemes present in Finnish, \citeauthor{finverbs} reports that there is an order in which inflectional morphemes usually appear.
+In consequence, analyzing Finnish verbs results in different but reoccuring patterns depending on the degree of inflection.
+The lexemic morpheme \{istu\} can be modified by \{i\} alone to just express past tense and still be productive.
+Following up on the idea of agglutination, Hungarian applies an slightly different strategy to achieve inflection:
 
-shape of words, repetition of strings für die überleitung in method
+\begin{figure}[h]
+\centering
+\label{fig:hun}
+\begin{exe}
+    \ex
+    \gll  Tegnap meg-hallgattunk egy lányt. \\
+    yesterday \textsc{prf}-listen.\textsc{pst.1pl} a girl.\textsc{acc}\\
+    \glt  `Yesterday we interviewed a girl.'
+\end{exe}
+\end{figure}
+
+
+Hungarian is also classifed as an agglutinative language for its frequent use of affixes.
+It is additionally known to combine several grammatical functions into one morphene as can be seen in example (2) as given by \textcite[262]{hunverbs}, making it a hybrid of agglutinative and fusional.
+The analysis of the verb in (2) does not allow canonical segmentation to the stem although there is an underlying form \{hall;\textasteriskcentered\} meaning \textquotedblleft hear \textquotedblright.
+Instead, it exists in inflection paradigms like the given example \{hallgatunk\} combinding the grammatical categories past tense and first person plural.
+The morphemes addressed so far where either suffixed or not segmentable.
+As lexical part \{hallgatunk\} receives a prefix \{meg\} expressing perfect tense.
+This use of morphemes can also be seen in germanic or romance languages, like Italian (adapted from ~\textcite[163]{itaverbs}):
+
+\begin{figure}[H]
+\centering
+    \label{fig:ita}
+    \begin{exe}
+        \ex
+        \gll  far=se=la sotto \\
+        do-\textsc{refl.prt}-\textsc{pron.prt} under\\
+        \glt  `To quake in one\textquotesingle s boots’'
+    \end{exe}
+\end{figure}
+
+Here the \{se\} and \{la\} carry two functions each and are suffixed to \{far\}, showing that there are morphological types in between agglutinating and fusioning.
+Arguably, \{se\} being a clitic pronoun that will appear in different positions acting as indirect object, but never independent of the verb.
+
+
+After a partial look on the classified languages two important empirical descriptive caveats remain: there are exceptions to almost every regularity in languages.
+No language is entirely consistent in following a morphosyntactical paradigm, meaning no language is entirely fusional or agglutinative (same applies to the synthetic and isoling spectrum).
+Judging from the word shapes in the data and literature, the way languages modify their stems or lexemic morphemes is largely based on affixation.
+In a tokenizer acknowledging lexemic parts of words, the knowledge of word formation in the target language should be conveyed.
