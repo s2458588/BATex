@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  12 FEB 2023 22:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  13 FEB 2023 00:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1697,20 +1697,23 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 7
 
 
 
-] (/home/gnom/uni/bachelor/BATex/out/main.toc)
+] (/home/gnom/uni/bachelor/BATex/out/main.toc [1
+
+
+
+])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [1
-
-
-
-]
-(/home/gnom/uni/bachelor/BATex/out/main.lof)
+ [2]
+(/home/gnom/uni/bachelor/BATex/out/main.lof
+LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
+(Font)              scaled to size 9.41345pt on input line 6.
+)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [2
+ [3
 
 ]
 (/home/gnom/uni/bachelor/BATex/out/main.lot
@@ -1721,14 +1724,14 @@ ine was complete.
 <to be read again> 
                    \par 
 l.4 ...rovided at WALS\let \reserved@d =[\def \par
-                                                   }}{5}{table.2.1}%
+                                                   }}{7}{table.2.1}%
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 /home/gnom/uni/bachelor/BATex/out/main.lot:4: Extra }, or forgotten \endgroup.
 l.4 ...vided at WALS\let \reserved@d =[\def \par }
-                                                  }{5}{table.2.1}%
+                                                  }{7}{table.2.1}%
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -1737,7 +1740,7 @@ deleted material, e.g., by typing `I$}'.
 
 /home/gnom/uni/bachelor/BATex/out/main.lot:4: Extra }, or forgotten \endgroup.
 l.4 ...ided at WALS\let \reserved@d =[\def \par }}
-                                                  {5}{table.2.1}%
+                                                  {7}{table.2.1}%
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -1765,60 +1768,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \addvspace {10\p@ }
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/gnom/uni/bachelor/BATex/out/main.lot:7: LaTeX Error: Something's wrong--p
-erhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \addvspace {10\p@ }
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/gnom/uni/bachelor/BATex/out/main.lot:8: LaTeX Error: Something's wrong--p
-erhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \addvspace {10\p@ }
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/gnom/uni/bachelor/BATex/out/main.lot:9: LaTeX Error: Something's wrong--p
-erhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \addvspace {10\p@ }
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/gnom/uni/bachelor/BATex/out/main.lot:10: LaTeX Error: Something's wrong--
-perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \addvspace {10\p@ }
-                        
+l.6 ...get = \texttt {verstehen}$}}{15}{table.3.2}
+                                                  %
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1826,114 +1777,34 @@ If that doesn't work, type  X <return>  to quit.
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [3
+ [4
 
 ]
 
-LaTeX Warning: Hyper reference `acro:bbgc' on page IV undefined on input line 1
-04.
-
-
-LaTeX Warning: Hyper reference `acro:bbgc' on page IV undefined on input line 1
-04.
-
-
-LaTeX Warning: Hyper reference `acro:bert' on page IV undefined on input line 1
-05.
-
-
-LaTeX Warning: Hyper reference `acro:bert' on page IV undefined on input line 1
-05.
-
-
-LaTeX Warning: Hyper reference `acro:bpe' on page IV undefined on input line 10
-6.
-
-
-LaTeX Warning: Hyper reference `acro:bpe' on page IV undefined on input line 10
-6.
-
-
-LaTeX Warning: Hyper reference `acro:bwe' on page IV undefined on input line 10
-7.
-
-
-LaTeX Warning: Hyper reference `acro:bwe' on page IV undefined on input line 10
-7.
-
-
-LaTeX Warning: Hyper reference `acro:cl' on page IV undefined on input line 108
+LaTeX Warning: Hyper reference `acro:bpe' on page V undefined on input line 106
 .
 
 
-LaTeX Warning: Hyper reference `acro:cl' on page IV undefined on input line 108
+LaTeX Warning: Hyper reference `acro:bpe' on page V undefined on input line 106
 .
 
 
-LaTeX Warning: Hyper reference `acro:gerparcor' on page IV undefined on input l
-ine 109.
-
-
-LaTeX Warning: Hyper reference `acro:gerparcor' on page IV undefined on input l
-ine 109.
-
-
-LaTeX Warning: Hyper reference `acro:hanta' on page IV undefined on input line 
-110.
-
-
-LaTeX Warning: Hyper reference `acro:hanta' on page IV undefined on input line 
-110.
-
-
-LaTeX Warning: Hyper reference `acro:lm' on page IV undefined on input line 111
+LaTeX Warning: Hyper reference `acro:bwe' on page V undefined on input line 107
 .
 
 
-LaTeX Warning: Hyper reference `acro:lm' on page IV undefined on input line 111
+LaTeX Warning: Hyper reference `acro:bwe' on page V undefined on input line 107
 .
 
 
-LaTeX Warning: Hyper reference `acro:lstm' on page IV undefined on input line 1
-12.
+LaTeX Warning: Hyper reference `acro:wm' on page V undefined on input line 118.
 
 
-LaTeX Warning: Hyper reference `acro:lstm' on page IV undefined on input line 1
-12.
+
+LaTeX Warning: Hyper reference `acro:wm' on page V undefined on input line 118.
 
 
-LaTeX Warning: Hyper reference `acro:ml' on page IV undefined on input line 113
-.
-
-
-LaTeX Warning: Hyper reference `acro:ml' on page IV undefined on input line 113
-.
-
-
-LaTeX Warning: Hyper reference `acro:mlm' on page IV undefined on input line 11
-4.
-
-
-LaTeX Warning: Hyper reference `acro:mlm' on page IV undefined on input line 11
-4.
-
-
-LaTeX Warning: Hyper reference `acro:ttl' on page IV undefined on input line 11
-7.
-
-
-LaTeX Warning: Hyper reference `acro:ttl' on page IV undefined on input line 11
-7.
-
-
-LaTeX Warning: Hyper reference `acro:wm' on page IV undefined on input line 118
-.
-
-
-LaTeX Warning: Hyper reference `acro:wm' on page IV undefined on input line 118
-.
-
-[4
+[5
 
 ]
 ./main.tex:124: Undefined control sequence.
@@ -1950,27 +1821,33 @@ and I'll forget about whatever was undefined.
 
 ]
 chapter 1.
-[2
+(./01introduction.tex
+Package acronym Info: Label `acro:bert' newly defined as it shall be overridden
 
-]
+although it is yet undefined on input line 3.
+Package acronym Info: Label `acro:cl' newly defined as it shall be overridden
+although it is yet undefined on input line 9.
+Package acronym Info: Label `acro:ml' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+ [2
+
+] [3]) [4]
 chapter 2.
 (./02overview.tex
 Package acronym Info: Label `acro:nlp' newly defined as it shall be overridden
 although it is yet undefined on input line 25.
- [3
+ [5
 
 ]
 Package acronym Info: Label `acro:pos' newly defined as it shall be overridden
 although it is yet undefined on input line 31.
-LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
-(Font)              scaled to size 9.41345pt on input line 44.
 
 Underfull \hbox (badness 10000) in paragraph at lines 45--45
   [][][]\TU/LinuxLibertineO(0)/m/n/10 https://de.statista.com/statistik/daten/s
 tudie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last
  []
 
-[4]
+[6]
 ./02overview.tex:81: Argument of \@tempf has an extra }.
 <inserted text> 
                 \par 
@@ -1995,21 +1872,198 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[5] [6]) [7]
+[7] [8]) [9]
 chapter 3.
-[8
+(./03methodology.tex
+Package acronym Info: Label `acro:lstm' newly defined as it shall be overridden
+
+although it is yet undefined on input line 19.
+Package acronym Info: Label `acro:lm' newly defined as it shall be overridden
+although it is yet undefined on input line 21.
+Package acronym Info: Label `acro:mlm' newly defined as it shall be overridden
+although it is yet undefined on input line 23.
+ [10
 
 ]
+Package acronym Info: Label `acro:hanta' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 125.
+ [11]
+Package acronym Info: Label `acro:gerparcor' newly defined as it shall be overr
+idden
+although it is yet undefined on input line 130.
+
+Overfull \hbox (12.1961pt too wide) in paragraph at lines 138--140
+[]\TU/LinuxLibertineO(0)/m/n/12 The POS vocabulary comes from  []Wiktionary []2
+022[] hanta-crawled verbs of gerparcor  []Wartena
+ []
+
+[12]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 179.
+ [13] [14] [15]
+Package acronym Info: Label `acro:POS' newly defined as it shall be overridden
+although it is yet undefined on input line 319.
+
+
+Package acronym Warning: Acronym `POS' is not defined on input line 319.
+
+
+Package acronym Warning: Acronym `POS' is not defined on input line 319.
+
+[16]
+Runaway argument?
+{,afterthought={ 
+./03methodology.tex:369: Paragraph ended before \forestOappto was complete.
+<to be read again> 
+                   \par 
+l.369 \end{forest}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./03methodology.tex:369: Extra }, or forgotten \endgroup.
+<argument> ...iven options}{,afterthought={ \par }
+                                                  }
+l.369 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./03methodology.tex:369: Extra }, or forgotten \endgroup.
+<argument> ...ven options}{,afterthought={ \par }}
+                                                  
+l.369 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{,afterthought={\unexpanded { 
+./03methodology.tex:369: Paragraph ended before \forestOeappto was complete.
+<to be read again> 
+                   \par 
+l.369 \end{forest}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./03methodology.tex:369: Extra }, or forgotten \endgroup.
+<argument> ...erthought={\unexpanded { \par \par }
+                                                  }}
+l.369 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./03methodology.tex:369: Extra }, or forgotten \endgroup.
+<argument> ...rthought={\unexpanded { \par \par }}
+                                                  }
+l.369 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./03methodology.tex:369: Extra }, or forgotten \endgroup.
+<argument> ...thought={\unexpanded { \par \par }}}
+                                                  
+l.369 \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./03methodology.tex:369: Package array Error:  Illegal pream-token (1): `c' use
+d.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 \end{forest}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./03methodology.tex:369: Package array Error:  Illegal pream-token (1): `c' use
+d.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 \end{forest}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (17.31955pt too wide) in paragraph at lines 369--370
+ [][] 
+ []
+
+[17]
+Package acronym Info: Label `acro:bbgc' newly defined as it shall be overridden
+
+although it is yet undefined on input line 410.
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--433
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package acronym Info: Label `acro:ttl' newly defined as it shall be overridden
+although it is yet undefined on input line 455.
+[18]) [19]
 chapter 4.
-[9
+(./04results.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20
 
 ]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [21] [22]
 chapter 5.
-[10
+[23
 
 ]
 chapter 6.
-[11
+[24
 
 ]
 chapter 7.
@@ -2046,55 +2100,81 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Reference `subsec:mlm' on page 12 undefined on input line 170.
-
-
-LaTeX Warning: Reference `subsec:mlm' on page 12 undefined on input line 171.
-
-[12
+[25
 
 ]
 chapter without number
 
-Overfull \hbox (18.97603pt too wide) in paragraph at lines 176--176
+Overfull \hbox (18.97603pt too wide) in paragraph at lines 164--164
 \TU/LinuxLibertineO(0)/m/it/12 Evaluation Conference\TU/LinuxLibertineO(0)/m/n/
 12 . Marseille, France: European Language Resources Association, pp. 1900–
  []
 
 
-Overfull \hbox (5.99193pt too wide) in paragraph at lines 176--176
+Overfull \hbox (5.99193pt too wide) in paragraph at lines 164--164
 \TU/LinuxLibertineO(0)/m/it/12 plexity\TU/LinuxLibertineO(0)/m/n/12 . Cambridge
  studies in Linguistics 153. Cambridge University Press. \TU/LinuxLibertineO(0)
 /m/sc/12 isbn\TU/LinuxLibertineO(0)/m/n/12 : 1107120640.
  []
 
-[13
+[26
 
 ]
-Overfull \hbox (0.36623pt too wide) in paragraph at lines 176--176
+Overfull \hbox (4.08003pt too wide) in paragraph at lines 164--164
+[][]\TU/LinuxLibertineO(0)/m/n/12 Devlin, Jacob, Ming-Wei Chang, Kenton Lee, an
+d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
+ []
+
+
+Overfull \hbox (1.02866pt too wide) in paragraph at lines 164--164
+\TU/LinuxLibertineO(0)/m/n/12 guistics, pp. 385–393. \TU/LinuxLibertineO(0)/m/s
+c/12 doi\TU/LinuxLibertineO(0)/m/n/12 : []$[][] [] [][][][][] [] [][] [] [][][]
+[] [] [][][] [][] [][][][][] [] [][]$[]. \TU/LinuxLibertineO(0)/m/sc/12 url\TU/
+LinuxLibertineO(0)/m/n/12 : []$[][][][][] [] [] [] [][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (0.36623pt too wide) in paragraph at lines 164--164
 \TU/LinuxLibertineO(0)/m/it/12 Mediterranean Morphology Meeting (MMM5)\TU/Linux
 LibertineO(0)/m/n/12 . Università degli Studi di Bologna. \TU/LinuxLibertineO(0
 )/m/sc/12 url\TU/LinuxLibertineO(0)/m/n/12 : []$[][][][][] []
  []
 
-[14] [15] (/home/gnom/uni/bachelor/BATex/out/main.aux)
+[27]
+Overfull \hbox (39.08957pt too wide) in paragraph at lines 164--164
+\TU/LinuxLibertineO(0)/m/n/12 3319904027; 9783319904023. \TU/LinuxLibertineO(0)
+/m/sc/12 url\TU/LinuxLibertineO(0)/m/n/12 : []$[][][][][][] [] [][] [] [][][][]
+ [] [][][] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][]$[]. 
+ []
+
+
+Overfull \hbox (4.87605pt too wide) in paragraph at lines 164--164
+[][]\TU/LinuxLibertineO(0)/m/n/12 Ortiz Su’arez, Pedro Javier, Benoit Sagot, an
+d Laurent Romary (2019). “  Asynchronous pipelines
+ []
+
+[28] [29] [30] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47805 strings out of 476156
- 1065756 string characters out of 5814963
- 1990653 words of memory out of 5000000
- 67859 multiletter control sequences out of 15000+600000
- 478717 words of font info for 111 fonts, out of 8000000 for 9000
+ 52033 strings out of 476156
+ 1141524 string characters out of 5814963
+ 1994818 words of memory out of 5000000
+ 72072 multiletter control sequences out of 15000+600000
+ 478879 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 122i,10n,133p,10600b,5006s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 146i,12n,134p,10600b,5011s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (22 pages).
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (38 pages).

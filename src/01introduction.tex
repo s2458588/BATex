@@ -1,28 +1,26 @@
 
 This thesis showcases the use of specific intervention in tokenization subsystems of machine learning.
-The intent of this thesis is to inject linguistic bias into the machine learning framework of BERT to sharpen the analytical capacities of a masked language model.
+The intent of this thesis is to inject linguistic bias into the machine learning framework of \ac{bert} to sharpen the analytical capacities of a masked language model.
 In this chapter the background, intentions and scope of the thesis are covered.
 
 
 \section{Motivation}
 \label{sec:motivation}
 There is an ongoing urge in the \acf{cl} community to understand natural language.
-Research in the past decades shows use of frequentist and statistical methods (such as GPT (\cite{gpt}) and bert \cite{ATTENTION}) to their advantage, leading to the emergence of the first machine learning (ML) models.
+Research in the past decades shows use of frequentist and statistical methods such as \ac{GPT} (\cite{gpt}) and \ac{bert} (\cite{ATTENTION}) to their advantage, leading to the emergence of the powerful, problem solving \ac{ml} models.
 It became apparent that these ML models are the best currently available approach to an automated understanding of natural language.
-The structural parallels of machine learning to human learning have often been drawn (\uppercase{zitation)}) to demonstrate how similar and more importantly: how different both can be.
-A powerful feature of \ac{ml} (as opposed to human learning) is the possibility of actively controlling the the learning parameters in a supervised environment.
-To test the efficiency of \uppercase{ML} parameters a variety of tasks (\uppercase{zitation}) are designed and applied.
+The structural parallels of machine learning to human learning have often been drawn (\citeauthor{humanmachinelearning1}; \cite{humanmachinelearning2}) to demonstrate how similar and also how different both can be.
+An essential feature of \ac{ml} (as opposed to human learning) is the possibility of actively controlling the learning parameters in a supervised environment.
+To test the efficiency of  \ac{ml} a variety of tasks (e.g.\ classification, clustering, detection) are designed and applied.
 A trained model will yield performance scores based on the quality of its training, much like humans on language tests.
-But the automated modeling of language is not the first instance of language modelling in a broader sense.
-Traditional linguistics (\uppercase{definition} has produced fundamental research the prior to the discovery of \uppercase{ML} architectures and their implementation.
-While generic ML frameworks seem appealing in the presumption that they require less work to reach somewhat satisfactoy results,
+Yet, automated modeling of language is not the first instance of language modelling in a broader sense.
+Traditional linguistics has produced fundamental research prior to the discovery of \ac{ml} architectures and their implementation.
+While generic \ac{ml} frameworks seem appealing in the presumption that they require less work to reach somewhat satisfactoy results,
 their performance is still incomplete.
 The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
 
-
-\textbf{flota} \cite{FLOTA}
-Language learners usually build up a lexicon consisting of lexemes which they will have to analyze accurately in order to be productive in that target language.
-A ML model relies on a tokenizer to create such a vocabulary  (\textbf{ZITATION}).
+While the research on neurophysical intake and representation of language is not entirely conclusive (\textcite[1--3]{n400}; \textcite{L2morphology}), it is assumed that language learners usually build up a lexicon consisting of lexemes (\cite[82 -- 100]{brennan2022language}) which they will have to analyze accurately in order to be proficient in that target language.
+A \ac{ml} model relies on a tokenizer to create such a vocabularies  (\textbf{ZITATION}).
 It is programmed to segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
 Ideally those subwords will be part of the functional vocabulary in the target language, which would make them a morphemes \textbf{ERKLÄRUNG}.
 A morpheme is canonically defined as the smallest unit carrying meaning in a language \cite{morpheme}.
@@ -33,6 +31,7 @@ WordPiece is designed to find the most effective pairs of subwords in a corpus t
 Subwords however are not necessarily a productive component of inventory that is used for inflectional morphology.
 In fact, the morphemes of a language and its generated tokenizer vocabulary  coincide.
 
+\cite{FLOTA}
 
 Following the guiding principle that \textbf{input quality is ouput quality} not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
 Note: explain why i use tokens and words, they are interchangeable right?
