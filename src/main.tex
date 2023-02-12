@@ -82,8 +82,8 @@
 
 
     \cleardoubleoddpage
-    \pagenumbering{Roman}
     \setcounter{page}{0}
+    \pagenumbering{Roman}
     \tableofcontents
     \newpage
     \listoffigures
@@ -91,10 +91,10 @@
     \listoftables
     \newpage
 
-    \newcommand{\sectionnumbering}[1]{%
-        \setcounter{section}{0}%
-        \renewcommand{\thesection}{\csname #1\endcsname{section}}%
-    }
+%    \newcommand{\sectionnumbering}[1]{%
+%        \setcounter{section}{0}%
+%        \renewcommand{\thesection}{\csname #1\endcsname{section}}%
+%    }
 
 
     \chapter*{List of Acronyms}
@@ -103,6 +103,7 @@
         \acro{bbgc}[bbgc]{bert-base-german-cased}
         \acro{bert}[BERT]{Bidirectional Encoders from Transformers}
         \acro{bpe}[BPE]{Byte Pair Encoding}
+        \acro{bwe}[BWE]{Bert WordPiece}
         \acro{cl}[CL]{Computational Linguistics}
         \acro{gerparcor}[GerParCor]{German Parliamentary Corpus}
         \acro{hanta}[HanTa]{Hanover Tagger}
@@ -112,6 +113,9 @@
         \acro{mlm}[MLM]{Masked Language Model}
         \acro{nlp}[NLP]{Natural Language Processing}
         \acro{pos}[POS]{Part of Speech}
+        \acro{ttl}[TTLab]{Text Technology Lab}
+        \acro{wm}[WM]{Wordmap}
+
     \end{acronym}
 
     \cleardoubleoddpage

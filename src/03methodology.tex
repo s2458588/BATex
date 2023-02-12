@@ -106,7 +106,7 @@ Schematic \autoref{fig:pipeline} shows the processing of data up until token enc
         \draw (110.34,380.5) node   [align=left] {\textbf{Encodings}};
 
     \end{tikzpicture}
-    \caption{Schematic integration of Wordmap segmentation into the BERT architecture. Continuous lines show non-selective channels, while dotted lines only pass data selectively}
+    \caption[Schematic integration of Wordmap segmentation into the BERT architecture.]{Schematic integration of Wordmap segmentation into the BERT architecture. Continuous lines show non-selective channels, while dotted lines only pass data selectively}
     \label{fig:pipeline}
 \end{figure}
 
@@ -261,6 +261,20 @@ Functional morphemes (morphemes that are carriers of grammatical features) are t
 Consequently, lexical morphemes in the family of inflectional languages are - by definition - modified by functional morphemes, they occur much less frequently.
 In this case, the activation function for a concatenation of same boolean values to be selected as segment is the normalizing z-score function defined as: $z_{i} = \frac{x_{i} - \overline{x}}{S}$,
 where $z$ is the z-score, $\overline{x}$ and $S$ are the sample mean and the sample standard deviation.
+Any segment below a z-score of zero is detected.
+For every verb that is mapped, the detected affixes are added to a vocabulary of functional morphemes.
+The rest of the string is saved into the vocabulary of lexemic segments, assuming that it still contains the lexical information in the verb.
+
+\textbf{PARETO PICTURE}
+Pareto distribution, once again pointing to Zipf's law.
+
+Both vocabularies are then cleared of outliers in different ways.
+The functional vocabulary drops every string longer than 2.5 times the standard deviation of its own population.
+Since more variance in length is expected in the lexemic vocabulary, the outlier function is limited to drop everything above the length  of 2 times the mean absolute deviation as a staple method for more volatile datasets.
+The upper segment of n-length strings in the lexemic vocabulary has thus been covered, but the low segment (short strings) remains untouched.
+To solve this problem, probably one of the more reaching but important measures is taken: removing any string of the lexemic vocabulary that is smaller than the mean n-length string in the functional vocabulary.
+Removing this interference in vocabularies is subject to the assumption that functional morphemes will be shorter than lexemic morphemes.
+After minimizing outliers and interference, both vocabularies are joined again to form the segmenters vocabulary.
 
 %TODO: this makes it robust against spelling errors because they cant durchsetz
 
@@ -356,7 +370,7 @@ The recursion can be seen as n-ary a trees containing every permutation of the s
 
 
 \end{forest}
-\caption{Permutations \textsc{segmenter} generates from target i.e. \texttt{verstehen}. Dotted segments mark the segmentation chosen later by the maximization function during tokenization.}
+\caption[Segmenter output for \texttt{verstehen}]{Permutations \textsc{segmenter} generates from target i.e. \texttt{verstehen}. Dotted segments mark the segmentation chosen later by the maximization function during tokenization.}
 \label{fig:segmentationtree}
 \end{figure}
 
@@ -394,7 +408,7 @@ Natural language processing is understood as the
 
 
 
-\subsection{Masked Language Model}
+\subsection{Model Training}
 \label{subsec:masked-language-model}
 All fine-tuned models use the \ac{bbgc} baseline by \textcite{bertbasegermancased}.
 For reference and readability they are given shortened IDs as follows:\\
@@ -417,8 +431,8 @@ For reference and readability they are given shortened IDs as follows:\\
 \end{table}
 
 The full model names in \autoref{tab:modelids} captures broad characteristics of the model.
-For example, mwo5 is the \textbf{m}asked language model using \textbf{W}ordmap tokenization fine-tuned on the \textbf{O}scar dataset of \textbf{5}00000 samples, while msg5 is the the \textbf{m}asked language model using \textbf{s}tandard BERT wordpiece tokenization fine-tuned on the \textbf{G}erParCor dataset of \textbf{5}00000 samples.
-All models except for bbgc were trained on the same parameters as seen in table \autoref{tab:modelshyper}.\\
+For example, \fbox{mwo5} is the \fbox{m}asked language model using \fbox{W}ordmap tokenization fine-tuned on the \fbox{O}scar dataset of \fbox{5}00k samples, while msg5 is the the masked language model using standard BERT wordpiece tokenization fine-tuned on the GerParCor dataset of 500k samples.
+All models except for bbgc are trained on the same parameters as seen in table \autoref{tab:modelshyper}.\\
 
 \begin{table}[h]
     \centering
@@ -430,14 +444,21 @@ All models except for bbgc were trained on the same parameters as seen in table 
         mwo5 & Oscar & BWP + WM & 0.0003 & 31250 & 16 & 500 &  bbgc \\
         msg5 & Gerparcor & BWP & 0.0003 & 31250 & 16 & 500 &  bbgc \\
         mso5 & Oscar & BWP & 0.0003 & 31250 & 16 & 500 &  bbgc \\
-        bbgc & Mixed\footnote{bert-base-german-cased} & BWP & 0.0001 & 810000 & 1024 & 10000 & - \\
+        bbgc & Mixed & BWP & 0.0001 & 810k/30k & 1024 & 10000 & - \\
         \bottomrule
     \end{tabular}
-    \caption{List of all used models and their hyperparameters. LR = learning rate, WU = warmup steps.}
+    \caption[List of all used models]{List of all used models and their hyperparameters. LR = learning rate, WU = warmup steps.}
     \label{tab:modelshyper}
 \end{table}
 
+The first four models use bbgc as baseline, meaning that they inherit its structural properties.
+DeepsetAI released bbgc having trained in two phases with differing sequence lengths 128/512 respectively.
+The maximum sequence length for each model is 512, the base vocabulary size is 30k.
+Models mwg5, mwo5, msg5, and mso5 where trained with less steps and thus higher learning rate to converge quicker with the given datasets.
+The models where implemented in PyTorch \textcite{pytorch} and  on the GPUs Quadro RTX 8000 (~48Gb) and NVIDIA GeForce GTX 1080 Ti (~11Gb) provided at \ac{ttl}.
 
 
 \subsection{Benchmark}
-\label{subsec:olmpics-benchmark}
+\label{subsec:benchmark-implementation}
+The original draft for this thesis featured a benchmark with a translated multiple choice question answering task from the oLMpics benchmark (\textcite{olmpics}).
+Due to incompatible versioning dependencies this was not feasible and a substitute had to be found.
