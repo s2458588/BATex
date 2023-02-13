@@ -17,6 +17,7 @@ The methodological implication of reading to the left and right of a token is to
 Secondly, \ac{bert} introduced the (at the time novel) \ac{mlm} method for training.
 The method involves masking a specified amount (default 15\%) of random tokens in the input sequence.
 Masked tokens are guessed by the model which can then update its weights according to success or failure.
+Bert-base-german-case is a \ac{bert}-base model with 12 encoding layers, 768 hidden layers, 12 heads and 110M parameters\footnote{https://huggingface.co/transformers/v2.9.1/pretrained_models.html}.
 
 The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (e.g. \ roberta, germanbert, mbert).
 Its wide support, comparability and versatility make \ac{bert} the model of choice for this thesis.
@@ -26,7 +27,7 @@ A variety of pre-trained tokenizers are available, although they come with a cav
 Once a tokenizer is trained on a dataset it is specific to that dataset.
 This means the application of a tokenizer on another dataset may result in out-of-vocabulary issues and different token/subtoken distributions.
 
-Particularly relevant to this thesis is the option to train an own tokenizer from the base module.
+Particularly relevant to this thesis is the option to train an own tokenizer from the base module, which the \ac{bbgc} model did using German data.
 Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}, which is used by the standard tokenizer to generate unique numerical input IDs.
 These identifiers correspond to tokens or parts of tokens found in the original dataset that the model was trained on.
 Wordmap partly takes over the tokenization depending on the the type of input it receives, the exact process is given in \autoref{subsec:tokenizer}.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  13 FEB 2023 21:45
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  14 FEB 2023 00:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1802,44 +1802,45 @@ although it is yet undefined on input line 17.
  [9
 
 ]
+Package acronym Info: Label `acro:bbgc' newly defined as it shall be overridden
+
+although it is yet undefined on input line 30.
 Package acronym Info: Label `acro:hanta' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 119.
+although it is yet undefined on input line 120.
  [10]
 Package acronym Info: Label `acro:gerparcor' newly defined as it shall be overr
 idden
-although it is yet undefined on input line 124.
+although it is yet undefined on input line 125.
  [11]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 169.
+put line 170.
  [12] [13] [14]
-Package acronym Info: Label `acro:bbgc' newly defined as it shall be overridden
-
-although it is yet undefined on input line 269.
 Package acronym Info: Label `acro:POS' newly defined as it shall be overridden
-although it is yet undefined on input line 310.
+although it is yet undefined on input line 311.
 
 
-Package acronym Warning: Acronym `POS' is not defined on input line 310.
+Package acronym Warning: Acronym `POS' is not defined on input line 311.
 
 
-Package acronym Warning: Acronym `POS' is not defined on input line 310.
+Package acronym Warning: Acronym `POS' is not defined on input line 311.
 
+[15] [16]
 Runaway argument?
 {,afterthought={ 
-./03methodology.tex:360: Paragraph ended before \forestOappto was complete.
+./03methodology.tex:361: Paragraph ended before \forestOappto was complete.
 <to be read again> 
                    \par 
-l.360 \end{forest}
+l.361 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./03methodology.tex:360: Extra }, or forgotten \endgroup.
+./03methodology.tex:361: Extra }, or forgotten \endgroup.
 <argument> ...iven options}{,afterthought={ \par }
                                                   }
-l.360 \end{forest}
+l.361 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1847,10 +1848,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./03methodology.tex:360: Extra }, or forgotten \endgroup.
+./03methodology.tex:361: Extra }, or forgotten \endgroup.
 <argument> ...ven options}{,afterthought={ \par }}
                                                   
-l.360 \end{forest}
+l.361 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1860,19 +1861,19 @@ deleted material, e.g., by typing `I$}'.
 
 Runaway argument?
 {,afterthought={\unexpanded { 
-./03methodology.tex:360: Paragraph ended before \forestOeappto was complete.
+./03methodology.tex:361: Paragraph ended before \forestOeappto was complete.
 <to be read again> 
                    \par 
-l.360 \end{forest}
+l.361 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./03methodology.tex:360: Extra }, or forgotten \endgroup.
+./03methodology.tex:361: Extra }, or forgotten \endgroup.
 <argument> ...erthought={\unexpanded { \par \par }
                                                   }}
-l.360 \end{forest}
+l.361 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1880,10 +1881,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./03methodology.tex:360: Extra }, or forgotten \endgroup.
+./03methodology.tex:361: Extra }, or forgotten \endgroup.
 <argument> ...rthought={\unexpanded { \par \par }}
                                                   }
-l.360 \end{forest}
+l.361 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1891,10 +1892,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./03methodology.tex:360: Extra }, or forgotten \endgroup.
+./03methodology.tex:361: Extra }, or forgotten \endgroup.
 <argument> ...thought={\unexpanded { \par \par }}}
                                                   
-l.360 \end{forest}
+l.361 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1903,48 +1904,51 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-./03methodology.tex:360: Package array Error:  Illegal pream-token (1): `c' use
+./03methodology.tex:361: Package array Error:  Illegal pream-token (1): `c' use
 d.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.360 \end{forest}
+l.361 \end{forest}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./03methodology.tex:360: Package array Error:  Illegal pream-token (1): `c' use
+./03methodology.tex:361: Package array Error:  Illegal pream-token (1): `c' use
 d.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.360 \end{forest}
+l.361 \end{forest}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (17.31955pt too wide) in paragraph at lines 360--361
+Overfull \hbox (17.31955pt too wide) in paragraph at lines 361--362
  [][] 
  []
 
-[15] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 401--403
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--424
+Underfull \hbox (badness 10000) in paragraph at lines 422--425
 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package acronym Info: Label `acro:ttl' newly defined as it shall be overridden
-although it is yet undefined on input line 446.
+although it is yet undefined on input line 447.
 [18]) [19]
 chapter 4.
 (./04results.tex [20
@@ -1998,13 +2002,20 @@ LaTeX Warning: Citation 'adversarialmorphin' on page 26 undefined on input line
 LaTeX Warning: Citation 'germeval' on page 27 undefined on input line 25.
 
 
-LaTeX Warning: Citation 'germeval' on page 27 undefined on input line 43.
+LaTeX Warning: Citation 'brownlee2020imbalanced' on page 27 undefined on input 
+line 26.
 
-) [27]
+
+Overfull \hbox (3.93304pt too wide) in paragraph at lines 23--33
+\TU/LinuxLibertineO(0)/m/n/12 number false positives may be attributed to imbal
+anced sampling ([]).
+ []
+
+) [27] [28]
 chapter 6.
 (./06conclusion.tex
 
-LaTeX Warning: Citation 'bertbasegermancasedsequel' on page 28 undefined on inp
+LaTeX Warning: Citation 'bertbasegermancasedsequel' on page 29 undefined on inp
 ut line 22.
 
 
@@ -3172,9 +3183,9 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Warning: Float too large for page by 40.11252pt on input line 216.
 
-[28
+[29
 
-] [29]
+] [30]
 chapter without number
 
 Overfull \hbox (18.97603pt too wide) in paragraph at lines 219--219
@@ -3189,7 +3200,7 @@ Overfull \hbox (5.99193pt too wide) in paragraph at lines 219--219
 /m/sc/12 isbn\TU/LinuxLibertineO(0)/m/n/12 : 1107120640.
  []
 
-[30
+[31
 
 ]
 Overfull \hbox (4.08003pt too wide) in paragraph at lines 219--219
@@ -3220,13 +3231,13 @@ Overfull \hbox (39.08957pt too wide) in paragraph at lines 219--219
 ][][][][]$[]. 
  []
 
-[31]
+[32]
 Overfull \hbox (4.87605pt too wide) in paragraph at lines 219--219
 [][]\TU/LinuxLibertineO(0)/m/n/12 Ortiz Su’arez, Pedro Javier, Benoit Sagot, an
 d Laurent Romary (2019). “  Asynchronous pipelines
  []
 
-[32] [33] [34] (/home/gnom/uni/bachelor/BATex/out/main.aux)
+[33] [34] [35] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -3245,12 +3256,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52115 strings out of 476156
- 1143034 string characters out of 5814963
- 1995039 words of memory out of 5000000
- 72139 multiletter control sequences out of 15000+600000
- 478879 words of font info for 117 fonts, out of 8000000 for 9000
+ 52131 strings out of 476156
+ 1143338 string characters out of 5814963
+ 1993185 words of memory out of 5000000
+ 72149 multiletter control sequences out of 15000+600000
+ 480708 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  146i,12n,134p,10600b,5015s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (42 pages).
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (43 pages).

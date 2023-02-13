@@ -11,38 +11,34 @@ For the course of this thesis a smaller set of experiment parameters where chose
 Relating to the models this includes the following design measures: (1) smaller model and sample size, (2) constructing Wordmap tokenization and using it on singular tokens during batching, and (3) a single evaluation task.
 Since the larger model performed better than the smaller ones fine-tuned on Oscar and GerParCor one could assume that the performance was influenced by the sheer size of input data and model parameters.
 However, there are enough accounts for outstanding performances in current machine learning applications for smaller models (\textcite{smallmodelbigbang}; \textcite{fewshotTHREEpercent}).
-\citeauthor{scalinglaws} provide an extensive study of model scaling stating that while larger models tend to be more sample-efficient, any of the factors computational capacity, model size and amount of data can compensate for the other ~\cite[3]{scalinglaws}.
+\citeauthor{scalinglaws} provide an extensive study of model scaling stating that while larger models tend to be more sample-efficient, any of the factors computational capacity, model size and amount of data can compensate for the other ~\citeyear[3]{scalinglaws}.
 As a consequence the smaller models trained on Oscar and GerParCor should generally be able to achieve better scores than their evaluation indicates.
 
 The impact of modifying the tokenization on a single \ac{pos} category in masked language learning must be close to none.
 In other endeavors ~\citeauthor{BITE} used the Penn Treebank to model each inflection with designated tokens instead of analyzing the textual surface form, showing that an improvement of WordPiece tokenization is morphologically augmentable with \ac{POS} ~\citeyear{BITE}.
 Their preceeding use of morphological concepts in language learning is found in their previous research through adversarial shifting of morphological paradigms to improve robustness of existing language models (~\cite[2927]{adversarialmorphin}).
 Implemening supporting processes for morphological modeling on an integral scale seems to be a condition for training impactful models.
-This could be one explanation for the
+This could be one explanation for the performance of the Wordmap based models but does not cover the standard models.
 
 The classification task used to see if the model predictions are noteworthy or negligible was partly inconclusive.
 As stated before the smaller models do not compare to the bbgc model.
-Since this one shot evaluation made even bbgc perform worse than its other classification tasks (\textcite{germeval}; GNAD\footnote{https://huggingface.co/bert-base-german-cased}) there may be an interfering factor in the task design.
-The high number false positives may be attributed to imbalanced sampling (\cite[5--6]{brownlee2020imbalanced})
+Since this one shot evaluation made even bbgc perform worse than its other classification tasks (\textcite{germeval}; GNAD\footnote{https://tblock.github.io/10kGNAD/}) there may be an interfering factor in the task design.
+The high number false positives may be attributed to imbalanced sampling (\cite[5--6]{brownlee2020imbalanced}).
+This could be an intrinsic property of the dataset or happen during the modification of the sample labels.
+On a side note the Wordmap models were designed to explicitly tokenize verbs with the aim of encoding an important core element of language, but the items in the Wikinews dataset featured news titles sometimes using elliptic phrasing and entirely dropping verbs.
+To explain the uniform performance drop in all models additional constraints have to be taken into consideration.
+The models are all masked language models, being a fine-tuned version of bbgc.
+Instead of unfreezing all layers and retraining a more suitable approach would be to try transfer learning instead, preserving useful ggbc encoding layers.
+To find out which of the structural modeling factors prevented the model from performing satisfyingly more training would have to be done, paying special attention to backpropagation, controlling the loss function in both fine-tuning and benchmark testing (ideally on runtime).
 
 Considering the overall low performance it is surprising to see mwg5 performing at the given rate.
-more training and controlling the loss
+Whether this can be ascribed to the aforementioned sample imbalance or learning rate jitter is impossible to tell in retrospect, although the latter is rather unlikely in view of the other small model performances using the same small learning rate.
+Positively the transfer of new subwords from the POS vocabulary to the BERT tokenizer vocabulary does not visibly impair performance.
+All the input verbs come from sanitized data and GerParCor, and since mwo5 (fine-tuned on Oscar) was the best performing small model there is even an argument for saying it did not carry over a vocabulary bias.
+Ultimately it is hard to classify the performance in this iteration of fine-tuning and testing.
+Judging solely by the scores it should not be compared to recent methods like the original inspiration FLOTA (\citeauthor{FLOTA}).
 
-
-
-it is hard to tell if the results are good without combining further metrics like loss or confusion matrix
-
-"A low precision score (<0.5) means your classifier has a high number of False positives which can be an outcome of imbalanced class or untuned model hyperparameters. In an imbalanced class problem"
--> unbalanced sampling
-spelling errors: oscar > gpc (effekt?)
-
-learning the set != better performance (standard different learning, similar performance)
-mw test scores > ms test scores (in precision + recall, but not in f1 -> imbalance?)
-jitter due to small sample size may distort how conclusive the final scores are
-
-bbgc performance stable for germeval \cite{germeval}
-https://tblock.github.io/10kGNAD/
-
+Concerning the Wordmap vocabulary generation it can be said that
 algorithm doesnt see circumfixes like ge---t) but only affixes, this could be possible with better noise control and map interpolation
 Characterizing the functional and lexical morphemes by their respective average length has had a positibe impact on segmentation, seem to have impacted the models performance very much.
 
