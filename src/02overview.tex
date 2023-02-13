@@ -1,8 +1,8 @@
 %define morpheme vs subword
 %define morphological tokenization
 
-Morphological tokenization can be understood as the process of identifying segments in text that are a productive in a given language, carrying meaning and hence also fitting the definition of a morpheme.
-describe the most recent findings on morphologically pretrained models in machine learning literature
+Morphological tokenization can be defined as the process of identifying segments in text that are a productive in a given language, carrying meaning and hence also fitting the definition of a morpheme.
+Recent or relevant findings on morphologically pretrained models in machine learning literature are discussed in this chapter
 
 %findings on POS effect on ML
 
@@ -57,11 +57,13 @@ Those languages that use affixation, fusion, composition and derivation (among o
 A summary of morphological typology is provided in ~\cite*[78--93]{LINGUISTICTYPOLOGY}).
 
 Due to the scope of this thesis, German will be the exemplary target language for the experimental setup.
-Its morphological complexity can be compared to other related or non-related languages as shown in \autoref{tab:similarity}.
-There still is no universally accepted measure the complexity of a language due to , but groupings exist on different parameters:
+Its morphological complexity can be compared to other related or non-related languages as shown in \autoref{tab:similarity} (ISO identifiers provided at WALS.\footnote{https://wals.info/languoid}).
+There still is no universally accepted measure the complexity of a language, but groupings exist on different parameters:
 \\
 \begin{table}[h]
     \centering
+    \caption[List of similar languages]{Listing of languages similar to German given the type of similarity based off \textcite{lehmann} and \textcite{MORPHOSYNTAXCOMPLEXITY1}.}
+    \label{tab:similarity}
     \begin{tabular}{lll}
         \toprule
         \textbf{Language} & \textbf{Similarity} & \textbf{ISO 639--3} \\
@@ -78,8 +80,7 @@ There still is no universally accepted measure the complexity of a language due 
         Hungarian & Morphology & hun \\
         \bottomrule
     \end{tabular}
-    \caption{Listing of languages similar to German given the type of similarity based off \textcite{lehmann} and \textcite{MORPHOSYNTAXCOMPLEXITY1}. ISO identifiers provided at WALS\footnote{https://wals.info/languoid}.}
-    \label{tab:similarity}
+
 \end{table}
 
 There have been interpolations between human judgements and statistical measures (on similarity of languages) which can be taken into consideration (\cite{bentz-etal-2016-comparison}).

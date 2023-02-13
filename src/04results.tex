@@ -12,7 +12,7 @@ The highest F1 in the last epoch achieved for any of the smaller models (mso5, m
 Meanwhile, the lowest F1 is found in \autoref{tab:mwg5} at 0.590542 mwg5.
 A similar arrangement is found when comparing final test scores in the set of smaller models: mwo5 > mso5 > msg5 > mwg5 ($0.442827 > 0.405168 > 0.392490 > 0.389116$).
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{lrrlr}
         \toprule
@@ -30,7 +30,7 @@ A similar arrangement is found when comparing final test scores in the set of sm
 Of all small models, mwo5 has the best results for all three metrics precision, recall and F1.
 It seemingly learns the fastest out of the four, starting with a recall of 0.329521  and ending on 0.73384 on the last epoch, overtaking its standard counterpart mso5 at the second epoch.
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{lrrrr}
         \toprule
@@ -49,7 +49,7 @@ Contrary to the pattern of mwo5, the wordmap model trained on GerParCor data pre
 The inital epoch shows the lowest scores of all models for precision, recall and logically F1.
 None of the predictions keep up with the accuracy of the other small model at any point in training.
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{lrrrr}
         \toprule
@@ -66,9 +66,10 @@ None of the predictions keep up with the accuracy of the other small model at an
 
 With an F1 of 0.604824 at the final epoch mso5 is the lowest scoring standard model, despite starting with similar scores in epoch 1 (\autoref{tab:mso5} vs. \autoref{tab:msg5}).
 The standard F1 test scores are close to each other, deviating only by one second decimal point indicating comparable benchmark performance.
+A comparison with the scores of the other Oscar-trained model mwo5 shows a bigger difference in accuracy, favoring the Wordmap version.
+The msg5 iteration is has a slightly steeper adaptation to the task, but fails to carry its performance over to the test scores:
 
-
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{lrrrr}
     \toprule
@@ -83,7 +84,12 @@ The standard F1 test scores are close to each other, deviating only by one secon
 \label{tab:msg5}
 \end{table}
 
-\begin{table}[h]
+As can be seen, msg5 converges more quickly than its oscar standard counterpart (\autoref{tab:msg5}).
+Although it has better precision, recall and F1 throughout all epochs final its test F1 is minimally inferior to mso5.
+
+
+
+\begin{table}[H]
     \centering
     \begin{tabular}{lrrrr}
         \toprule
@@ -98,7 +104,7 @@ The standard F1 test scores are close to each other, deviating only by one secon
     \label{tab:bert-base-german-cased}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{lrrrrr}
         \toprule

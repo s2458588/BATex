@@ -70,11 +70,10 @@
     \maketitle
 
     \cleardoublepage
-    \addtocounter{page}{-1}
     \thispagestyle{empty}
-    %I thank my supervisors Prof. Dr. Alexander Mehler and Dr. Zakharia Pourtskhvanidze for their competence and professionalism, without whom this thesis would not have happened.
-    %My explicit thanks go to Manuel Stoeckel and Guiseppe Abrami for their valuable patience, advice and encouragement.
-    %Thanks to my close ones for your trust and support.
+    I thank my supervisors Prof. Dr. Alexander Mehler and Dr. Zakharia Pourtskhvanidze for their competence and professionalism, without whom this thesis across universitary departments would not have happened.
+    My explicit thanks go to Manuel Stoeckel and Guiseppe Abrami for their valuable patience, advice and encouragement.
+    Thanks to my close ones for your trust and support.
 
     \chapter*{Abstract}
     \thispagestyle{empty}
@@ -83,11 +82,13 @@
 
 
     \cleardoubleoddpage
-    \setcounter{page}{0}
     \pagenumbering{Roman}
+
     \tableofcontents
+    \thispagestyle{empty}
     \newpage
     \listoffigures
+    \setcounter{page}{1}
     \newpage
     \listoftables
     \newpage
@@ -96,7 +97,6 @@
 %        \setcounter{section}{0}%
 %        \renewcommand{\thesection}{\csname #1\endcsname{section}}%
 %    }
-
 
     \chapter*{List of Acronyms}
     \addcontentsline{toc}{chapter}{List of Acronyms}
@@ -109,7 +109,7 @@
         \acro{gerparcor}[GerParCor]{German Parliamentary Corpus}
         \acro{gpt}[GPT]{Genertive Pretrained Transformers}
         \acro{hanta}[HanTa]{Hanover Tagger}
-        \acro{lm}[LM]{Language Model}
+        \acro{lm}[LM]{language model}
         \acro{lstm}[LSTM]{Long Short-Term Memory}
         \acro{ml}[ML]{Machine Learning}
         \acro{mlm}[MLM]{Masked Language Model}
@@ -121,12 +121,14 @@
     \end{acronym}
 
     \cleardoubleoddpage
-    \pagenumbering{arabic}
-    \sectionnumbering{arabic}
+    %\pagenumbering{arabic}
+    %\sectionnumbering{arabic}
 
     % BEGINNING OF BODY
 
     \chapter{Introduction}
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
     \label{ch:introduction}
     \input{01introduction}
 
@@ -152,12 +154,6 @@
     \chapter{Conclusion}
     \label{ch:conclusion}
     %\input{06conclusion}
-
-    \chapter{\latex Testchapter}
-    \begin{quote}
-        \textquote[{\cite{DEEPL}}]{This is a quote by textquote}
-        \enquote{This is a quote by enquote}
-    \end{quote}
 
 
     \appendix

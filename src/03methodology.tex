@@ -4,7 +4,8 @@ in this section the whole methodoloy is covered.
 what do i use in this thesis, why do i use it and lastly, how?
 make sure the why covers methodological implications.
 (vergiss nicht alle pakete als quelle im Anhang)
-The
+
+
 
 \section{Requirements}
 \label{sec:requirements}
@@ -24,20 +25,20 @@ Secondly, \ac{bert} introduced the (at the time novel) \ac{mlm} method for train
 The method involves masking a specified amount (default 15\%) of random tokens in the input sequence.
 Masked tokens are guessed by the model which can then update its weights according to success or failure.
 
-The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (roberta, germanbert, mbert \uppercase{citation}).
+The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (e.g. \ roberta, germanbert, mbert).
 Its wide support, comparability and versatility make \ac{bert} the model of choice for this thesis.
-Another notable feature in \uppercase{bert} is the implementation of the WordPiece tokenizer module (\uppercase{\href{https://huggingface.co/course/chapter6/6?fw=pt}{quelle?}}).
+Another notable feature in \uppercase{bert} is the implementation of the WordPiece tokenizer module\footnote{The source code was not published but is inferred on \href{https://huggingface.co/course/chapter6/6?fw=pt}{huggingface}}.
 Default BERT WordPiece tokenization is predominantly heuristic by combining strings based on a precalculated score.
 A variety of pre-trained tokenizers are available, although they come with a caveat.
 Once a tokenizer is trained on a dataset it is specific to that dataset.
 This means the application of a tokenizer on another dataset may result in out-of-vocabulary issues and different token/subtoken distributions.
 
 Particularly relevant to this thesis is the option to train an own tokenizer from the base module.
-Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}, which is used by the standard tokenizer to generate unique input numerical IDs.
+Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}, which is used by the standard tokenizer to generate unique numerical input IDs.
 These identifiers correspond to tokens or parts of tokens found in the original dataset that the model was trained on.
 Wordmap partly takes over the tokenization depending on the the type of input it receives, the exact process is given in \autoref{subsec:tokenizer}.
 Once a string is tokenized it gets passed on to the transformer model for contextualized embedding.
-Schematic \autoref{fig:pipeline} shows the processing of data up until token encoding.
+\autoref{fig:pipeline} shows the processing of data up until token encoding.
 
 \begin{figure}
     \centering
@@ -123,7 +124,7 @@ It is important to note that the POS vocabulary is separate from the the tokeniz
 This serves the specific purpose of keeping the vocabulary on which the model is trained clean from unwanted or unused subwords.
 Machine learning practice generally points to the trade-off between vocabulary size and model performance, hence the addition of POS Vocabulary to the BERT Tokenizer vocabulary is used only when necessary.
 Datasets are then passed through \ac{hanta} to provide WMTokenizer with flagged data to tokenize only selected tokens.
-Lastly BERT Tokenizer returns the canonical encodings known from language modeling.
+Lastly BERT Tokenizer returns the current standard encodings used in \ac{bert} language modeling.
 
 \subsection{Data}
 \label{subsec:data}
@@ -131,27 +132,26 @@ Two corpora where selected for fine-tuning: \ac{gerparcor} and oscar (\cite{osca
 FLOTA was trained on 12000 samples per  category ~\cite{FLOTA}, which is why for this fine-tuning a sample size of 500000 seems sufficient.
 GerParCor is a \enquote{GerParCor genre-specific corpus of (predominantly historical) German-language parliamentary protocols from three centuries and four countries, including state and federal level data.} (\cite[1]{GERPARCOR}).
 Of all subcorpora included in \ac{gerparcor}, one specifically texts and transcripts of the german parliament.
-All 500k samples in the \ac{gerparcor} dataset used for this thesis is found in the \texttt{Bundestag} subcorpus of \ac{gerparcor}.
+All 500k samples in the \ac{gerparcor} dataset used for this thesis are found in the \texttt{Bundestag} subcorpus of \ac{gerparcor}.
 Oscar offers other subcorpora partly hosted on huggingface.
-In this case, a web-crawled german corpus called \texttt{unshuffled\_deduplicated\_de} was chosen, as introduced by its curators \textcite{oscarsub2}; (\citeyear{oscarsub1}).
+In this case, a web-crawled german corpus called \texttt{unshuffled\_deduplicated\_de} was chosen, as introduced by its curators (\textcite{oscarsub2}; (\textcite{oscarsub1}).
 
-The POS vocabulary comes from ~\cite{wiktionary}
-hanta-crawled verbs of gerparcor ~\cite{hanta}
+The POS vocabulary put throuh the Wordmapping pipelines comes from ~\textcite{wiktionary} and \ac{hanta}-crawled verbs of gerparcor ~\cite{hanta}
 
-
-\subsection{Benchmark}
-\label{subsec:benchmark}
-The benchmark used on the model is oLMpics (\cite{olmpics})
 
 \section{Implementation}
 \label{sec:implementation}
 
-Tatsächliche Anwendung der Methoden auf die Daten
+The implementation of aforementioned methodology is presented in this section.
+The core part is the conceptualization and implementation of the tokenizer, which is explained in three steps:
+the wordmap algorithm generating a vocabulary, the segmentation algorithm for token segmentation and maximization, and the integration into \ac{bert}.
+After that a short description of model hyperparameterization and training is given.
+The same is done for the model evaluation task in the last subsection of this chapter.
 
 \subsection{Tokenizer}
 \label{subsec:tokenizer}
 \uppercase{essentially deriving sensible subtokens to represent lexemes}
-The methods of tokenization is explained in the following.
+The methods of tokenization are explained in the following subsection.
 This is the main part of the thesis containing two algorithms for vocabulary generation and token segmentation.
 Once the two algorithms have been explained, the last section of this chapter features the
 
