@@ -587,39 +587,6 @@
       \verb https://arxiv.org/abs/cs/0205057
       \endverb
     \endentry
-    \entry{DEEPL}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=086b5407f3734e9b5c12a636fc131ba8}{%
-           family={DeepL},
-           familyi={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {DeepL SE}%
-      }
-      \strng{namehash}{086b5407f3734e9b5c12a636fc131ba8}
-      \strng{fullhash}{086b5407f3734e9b5c12a636fc131ba8}
-      \strng{bibnamehash}{086b5407f3734e9b5c12a636fc131ba8}
-      \strng{authorbibnamehash}{086b5407f3734e9b5c12a636fc131ba8}
-      \strng{authornamehash}{086b5407f3734e9b5c12a636fc131ba8}
-      \strng{authorfullhash}{086b5407f3734e9b5c12a636fc131ba8}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{addendum}{Last accessed: 28.12.2022}
-      \field{journaltitle}{DeepL Translate: The world's most accurate translator}
-      \field{month}{11}
-      \field{title}{How does deepl work?}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://www.deepl.com/en/blog/how-does-deepl-work
-      \endverb
-      \verb{url}
-      \verb https://www.deepl.com/en/blog/how-does-deepl-work
-      \endverb
-    \endentry
     \entry{n400}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=eea818ca2e5b2485ad0572f40d5ba6a4}{%

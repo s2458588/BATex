@@ -7,9 +7,9 @@ In this chapter the background, intentions and scope of the thesis are covered.
 \section{Motivation}
 \label{sec:motivation}
 There is an ongoing urge in the \acf{cl} community to understand natural language.
-Research in the past decades shows use of frequentist and statistical methods such as \ac{GPT} (\cite{gpt}) and \ac{bert} (\cite{ATTENTION}) to their advantage, leading to the emergence of the powerful, problem solving \ac{ml} models.
+Research in the past decades shows use of frequentist and statistical methods such as \ac{gpt} (\cite{gpt}) and \ac{bert} (\cite{ATTENTION}) to their advantage, leading to the emergence of the powerful, problem solving \ac{ml} models.
 It became apparent that these ML models are the best currently available approach to an automated understanding of natural language.
-The structural parallels of machine learning to human learning have often been drawn (\citeauthor{humanmachinelearning1}; \cite{humanmachinelearning2}) to demonstrate how similar and also how different both can be.
+The structural parallels of machine learning to human learning have often been drawn (\citeauthor{humanmachinelearning1}; ~\cite{humanmachinelearning2}) to demonstrate how similar and also how different both can be.
 An essential feature of \ac{ml} (as opposed to human learning) is the possibility of actively controlling the learning parameters in a supervised environment.
 To test the efficiency of  \ac{ml} a variety of tasks (e.g.\ classification, clustering, detection) are designed and applied.
 A trained model will yield performance scores based on the quality of its training, much like humans on language tests.
@@ -20,10 +20,10 @@ their performance is still incomplete.
 The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
 
 While the research on neurophysical intake and representation of language is not entirely conclusive (\textcite[1--3]{n400}; \textcite{L2morphology}), it is assumed that language learners usually build up a lexicon consisting of lexemes (\cite[82 -- 100]{brennan2022language}) which they will have to analyze accurately in order to be proficient in that target language.
-A \ac{ml} model relies on a tokenizer to create such a vocabularies  (\textbf{ZITATION}).
+A language model relies on a tokenizer to create such a vocabularies.
 It is programmed to segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
-Ideally those subwords will be part of the functional vocabulary in the target language, which would make them a morphemes \textbf{ERKLÄRUNG}.
-A morpheme is canonically defined as the smallest unit carrying meaning in a language \cite{morpheme}.
+Ideally those subwords will be part of the functional vocabulary in the target language, which would make them a morpheme.
+A morpheme is canonically defined as the smallest unit carrying meaning in a language (\cite{morpheme}).
 The problem of captchuring lexical morphemes at the tokenization level is a problem of morphological analysis.
 A standard approach implemented in the BERT architecture is WordPiece tokenization, which takes pairs of ngrams and calculates a score based on the overall frequency in the text as well as cooccurrences.
 This was idea pioneered by Schuster and Nakajima (\citeyear{WORDPIECEOG}) to deal with the problem of near infinite vocabularies and was later adopted in a google research project designing the final WordPiece algorithm ~\cite{WORDPIECEGOOGLE}.

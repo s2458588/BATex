@@ -33,7 +33,7 @@
 \newacro{bwe}[\AC@hyperlink{bwe}{BWE}]{Bert WordPiece}
 \newacro{cl}[\AC@hyperlink{cl}{CL}]{Computational Linguistics}
 \newacro{gerparcor}[\AC@hyperlink{gerparcor}{GerParCor}]{German Parliamentary Corpus}
-\newacro{gpt}[\AC@hyperlink{gpt}{GPT}]{Genertive Pretrained Transformers}
+\newacro{gpt}[\AC@hyperlink{gpt}{GPT}]{Generative Pretrained Transformers}
 \newacro{hanta}[\AC@hyperlink{hanta}{HanTa}]{Hanover Tagger}
 \newacro{lm}[\AC@hyperlink{lm}{LM}]{language model}
 \newacro{lstm}[\AC@hyperlink{lstm}{LSTM}]{Long Short-Term Memory}
@@ -77,9 +77,9 @@
 \AC@undonewlabel{acro:cl}
 \newlabel{acro:cl}{{1.1}{1}{Motivation}{section*.7}{}}
 \acronymused{cl}
-\AC@undonewlabel{acro:GPT}
-\newlabel{acro:GPT}{{1.1}{1}{Motivation}{section*.8}{}}
-\acronymused{GPT}
+\AC@undonewlabel{acro:gpt}
+\newlabel{acro:gpt}{{1.1}{1}{Motivation}{section*.8}{}}
+\acronymused{gpt}
 \abx@aux@page{1}{1}
 \acronymused{bert}
 \abx@aux@page{2}{1}
@@ -96,7 +96,6 @@
 \abx@aux@page{7}{1}
 \abx@aux@cite{0}{FLOTA}
 \abx@aux@segm{0}{0}{FLOTA}
-\acronymused{ml}
 \abx@aux@page{8}{2}
 \abx@aux@page{10}{2}
 \abx@aux@page{11}{2}
@@ -282,124 +281,156 @@
 \acronymused{pos}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Wordmap generation}}{13}{algorithm.1}\protected@file@percent }
 \newlabel{alg:wordmap}{{1}{13}{Generating a custom pre-training vocabulary}{algorithm.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Example wordmaps for $target = \texttt  {verstehen}$}}{14}{table.3.2}\protected@file@percent }
-\newlabel{tab:wordmaps}{{2}{14}{Example wordmaps for $target = \texttt {verstehen}$}{table.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Example Wordmaps for $target = \texttt  {verstehen}$}}{14}{table.3.2}\protected@file@percent }
+\newlabel{tab:wordmaps}{{2}{14}{Example Wordmaps for $target = \texttt {verstehen}$}{table.3.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline BERT Tokenizer Modification}{15}{subsubsection*.20}\protected@file@percent }
 \newlabel{subsubsec:tokenizer-modification}{{3.2.1}{15}{BERT Tokenizer Modification}{subsubsection*.20}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Target Segmentation}}{15}{algorithm.2}\protected@file@percent }
-\newlabel{alg:segmenter}{{2}{15}{BERT Tokenizer Modification}{algorithm.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Segmenter output for \texttt  {verstehen}}}{16}{figure.3.2}\protected@file@percent }
-\newlabel{fig:segmentationtree}{{2}{16}{Segmenter output for \texttt {verstehen}}{figure.3.2}{}}
+\AC@undonewlabel{acro:bbgc}
+\newlabel{acro:bbgc}{{3.2.1}{15}{BERT Tokenizer Modification}{section*.21}{}}
+\acronymused{bbgc}
+\acronymused{hanta}
+\acronymused{hanta}
 \AC@undonewlabel{acro:POS}
-\newlabel{acro:POS}{{3.2.1}{16}{BERT Tokenizer Modification}{section*.21}{}}
+\newlabel{acro:POS}{{3.2.1}{15}{BERT Tokenizer Modification}{section*.22}{}}
 \acronymused{POS}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Target Segmentation}}{16}{algorithm.2}\protected@file@percent }
+\newlabel{alg:segmenter}{{2}{16}{BERT Tokenizer Modification}{algorithm.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Segmenter output for \texttt  {verstehen}}}{17}{figure.3.2}\protected@file@percent }
+\newlabel{fig:segmentationtree}{{2}{17}{Segmenter output for \texttt {verstehen}}{figure.3.2}{}}
+\newlabel{eq:maximization}{{3.1}{17}{BERT Tokenizer Modification}{equation.3.2.1}{}}
 \abx@aux@cite{0}{METZLER2016}
 \abx@aux@segm{0}{0}{METZLER2016}
 \abx@aux@cite{0}{bertbasegermancased}
 \abx@aux@segm{0}{0}{bertbasegermancased}
-\newlabel{eq:maximization}{{3.1}{17}{BERT Tokenizer Modification}{equation.3.2.1}{}}
-\acronymused{pos}
-\abx@aux@page{48}{17}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Model Training}{17}{subsection.3.2.2}\protected@file@percent }
-\newlabel{subsec:masked-language-model}{{3.2.2}{17}{Model Training}{subsection.3.2.2}{}}
-\AC@undonewlabel{acro:bbgc}
-\newlabel{acro:bbgc}{{3.2.2}{17}{Model Training}{section*.22}{}}
-\acronymused{bbgc}
-\abx@aux@page{49}{17}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces ID references assigned to full model names}}{17}{table.3.3}\protected@file@percent }
-\newlabel{tab:modelids}{{3}{17}{ID references assigned to full model names}{table.3.3}{}}
 \abx@aux@cite{0}{pytorch}
 \abx@aux@segm{0}{0}{pytorch}
-\abx@aux@cite{0}{olmpics}
-\abx@aux@segm{0}{0}{olmpics}
+\acronymused{pos}
+\abx@aux@page{48}{18}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Model Training}{18}{subsection.3.2.2}\protected@file@percent }
+\newlabel{subsec:masked-language-model}{{3.2.2}{18}{Model Training}{subsection.3.2.2}{}}
+\acronymused{bbgc}
+\abx@aux@page{49}{18}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces ID references assigned to full model names}}{18}{table.3.3}\protected@file@percent }
+\newlabel{tab:modelids}{{3}{18}{ID references assigned to full model names}{table.3.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces List of all used models}}{18}{table.3.4}\protected@file@percent }
 \newlabel{tab:modelshyper}{{4}{18}{List of all used models}{table.3.4}{}}
-\abx@aux@page{50}{18}
+\abx@aux@cite{0}{olmpics}
+\abx@aux@segm{0}{0}{olmpics}
+\abx@aux@page{50}{19}
 \AC@undonewlabel{acro:ttl}
-\newlabel{acro:ttl}{{3.2.2}{18}{Model Training}{section*.23}{}}
+\newlabel{acro:ttl}{{3.2.2}{19}{Model Training}{section*.23}{}}
 \acronymused{ttl}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Benchmark}{18}{subsection.3.2.3}\protected@file@percent }
-\newlabel{subsec:benchmark-implementation}{{3.2.3}{18}{Benchmark}{subsection.3.2.3}{}}
-\abx@aux@page{51}{18}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Benchmark}{19}{subsection.3.2.3}\protected@file@percent }
+\newlabel{subsec:benchmark-implementation}{{3.2.3}{19}{Benchmark}{subsection.3.2.3}{}}
+\abx@aux@page{51}{19}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:results}{{4}{19}{Results}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Benchmark}{19}{section.4.1}\protected@file@percent }
-\newlabel{sec:benchmark}{{4.1}{19}{Benchmark}{section.4.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Metrics for model mwo5}}{19}{table.4.5}\protected@file@percent }
-\newlabel{tab:mwo5}{{5}{19}{Metrics for model mwo5}{table.4.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Metrics for model mwg5}}{20}{table.4.6}\protected@file@percent }
-\newlabel{tab:mwg5}{{6}{20}{Metrics for model mwg5}{table.4.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Metrics for model mso5}}{20}{table.4.7}\protected@file@percent }
+\newlabel{ch:results}{{4}{20}{Results}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Benchmark}{20}{section.4.1}\protected@file@percent }
+\newlabel{sec:benchmark}{{4.1}{20}{Benchmark}{section.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Metrics for model mwo5}}{20}{table.4.5}\protected@file@percent }
+\newlabel{tab:mwo5}{{5}{20}{Metrics for model mwo5}{table.4.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Metrics for model mwg5}}{21}{table.4.6}\protected@file@percent }
+\newlabel{tab:mwg5}{{6}{21}{Metrics for model mwg5}{table.4.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Metrics for model mso5}}{21}{table.4.7}\protected@file@percent }
 \acronymused{bbgc}
-\newlabel{tab:mso5}{{7}{20}{Metrics for model mso5}{table.4.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Metrics for model msg5}}{21}{table.4.8}\protected@file@percent }
+\newlabel{tab:mso5}{{7}{21}{Metrics for model mso5}{table.4.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Metrics for model msg5}}{22}{table.4.8}\protected@file@percent }
 \acronymused{bbgc}
-\newlabel{tab:msg5}{{8}{21}{Metrics for model msg5}{table.4.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Metrics for model bbgc}}{21}{table.4.9}\protected@file@percent }
-\newlabel{tab:bert-base-german-cased}{{9}{21}{Metrics for model bbgc}{table.4.9}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Test score summary for all evaluated models.}}{21}{table.4.10}\protected@file@percent }
-\newlabel{tab:test-summary}{{10}{21}{Test score summary for all evaluated models}{table.4.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Tokenization}{21}{section.4.2}\protected@file@percent }
-\newlabel{sec:tokenization}{{4.2}{21}{Tokenization}{section.4.2}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{22}{chapter.5}\protected@file@percent }
+\newlabel{tab:msg5}{{8}{22}{Metrics for model msg5}{table.4.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Metrics for model bbgc}}{22}{table.4.9}\protected@file@percent }
+\newlabel{tab:bert-base-german-cased}{{9}{22}{Metrics for model bbgc}{table.4.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Test score summary for all evaluated models.}}{22}{table.4.10}\protected@file@percent }
+\newlabel{tab:test-summary}{{10}{22}{Test score summary for all evaluated models}{table.4.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Wordmapping}{23}{section.4.2}\protected@file@percent }
+\newlabel{sec:wordmapping}{{4.2}{23}{Wordmapping}{section.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Wordmap for \textquotesingle viertelt\textquotesingle }}{23}{figure.4.3}\protected@file@percent }
+\newlabel{fig:wordmap2}{{3}{23}{Wordmap for \textquotesingle viertelt\textquotesingle }{figure.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Wordmap for \textquotesingle anschauen\textquotesingle }}{24}{figure.4.4}\protected@file@percent }
+\newlabel{fig:wordmap3}{{4}{24}{Wordmap for \textquotesingle anschauen\textquotesingle }{figure.4.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pareto distribution in POS vocabulary}}{25}{figure.4.5}\protected@file@percent }
+\newlabel{fig:pareto}{{5}{25}{Pareto distribution in POS vocabulary}{figure.4.5}{}}
+\abx@aux@cite{0}{smallmodelbigbang}
+\abx@aux@segm{0}{0}{smallmodelbigbang}
+\abx@aux@cite{0}{fewshotTHREEpercent}
+\abx@aux@segm{0}{0}{fewshotTHREEpercent}
+\abx@aux@cite{0}{scalinglaws}
+\abx@aux@segm{0}{0}{scalinglaws}
+\abx@aux@cite{0}{scalinglaws}
+\abx@aux@segm{0}{0}{scalinglaws}
+\abx@aux@cite{0}{BITE}
+\abx@aux@segm{0}{0}{BITE}
+\abx@aux@cite{0}{BITE}
+\abx@aux@segm{0}{0}{BITE}
+\abx@aux@cite{0}{adversarialmorphin}
+\abx@aux@segm{0}{0}{adversarialmorphin}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{26}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:discussion}{{5}{22}{Discussion}{chapter.5}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{23}{chapter.6}\protected@file@percent }
+\newlabel{ch:discussion}{{5}{26}{Discussion}{chapter.5}{}}
+\acronymused{pos}
+\acronymused{POS}
+\abx@aux@cite{0}{germeval}
+\abx@aux@segm{0}{0}{germeval}
+\abx@aux@cite{0}{germeval}
+\abx@aux@segm{0}{0}{germeval}
+\abx@aux@cite{0}{bertbasegermancasedsequel}
+\abx@aux@segm{0}{0}{bertbasegermancasedsequel}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{28}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:conclusion}{{6}{23}{Conclusion}{chapter.6}{}}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Bibliography}{24}{chapter*.24}\protected@file@percent }
+\newlabel{ch:conclusion}{{6}{28}{Conclusion}{chapter.6}{}}
+\acronymused{cl}
+\newlabel{tab:pythonpackages}{{6}{29}{Conclusion}{chapter.6}{}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Bibliography}{30}{chapter*.24}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\abx@aux@page{52}{24}
-\abx@aux@page{53}{24}
-\abx@aux@page{54}{24}
-\abx@aux@page{55}{24}
-\abx@aux@page{56}{24}
-\abx@aux@page{57}{24}
-\abx@aux@page{58}{24}
-\abx@aux@page{59}{24}
-\abx@aux@page{60}{24}
-\abx@aux@page{61}{25}
-\abx@aux@page{62}{25}
-\abx@aux@page{63}{25}
-\abx@aux@page{64}{25}
-\abx@aux@page{65}{25}
-\abx@aux@page{66}{25}
-\abx@aux@page{67}{25}
-\abx@aux@page{68}{25}
-\abx@aux@page{69}{25}
-\abx@aux@page{70}{25}
-\abx@aux@page{71}{26}
-\abx@aux@page{72}{26}
-\abx@aux@page{73}{26}
-\abx@aux@page{74}{26}
-\abx@aux@page{75}{26}
-\abx@aux@page{76}{26}
-\abx@aux@page{77}{26}
-\abx@aux@page{78}{26}
-\abx@aux@page{79}{26}
-\abx@aux@page{80}{27}
-\abx@aux@page{81}{27}
-\abx@aux@page{82}{27}
-\abx@aux@page{83}{27}
-\abx@aux@page{84}{27}
-\abx@aux@page{85}{27}
-\abx@aux@page{86}{27}
-\abx@aux@page{87}{27}
-\abx@aux@page{88}{27}
-\abx@aux@page{89}{27}
-\abx@aux@page{90}{28}
-\abx@aux@page{91}{28}
-\abx@aux@page{92}{28}
-\abx@aux@read@bbl@mdfivesum{219D11CE84DA5EC6D8A19C8C1775591E}
+\abx@aux@page{52}{30}
+\abx@aux@page{53}{30}
+\abx@aux@page{54}{30}
+\abx@aux@page{55}{30}
+\abx@aux@page{56}{30}
+\abx@aux@page{57}{30}
+\abx@aux@page{58}{30}
+\abx@aux@page{59}{30}
+\abx@aux@page{60}{30}
+\abx@aux@page{61}{31}
+\abx@aux@page{62}{31}
+\abx@aux@page{63}{31}
+\abx@aux@page{64}{31}
+\abx@aux@page{65}{31}
+\abx@aux@page{66}{31}
+\abx@aux@page{67}{31}
+\abx@aux@page{68}{31}
+\abx@aux@page{69}{31}
+\abx@aux@page{70}{32}
+\abx@aux@page{71}{32}
+\abx@aux@page{72}{32}
+\abx@aux@page{73}{32}
+\abx@aux@page{74}{32}
+\abx@aux@page{75}{32}
+\abx@aux@page{76}{32}
+\abx@aux@page{77}{32}
+\abx@aux@page{78}{32}
+\abx@aux@page{79}{32}
+\abx@aux@page{80}{33}
+\abx@aux@page{81}{33}
+\abx@aux@page{82}{33}
+\abx@aux@page{83}{33}
+\abx@aux@page{84}{33}
+\abx@aux@page{85}{33}
+\abx@aux@page{86}{33}
+\abx@aux@page{87}{33}
+\abx@aux@page{88}{33}
+\abx@aux@page{89}{33}
+\abx@aux@page{90}{34}
+\abx@aux@page{91}{34}
+\abx@aux@read@bbl@mdfivesum{B0C2E8B85AFB7B76BC96F6A63DE92877}
 \abx@aux@read@bblrerun
 \abx@aux@defaultrefcontext{0}{GERPARCOR}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{mixednoiseinterlanguage}{nyt/global//global/global}
@@ -413,7 +444,6 @@
 \abx@aux@defaultrefcontext{0}{measuresofMC}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{comrie1989}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{morfessor}{nyt/global//global/global}
-\abx@aux@defaultrefcontext{0}{DEEPL}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{n400}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{BERTHIGH1}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{MORPHOSYNTAXCOMPLEXITY1}{nyt/global//global/global}
@@ -450,4 +480,4 @@
 \@writefile{toc}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
 \@writefile{lof}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
 \@writefile{lot}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
-\gdef \@abspage@last{36}
+\gdef \@abspage@last{42}

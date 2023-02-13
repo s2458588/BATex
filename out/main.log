@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  13 FEB 2023 03:12
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  13 FEB 2023 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1383,13 +1383,13 @@ File: setspace.hak 2021/11/13 v3.35 KOMA-Script scrhack part (hacking package s
 etspace)
 ))
 
-./main.tex:31: LaTeX Error: No counter 'algorithm' defined.
+./main.tex:32: LaTeX Error: No counter 'algorithm' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 \counterwithout{algorithm}{chapter}
+l.32 \counterwithout{algorithm}{chapter}
                                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1480,102 +1480,102 @@ LaTeX Warning: Unused global option(s):
 (/home/gnom/uni/bachelor/BATex/out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-3.
+4.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-Package scrbase Info: activating english \contentsname on input line 53.
-Package scrbase Info: activating english \listfigurename on input line 53.
-Package scrbase Info: activating english \listtablename on input line 53.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+Package scrbase Info: activating english \contentsname on input line 54.
+Package scrbase Info: activating english \listfigurename on input line 54.
+Package scrbase Info: activating english \listtablename on input line 54.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 53.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 53.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 53.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 53.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 53.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 53.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 53.
-LaTeX Font Info:    Redeclaring math accent \check on input line 53.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 53.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 53.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 53.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 53.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 54.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 54.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 54.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 54.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 54.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 54.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 54.
+LaTeX Font Info:    Redeclaring math accent \check on input line 54.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 54.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 54.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 54.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 54.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 53.
+(Font)              `operators' in the math version `normal' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LinuxLibertineO(0)/m/n on input line
- 53.
+ 54.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 53.
+(Font)              `operators' in the math version `bold' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LinuxLibertineO(0)/m/n on input lin
-e 53.
+e 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/m/n
- on input line 53.
+ on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/LinuxLibertineO(0)/m/it on input li
-ne 53.
+ne 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/LinuxLibertineO(0)/b/n on input lin
-e 53.
+e 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/LinuxBiolinumO(0)/m/n on input line
- 53.
+ 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/m/n on input line
- 53.
+ 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/b/n
- on input line 53.
+ on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/LinuxLibertineO(0)/b/it on input l
-ine 53.
+ine 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/LinuxBiolinumO(0)/b/n on input lin
-e 53.
+e 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/b/n on input line
- 53.
+ 54.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1592,9 +1592,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (/home/gnom/uni/bachelor/BATex/out/main.bbl)
-Package biblatex Info: Reference section=0 on input line 53.
-Package biblatex Info: Reference segment=0 on input line 53.
-Package hyperref Info: Link coloring OFF on input line 53.
+Package biblatex Info: Reference section=0 on input line 54.
+Package biblatex Info: Reference segment=0 on input line 54.
+Package hyperref Info: Link coloring OFF on input line 54.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1607,9 +1607,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count515
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (/home/gnom/uni/bachelor/BATex/out/main.out)
 (/home/gnom/uni/bachelor/BATex/out/main.out)
@@ -1623,7 +1623,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 53.
+(scrreprt)           before \begin{document} on input line 54.
 
 (/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1670,20 +1670,20 @@ ext;"
 (fontspec)             O/BI/OT:script=latn;language=dflt;+sups;+smcp;mapping=te
 x-text;"
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 7
-1.
+2.
 
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
@@ -1727,35 +1727,27 @@ LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
 ]
 
 LaTeX Warning: Hyper reference `acro:bpe' on page III undefined on input line 1
-08.
+07.
 
 
 LaTeX Warning: Hyper reference `acro:bpe' on page III undefined on input line 1
+07.
+
+
+LaTeX Warning: Hyper reference `acro:bwe' on page III undefined on input line 1
 08.
 
 
 LaTeX Warning: Hyper reference `acro:bwe' on page III undefined on input line 1
-09.
-
-
-LaTeX Warning: Hyper reference `acro:bwe' on page III undefined on input line 1
-09.
-
-
-LaTeX Warning: Hyper reference `acro:gpt' on page III undefined on input line 1
-12.
-
-
-LaTeX Warning: Hyper reference `acro:gpt' on page III undefined on input line 1
-12.
+08.
 
 
 LaTeX Warning: Hyper reference `acro:wm' on page III undefined on input line 12
-1.
+0.
 
 
 LaTeX Warning: Hyper reference `acro:wm' on page III undefined on input line 12
-1.
+0.
 
 [3
 
@@ -1767,18 +1759,11 @@ Package acronym Info: Label `acro:bert' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:cl' newly defined as it shall be overridden
 although it is yet undefined on input line 9.
-Package acronym Info: Label `acro:GPT' newly defined as it shall be overridden
+Package acronym Info: Label `acro:gpt' newly defined as it shall be overridden
 although it is yet undefined on input line 10.
-
-
-Package acronym Warning: Acronym `GPT' is not defined on input line 10.
-
-
-Package acronym Warning: Acronym `GPT' is not defined on input line 10.
-
 Package acronym Info: Label `acro:ml' newly defined as it shall be overridden
 although it is yet undefined on input line 10.
-[1
+ [1
 
 
 
@@ -1798,55 +1783,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--45
 tudie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last
  []
 
-[5] [6] [7]) [8]
+[5]
+Overfull \hbox (5.80505pt too wide) in paragraph at lines 53--58
+\TU/LinuxLibertineO(0)/m/n/12 Mind that morphological complexity is a classifyi
+ng category to describe gradients of function-
+ []
+
+[6] [7]) [8]
 chapter 3.
 (./03methodology.tex
 Package acronym Info: Label `acro:lstm' newly defined as it shall be overridden
 
-although it is yet undefined on input line 20.
+although it is yet undefined on input line 13.
 Package acronym Info: Label `acro:lm' newly defined as it shall be overridden
-although it is yet undefined on input line 22.
+although it is yet undefined on input line 15.
 Package acronym Info: Label `acro:mlm' newly defined as it shall be overridden
-although it is yet undefined on input line 24.
+although it is yet undefined on input line 17.
  [9
 
 ]
 Package acronym Info: Label `acro:hanta' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 126.
+although it is yet undefined on input line 119.
  [10]
 Package acronym Info: Label `acro:gerparcor' newly defined as it shall be overr
 idden
-although it is yet undefined on input line 131.
+although it is yet undefined on input line 124.
  [11]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 179.
+put line 169.
  [12] [13] [14]
+Package acronym Info: Label `acro:bbgc' newly defined as it shall be overridden
+
+although it is yet undefined on input line 269.
 Package acronym Info: Label `acro:POS' newly defined as it shall be overridden
-although it is yet undefined on input line 319.
+although it is yet undefined on input line 310.
 
 
-Package acronym Warning: Acronym `POS' is not defined on input line 319.
+Package acronym Warning: Acronym `POS' is not defined on input line 310.
 
 
-Package acronym Warning: Acronym `POS' is not defined on input line 319.
+Package acronym Warning: Acronym `POS' is not defined on input line 310.
 
-[15]
 Runaway argument?
 {,afterthought={ 
-./03methodology.tex:369: Paragraph ended before \forestOappto was complete.
+./03methodology.tex:360: Paragraph ended before \forestOappto was complete.
 <to be read again> 
                    \par 
-l.369 \end{forest}
+l.360 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./03methodology.tex:369: Extra }, or forgotten \endgroup.
+./03methodology.tex:360: Extra }, or forgotten \endgroup.
 <argument> ...iven options}{,afterthought={ \par }
                                                   }
-l.369 \end{forest}
+l.360 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1854,10 +1847,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./03methodology.tex:369: Extra }, or forgotten \endgroup.
+./03methodology.tex:360: Extra }, or forgotten \endgroup.
 <argument> ...ven options}{,afterthought={ \par }}
                                                   
-l.369 \end{forest}
+l.360 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1867,19 +1860,19 @@ deleted material, e.g., by typing `I$}'.
 
 Runaway argument?
 {,afterthought={\unexpanded { 
-./03methodology.tex:369: Paragraph ended before \forestOeappto was complete.
+./03methodology.tex:360: Paragraph ended before \forestOeappto was complete.
 <to be read again> 
                    \par 
-l.369 \end{forest}
+l.360 \end{forest}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-./03methodology.tex:369: Extra }, or forgotten \endgroup.
+./03methodology.tex:360: Extra }, or forgotten \endgroup.
 <argument> ...erthought={\unexpanded { \par \par }
                                                   }}
-l.369 \end{forest}
+l.360 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1887,10 +1880,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./03methodology.tex:369: Extra }, or forgotten \endgroup.
+./03methodology.tex:360: Extra }, or forgotten \endgroup.
 <argument> ...rthought={\unexpanded { \par \par }}
                                                   }
-l.369 \end{forest}
+l.360 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1898,10 +1891,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./03methodology.tex:369: Extra }, or forgotten \endgroup.
+./03methodology.tex:360: Extra }, or forgotten \endgroup.
 <argument> ...thought={\unexpanded { \par \par }}}
                                                   
-l.369 \end{forest}
+l.360 \end{forest}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1910,90 +1903,1302 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-./03methodology.tex:369: Package array Error:  Illegal pream-token (1): `c' use
+./03methodology.tex:360: Package array Error:  Illegal pream-token (1): `c' use
 d.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.369 \end{forest}
+l.360 \end{forest}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./03methodology.tex:369: Package array Error:  Illegal pream-token (1): `c' use
+./03methodology.tex:360: Package array Error:  Illegal pream-token (1): `c' use
 d.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.369 \end{forest}
+l.360 \end{forest}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (17.31955pt too wide) in paragraph at lines 369--370
+Overfull \hbox (17.31955pt too wide) in paragraph at lines 360--361
  [][] 
  []
 
-[16]
-Package acronym Info: Label `acro:bbgc' newly defined as it shall be overridden
-
-although it is yet undefined on input line 410.
-
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
+[15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--433
+Underfull \hbox (badness 10000) in paragraph at lines 421--424
 
  []
 
-[17]
 Package acronym Info: Label `acro:ttl' newly defined as it shall be overridden
-although it is yet undefined on input line 455.
-) [18]
+although it is yet undefined on input line 446.
+[18]) [19]
 chapter 4.
-(./04results.tex [19
+(./04results.tex [20
 
-] [20]) [21]
+] [21] [22]
+File: ../images//viertelt.png Graphic file (type bmp)
+<../images//viertelt.png>
+File: ../images//anschauen.png Graphic file (type bmp)
+<../images//anschauen.png>
+ [23]
+File: ../images//pareto.png Graphic file (type bmp)
+<../images//pareto.png>
+ [24]) [25]
 chapter 5.
-[22
+(./05discussion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--4
+
+ []
+
+
+LaTeX Warning: Citation 'smallmodelbigbang' on page 26 undefined on input line 
+13.
+
+
+LaTeX Warning: Citation 'fewshotTHREEpercent' on page 26 undefined on input lin
+e 13.
+
+
+LaTeX Warning: Citation 'scalinglaws' on page 26 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'scalinglaws' on page 26 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'BITE' on page 26 undefined on input line 18.
+
+
+Package acronym Warning: Acronym `POS' is not defined on input line 18.
+
+
+LaTeX Warning: Citation 'BITE' on page 26 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'adversarialmorphin' on page 26 undefined on input line
+ 19.
+
+[26
 
 ]
+
+LaTeX Warning: Citation 'germeval' on page 27 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'germeval' on page 27 undefined on input line 43.
+
+) [27]
 chapter 6.
-[23
+(./06conclusion.tex
 
-]
+LaTeX Warning: Citation 'bertbasegermancasedsequel' on page 28 undefined on inp
+ut line 22.
+
+
+Overfull \hbox (67.35707pt too wide) in paragraph at lines 18--23
+\TU/LinuxLibertineO(0)/m/n/12 ment to the maximization function: relative contr
+ol loss next time, maybe use  [] 
+ []
+
+)
+./main.tex:164: Missing \endcsname inserted.
+<to be read again> 
+                   \scan_stop: 
+l.164         \begin
+                    {tabular}{lll}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./main.tex:164: Missing \endcsname inserted.
+<to be read again> 
+                   \scan_stop: 
+l.164         \begin
+                    {tabular}{lll}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+./main.tex:164: LaTeX Error: Environment \endgraf \endgroup  undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164         \begin
+                    {tabular}{lll}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main.tex:164: Extra }, or forgotten \endgroup.
+\@begin@tempboxa ...begingroup #2\color@endgroup }
+                                                  \def \width {\wd \@tempbox...
+l.164         \begin
+                    {tabular}{lll}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./main.tex:164: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164         \begin
+                    {tabular}{lll}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main.tex:164: Undefined control sequence.
+<argument> \pagewidth 
+                      
+l.164         \begin
+                    {tabular}{lll}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:164: Missing number, treated as zero.
+<to be read again> 
+                   !
+l.164         \begin
+                    {tabular}{lll}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./main.tex:164: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.164         \begin
+                    {tabular}{lll}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./main.tex:164: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164         \begin
+                    {tabular}{lll}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main.tex:165: Misplaced \noalign.
+\toprule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
+l.165             \toprule
+                          
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./main.tex:166: Missing } inserted.
+<inserted text> 
+                }
+l.166             \textbf
+                         {Used Python  Packages} & & \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main.tex:166: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.166             \textbf
+                         {Used Python  Packages} & & \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main.tex:166: Missing } inserted.
+<inserted text> 
+                }
+l.166             \textbf
+                         {Used Python  Packages} & & \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./main.tex:166: Undefined control sequence.
+\@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
+                                                  
+l.166             \textbf
+                         {Used Python  Packages} & & \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:166: Misplaced alignment tab character &.
+l.166             \textbf{Used Python  Packages} &
+                                                   & \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:166: Misplaced alignment tab character &.
+l.166 ...       \textbf{Used Python  Packages} & &
+                                                   \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:167: Misplaced \noalign.
+\midrule ->\noalign 
+                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
+l.167             \midrule
+                          
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./main.tex:168: Misplaced alignment tab character &.
+l.168             aiohttp==3.8.1 &
+                                   Jinja2==3.1.2 & pyOpenSSL==22.0.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:168: Misplaced alignment tab character &.
+l.168             aiohttp==3.8.1 & Jinja2==3.1.2 &
+                                                   pyOpenSSL==22.0.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:169: Misplaced alignment tab character &.
+l.169             aiosignal==1.2.0 &
+                                     joblib==1.1.0 & pyparsing==3.0.9\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:169: Misplaced alignment tab character &.
+l.169 ...       aiosignal==1.2.0 & joblib==1.1.0 &
+                                                   pyparsing==3.0.9\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:170: Misplaced alignment tab character &.
+l.170             argon2-cffi==21.3.0 &
+                                        jsonschema==4.16.0 & PyQt5==5.15.7\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:170: Misplaced alignment tab character &.
+l.170 ...rgon2-cffi==21.3.0 & jsonschema==4.16.0 &
+                                                   PyQt5==5.15.7\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:171: Misplaced alignment tab character &.
+l.171             argon2-cffi-bindings==21.2.0 &
+                                                 jupyter==1.0.0 & PyQt5-sip=...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:171: Misplaced alignment tab character &.
+l.171 ...-cffi-bindings==21.2.0 & jupyter==1.0.0 &
+                                                   PyQt5-sip==12.11.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:172: Misplaced alignment tab character &.
+l.172             async-timeout==4.0.2 &
+                                         jupyter\_client==7.3.5 & pyrsistent...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:172: Misplaced alignment tab character &.
+l.172 ...timeout==4.0.2 & jupyter\_client==7.3.5 &
+                                                   pyrsistent==0.18.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:173: Misplaced alignment tab character &.
+l.173             asynctest==0.13.0 &
+                                      jupyter-console==6.4.4 & PySocks==1.7.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:173: Misplaced alignment tab character &.
+l.173 ...nctest==0.13.0 & jupyter-console==6.4.4 &
+                                                   PySocks==1.7.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:174: Misplaced alignment tab character &.
+l.174             attrs==22.1.0 &
+                                  jupyter\_core==4.11.1 & python-dateutil==2...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:174: Misplaced alignment tab character &.
+l.174 ...  attrs==22.1.0 & jupyter\_core==4.11.1 &
+                                                   python-dateutil==2.8.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:175: Misplaced alignment tab character &.
+l.175             backcall==0.2.0 &
+                                    jupyterlab-pygments==0.2.2 & pytz==2022....
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:175: Misplaced alignment tab character &.
+l.175 ...all==0.2.0 & jupyterlab-pygments==0.2.2 &
+                                                   pytz==2022.2.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:176: Misplaced alignment tab character &.
+l.176 ...   backports.functools-lru-cache==1.6.4 &
+                                                   jupyterlab-widgets==3.0.3...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:176: Misplaced alignment tab character &.
+l.176 ...ache==1.6.4 & jupyterlab-widgets==3.0.3 &
+                                                   PyYAML==6.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:177: Misplaced alignment tab character &.
+l.177             beautifulsoup4==4.11.1 &
+                                           kiwisolver==1.4.4 & pyzmq==23.2.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:177: Misplaced alignment tab character &.
+l.177 ...utifulsoup4==4.11.1 & kiwisolver==1.4.4 &
+                                                   pyzmq==23.2.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:178: Misplaced alignment tab character &.
+l.178             bleach==5.0.1 &
+                                  lxml==4.9.1 & qtconsole==5.3.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:178: Misplaced alignment tab character &.
+l.178             bleach==5.0.1 & lxml==4.9.1 &
+                                                qtconsole==5.3.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:179: Misplaced alignment tab character &.
+l.179             Bottleneck==1.3.5 &
+                                      MarkupSafe==2.1.1 & QtPy==2.2.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:179: Misplaced alignment tab character &.
+l.179 ...  Bottleneck==1.3.5 & MarkupSafe==2.1.1 &
+                                                   QtPy==2.2.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:180: Misplaced alignment tab character &.
+l.180             brotlipy==0.7.0 &
+                                    matplotlib==3.5.3 & regex==2022.9.13\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:180: Misplaced alignment tab character &.
+l.180 ...    brotlipy==0.7.0 & matplotlib==3.5.3 &
+                                                   regex==2022.9.13\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:181: Misplaced alignment tab character &.
+l.181             certifi==2022.12.7 &
+                                       matplotlib-inline==0.1.6 & requests==...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:181: Misplaced alignment tab character &.
+l.181 ...i==2022.12.7 & matplotlib-inline==0.1.6 &
+                                                   requests==2.28.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:182: Misplaced alignment tab character &.
+l.182             cffi==1.15.1 &
+                                 mistune==2.0.4 & responses==0.18.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:182: Misplaced alignment tab character &.
+l.182             cffi==1.15.1 & mistune==2.0.4 &
+                                                  responses==0.18.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:183: Misplaced alignment tab character &.
+l.183             charset-normalizer==2.1.1 &
+                                              more-itertools==9.0.0 & sacrem...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:183: Misplaced alignment tab character &.
+l.183 ...rmalizer==2.1.1 & more-itertools==9.0.0 &
+                                                   sacremoses==0.0.53\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:184: Misplaced alignment tab character &.
+l.184             click==8.1.3 &
+                                 mpmath==1.2.1 & scikit-learn==1.0.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:184: Misplaced alignment tab character &.
+l.184             click==8.1.3 & mpmath==1.2.1 &
+                                                 scikit-learn==1.0.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:185: Misplaced alignment tab character &.
+l.185             colorama==0.4.5 &
+                                    multidict==6.0.2 & scipy==1.7.3\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:185: Misplaced alignment tab character &.
+l.185 ...     colorama==0.4.5 & multidict==6.0.2 &
+                                                   scipy==1.7.3\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:186: Misplaced alignment tab character &.
+l.186             cryptography==37.0.4 &
+                                         multiprocess==0.70.13 & Send2Trash=...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:186: Misplaced alignment tab character &.
+l.186 ...ography==37.0.4 & multiprocess==0.70.13 &
+                                                   Send2Trash==1.8.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:187: Misplaced alignment tab character &.
+l.187             cycler==0.11.0 &
+                                   munkres==1.1.4 & setuptools==65.3.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:187: Misplaced alignment tab character &.
+l.187 ...        cycler==0.11.0 & munkres==1.1.4 &
+                                                   setuptools==65.3.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:188: Misplaced alignment tab character &.
+l.188             dataclasses==0.8 &
+                                     nbclient==0.6.8 & sip==6.6.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:188: Misplaced alignment tab character &.
+l.188 ...     dataclasses==0.8 & nbclient==0.6.8 &
+                                                   sip==6.6.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:189: Misplaced alignment tab character &.
+l.189             datasets==2.4.0 &
+                                    nbconvert==7.0.0 & six==1.16.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:189: Misplaced alignment tab character &.
+l.189 ...     datasets==2.4.0 & nbconvert==7.0.0 &
+                                                   six==1.16.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:190: Misplaced alignment tab character &.
+l.190             debugpy==1.6.3 &
+                                   nbformat==5.4.0 & soupsieve==2.3.2.post1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:190: Misplaced alignment tab character &.
+l.190 ...       debugpy==1.6.3 & nbformat==5.4.0 &
+                                                   soupsieve==2.3.2.post1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:191: Misplaced alignment tab character &.
+l.191             decorator==5.1.1 &
+                                     nest-asyncio==1.5.5 & sympy==1.10.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:191: Misplaced alignment tab character &.
+l.191 ... decorator==5.1.1 & nest-asyncio==1.5.5 &
+                                                   sympy==1.10.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:192: Misplaced alignment tab character &.
+l.192             defusedxml==0.7.1 &
+                                      nltk==3.8.1 & terminado==0.15.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:192: Misplaced alignment tab character &.
+l.192 ...        defusedxml==0.7.1 & nltk==3.8.1 &
+                                                   terminado==0.15.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:193: Misplaced alignment tab character &.
+l.193             dill==0.3.5.1 &
+                                  notebook==6.4.12 & threadpoolctl==3.1.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:193: Misplaced alignment tab character &.
+l.193 ...       dill==0.3.5.1 & notebook==6.4.12 &
+                                                   threadpoolctl==3.1.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:194: Misplaced alignment tab character &.
+l.194             entrypoints==0.4 &
+                                     numexpr==2.8.3 & tinycss2==1.1.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:194: Misplaced alignment tab character &.
+l.194 ...      entrypoints==0.4 & numexpr==2.8.3 &
+                                                   tinycss2==1.1.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:195: Misplaced alignment tab character &.
+l.195             fastjsonschema==2.16.1 &
+                                           numpy==1.21.6 & tokenizers==0.12.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:195: Misplaced alignment tab character &.
+l.195 ... fastjsonschema==2.16.1 & numpy==1.21.6 &
+                                                   tokenizers==0.12.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:196: Misplaced alignment tab character &.
+l.196             filelock==3.8.0 &
+                                    packaging==21.3 & toml==0.10.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:196: Misplaced alignment tab character &.
+l.196 ...      filelock==3.8.0 & packaging==21.3 &
+                                                   toml==0.10.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:197: Misplaced alignment tab character &.
+l.197             findiff==0.8.9 &
+                                   pandas==1.3.5 & torch==1.12.1.post200\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:197: Misplaced alignment tab character &.
+l.197             findiff==0.8.9 & pandas==1.3.5 &
+                                                   torch==1.12.1.post200\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:198: Misplaced alignment tab character &.
+l.198             flit\_core==3.7.1 &
+                                      pandocfilters==1.5.0 & tornado==6.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:198: Misplaced alignment tab character &.
+l.198 ...lit\_core==3.7.1 & pandocfilters==1.5.0 &
+                                                   tornado==6.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:199: Misplaced alignment tab character &.
+l.199             fonttools==4.25.0 &
+                                      parso==0.8.3 & tqdm==4.64.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:199: Misplaced alignment tab character &.
+l.199 ...       fonttools==4.25.0 & parso==0.8.3 &
+                                                   tqdm==4.64.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:200: Misplaced alignment tab character &.
+l.200             frozenlist==1.3.1 &
+                                      pexpect==4.8.0 & traitlets==5.3.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:200: Misplaced alignment tab character &.
+l.200 ...     frozenlist==1.3.1 & pexpect==4.8.0 &
+                                                   traitlets==5.3.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:201: Misplaced alignment tab character &.
+l.201             fsspec==2022.8.2 &
+                                     pickleshare==0.7.5 & transformers==4.21...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:201: Misplaced alignment tab character &.
+l.201 ...  fsspec==2022.8.2 & pickleshare==0.7.5 &
+                                                   transformers==4.21.3\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:202: Misplaced alignment tab character &.
+l.202             gmpy2==2.1.2 &
+                                 Pillow==9.2.0 & typing\_extensions==4.3.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:202: Misplaced alignment tab character &.
+l.202             gmpy2==2.1.2 & Pillow==9.2.0 &
+                                                 typing\_extensions==4.3.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:203: Misplaced alignment tab character &.
+l.203             HanTa==1.0.0 &
+                                 pip==22.2.2 & urllib3==1.26.11\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:203: Misplaced alignment tab character &.
+l.203             HanTa==1.0.0 & pip==22.2.2 &
+                                               urllib3==1.26.11\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:204: Misplaced alignment tab character &.
+l.204             huggingface-hub==0.9.1 &
+                                           pkgutil\_resolve\_name==1.3.10 & ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:204: Misplaced alignment tab character &.
+l.204 ...=0.9.1 & pkgutil\_resolve\_name==1.3.10 &
+                                                   wcwidth==0.2.5\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:205: Misplaced alignment tab character &.
+l.205             idna==3.3 &
+                              ply==3.11 & webencodings==0.5.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:205: Misplaced alignment tab character &.
+l.205             idna==3.3 & ply==3.11 &
+                                          webencodings==0.5.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:206: Misplaced alignment tab character &.
+l.206             importlib-metadata==4.11.4 &
+                                               prometheus-client==0.14.1 & w...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:206: Misplaced alignment tab character &.
+l.206 ...ata==4.11.4 & prometheus-client==0.14.1 &
+                                                   wheel==0.37.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:207: Misplaced alignment tab character &.
+l.207             importlib-resources==5.9.0 &
+                                               prompt-toolkit==3.0.31 & widg...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:207: Misplaced alignment tab character &.
+l.207 ...sources==5.9.0 & prompt-toolkit==3.0.31 &
+                                                   widgetsnbextension==4.0.3\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:208: Misplaced alignment tab character &.
+l.208             ipykernel==6.15.2 &
+                                      psutil==5.9.2 & xxhash==0.0.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:208: Misplaced alignment tab character &.
+l.208 ...      ipykernel==6.15.2 & psutil==5.9.2 &
+                                                   xxhash==0.0.0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:209: Misplaced alignment tab character &.
+l.209             ipython==7.33.0 &
+                                    ptyprocess==0.7.0 & yarl==1.7.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:209: Misplaced alignment tab character &.
+l.209 ...    ipython==7.33.0 & ptyprocess==0.7.0 &
+                                                   yarl==1.7.2\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:210: Misplaced alignment tab character &.
+l.210             ipython-genutils==0.2.0 &
+                                            pyarrow==8.0.0 & zipp==3.8.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:210: Misplaced alignment tab character &.
+l.210 ...python-genutils==0.2.0 & pyarrow==8.0.0 &
+                                                   zipp==3.8.1\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:211: Misplaced alignment tab character &.
+l.211             ipywidgets==8.0.2 &
+                                      pycparser==2.21 & \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:211: Misplaced alignment tab character &.
+l.211 ...    ipywidgets==8.0.2 & pycparser==2.21 &
+                                                   \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:212: Misplaced alignment tab character &.
+l.212             jedi==0.18.1 &
+                                 Pygments==2.13.0 & \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:212: Misplaced alignment tab character &.
+l.212 ...        jedi==0.18.1 & Pygments==2.13.0 &
+                                                   \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:213: Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.213             \bottomrule
+                             
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+./main.tex:214: Misplaced \crcr.
+\endarray ->\crcr 
+                  \egroup \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.214         \end{tabular}
+                           
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./main.tex:214: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup 
+                          \egroup \@arrayright \gdef \@preamble {}\CT@end 
+l.214         \end{tabular}
+                           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./main.tex:214: Extra }, or forgotten \endgroup.
+\endarray ->\crcr \egroup \egroup 
+                                  \@arrayright \gdef \@preamble {}\CT@end 
+l.214         \end{tabular}
+                           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./main.tex:214: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.214         \end{tabular}
+                           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./main.tex:214: LaTeX Error: \begin{table} on input line 161 ended by \end{tabu
+lar}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214         \end{tabular}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./main.tex:214: Missing $ inserted.
+<inserted text> 
+                $
+l.214         \end{tabular}
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Float too large for page by 40.11252pt on input line 216.
+
+[28
+
+] [29]
 chapter without number
 
-Overfull \hbox (18.97603pt too wide) in paragraph at lines 163--163
+Overfull \hbox (18.97603pt too wide) in paragraph at lines 219--219
 \TU/LinuxLibertineO(0)/m/it/12 Evaluation Conference\TU/LinuxLibertineO(0)/m/n/
 12 . Marseille, France: European Language Resources Association, pp. 1900–
  []
 
 
-Overfull \hbox (5.99193pt too wide) in paragraph at lines 163--163
+Overfull \hbox (5.99193pt too wide) in paragraph at lines 219--219
 \TU/LinuxLibertineO(0)/m/it/12 plexity\TU/LinuxLibertineO(0)/m/n/12 . Cambridge
  studies in Linguistics 153. Cambridge University Press. \TU/LinuxLibertineO(0)
 /m/sc/12 isbn\TU/LinuxLibertineO(0)/m/n/12 : 1107120640.
  []
 
-[24
+[30
 
 ]
-Overfull \hbox (4.08003pt too wide) in paragraph at lines 163--163
+Overfull \hbox (4.08003pt too wide) in paragraph at lines 219--219
 [][]\TU/LinuxLibertineO(0)/m/n/12 Devlin, Jacob, Ming-Wei Chang, Kenton Lee, an
 d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
  []
 
 
-Overfull \hbox (1.02866pt too wide) in paragraph at lines 163--163
+Overfull \hbox (1.02866pt too wide) in paragraph at lines 219--219
 \TU/LinuxLibertineO(0)/m/n/12 guistics, pp. 385–393. \TU/LinuxLibertineO(0)/m/s
 c/12 doi\TU/LinuxLibertineO(0)/m/n/12 : []$[][] [] [][][][][] [] [][] [] [][][]
 [] [] [][][] [][] [][][][][] [] [][]$[]. \TU/LinuxLibertineO(0)/m/sc/12 url\TU/
@@ -2001,29 +3206,32 @@ LinuxLibertineO(0)/m/n/12 : []$[][][][][] [] [] [] [][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (0.36623pt too wide) in paragraph at lines 163--163
+Overfull \hbox (0.36623pt too wide) in paragraph at lines 219--219
 \TU/LinuxLibertineO(0)/m/it/12 Mediterranean Morphology Meeting (MMM5)\TU/Linux
 LibertineO(0)/m/n/12 . Università degli Studi di Bologna. \TU/LinuxLibertineO(0
 )/m/sc/12 url\TU/LinuxLibertineO(0)/m/n/12 : []$[][][][][] []
  []
 
-[25]
-Overfull \hbox (39.08957pt too wide) in paragraph at lines 163--163
+
+Overfull \hbox (39.08957pt too wide) in paragraph at lines 219--219
 \TU/LinuxLibertineO(0)/m/n/12 3319904027; 9783319904023. \TU/LinuxLibertineO(0)
 /m/sc/12 url\TU/LinuxLibertineO(0)/m/n/12 : []$[][][][][][] [] [][] [] [][][][]
  [] [][][] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][]$[]. 
  []
 
-
-Overfull \hbox (4.87605pt too wide) in paragraph at lines 163--163
+[31]
+Overfull \hbox (4.87605pt too wide) in paragraph at lines 219--219
 [][]\TU/LinuxLibertineO(0)/m/n/12 Ortiz Su’arez, Pedro Javier, Benoit Sagot, an
 d Laurent Romary (2019). “  Asynchronous pipelines
  []
 
-[26] [27] [28] (/home/gnom/uni/bachelor/BATex/out/main.aux)
+[32] [33] [34] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -2037,12 +3245,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52043 strings out of 476156
- 1141641 string characters out of 5814963
- 1994782 words of memory out of 5000000
- 72082 multiletter control sequences out of 15000+600000
+ 52115 strings out of 476156
+ 1143034 string characters out of 5814963
+ 1995039 words of memory out of 5000000
+ 72139 multiletter control sequences out of 15000+600000
  478879 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 146i,12n,134p,10600b,5011s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 146i,12n,134p,10600b,5015s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (36 pages).
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (42 pages).

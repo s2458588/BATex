@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[52] biber:340> INFO - === Mo Feb 13, 2023, 00:43:45
+[53] biber:340> INFO - === Mo Feb 13, 2023, 18:09:41
 [63] Biber.pm:418> INFO - Reading 'main.bcf'
-[121] Biber.pm:972> INFO - Found 41 citekeys in bib section 0
-[130] Biber.pm:4383> INFO - Processing section 0
-[140] Biber.pm:4574> INFO - Looking for bibtex file 'main.bib' for section 0
-[146] bibtex.pm:1713> INFO - LaTeX decoding ...
-[207] bibtex.pm:1518> INFO - Found BibTeX data source '/home/gnom/uni/bachelor/BATex/src/main.bib'
-[584] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[584] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[584] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[584] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[624] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[668] bbl.pm:757> INFO - Output to main.bbl
-[668] Biber.pm:130> WARN - ISBN '3319904027; 9783319904023' in entry 'humanmachinelearning1' is invalid - run biber with '--validate_datamodel' for details.
-[669] Biber.pm:132> INFO - WARNINGS: 1
+[113] Biber.pm:972> INFO - Found 40 citekeys in bib section 0
+[122] Biber.pm:4383> INFO - Processing section 0
+[129] Biber.pm:4574> INFO - Looking for bibtex file 'main.bib' for section 0
+[133] bibtex.pm:1713> INFO - LaTeX decoding ...
+[185] bibtex.pm:1518> INFO - Found BibTeX data source '/home/gnom/uni/bachelor/BATex/src/main.bib'
+[498] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[498] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[498] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[498] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[534] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[576] bbl.pm:757> INFO - Output to main.bbl
+[576] Biber.pm:130> WARN - ISBN '3319904027; 9783319904023' in entry 'humanmachinelearning1' is invalid - run biber with '--validate_datamodel' for details.
+[576] Biber.pm:132> INFO - WARNINGS: 1

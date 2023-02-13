@@ -1,18 +1,11 @@
-%\usepackage{biblatex}
-%\usepackage{booktabs}
-in this section the whole methodoloy is covered.
-what do i use in this thesis, why do i use it and lastly, how?
-make sure the why covers methodological implications.
-(vergiss nicht alle pakete als quelle im Anhang)
-
-
+This chapter first outlines the theoretical framework together with necessary data.
+After that, the implementation is explained with references to methodological implications of the choices made.
 
 \section{Requirements}
 \label{sec:requirements}
 A series of tools will help to achieve lexicalized tokenization.
 They will be explained in this section along with their methodological edge.
 
-% EVTL. MACHINE LEARNING MODEL AUFSPLITTEN IN MODEL, TOKENIZER VOCABULARY?
 \subsection{Pipeline Structure \& Transformers Library}
 \label{subsec:architecture}
 
@@ -119,7 +112,7 @@ Two datasets are generated from this input, each amounting to 500000 sentences p
 POS Datafiles ideally contains only words that are identified as the same \ac{pos} category.
 To increase the resulting POS vocabulary, POS Datafiles can be augmented by two channels: input can come from the corpus itself, but would need to be tagged first.
 Otherwise a predefined list of words can be used as an external and generic source for Wordmap generation.
-In POS Vocabulary, naive adjustments like removing outliers and interferences are performed on the set of subwords yielded by Wordmap generation.
+In POS Vocabulary, adjustments like removing outliers and interferences are performed on the set of subwords yielded by Wordmap generation.
 It is important to note that the POS vocabulary is separate from the the tokenizer vocabulary.
 This serves the specific purpose of keeping the vocabulary on which the model is trained clean from unwanted or unused subwords.
 Machine learning practice generally points to the trade-off between vocabulary size and model performance, hence the addition of POS Vocabulary to the BERT Tokenizer vocabulary is used only when necessary.
@@ -150,13 +143,8 @@ The same is done for the model evaluation task in the last subsection of this ch
 
 \subsection{Tokenizer}
 \label{subsec:tokenizer}
-\uppercase{essentially deriving sensible subtokens to represent lexemes}
 The methods of tokenization are explained in the following subsection.
-This is the main part of the thesis containing two algorithms for vocabulary generation and token segmentation.
-Once the two algorithms have been explained, the last section of this chapter features the
-
-
-Languages, as consistent form of communication, always
+This is also the main part of the thesis, containing two algorithms - one for vocabulary generation and one for token segmentation.
 Throughout this section, the words $target$ and $token$ are used to describe a word that is analyzed.
 One denotes the argument of the wordmapping and segmenter function ($target$), the other describes a word occurring in the corpus ($token$).
 
@@ -164,14 +152,16 @@ One denotes the argument of the wordmapping and segmenter function ($target$), t
 \label{subsubsec:generating-a-custom-pre-training-vocabulary}
 
 Embedding those subwords which take part in inflectional processes essentially means deriving sensible subwords to represent actual morphemes.
-
 The vocabulary generated for this chapter is a list of inflected and non-inflected verbs (as to state the example) provided by two sources: (1) the german verb wiktionary and (2) a crawl of the GerParCor corpus with the HanTa tagger \cite{hanta}.
 Initial experiments where done only with the wiktionary verb list since it provided sanitized input for the algorithm in development.
-As soon as the verbs where extracted from \ac{gerparcor} via \ac{hanta}
+As soon as the verbs where extracted from \ac{gerparcor} via \ac{hanta} they where added to increase the sample size at the cost of adding noise.
+A naive regular expression detecting syllable nuclei was used to sort the verbs into their respective syllable count.
+It provides an overview over the POS dataset and can potentially decrease iterations.
+The whole POS dataset was iterated over nevertheless, words with syllable count 2 or less are only analyzed to the right to prevent the algorithm from analyzing words that are likely to not have a prefix.
+Through the positional distribution and morphological variety mentioned in \autoref{sec:target-languages} this did not pose a problem.
 
 The Wordmap algorithm as shown in \autoref{alg:wordmap} is the first step to extracting morphemes from a token.
 Its purpose is to compare two strings and store their intersections in a map of boolean values.
-
 
 \algrenewcommand\algorithmicrequire{\textbf{Input:}}
 \algrenewcommand\algorithmicensure{\textbf{Output:}}
@@ -228,32 +218,11 @@ The 2-tuple $pair$ are the strings to be compared.
 It is passed on to (1) \textsc{shorter}, a function returning the shorter of both strings (2) \textsc{longer}, expectedly returning the longer of both strings (3) \textsc{match\_case}, a function to determine the behavior of the algorithm later on.
 As two strings are compared \textsc{match\_case} captures three cases: $pair$ matches in the first, last or both positions.
 Finally $len$ denotes the length of the longest string and $\delta$ difference in length between $s$ and $l$.
-$\delta$ functions as an offset for index-based comparisons \textsc{wordmap}.
-
-\textsc{wordmap} is a naive mapping function generating the wordmaps.
-
-
-\begin{table}
-    \centering
-    \caption{Example wordmaps for $target = \texttt{verstehen}$}
-    \label{tab:wordmaps}
-    \begin{tabular}{llll}
-        \toprule
-        \textbf{String} & \textbf{Wordmap} & \textbf{Case} & \textbf{Padding} \\
-        \midrule
-        \texttt{verarbeiten} & 111000000 & left match & Yes \\
-         & 001000011 & right match & Yes \\
-        \texttt{variiert} & 101001000 & left match & Yes \\
-        \texttt{vormachen} & 101000111 & left match & No \\
-        & 101000111 & right match & No \\
-        \texttt{anstrebtest} &  & no match &   \\
-        (...) &  &  &  \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+$\delta$ functions as an offset for index-based comparisons \textsc{wordmap}, the mapping function generating the Wordmaps.
 
 Once every $v$ has been compared to $target$, $maps$ stores boolean counts of characters occurring in their respective positions in $target$.
 Every map is cleaned with a regular expression to reduce noise caused by natural character occurrence (some characters like \textless n\textgreater, \textless s\textgreater ~will be more frequent than others).
+Omitting this step will result cause a ceiling effect rendering the maps useless.
 Continuous concatenations of leading or trailing matches stay, while every match enclosed by $0$ will be replaced the $0$.
 As an example, $wordmap = 11101100101$ contains three matches on the inside which will result in $11100000001$ as final output.
 In the penultimate stage of mapping $target$, all maps are summed up to receive the number of absolute positional occurrences of every character in $target$.
@@ -267,6 +236,25 @@ Any segment below a z-score of zero is detected.
 For every verb that is mapped, the detected affixes are added to a vocabulary of functional morphemes.
 The rest of the string is saved into the vocabulary of lexemic segments, assuming that it still contains the lexical information in the verb.
 
+\begin{table}[H]
+    \centering
+    \caption{Example Wordmaps for $target = \texttt{verstehen}$}
+    \label{tab:wordmaps}
+    \begin{tabular}{llll}
+        \toprule
+        \textbf{String} & \textbf{Wordmap} & \textbf{Case} & \textbf{Padding} \\
+        \midrule
+        \texttt{verarbeiten} & 111000000 & left match & Yes \\
+        & 001000011 & right match & Yes \\
+        \texttt{variiert} & 101001000 & left match & Yes \\
+        \texttt{vormachen} & 101000111 & left match & No \\
+        & 101000111 & right match & No \\
+        \texttt{anstrebtest} &  & no match &   \\
+        (...) &  &  &  \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
 Both vocabularies are then cleared of outliers in different ways.
 The functional vocabulary drops every string longer than 2.5 times the standard deviation of its own population.
 Since more variance in length is expected in the lexemic vocabulary, the outlier function is limited to drop everything above the length  of 2 times the mean absolute deviation as a staple method for more volatile datasets.
@@ -277,7 +265,10 @@ After minimizing outliers and interference, both vocabularies are joined again t
 
 \subsubsection{BERT Tokenizer Modification}
 \label{subsubsec:tokenizer-modification}
-
+The BERT tokenizer module tokenizes using subwords form its own vocabulary during pre-training.
+By loading the \ac{bbgc} pre-trained tokenizer with and an instance of \ac{hanta} as taggint overhead a sample from the dataset batching function can be fully encoded for training.
+While iterating over the sample \ac{hanta} passes on detected verbs to \autoref{alg:segmenter}.
+All tokenized subsentences are then joined and added to the encoded batch.
 
 \begin{algorithm}
     \caption{Target Segmentation}\label{alg:segmenter}
@@ -412,6 +403,8 @@ For reference and readability they are given shortened IDs as follows:\\
 
 \begin{table}[h]
     \centering
+    \caption{ID references assigned to full model names}
+    \label{tab:modelids}
     \begin{tabular}{ll}
         \toprule
         \textbf{ID} & \textbf{Full name} \\
@@ -423,8 +416,6 @@ For reference and readability they are given shortened IDs as follows:\\
         bbgc & bert-base-german-cased \\
         \bottomrule
     \end{tabular}
-    \caption{ID references assigned to full model names}
-    \label{tab:modelids}
 \end{table}
 
 The full model names in \autoref{tab:modelids} captures broad characteristics of the model.
@@ -433,6 +424,8 @@ All models except for bbgc are trained on the same parameters as seen in table \
 
 \begin{table}[h]
     \centering
+    \caption[List of all used models]{List of all used models and their hyperparameters. LR = learning rate, WU = warmup steps.}
+    \label{tab:modelshyper}
     \begin{tabular}{lllrrrrl}
         \toprule
         \textbf{ID} & \textbf{Corpus} & \textbf{Tokenization} & \textbf{LR} & \textbf{Steps} & \textbf{Batchsize} & \textbf{WU} & \textbf{Base} \\
@@ -444,8 +437,6 @@ All models except for bbgc are trained on the same parameters as seen in table \
         bbgc & Mixed & BWP & 0.0001 & 810k/30k & 1024 & 10000 & - \\
         \bottomrule
     \end{tabular}
-    \caption[List of all used models]{List of all used models and their hyperparameters. LR = learning rate, WU = warmup steps.}
-    \label{tab:modelshyper}
 \end{table}
 
 The first four models use bbgc as baseline, meaning that they inherit its structural properties.
@@ -461,5 +452,6 @@ Due to incompatible versioning dependencies this was not feasible and a substitu
 To test the performance of trained models a one-shot sequence classification task is set up instead.
 The task consists of \textasciitilde11k samples containing a sentence and a single label.
 Each sentence is the title of a news article found on the german Wikinews site, belonging to one of the categories listed on their topic section\footnote{https://de.wikinews.org/wiki/Kategorie:Themenportal}.
+Samples are modified so that one sentence is assigned a single category label.
 Only those categories which appeared at least 200 times where selected for this task, leaving a total of 24 labels to choose from.
 Every model is then trained and valited on a split (train: 70\%, test: 23\%, validation: 7\%) with a training and evaluation batch size of 16, a less sharp learning rate at 0.00002, and three epochs.

@@ -1,20 +1,52 @@
+Results of the pre-trained model benchmarks and tokenization are analyzed in this chapter.
+A closer look is taken at the training procedure and the benchmark results to identify possible effects in data or model architecture.
+For purposes of readability the models are referred to by their IDs introduced in \autoref{subsec:masked-language-model}.\\
 
-algorithm doesnt see circumfixes like ge---t) but only affixes, this could be possible with better noise control and map interpolation
+scores
+The first apparent difference when comparing the models presented in this study are the test scores.
+An overall sub-par performance can be observed for the non-ggbc models, while their baseline model clearly performed better at the task.
+There are many causes for low model performance.
+A model runs through many direct (hyperparameters, implementation) or indirect (data quality, task choice) modeling steps.
+For the course of this thesis a smaller set of experiment parameters where chosen to establish a controlled environment for hypothesis testing.
+Relating to the models this includes the following design measures: (1) smaller model and sample size, (2) constructing Wordmap tokenization and using it on singular tokens during batching, and (3) a single evaluation task.
+Since the larger model performed better than the smaller ones fine-tuned on Oscar and GerParCor one could assume that the performance was influenced by the sheer size of input data and model parameters.
+However, there are enough accounts for outstanding performances in current machine learning applications for smaller models (\textcite{smallmodelbigbang}; \textcite{fewshotTHREEpercent}).
+\citeauthor{scalinglaws} provide an extensive study of model scaling stating that while larger models tend to be more sample-efficient, any of the factors computational capacity, model size and amount of data can compensate for the other ~\cite[3]{scalinglaws}.
+As a consequence the smaller models trained on Oscar and GerParCor should generally be able to achieve better scores than their evaluation indicates.
 
-Characterizing the functional and lexical morphemes by their respective average length has had a positibe impact on segmentation, seem to have impacted the models performance very much.
+The impact of modifying the tokenization on a single \ac{pos} category in masked language learning must be close to none.
+In other endeavors ~\citeauthor{BITE} used the Penn Treebank to model each inflection with designated tokens instead of analyzing the textual surface form, showing that an improvement of WordPiece tokenization is morphologically augmentable with \ac{POS} ~\citeyear{BITE}.
+Their preceeding use of morphological concepts in language learning is found in their previous research through adversarial shifting of morphological paradigms to improve robustness of existing language models (~\cite[2927]{adversarialmorphin}).
+Implemening supporting processes for morphological modeling on an integral scale seems to be a condition for training impactful models.
+This could be one explanation for the
+
+The classification task used to see if the model predictions are noteworthy or negligible was partly inconclusive.
+As stated before the smaller models do not compare to the bbgc model.
+Since this one shot evaluation made even bbgc perform worse than its other classification tasks (\textcite{germeval}; GNAD\footnote{https://huggingface.co/bert-base-german-cased}) there may be an interfering factor in the task design.
+The high number false positives may be attributed to imbalanced sampling (\cite[5--6]{brownlee2020imbalanced})
+
+Considering the overall low performance it is surprising to see mwg5 performing at the given rate.
+more training and controlling the loss
+
+
 
 it is hard to tell if the results are good without combining further metrics like loss or confusion matrix
 
 "A low precision score (<0.5) means your classifier has a high number of False positives which can be an outcome of imbalanced class or untuned model hyperparameters. In an imbalanced class problem"
 -> unbalanced sampling
-
-
-
 spelling errors: oscar > gpc (effekt?)
 
 learning the set != better performance (standard different learning, similar performance)
 mw test scores > ms test scores (in precision + recall, but not in f1 -> imbalance?)
-
 jitter due to small sample size may distort how conclusive the final scores are
 
 bbgc performance stable for germeval \cite{germeval}
+https://tblock.github.io/10kGNAD/
+
+algorithm doesnt see circumfixes like ge---t) but only affixes, this could be possible with better noise control and map interpolation
+Characterizing the functional and lexical morphemes by their respective average length has had a positibe impact on segmentation, seem to have impacted the models performance very much.
+
+
+
+
+
