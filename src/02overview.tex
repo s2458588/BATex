@@ -1,17 +1,11 @@
-%define morpheme vs subword
-%define morphological tokenization
-
 Morphological tokenization can be defined as the process of identifying segments in text that are a productive in a given language, carrying meaning and hence also fitting the definition of a morpheme.
-Recent or relevant findings on morphologically pretrained models in machine learning literature are discussed in this chapter
-
-%findings on POS effect on ML
+Recent or relevant findings on morphologically pretrained models in machine learning literature are discussed in this chapter.
 
 \section{Related Works}
 \label{sec:related-works}
 
+This thesis was mainly inspired through a paper by \citeauthor{FLOTA}, which proposes more flexible segmentation with respect to preserving morphological structure.
 In the past, many efforts towards morphological tokenization have been made.
-This thesis was mainly inspired by the FLOTA
-
 Earlier generalized attempts like morfessor (\cite{morfessor}) have been outperformed by Sequence based models that also use linguistic morphology ~\cite{subwordvsmorfessor} .
 Notably, top-down generation of subword vocabularies has shown promising results for tokenization in fusional languages.
 This aligns with the notion that standard BPE (\cite{BPE}) or WordPiece ~\cite{WORDPIECEGOOGLE} tokenization effectivity suffers from complex morphology causing a big vocabulary.
@@ -28,7 +22,7 @@ In an effort to explain the provenience and relatedness of languages many tools 
 
 Whether it be identification of morphological features (\cite[42--56]{comrie1989}), complexity measures (\cite{measuresofMC}) or connection through reconstruction (\cite{INDOEUROPE}),
 the different linguistic disciplines suggest observable regularities by which to morphologically group languages.
-Leveraging the relatedness of languages in NLP is not a new idea in tokenization or \ac{pos} \hyphen tagging, but is seeing mixed results up to this day, even with augmentation methods (\cite{mixednoiseinterlanguage}).
+Leveraging the relatedness of languages in NLP is not a new idea in tokenization or \ac{pos}\hyphen tagging, but is seeing mixed results up to this day, even with augmentation methods (\cite{mixednoiseinterlanguage}).
 The options seem to branch out quickly, but the mechanism of clearly separating lexemic and functional information seems inherent to most languages.
 The way they differ is in they combine grammatical functions in morphemes (fusion) and bind them to lexemic morphemes (synthesis).
 This may be why approaches with stemming, lemmatization or other morphological analyses are very relevant to building good tokenizers for all languages on the isolating to synthetic spectrum (\cite[51--53]{POLYSYNTHLM}).

@@ -30,7 +30,7 @@
 \newacro{bbgc}[\AC@hyperlink{bbgc}{bbgc}]{bert-base-german-cased}
 \newacro{bert}[\AC@hyperlink{bert}{BERT}]{Bidirectional Encoders from Transformers}
 \newacro{bpe}[\AC@hyperlink{bpe}{BPE}]{Byte Pair Encoding}
-\newacro{bwe}[\AC@hyperlink{bwe}{BWE}]{Bert WordPiece}
+\newacro{wp}[\AC@hyperlink{wp}{BW}]{WordPiece}
 \newacro{cl}[\AC@hyperlink{cl}{CL}]{Computational Linguistics}
 \newacro{gerparcor}[\AC@hyperlink{gerparcor}{GerParCor}]{German Parliamentary Corpus}
 \newacro{gpt}[\AC@hyperlink{gpt}{GPT}]{Generative Pretrained Transformers}
@@ -42,7 +42,6 @@
 \newacro{nlp}[\AC@hyperlink{nlp}{NLP}]{Natural Language Processing}
 \newacro{pos}[\AC@hyperlink{pos}{POS}]{Part of Speech}
 \newacro{ttl}[\AC@hyperlink{ttl}{TTLab}]{Text Technology Lab}
-\newacro{wm}[\AC@hyperlink{wm}{WM}]{Wordmap}
 \abx@aux@cite{0}{gpt}
 \abx@aux@segm{0}{0}{gpt}
 \abx@aux@cite{0}{ATTENTION}
@@ -57,12 +56,16 @@
 \abx@aux@segm{0}{0}{L2morphology}
 \abx@aux@cite{0}{brennan2022language}
 \abx@aux@segm{0}{0}{brennan2022language}
+\abx@aux@cite{0}{handsfreesegmentation}
+\abx@aux@segm{0}{0}{handsfreesegmentation}
 \abx@aux@cite{0}{morpheme}
 \abx@aux@segm{0}{0}{morpheme}
 \abx@aux@cite{0}{WORDPIECEOG}
 \abx@aux@segm{0}{0}{WORDPIECEOG}
 \abx@aux@cite{0}{WORDPIECEGOOGLE}
 \abx@aux@segm{0}{0}{WORDPIECEGOOGLE}
+\abx@aux@cite{0}{inputoutput}
+\abx@aux@segm{0}{0}{inputoutput}
 \HyPL@Entry{8<</S/D>>}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -94,15 +97,19 @@
 \abx@aux@page{5}{1}
 \abx@aux@page{6}{1}
 \abx@aux@page{7}{1}
-\abx@aux@cite{0}{FLOTA}
-\abx@aux@segm{0}{0}{FLOTA}
 \abx@aux@page{8}{2}
-\abx@aux@page{10}{2}
+\abx@aux@page{9}{2}
 \abx@aux@page{11}{2}
+\abx@aux@page{12}{2}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Hypotheses}{2}{section.1.2}\protected@file@percent }
 \newlabel{sec:hypothesis}{{1.2}{2}{Hypotheses}{section.1.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}Scope and Structure}{3}{section.1.3}\protected@file@percent }
 \newlabel{sec:scope-and-structure}{{1.3}{3}{Scope and Structure}{section.1.3}{}}
+\AC@undonewlabel{acro:pos}
+\newlabel{acro:pos}{{1.3}{3}{Scope and Structure}{section*.10}{}}
+\acronymused{pos}
+\abx@aux@cite{0}{FLOTA}
+\abx@aux@segm{0}{0}{FLOTA}
 \abx@aux@cite{0}{morfessor}
 \abx@aux@segm{0}{0}{morfessor}
 \abx@aux@cite{0}{subwordvsmorfessor}
@@ -128,15 +135,15 @@
 \newlabel{ch:overview}{{2}{4}{Overview}{chapter.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Related Works}{4}{section.2.1}\protected@file@percent }
 \newlabel{sec:related-works}{{2.1}{4}{Related Works}{section.2.1}{}}
-\abx@aux@page{12}{4}
-\abx@aux@page{13}{4}
 \abx@aux@page{14}{4}
 \abx@aux@page{15}{4}
 \abx@aux@page{16}{4}
+\abx@aux@page{17}{4}
 \abx@aux@page{18}{4}
 \abx@aux@page{20}{4}
+\abx@aux@page{22}{4}
 \AC@undonewlabel{acro:nlp}
-\newlabel{acro:nlp}{{2.1}{4}{Related Works}{section*.10}{}}
+\newlabel{acro:nlp}{{2.1}{4}{Related Works}{section*.11}{}}
 \acronymused{nlp}
 \abx@aux@cite{0}{comrie1989}
 \abx@aux@segm{0}{0}{comrie1989}
@@ -151,17 +158,15 @@
 \abx@aux@cite{0}{METZLER2016}
 \abx@aux@segm{0}{0}{METZLER2016}
 \acronymused{nlp}
-\abx@aux@page{21}{5}
-\abx@aux@page{22}{5}
 \abx@aux@page{23}{5}
-\AC@undonewlabel{acro:pos}
-\newlabel{acro:pos}{{2.1}{5}{Related Works}{section*.11}{}}
-\acronymused{pos}
 \abx@aux@page{24}{5}
 \abx@aux@page{25}{5}
+\acronymused{pos}
+\abx@aux@page{26}{5}
+\abx@aux@page{27}{5}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Target Languages}{5}{section.2.2}\protected@file@percent }
 \newlabel{sec:target-languages}{{2.2}{5}{Target Languages}{section.2.2}{}}
-\abx@aux@page{26}{5}
+\abx@aux@page{28}{5}
 \abx@aux@cite{0}{MORPHOLOGICALCOMPLEXITY}
 \abx@aux@segm{0}{0}{MORPHOLOGICALCOMPLEXITY}
 \abx@aux@cite{0}{LINGUISTICTYPOLOGY}
@@ -176,24 +181,24 @@
 \abx@aux@segm{0}{0}{MORPHOSYNTAXCOMPLEXITY1}
 \abx@aux@cite{0}{bentz-etal-2016-comparison}
 \abx@aux@segm{0}{0}{bentz-etal-2016-comparison}
-\abx@aux@cite{0}{finverbs}
-\abx@aux@segm{0}{0}{finverbs}
-\abx@aux@page{27}{6}
-\abx@aux@page{28}{6}
+\abx@aux@page{29}{6}
+\abx@aux@page{30}{6}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces List of similar languages}}{6}{table.2.1}\protected@file@percent }
 \newlabel{tab:similarity}{{1}{6}{List of similar languages}{table.2.1}{}}
-\abx@aux@page{33}{6}
+\abx@aux@page{35}{6}
+\abx@aux@cite{0}{finverbs}
+\abx@aux@segm{0}{0}{finverbs}
 \abx@aux@cite{0}{finverbs}
 \abx@aux@segm{0}{0}{finverbs}
 \abx@aux@cite{0}{hunverbs}
 \abx@aux@segm{0}{0}{hunverbs}
 \abx@aux@cite{0}{itaverbs}
 \abx@aux@segm{0}{0}{itaverbs}
-\abx@aux@page{34}{7}
+\abx@aux@page{36}{7}
 \newlabel{fig:fin}{{2.2}{7}{Target Languages}{table.2.1}{}}
 \newlabel{fig:hun}{{2.2}{7}{Target Languages}{Item.1}{}}
-\abx@aux@page{36}{7}
-\abx@aux@page{37}{7}
+\abx@aux@page{38}{7}
+\abx@aux@page{39}{8}
 \newlabel{fig:ita}{{2.2}{8}{Target Languages}{Item.2}{}}
 \abx@aux@cite{0}{ATTENTION}
 \abx@aux@segm{0}{0}{ATTENTION}
@@ -210,11 +215,11 @@
 \newlabel{subsec:architecture}{{3.1.1}{9}{Pipeline Structure \& Transformers Library}{subsection.3.1.1}{}}
 \acronymused{bert}
 \acronymused{nlp}
-\abx@aux@page{38}{9}
+\abx@aux@page{40}{9}
 \AC@undonewlabel{acro:lstm}
 \newlabel{acro:lstm}{{3.1.1}{9}{Pipeline Structure \& Transformers Library}{section*.12}{}}
 \acronymused{lstm}
-\abx@aux@page{39}{9}
+\abx@aux@page{41}{9}
 \acronymused{bert}
 \AC@undonewlabel{acro:lm}
 \newlabel{acro:lm}{{3.1.1}{9}{Pipeline Structure \& Transformers Library}{section*.13}{}}
@@ -257,17 +262,17 @@
 \AC@undonewlabel{acro:gerparcor}
 \newlabel{acro:gerparcor}{{3.1.2}{11}{Data}{section*.17}{}}
 \acronymused{gerparcor}
-\abx@aux@page{40}{11}
-\abx@aux@page{41}{11}
 \abx@aux@page{42}{11}
-\acronymused{gerparcor}
-\acronymused{gerparcor}
-\acronymused{gerparcor}
 \abx@aux@page{43}{11}
 \abx@aux@page{44}{11}
+\acronymused{gerparcor}
+\acronymused{gerparcor}
+\acronymused{gerparcor}
 \abx@aux@page{45}{11}
-\acronymused{hanta}
 \abx@aux@page{46}{11}
+\abx@aux@page{47}{11}
+\acronymused{hanta}
+\abx@aux@page{48}{11}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Implementation}{11}{section.3.2}\protected@file@percent }
 \newlabel{sec:implementation}{{3.2}{11}{Implementation}{section.3.2}{}}
 \acronymused{bert}
@@ -277,7 +282,7 @@
 \newlabel{subsec:tokenizer}{{3.2.1}{12}{Tokenizer}{subsection.3.2.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline Generating a custom pre-training vocabulary}{12}{subsubsection*.19}\protected@file@percent }
 \newlabel{subsubsec:generating-a-custom-pre-training-vocabulary}{{3.2.1}{12}{Generating a custom pre-training vocabulary}{subsubsection*.19}{}}
-\abx@aux@page{47}{12}
+\abx@aux@page{49}{12}
 \acronymused{gerparcor}
 \acronymused{hanta}
 \acronymused{pos}
@@ -307,24 +312,24 @@
 \abx@aux@cite{0}{pytorch}
 \abx@aux@segm{0}{0}{pytorch}
 \acronymused{pos}
-\abx@aux@page{48}{18}
+\abx@aux@page{50}{18}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Model Training}{18}{subsection.3.2.2}\protected@file@percent }
 \newlabel{subsec:masked-language-model}{{3.2.2}{18}{Model Training}{subsection.3.2.2}{}}
 \acronymused{bbgc}
-\abx@aux@page{49}{18}
+\abx@aux@page{51}{18}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces ID references assigned to full model names}}{18}{table.3.3}\protected@file@percent }
 \newlabel{tab:modelids}{{3}{18}{ID references assigned to full model names}{table.3.3}{}}
 \abx@aux@cite{0}{olmpics}
 \abx@aux@segm{0}{0}{olmpics}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces List of all used models}}{19}{table.3.4}\protected@file@percent }
 \newlabel{tab:modelshyper}{{4}{19}{List of all used models}{table.3.4}{}}
-\abx@aux@page{50}{19}
+\abx@aux@page{52}{19}
 \AC@undonewlabel{acro:ttl}
 \newlabel{acro:ttl}{{3.2.2}{19}{Model Training}{section*.23}{}}
 \acronymused{ttl}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Benchmark}{19}{subsection.3.2.3}\protected@file@percent }
 \newlabel{subsec:benchmark-implementation}{{3.2.3}{19}{Benchmark}{subsection.3.2.3}{}}
-\abx@aux@page{51}{19}
+\abx@aux@page{53}{19}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -373,6 +378,8 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{ch:discussion}{{5}{26}{Discussion}{chapter.5}{}}
+\abx@aux@page{54}{26}
+\abx@aux@page{55}{26}
 \acronymused{pos}
 \acronymused{POS}
 \abx@aux@cite{0}{germeval}
@@ -381,48 +388,39 @@
 \abx@aux@segm{0}{0}{brownlee2020imbalanced}
 \abx@aux@cite{0}{FLOTA}
 \abx@aux@segm{0}{0}{FLOTA}
+\abx@aux@page{60}{27}
+\abx@aux@page{61}{27}
+\abx@aux@page{62}{27}
+\abx@aux@page{63}{27}
 \abx@aux@cite{0}{BITE}
 \abx@aux@segm{0}{0}{BITE}
+\abx@aux@page{64}{28}
 \AC@undonewlabel{acro:wp}
 \newlabel{acro:wp}{{5}{28}{Discussion}{section*.24}{}}
 \acronymused{wp}
 \AC@undonewlabel{acro:bpe}
 \newlabel{acro:bpe}{{5}{28}{Discussion}{section*.25}{}}
 \acronymused{bpe}
-\abx@aux@cite{0}{bertbasegermancasedsequel}
-\abx@aux@segm{0}{0}{bertbasegermancasedsequel}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{30}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:conclusion}{{6}{29}{Conclusion}{chapter.6}{}}
+\newlabel{ch:conclusion}{{6}{30}{Conclusion}{chapter.6}{}}
 \acronymused{cl}
-\newlabel{tab:pythonpackages}{{6}{30}{Conclusion}{chapter.6}{}}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Bibliography}{31}{chapter*.26}\protected@file@percent }
+\newlabel{tab:pythonpackages}{{6}{31}{Conclusion}{chapter.6}{}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Bibliography}{32}{chapter*.26}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\abx@aux@page{53}{31}
-\abx@aux@page{54}{31}
-\abx@aux@page{55}{31}
-\abx@aux@page{56}{31}
-\abx@aux@page{57}{31}
-\abx@aux@page{58}{31}
-\abx@aux@page{59}{31}
-\abx@aux@page{60}{31}
-\abx@aux@page{61}{31}
-\abx@aux@page{62}{32}
-\abx@aux@page{63}{32}
-\abx@aux@page{64}{32}
 \abx@aux@page{65}{32}
 \abx@aux@page{66}{32}
 \abx@aux@page{67}{32}
 \abx@aux@page{68}{32}
 \abx@aux@page{69}{32}
 \abx@aux@page{70}{32}
-\abx@aux@page{71}{33}
-\abx@aux@page{72}{33}
-\abx@aux@page{73}{33}
+\abx@aux@page{71}{32}
+\abx@aux@page{72}{32}
+\abx@aux@page{73}{32}
 \abx@aux@page{74}{33}
 \abx@aux@page{75}{33}
 \abx@aux@page{76}{33}
@@ -430,9 +428,9 @@
 \abx@aux@page{78}{33}
 \abx@aux@page{79}{33}
 \abx@aux@page{80}{33}
-\abx@aux@page{81}{34}
-\abx@aux@page{82}{34}
-\abx@aux@page{83}{34}
+\abx@aux@page{81}{33}
+\abx@aux@page{82}{33}
+\abx@aux@page{83}{33}
 \abx@aux@page{84}{34}
 \abx@aux@page{85}{34}
 \abx@aux@page{86}{34}
@@ -440,10 +438,30 @@
 \abx@aux@page{88}{34}
 \abx@aux@page{89}{34}
 \abx@aux@page{90}{34}
-\abx@aux@page{91}{35}
-\abx@aux@page{92}{35}
-\abx@aux@read@bbl@mdfivesum{B0C2E8B85AFB7B76BC96F6A63DE92877}
-\abx@aux@read@bblrerun
+\abx@aux@page{91}{34}
+\abx@aux@page{92}{34}
+\abx@aux@page{93}{34}
+\abx@aux@page{94}{34}
+\abx@aux@page{95}{35}
+\abx@aux@page{96}{35}
+\abx@aux@page{97}{35}
+\abx@aux@page{98}{35}
+\abx@aux@page{99}{35}
+\abx@aux@page{100}{35}
+\abx@aux@page{101}{35}
+\abx@aux@page{102}{35}
+\abx@aux@page{103}{35}
+\abx@aux@page{104}{35}
+\abx@aux@page{105}{36}
+\abx@aux@page{106}{36}
+\abx@aux@page{107}{36}
+\abx@aux@page{108}{36}
+\abx@aux@page{109}{36}
+\abx@aux@page{110}{36}
+\abx@aux@page{111}{36}
+\abx@aux@page{112}{36}
+\abx@aux@page{113}{36}
+\abx@aux@read@bbl@mdfivesum{199BF14DA93253C58F78AABCE08D8038}
 \abx@aux@defaultrefcontext{0}{GERPARCOR}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{mixednoiseinterlanguage}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{LINGUISTICTYPOLOGY}{nyt/global//global/global}
@@ -451,6 +469,7 @@
 \abx@aux@defaultrefcontext{0}{bentz-etal-2016-comparison}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{INDOEUROPE}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{brennan2022language}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{brownlee2020imbalanced}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{bertbasegermancased}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{morpheme}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{measuresofMC}{nyt/global//global/global}
@@ -462,7 +481,10 @@
 \abx@aux@defaultrefcontext{0}{METZLER2016}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{FLOTA}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{itaverbs}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{handsfreesegmentation}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{fewshotTHREEpercent}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{humanmachinelearning1}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{scalinglaws}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{L2morphology}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{hunverbs}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{humanmachinelearning2}{nyt/global//global/global}
@@ -472,16 +494,21 @@
 \abx@aux@defaultrefcontext{0}{oscarsub2}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{oscar}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{pytorch}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{inputoutput}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{subwordvsmorfessor}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{gpt}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{MONOLINGUAL}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{smallmodelbigbang}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{WORDPIECEOG}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{POLYSYNTHLM}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{BPE}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{olmpics}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{adversarialmorphin}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{BITE}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{TOKENIZATIONIMPACT}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{ATTENTION}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{hanta}{nyt/global//global/global}
+\abx@aux@defaultrefcontext{0}{germeval}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{wiktionary}{nyt/global//global/global}
 \abx@aux@defaultrefcontext{0}{WORDPIECEGOOGLE}{nyt/global//global/global}
 \global\@namedef{scr@dte@chapter@lastmaxnumwidth}{10.96793pt}
@@ -492,4 +519,4 @@
 \@writefile{toc}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
 \@writefile{lof}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
 \@writefile{lot}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
-\gdef \@abspage@last{43}
+\gdef \@abspage@last{44}

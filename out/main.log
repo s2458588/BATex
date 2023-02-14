@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  14 FEB 2023 01:25
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  14 FEB 2023 03:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1724,32 +1724,7 @@ LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
 
  [2
 
-]
-
-LaTeX Warning: Hyper reference `acro:bpe' on page III undefined on input line 1
-07.
-
-
-LaTeX Warning: Hyper reference `acro:bpe' on page III undefined on input line 1
-07.
-
-
-LaTeX Warning: Hyper reference `acro:bwe' on page III undefined on input line 1
-08.
-
-
-LaTeX Warning: Hyper reference `acro:bwe' on page III undefined on input line 1
-08.
-
-
-LaTeX Warning: Hyper reference `acro:wm' on page III undefined on input line 12
-0.
-
-
-LaTeX Warning: Hyper reference `acro:wm' on page III undefined on input line 12
-0.
-
-[3
+] [3
 
 ]
 chapter 1.
@@ -1767,24 +1742,24 @@ although it is yet undefined on input line 10.
 
 
 
-] [2]) [3]
+] [2]
+Package acronym Info: Label `acro:pos' newly defined as it shall be overridden
+although it is yet undefined on input line 62.
+) [3]
 chapter 2.
 (./02overview.tex
 Package acronym Info: Label `acro:nlp' newly defined as it shall be overridden
-although it is yet undefined on input line 25.
+although it is yet undefined on input line 19.
  [4
 
 ]
-Package acronym Info: Label `acro:pos' newly defined as it shall be overridden
-although it is yet undefined on input line 31.
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
   [][][]\TU/LinuxLibertineO(0)/m/n/10 https://de.statista.com/statistik/daten/s
 tudie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last
  []
 
 [5]
-Overfull \hbox (5.80505pt too wide) in paragraph at lines 53--58
+Overfull \hbox (5.80505pt too wide) in paragraph at lines 47--52
 \TU/LinuxLibertineO(0)/m/n/12 Mind that morphological complexity is a classifyi
 ng category to describe gradients of function-
  []
@@ -1969,116 +1944,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--4
  []
 
 
-LaTeX Warning: Citation 'smallmodelbigbang' on page 26 undefined on input line 
-13.
-
-
-LaTeX Warning: Citation 'fewshotTHREEpercent' on page 26 undefined on input lin
-e 13.
-
-
-LaTeX Warning: Citation 'scalinglaws' on page 26 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'scalinglaws' on page 26 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'BITE' on page 26 undefined on input line 18.
-
-
-Package acronym Warning: Acronym `POS' is not defined on input line 18.
-
-
-LaTeX Warning: Citation 'BITE' on page 26 undefined on input line 18.
-
-
-LaTeX Warning: Citation 'adversarialmorphin' on page 26 undefined on input line
- 19.
+Package acronym Warning: Acronym `POS' is not defined on input line 17.
 
 [26
 
-]
-
-LaTeX Warning: Citation 'germeval' on page 27 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'brownlee2020imbalanced' on page 27 undefined on input 
-line 26.
-
-
-Overfull \hbox (3.93304pt too wide) in paragraph at lines 23--33
-\TU/LinuxLibertineO(0)/m/n/12 number false positives may be attributed to imbal
-anced sampling ([]).
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--40
-
- []
-
-
-LaTeX Warning: Citation 'BITE' on page 27 undefined on input line 47.
-
-[27]
+] [27]
 Package acronym Info: Label `acro:wp' newly defined as it shall be overridden
 although it is yet undefined on input line 54.
-
-
-Package acronym Warning: Acronym `wp' is not defined on input line 54.
-
-
-Package acronym Warning: Acronym `wp' is not defined on input line 54.
-
 Package acronym Info: Label `acro:bpe' newly defined as it shall be overridden
 although it is yet undefined on input line 54.
-) [28]
+) [28] [29]
 chapter 6.
-(./06conclusion.tex
-
-LaTeX Warning: Citation 'bertbasegermancasedsequel' on page 29 undefined on inp
-ut line 22.
-
-
-Overfull \hbox (67.35707pt too wide) in paragraph at lines 18--23
-\TU/LinuxLibertineO(0)/m/n/12 ment to the maximization function: relative contr
-ol loss next time, maybe use  [] 
- []
-
-)
-./main.tex:164: Missing \endcsname inserted.
+(./06conclusion.tex)
+./main.tex:167: Missing \endcsname inserted.
 <to be read again> 
                    \scan_stop: 
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
-./main.tex:164: Missing \endcsname inserted.
+./main.tex:167: Missing \endcsname inserted.
 <to be read again> 
                    \scan_stop: 
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
 
-./main.tex:164: LaTeX Error: Environment \endgraf \endgroup  undefined.
+./main.tex:167: LaTeX Error: Environment \endgraf \endgroup  undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./main.tex:164: Extra }, or forgotten \endgroup.
+./main.tex:167: Extra }, or forgotten \endgroup.
 \@begin@tempboxa ...begingroup #2\color@endgroup }
                                                   \def \width {\wd \@tempbox...
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -2086,43 +1997,43 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-./main.tex:164: Package graphics Error: Division by 0.
+./main.tex:167: Package graphics Error: Division by 0.
 
 See the graphics package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./main.tex:164: Undefined control sequence.
+./main.tex:167: Undefined control sequence.
 <argument> \pagewidth 
                       
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:164: Missing number, treated as zero.
+./main.tex:167: Missing number, treated as zero.
 <to be read again> 
                    !
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./main.tex:164: Illegal unit of measure (pt inserted).
+./main.tex:167: Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -2131,100 +2042,72 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-./main.tex:164: Package graphics Error: Division by 0.
+./main.tex:167: Package graphics Error: Division by 0.
 
 See the graphics package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164         \begin
-                    {tabular}{lll}
+l.167         \begin
+                    {tabular}{l|l|l}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./main.tex:165: Misplaced \noalign.
+./main.tex:168: Misplaced \noalign.
 \toprule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
-l.165             \toprule
+l.168             \toprule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-./main.tex:166: Missing } inserted.
+./main.tex:170: Missing } inserted.
 <inserted text> 
                 }
-l.166             \textbf
-                         {Used Python  Packages} & & \\
+l.170             a
+                   iohttp==3.8.1 & Jinja2==3.1.2 & pyOpenSSL==22.0.0\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./main.tex:166: Missing \endgroup inserted.
+./main.tex:170: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.166             \textbf
-                         {Used Python  Packages} & & \\
+l.170             a
+                   iohttp==3.8.1 & Jinja2==3.1.2 & pyOpenSSL==22.0.0\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./main.tex:166: Missing } inserted.
+./main.tex:170: Missing } inserted.
 <inserted text> 
                 }
-l.166             \textbf
-                         {Used Python  Packages} & & \\
+l.170             a
+                   iohttp==3.8.1 & Jinja2==3.1.2 & pyOpenSSL==22.0.0\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./main.tex:166: Undefined control sequence.
+./main.tex:170: Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.166             \textbf
-                         {Used Python  Packages} & & \\
+l.170             a
+                   iohttp==3.8.1 & Jinja2==3.1.2 & pyOpenSSL==22.0.0\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:166: Misplaced alignment tab character &.
-l.166             \textbf{Used Python  Packages} &
-                                                   & \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./main.tex:166: Misplaced alignment tab character &.
-l.166 ...       \textbf{Used Python  Packages} & &
-                                                   \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./main.tex:167: Misplaced \noalign.
-\midrule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.167             \midrule
-                          
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./main.tex:168: Misplaced alignment tab character &.
-l.168             aiohttp==3.8.1 &
+./main.tex:170: Misplaced alignment tab character &.
+l.170             aiohttp==3.8.1 &
                                    Jinja2==3.1.2 & pyOpenSSL==22.0.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2233,8 +2116,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:168: Misplaced alignment tab character &.
-l.168             aiohttp==3.8.1 & Jinja2==3.1.2 &
+./main.tex:170: Misplaced alignment tab character &.
+l.170             aiohttp==3.8.1 & Jinja2==3.1.2 &
                                                    pyOpenSSL==22.0.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2243,8 +2126,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:169: Misplaced alignment tab character &.
-l.169             aiosignal==1.2.0 &
+./main.tex:171: Misplaced alignment tab character &.
+l.171             aiosignal==1.2.0 &
                                      joblib==1.1.0 & pyparsing==3.0.9\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2253,8 +2136,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:169: Misplaced alignment tab character &.
-l.169 ...       aiosignal==1.2.0 & joblib==1.1.0 &
+./main.tex:171: Misplaced alignment tab character &.
+l.171 ...       aiosignal==1.2.0 & joblib==1.1.0 &
                                                    pyparsing==3.0.9\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2263,8 +2146,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:170: Misplaced alignment tab character &.
-l.170             argon2-cffi==21.3.0 &
+./main.tex:172: Misplaced alignment tab character &.
+l.172             argon2-cffi==21.3.0 &
                                         jsonschema==4.16.0 & PyQt5==5.15.7\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2273,8 +2156,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:170: Misplaced alignment tab character &.
-l.170 ...rgon2-cffi==21.3.0 & jsonschema==4.16.0 &
+./main.tex:172: Misplaced alignment tab character &.
+l.172 ...rgon2-cffi==21.3.0 & jsonschema==4.16.0 &
                                                    PyQt5==5.15.7\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2283,8 +2166,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:171: Misplaced alignment tab character &.
-l.171             argon2-cffi-bindings==21.2.0 &
+./main.tex:173: Misplaced alignment tab character &.
+l.173             argon2-cffi-bindings==21.2.0 &
                                                  jupyter==1.0.0 & PyQt5-sip=...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2293,8 +2176,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:171: Misplaced alignment tab character &.
-l.171 ...-cffi-bindings==21.2.0 & jupyter==1.0.0 &
+./main.tex:173: Misplaced alignment tab character &.
+l.173 ...-cffi-bindings==21.2.0 & jupyter==1.0.0 &
                                                    PyQt5-sip==12.11.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2303,8 +2186,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:172: Misplaced alignment tab character &.
-l.172             async-timeout==4.0.2 &
+./main.tex:174: Misplaced alignment tab character &.
+l.174             async-timeout==4.0.2 &
                                          jupyter\_client==7.3.5 & pyrsistent...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2313,8 +2196,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:172: Misplaced alignment tab character &.
-l.172 ...timeout==4.0.2 & jupyter\_client==7.3.5 &
+./main.tex:174: Misplaced alignment tab character &.
+l.174 ...timeout==4.0.2 & jupyter\_client==7.3.5 &
                                                    pyrsistent==0.18.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2323,8 +2206,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:173: Misplaced alignment tab character &.
-l.173             asynctest==0.13.0 &
+./main.tex:175: Misplaced alignment tab character &.
+l.175             asynctest==0.13.0 &
                                       jupyter-console==6.4.4 & PySocks==1.7.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2333,8 +2216,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:173: Misplaced alignment tab character &.
-l.173 ...nctest==0.13.0 & jupyter-console==6.4.4 &
+./main.tex:175: Misplaced alignment tab character &.
+l.175 ...nctest==0.13.0 & jupyter-console==6.4.4 &
                                                    PySocks==1.7.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2343,8 +2226,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:174: Misplaced alignment tab character &.
-l.174             attrs==22.1.0 &
+./main.tex:176: Misplaced alignment tab character &.
+l.176             attrs==22.1.0 &
                                   jupyter\_core==4.11.1 & python-dateutil==2...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2353,8 +2236,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:174: Misplaced alignment tab character &.
-l.174 ...  attrs==22.1.0 & jupyter\_core==4.11.1 &
+./main.tex:176: Misplaced alignment tab character &.
+l.176 ...  attrs==22.1.0 & jupyter\_core==4.11.1 &
                                                    python-dateutil==2.8.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2363,8 +2246,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:175: Misplaced alignment tab character &.
-l.175             backcall==0.2.0 &
+./main.tex:177: Misplaced alignment tab character &.
+l.177             backcall==0.2.0 &
                                     jupyterlab-pygments==0.2.2 & pytz==2022....
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2373,8 +2256,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:175: Misplaced alignment tab character &.
-l.175 ...all==0.2.0 & jupyterlab-pygments==0.2.2 &
+./main.tex:177: Misplaced alignment tab character &.
+l.177 ...all==0.2.0 & jupyterlab-pygments==0.2.2 &
                                                    pytz==2022.2.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2383,8 +2266,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:176: Misplaced alignment tab character &.
-l.176 ...   backports.functools-lru-cache==1.6.4 &
+./main.tex:178: Misplaced alignment tab character &.
+l.178 ...   backports.functools-lru-cache==1.6.4 &
                                                    jupyterlab-widgets==3.0.3...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2393,8 +2276,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:176: Misplaced alignment tab character &.
-l.176 ...ache==1.6.4 & jupyterlab-widgets==3.0.3 &
+./main.tex:178: Misplaced alignment tab character &.
+l.178 ...ache==1.6.4 & jupyterlab-widgets==3.0.3 &
                                                    PyYAML==6.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2403,8 +2286,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:177: Misplaced alignment tab character &.
-l.177             beautifulsoup4==4.11.1 &
+./main.tex:179: Misplaced alignment tab character &.
+l.179             beautifulsoup4==4.11.1 &
                                            kiwisolver==1.4.4 & pyzmq==23.2.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2413,8 +2296,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:177: Misplaced alignment tab character &.
-l.177 ...utifulsoup4==4.11.1 & kiwisolver==1.4.4 &
+./main.tex:179: Misplaced alignment tab character &.
+l.179 ...utifulsoup4==4.11.1 & kiwisolver==1.4.4 &
                                                    pyzmq==23.2.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2423,8 +2306,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:178: Misplaced alignment tab character &.
-l.178             bleach==5.0.1 &
+./main.tex:180: Misplaced alignment tab character &.
+l.180             bleach==5.0.1 &
                                   lxml==4.9.1 & qtconsole==5.3.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2433,8 +2316,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:178: Misplaced alignment tab character &.
-l.178             bleach==5.0.1 & lxml==4.9.1 &
+./main.tex:180: Misplaced alignment tab character &.
+l.180             bleach==5.0.1 & lxml==4.9.1 &
                                                 qtconsole==5.3.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2443,8 +2326,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:179: Misplaced alignment tab character &.
-l.179             Bottleneck==1.3.5 &
+./main.tex:181: Misplaced alignment tab character &.
+l.181             Bottleneck==1.3.5 &
                                       MarkupSafe==2.1.1 & QtPy==2.2.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2453,8 +2336,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:179: Misplaced alignment tab character &.
-l.179 ...  Bottleneck==1.3.5 & MarkupSafe==2.1.1 &
+./main.tex:181: Misplaced alignment tab character &.
+l.181 ...  Bottleneck==1.3.5 & MarkupSafe==2.1.1 &
                                                    QtPy==2.2.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2463,8 +2346,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:180: Misplaced alignment tab character &.
-l.180             brotlipy==0.7.0 &
+./main.tex:182: Misplaced alignment tab character &.
+l.182             brotlipy==0.7.0 &
                                     matplotlib==3.5.3 & regex==2022.9.13\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2473,8 +2356,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:180: Misplaced alignment tab character &.
-l.180 ...    brotlipy==0.7.0 & matplotlib==3.5.3 &
+./main.tex:182: Misplaced alignment tab character &.
+l.182 ...    brotlipy==0.7.0 & matplotlib==3.5.3 &
                                                    regex==2022.9.13\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2483,8 +2366,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:181: Misplaced alignment tab character &.
-l.181             certifi==2022.12.7 &
+./main.tex:183: Misplaced alignment tab character &.
+l.183             certifi==2022.12.7 &
                                        matplotlib-inline==0.1.6 & requests==...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2493,8 +2376,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:181: Misplaced alignment tab character &.
-l.181 ...i==2022.12.7 & matplotlib-inline==0.1.6 &
+./main.tex:183: Misplaced alignment tab character &.
+l.183 ...i==2022.12.7 & matplotlib-inline==0.1.6 &
                                                    requests==2.28.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2503,8 +2386,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:182: Misplaced alignment tab character &.
-l.182             cffi==1.15.1 &
+./main.tex:184: Misplaced alignment tab character &.
+l.184             cffi==1.15.1 &
                                  mistune==2.0.4 & responses==0.18.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2513,8 +2396,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:182: Misplaced alignment tab character &.
-l.182             cffi==1.15.1 & mistune==2.0.4 &
+./main.tex:184: Misplaced alignment tab character &.
+l.184             cffi==1.15.1 & mistune==2.0.4 &
                                                   responses==0.18.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2523,8 +2406,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:183: Misplaced alignment tab character &.
-l.183             charset-normalizer==2.1.1 &
+./main.tex:185: Misplaced alignment tab character &.
+l.185             charset-normalizer==2.1.1 &
                                               more-itertools==9.0.0 & sacrem...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2533,8 +2416,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:183: Misplaced alignment tab character &.
-l.183 ...rmalizer==2.1.1 & more-itertools==9.0.0 &
+./main.tex:185: Misplaced alignment tab character &.
+l.185 ...rmalizer==2.1.1 & more-itertools==9.0.0 &
                                                    sacremoses==0.0.53\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2543,8 +2426,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:184: Misplaced alignment tab character &.
-l.184             click==8.1.3 &
+./main.tex:186: Misplaced alignment tab character &.
+l.186             click==8.1.3 &
                                  mpmath==1.2.1 & scikit-learn==1.0.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2553,8 +2436,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:184: Misplaced alignment tab character &.
-l.184             click==8.1.3 & mpmath==1.2.1 &
+./main.tex:186: Misplaced alignment tab character &.
+l.186             click==8.1.3 & mpmath==1.2.1 &
                                                  scikit-learn==1.0.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2563,8 +2446,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:185: Misplaced alignment tab character &.
-l.185             colorama==0.4.5 &
+./main.tex:187: Misplaced alignment tab character &.
+l.187             colorama==0.4.5 &
                                     multidict==6.0.2 & scipy==1.7.3\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2573,8 +2456,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:185: Misplaced alignment tab character &.
-l.185 ...     colorama==0.4.5 & multidict==6.0.2 &
+./main.tex:187: Misplaced alignment tab character &.
+l.187 ...     colorama==0.4.5 & multidict==6.0.2 &
                                                    scipy==1.7.3\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2583,8 +2466,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:186: Misplaced alignment tab character &.
-l.186             cryptography==37.0.4 &
+./main.tex:188: Misplaced alignment tab character &.
+l.188             cryptography==37.0.4 &
                                          multiprocess==0.70.13 & Send2Trash=...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2593,8 +2476,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:186: Misplaced alignment tab character &.
-l.186 ...ography==37.0.4 & multiprocess==0.70.13 &
+./main.tex:188: Misplaced alignment tab character &.
+l.188 ...ography==37.0.4 & multiprocess==0.70.13 &
                                                    Send2Trash==1.8.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2603,8 +2486,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:187: Misplaced alignment tab character &.
-l.187             cycler==0.11.0 &
+./main.tex:189: Misplaced alignment tab character &.
+l.189             cycler==0.11.0 &
                                    munkres==1.1.4 & setuptools==65.3.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2613,8 +2496,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:187: Misplaced alignment tab character &.
-l.187 ...        cycler==0.11.0 & munkres==1.1.4 &
+./main.tex:189: Misplaced alignment tab character &.
+l.189 ...        cycler==0.11.0 & munkres==1.1.4 &
                                                    setuptools==65.3.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2623,8 +2506,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:188: Misplaced alignment tab character &.
-l.188             dataclasses==0.8 &
+./main.tex:190: Misplaced alignment tab character &.
+l.190             dataclasses==0.8 &
                                      nbclient==0.6.8 & sip==6.6.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2633,8 +2516,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:188: Misplaced alignment tab character &.
-l.188 ...     dataclasses==0.8 & nbclient==0.6.8 &
+./main.tex:190: Misplaced alignment tab character &.
+l.190 ...     dataclasses==0.8 & nbclient==0.6.8 &
                                                    sip==6.6.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2643,8 +2526,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:189: Misplaced alignment tab character &.
-l.189             datasets==2.4.0 &
+./main.tex:191: Misplaced alignment tab character &.
+l.191             datasets==2.4.0 &
                                     nbconvert==7.0.0 & six==1.16.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2653,8 +2536,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:189: Misplaced alignment tab character &.
-l.189 ...     datasets==2.4.0 & nbconvert==7.0.0 &
+./main.tex:191: Misplaced alignment tab character &.
+l.191 ...     datasets==2.4.0 & nbconvert==7.0.0 &
                                                    six==1.16.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2663,8 +2546,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:190: Misplaced alignment tab character &.
-l.190             debugpy==1.6.3 &
+./main.tex:192: Misplaced alignment tab character &.
+l.192             debugpy==1.6.3 &
                                    nbformat==5.4.0 & soupsieve==2.3.2.post1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2673,8 +2556,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:190: Misplaced alignment tab character &.
-l.190 ...       debugpy==1.6.3 & nbformat==5.4.0 &
+./main.tex:192: Misplaced alignment tab character &.
+l.192 ...       debugpy==1.6.3 & nbformat==5.4.0 &
                                                    soupsieve==2.3.2.post1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2683,8 +2566,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:191: Misplaced alignment tab character &.
-l.191             decorator==5.1.1 &
+./main.tex:193: Misplaced alignment tab character &.
+l.193             decorator==5.1.1 &
                                      nest-asyncio==1.5.5 & sympy==1.10.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2693,8 +2576,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:191: Misplaced alignment tab character &.
-l.191 ... decorator==5.1.1 & nest-asyncio==1.5.5 &
+./main.tex:193: Misplaced alignment tab character &.
+l.193 ... decorator==5.1.1 & nest-asyncio==1.5.5 &
                                                    sympy==1.10.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2703,8 +2586,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:192: Misplaced alignment tab character &.
-l.192             defusedxml==0.7.1 &
+./main.tex:194: Misplaced alignment tab character &.
+l.194             defusedxml==0.7.1 &
                                       nltk==3.8.1 & terminado==0.15.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2713,8 +2596,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:192: Misplaced alignment tab character &.
-l.192 ...        defusedxml==0.7.1 & nltk==3.8.1 &
+./main.tex:194: Misplaced alignment tab character &.
+l.194 ...        defusedxml==0.7.1 & nltk==3.8.1 &
                                                    terminado==0.15.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2723,8 +2606,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:193: Misplaced alignment tab character &.
-l.193             dill==0.3.5.1 &
+./main.tex:195: Misplaced alignment tab character &.
+l.195             dill==0.3.5.1 &
                                   notebook==6.4.12 & threadpoolctl==3.1.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2733,8 +2616,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:193: Misplaced alignment tab character &.
-l.193 ...       dill==0.3.5.1 & notebook==6.4.12 &
+./main.tex:195: Misplaced alignment tab character &.
+l.195 ...       dill==0.3.5.1 & notebook==6.4.12 &
                                                    threadpoolctl==3.1.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2743,8 +2626,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:194: Misplaced alignment tab character &.
-l.194             entrypoints==0.4 &
+./main.tex:196: Misplaced alignment tab character &.
+l.196             entrypoints==0.4 &
                                      numexpr==2.8.3 & tinycss2==1.1.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2753,8 +2636,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:194: Misplaced alignment tab character &.
-l.194 ...      entrypoints==0.4 & numexpr==2.8.3 &
+./main.tex:196: Misplaced alignment tab character &.
+l.196 ...      entrypoints==0.4 & numexpr==2.8.3 &
                                                    tinycss2==1.1.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2763,8 +2646,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:195: Misplaced alignment tab character &.
-l.195             fastjsonschema==2.16.1 &
+./main.tex:197: Misplaced alignment tab character &.
+l.197             fastjsonschema==2.16.1 &
                                            numpy==1.21.6 & tokenizers==0.12.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2773,8 +2656,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:195: Misplaced alignment tab character &.
-l.195 ... fastjsonschema==2.16.1 & numpy==1.21.6 &
+./main.tex:197: Misplaced alignment tab character &.
+l.197 ... fastjsonschema==2.16.1 & numpy==1.21.6 &
                                                    tokenizers==0.12.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2783,8 +2666,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:196: Misplaced alignment tab character &.
-l.196             filelock==3.8.0 &
+./main.tex:198: Misplaced alignment tab character &.
+l.198             filelock==3.8.0 &
                                     packaging==21.3 & toml==0.10.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2793,8 +2676,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:196: Misplaced alignment tab character &.
-l.196 ...      filelock==3.8.0 & packaging==21.3 &
+./main.tex:198: Misplaced alignment tab character &.
+l.198 ...      filelock==3.8.0 & packaging==21.3 &
                                                    toml==0.10.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2803,8 +2686,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:197: Misplaced alignment tab character &.
-l.197             findiff==0.8.9 &
+./main.tex:199: Misplaced alignment tab character &.
+l.199             findiff==0.8.9 &
                                    pandas==1.3.5 & torch==1.12.1.post200\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2813,8 +2696,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:197: Misplaced alignment tab character &.
-l.197             findiff==0.8.9 & pandas==1.3.5 &
+./main.tex:199: Misplaced alignment tab character &.
+l.199             findiff==0.8.9 & pandas==1.3.5 &
                                                    torch==1.12.1.post200\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2823,8 +2706,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:198: Misplaced alignment tab character &.
-l.198             flit\_core==3.7.1 &
+./main.tex:200: Misplaced alignment tab character &.
+l.200             flit\_core==3.7.1 &
                                       pandocfilters==1.5.0 & tornado==6.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2833,8 +2716,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:198: Misplaced alignment tab character &.
-l.198 ...lit\_core==3.7.1 & pandocfilters==1.5.0 &
+./main.tex:200: Misplaced alignment tab character &.
+l.200 ...lit\_core==3.7.1 & pandocfilters==1.5.0 &
                                                    tornado==6.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2843,8 +2726,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:199: Misplaced alignment tab character &.
-l.199             fonttools==4.25.0 &
+./main.tex:201: Misplaced alignment tab character &.
+l.201             fonttools==4.25.0 &
                                       parso==0.8.3 & tqdm==4.64.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2853,8 +2736,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:199: Misplaced alignment tab character &.
-l.199 ...       fonttools==4.25.0 & parso==0.8.3 &
+./main.tex:201: Misplaced alignment tab character &.
+l.201 ...       fonttools==4.25.0 & parso==0.8.3 &
                                                    tqdm==4.64.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2863,8 +2746,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:200: Misplaced alignment tab character &.
-l.200             frozenlist==1.3.1 &
+./main.tex:202: Misplaced alignment tab character &.
+l.202             frozenlist==1.3.1 &
                                       pexpect==4.8.0 & traitlets==5.3.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2873,8 +2756,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:200: Misplaced alignment tab character &.
-l.200 ...     frozenlist==1.3.1 & pexpect==4.8.0 &
+./main.tex:202: Misplaced alignment tab character &.
+l.202 ...     frozenlist==1.3.1 & pexpect==4.8.0 &
                                                    traitlets==5.3.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2883,8 +2766,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:201: Misplaced alignment tab character &.
-l.201             fsspec==2022.8.2 &
+./main.tex:203: Misplaced alignment tab character &.
+l.203             fsspec==2022.8.2 &
                                      pickleshare==0.7.5 & transformers==4.21...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2893,8 +2776,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:201: Misplaced alignment tab character &.
-l.201 ...  fsspec==2022.8.2 & pickleshare==0.7.5 &
+./main.tex:203: Misplaced alignment tab character &.
+l.203 ...  fsspec==2022.8.2 & pickleshare==0.7.5 &
                                                    transformers==4.21.3\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2903,8 +2786,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:202: Misplaced alignment tab character &.
-l.202             gmpy2==2.1.2 &
+./main.tex:204: Misplaced alignment tab character &.
+l.204             gmpy2==2.1.2 &
                                  Pillow==9.2.0 & typing\_extensions==4.3.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2913,8 +2796,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:202: Misplaced alignment tab character &.
-l.202             gmpy2==2.1.2 & Pillow==9.2.0 &
+./main.tex:204: Misplaced alignment tab character &.
+l.204             gmpy2==2.1.2 & Pillow==9.2.0 &
                                                  typing\_extensions==4.3.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2923,8 +2806,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:203: Misplaced alignment tab character &.
-l.203             HanTa==1.0.0 &
+./main.tex:205: Misplaced alignment tab character &.
+l.205             HanTa==1.0.0 &
                                  pip==22.2.2 & urllib3==1.26.11\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2933,8 +2816,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:203: Misplaced alignment tab character &.
-l.203             HanTa==1.0.0 & pip==22.2.2 &
+./main.tex:205: Misplaced alignment tab character &.
+l.205             HanTa==1.0.0 & pip==22.2.2 &
                                                urllib3==1.26.11\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2943,8 +2826,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:204: Misplaced alignment tab character &.
-l.204             huggingface-hub==0.9.1 &
+./main.tex:206: Misplaced alignment tab character &.
+l.206             huggingface-hub==0.9.1 &
                                            pkgutil\_resolve\_name==1.3.10 & ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2953,8 +2836,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:204: Misplaced alignment tab character &.
-l.204 ...=0.9.1 & pkgutil\_resolve\_name==1.3.10 &
+./main.tex:206: Misplaced alignment tab character &.
+l.206 ...=0.9.1 & pkgutil\_resolve\_name==1.3.10 &
                                                    wcwidth==0.2.5\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2963,8 +2846,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:205: Misplaced alignment tab character &.
-l.205             idna==3.3 &
+./main.tex:207: Misplaced alignment tab character &.
+l.207             idna==3.3 &
                               ply==3.11 & webencodings==0.5.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2973,8 +2856,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:205: Misplaced alignment tab character &.
-l.205             idna==3.3 & ply==3.11 &
+./main.tex:207: Misplaced alignment tab character &.
+l.207             idna==3.3 & ply==3.11 &
                                           webencodings==0.5.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2983,8 +2866,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:206: Misplaced alignment tab character &.
-l.206             importlib-metadata==4.11.4 &
+./main.tex:208: Misplaced alignment tab character &.
+l.208             importlib-metadata==4.11.4 &
                                                prometheus-client==0.14.1 & w...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2993,8 +2876,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:206: Misplaced alignment tab character &.
-l.206 ...ata==4.11.4 & prometheus-client==0.14.1 &
+./main.tex:208: Misplaced alignment tab character &.
+l.208 ...ata==4.11.4 & prometheus-client==0.14.1 &
                                                    wheel==0.37.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3003,8 +2886,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:207: Misplaced alignment tab character &.
-l.207             importlib-resources==5.9.0 &
+./main.tex:209: Misplaced alignment tab character &.
+l.209             importlib-resources==5.9.0 &
                                                prompt-toolkit==3.0.31 & widg...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3013,8 +2896,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:207: Misplaced alignment tab character &.
-l.207 ...sources==5.9.0 & prompt-toolkit==3.0.31 &
+./main.tex:209: Misplaced alignment tab character &.
+l.209 ...sources==5.9.0 & prompt-toolkit==3.0.31 &
                                                    widgetsnbextension==4.0.3\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3023,8 +2906,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:208: Misplaced alignment tab character &.
-l.208             ipykernel==6.15.2 &
+./main.tex:210: Misplaced alignment tab character &.
+l.210             ipykernel==6.15.2 &
                                       psutil==5.9.2 & xxhash==0.0.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3033,8 +2916,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:208: Misplaced alignment tab character &.
-l.208 ...      ipykernel==6.15.2 & psutil==5.9.2 &
+./main.tex:210: Misplaced alignment tab character &.
+l.210 ...      ipykernel==6.15.2 & psutil==5.9.2 &
                                                    xxhash==0.0.0\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3043,8 +2926,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:209: Misplaced alignment tab character &.
-l.209             ipython==7.33.0 &
+./main.tex:211: Misplaced alignment tab character &.
+l.211             ipython==7.33.0 &
                                     ptyprocess==0.7.0 & yarl==1.7.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3053,8 +2936,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:209: Misplaced alignment tab character &.
-l.209 ...    ipython==7.33.0 & ptyprocess==0.7.0 &
+./main.tex:211: Misplaced alignment tab character &.
+l.211 ...    ipython==7.33.0 & ptyprocess==0.7.0 &
                                                    yarl==1.7.2\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3063,8 +2946,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:210: Misplaced alignment tab character &.
-l.210             ipython-genutils==0.2.0 &
+./main.tex:212: Misplaced alignment tab character &.
+l.212             ipython-genutils==0.2.0 &
                                             pyarrow==8.0.0 & zipp==3.8.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3073,8 +2956,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:210: Misplaced alignment tab character &.
-l.210 ...python-genutils==0.2.0 & pyarrow==8.0.0 &
+./main.tex:212: Misplaced alignment tab character &.
+l.212 ...python-genutils==0.2.0 & pyarrow==8.0.0 &
                                                    zipp==3.8.1\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3083,8 +2966,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:211: Misplaced alignment tab character &.
-l.211             ipywidgets==8.0.2 &
+./main.tex:213: Misplaced alignment tab character &.
+l.213             ipywidgets==8.0.2 &
                                       pycparser==2.21 & \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3093,8 +2976,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:211: Misplaced alignment tab character &.
-l.211 ...    ipywidgets==8.0.2 & pycparser==2.21 &
+./main.tex:213: Misplaced alignment tab character &.
+l.213 ...    ipywidgets==8.0.2 & pycparser==2.21 &
                                                    \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3103,8 +2986,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:212: Misplaced alignment tab character &.
-l.212             jedi==0.18.1 &
+./main.tex:214: Misplaced alignment tab character &.
+l.214             jedi==0.18.1 &
                                  Pygments==2.13.0 & \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3113,8 +2996,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:212: Misplaced alignment tab character &.
-l.212 ...        jedi==0.18.1 & Pygments==2.13.0 &
+./main.tex:214: Misplaced alignment tab character &.
+l.214 ...        jedi==0.18.1 & Pygments==2.13.0 &
                                                    \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3123,18 +3006,18 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:213: Misplaced \noalign.
+./main.tex:215: Misplaced \noalign.
 \bottomrule ->\noalign 
                        {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.213             \bottomrule
+l.215             \bottomrule
                              
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-./main.tex:214: Misplaced \crcr.
+./main.tex:216: Misplaced \crcr.
 \endarray ->\crcr 
                   \egroup \egroup \@arrayright \gdef \@preamble {}\CT@end 
-l.214         \end{tabular}
+l.216         \end{tabular}
                            
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3142,10 +3025,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./main.tex:214: Extra }, or forgotten \endgroup.
+./main.tex:216: Extra }, or forgotten \endgroup.
 \endarray ->\crcr \egroup 
                           \egroup \@arrayright \gdef \@preamble {}\CT@end 
-l.214         \end{tabular}
+l.216         \end{tabular}
                            
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3153,10 +3036,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./main.tex:214: Extra }, or forgotten \endgroup.
+./main.tex:216: Extra }, or forgotten \endgroup.
 \endarray ->\crcr \egroup \egroup 
                                   \@arrayright \gdef \@preamble {}\CT@end 
-l.214         \end{tabular}
+l.216         \end{tabular}
                            
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3164,10 +3047,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./main.tex:214: Extra }, or forgotten $.
+./main.tex:216: Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.214         \end{tabular}
+l.216         \end{tabular}
                            
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3176,23 +3059,23 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-./main.tex:214: LaTeX Error: \begin{table} on input line 161 ended by \end{tabu
+./main.tex:216: LaTeX Error: \begin{table} on input line 164 ended by \end{tabu
 lar}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214         \end{tabular}
+l.216         \end{tabular}
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./main.tex:214: Missing $ inserted.
+./main.tex:216: Missing $ inserted.
 <inserted text> 
                 $
-l.214         \end{tabular}
+l.216         \end{tabular}
                            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3201,35 +3084,35 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Warning: Float too large for page by 40.11252pt on input line 216.
+LaTeX Warning: Float too large for page by 22.87517pt on input line 218.
 
-[29
+[30
 
-] [30]
+] [31]
 chapter without number
 
-Overfull \hbox (18.97603pt too wide) in paragraph at lines 219--219
+Overfull \hbox (18.97603pt too wide) in paragraph at lines 221--221
 \TU/LinuxLibertineO(0)/m/it/12 Evaluation Conference\TU/LinuxLibertineO(0)/m/n/
 12 . Marseille, France: European Language Resources Association, pp. 1900–
  []
 
 
-Overfull \hbox (5.99193pt too wide) in paragraph at lines 219--219
+Overfull \hbox (5.99193pt too wide) in paragraph at lines 221--221
 \TU/LinuxLibertineO(0)/m/it/12 plexity\TU/LinuxLibertineO(0)/m/n/12 . Cambridge
  studies in Linguistics 153. Cambridge University Press. \TU/LinuxLibertineO(0)
 /m/sc/12 isbn\TU/LinuxLibertineO(0)/m/n/12 : 1107120640.
  []
 
-[31
+[32
 
 ]
-Overfull \hbox (4.08003pt too wide) in paragraph at lines 219--219
+Overfull \hbox (4.08003pt too wide) in paragraph at lines 221--221
 [][]\TU/LinuxLibertineO(0)/m/n/12 Devlin, Jacob, Ming-Wei Chang, Kenton Lee, an
 d Kristina Toutanova (2018). \TU/LinuxLibertineO(0)/m/it/12 BERT: Pre-training
  []
 
 
-Overfull \hbox (1.02866pt too wide) in paragraph at lines 219--219
+Overfull \hbox (1.02866pt too wide) in paragraph at lines 221--221
 \TU/LinuxLibertineO(0)/m/n/12 guistics, pp. 385–393. \TU/LinuxLibertineO(0)/m/s
 c/12 doi\TU/LinuxLibertineO(0)/m/n/12 : []$[][] [] [][][][][] [] [][] [] [][][]
 [] [] [][][] [][] [][][][][] [] [][]$[]. \TU/LinuxLibertineO(0)/m/sc/12 url\TU/
@@ -3237,51 +3120,49 @@ LinuxLibertineO(0)/m/n/12 : []$[][][][][] [] [] [] [][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (0.36623pt too wide) in paragraph at lines 219--219
+Overfull \hbox (0.36623pt too wide) in paragraph at lines 221--221
 \TU/LinuxLibertineO(0)/m/it/12 Mediterranean Morphology Meeting (MMM5)\TU/Linux
 LibertineO(0)/m/n/12 . Università degli Studi di Bologna. \TU/LinuxLibertineO(0
 )/m/sc/12 url\TU/LinuxLibertineO(0)/m/n/12 : []$[][][][][] []
  []
 
-
-Overfull \hbox (39.08957pt too wide) in paragraph at lines 219--219
-\TU/LinuxLibertineO(0)/m/n/12 3319904027; 9783319904023. \TU/LinuxLibertineO(0)
-/m/sc/12 url\TU/LinuxLibertineO(0)/m/n/12 : []$[][][][][][] [] [][] [] [][][][]
- [] [][][] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][]$[]. 
+[33]
+Overfull \hbox (9.699pt too wide) in paragraph at lines 221--221
+[][]\TU/LinuxLibertineO(0)/m/n/12 Kaplan, Jared et al. (2020). “  Scaling Laws 
+for Neural Language Models”. In: \TU/LinuxLibertineO(0)/m/it/12 CoRR \TU/LinuxL
+ibertineO(0)/m/n/12 abs/2001.08361.
  []
 
-[32]
-Overfull \hbox (4.87605pt too wide) in paragraph at lines 219--219
+
+Overfull \hbox (4.87605pt too wide) in paragraph at lines 221--221
 [][]\TU/LinuxLibertineO(0)/m/n/12 Ortiz Su’arez, Pedro Javier, Benoit Sagot, an
 d Laurent Romary (2019). “  Asynchronous pipelines
  []
 
-[33] [34] [35] (/home/gnom/uni/bachelor/BATex/out/main.aux)
+[34] [35]
+Overfull \hbox (11.06107pt too wide) in paragraph at lines 221--221
+\TU/LinuxLibertineO(0)/m/it/12 ceedings of the 2020 Conference on Empirical Met
+hods in Natural Language Processing (EMNLP)\TU/LinuxLibertineO(0)/m/n/12 .
+ []
 
-LaTeX Warning: There were undefined references.
 
+Package biblatex Warning: No driver for entry type 'data'.
+(biblatex)                Using fallback driver on input line 220.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+[36] (/home/gnom/uni/bachelor/BATex/out/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52139 strings out of 476156
- 1143429 string characters out of 5814963
- 1993246 words of memory out of 5000000
- 72157 multiletter control sequences out of 15000+600000
+ 52182 strings out of 476156
+ 1144911 string characters out of 5814963
+ 1993638 words of memory out of 5000000
+ 72200 multiletter control sequences out of 15000+600000
  480708 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  146i,12n,134p,10600b,5015s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (43 pages).
+Output written on /home/gnom/uni/bachelor/BATex/out/main.pdf (44 pages).

@@ -15,8 +15,8 @@ As a consequence the smaller models trained on Oscar and GerParCor should genera
 
 The impact of modifying the tokenization on a single \ac{pos} category in masked language learning must be close to none, given that the tasks do not explicitly focus on that category.
 In other endeavors ~\citeauthor{BITE} used the Penn Treebank to model each inflection with designated tokens instead of analyzing the textual surface form, showing that an improvement of WordPiece tokenization is morphologically augmentable with \ac{POS} ~\citeyear{BITE}.
-Their preceeding use of morphological concepts in language learning is found in their previous research through adversarial shifting of morphological paradigms to improve robustness of existing language models (~\cite[2927]{adversarialmorphin}).
-Implemening supporting processes for morphological modeling on an integral scale seems to be a condition for training impactful models.
+Their preceding use of morphological concepts in language learning is found in their earlier research through adversarial shifting of morphological paradigms to improve robustness of existing language models (\cite[2927]{adversarialmorphin}).
+Implementing supporting processes for morphological modeling on an integral scale seems to be a condition for training impactful models.
 This could be one explanation for the performance of the Wordmap based models but does not cover the standard models.
 
 The classification task used to see if the model predictions are noteworthy or negligible was partly inconclusive.
@@ -35,21 +35,31 @@ Whether this can be ascribed to the aforementioned sample imbalance or learning 
 Positively the transfer of new subwords from the POS vocabulary to the BERT tokenizer vocabulary does not visibly impair performance.
 All the input verbs come from sanitized data and GerParCor, and since mwo5 (fine-tuned on Oscar) was the best performing small model there is even an argument for saying it did not carry over a vocabulary bias.
 Ultimately it is hard to classify the performance in this iteration of fine-tuning and testing.
-Judging solely by the scores it should not be compared to recent methods like the original inspiration FLOTA (\citeauthor{FLOTA}).\\
-
+Judging solely by the scores it should not be compared to recent methods like the original inspiration FLOTA (\cite{FLOTA}).\\
+These observations allow answering the first \hyperlink{hyp1}{hypothesis}: the classification task demonstrates irregular scoring behavior for Wordmap models surpassing (mwo5) and also failing to reach (mwg5) comparable standard models msg5 and mso5.
+No effect could be connected to the tokenization with Wordmap, the null hypothesis remains.
 
 Concerning the Wordmap vocabulary generation it can be said that Wordmap shows effective extraction and analysis of segments in german verbs.
 Its segmenting capabilities hold up to the FLOTA algorithm under the assumption that other lexical POS categories yield similar results.
 This assumption is favored by the idea of morphological complexity given in \autoref{sec:target-languages}.
-From a linguistic point of view there are a few reservations that shoudl be adressed.
+From a linguistic point of view there are a few reservations that should be addressed.
 The Wordmap algorithm does not work on any grammatical framework and is unable to connect morphemes that would otherwise be analyzed as one, for example circumfixes.
-This makes for lighter and easier implementation but outsources the connection of spatially separated and their functional exponence to the layers of the neural network (unlike e.g.\ \textcite{BITE}).
+This makes for lighter and easier implementation but outsources the connection of spatially separated morphemes and their functional exponence to the layers of the neural network (unlike e.g.\ \textcite{BITE}).
 Recent language models deliver for languages with allomorphisms or multiple exponence\footnote{Brief summary on morphological exponence: https://home.uni-leipzig.de/jtrommer/netzwerk_antrag.pdf} despite not analyzing segmental dependencies at all and perform very well (this does not mean they cannot be improved by doing so).
 
 
 Naturally there is still room for improvement regarding the maximization function, scope and especially testing.
-As of now the segmentation algorithm behaves similar to FLOTA in that it discrimates subwords by length, among other features.
+As of now the segmentation algorithm behaves similar to FLOTA in that it discriminates subwords by length, among other features.
 The lexical bias is mainly provided the by the stand-alone vocabulary generated beforehand.
-This can most likely be improved by incorporating relative subword frequency into the maximization weight, following the example of succesful tokenizers like \ac{wp} and \ac{bpe} do nowadays.
+This can most likely be improved by incorporating relative subword frequency into the maximization weight, following the example of successful tokenizers like \ac{wp} and \ac{bpe} do nowadays.
+More ample implications pose questions as to how Wordmap would fare under circumstances of reanalysis, loaning, grammaticalization or lexicalization.
+These processes usually take a long time and require many (linguistically) productive cycles, so that affected words will probably appear in corpora for a Wordmap generation algorithm to catch.
+Another remark to be made in respect to character frequency.
+The problem of identifying segments and discarding characters that do not belong to an adjacent morpheme is not trivial.
+For Wordmap this poses the greatest challenge, leading to most of the unwanted fragments in both functional and lexemic vocabulary.
+A suggestion is to do character sampling for retrieving (maybe even POS specific) character frequencies and using those as dampening for the Wordmap segment detection.
+The detection itself is still binary and should be revised to detect segment counts that are in a range instead.
+During development, a good indicator of segment boundaries where values around the mean, which almost are almost consistently in proximity of each other.
 The application scope and testing cycle determine each other.
 Examining Wordmap performance for more POS categories and languages would broaden its scope and probably reach their limit at the domain of incorporating languages, at which point the method needs fundamental expansion.
+\hyperlink{hyp2}{hypothesis 2}

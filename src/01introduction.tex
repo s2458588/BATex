@@ -1,7 +1,7 @@
 
-This thesis showcases the use of specific intervention in tokenization subsystems of machine learning.
+This thesis showcases the use of specific intervention in tokenization subsystems of language modeling in machine learning.
 The intent of this thesis is to inject linguistic bias into the machine learning framework of \ac{bert} to sharpen the analytical capacities of a masked language model.
-In this chapter the background, intentions and scope of the thesis are covered.
+In this chapter motivation and intentions are given alongside the resulting hypotheses and scope of the thesis.
 
 
 \section{Motivation}
@@ -20,7 +20,7 @@ their performance is still incomplete.
 The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
 
 While the research on neurophysical intake and representation of language is not entirely conclusive (\textcite[1--3]{n400}; \textcite{L2morphology}), it is assumed that language learners usually build up a lexicon consisting of lexemes (\cite[82 -- 100]{brennan2022language}) which they will have to analyze accurately in order to be proficient in that target language.
-A language model relies on a tokenizer to create such a vocabularies.
+A language model relies on a tokenizer to create such a vocabularies (attemps at bypassing this exist as well, e.g. \ \textcite{handsfreesegmentation}).
 It is programmed to segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
 Ideally those subwords will be part of the functional vocabulary in the target language, which would make them a morpheme.
 A morpheme is canonically defined as the smallest unit carrying meaning in a language (\cite{morpheme}).
@@ -30,43 +30,40 @@ This was idea pioneered by Schuster and Nakajima (\citeyear{WORDPIECEOG}) to dea
 WordPiece is designed to find the most effective pairs of subwords in a corpus to optimize vocabulary size.
 Subwords however are not necessarily a productive component of inventory that is used for inflectional morphology.
 In fact, the morphemes of a language and its generated tokenizer vocabulary  coincide.
-
-\cite{FLOTA}
-
-Following the guiding principle that \textbf{input quality is ouput quality} not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
-Note: explain why i use tokens and words, they are interchangeable right?
-holistic, need less attention to produce satisfactory
-\uppercase{not just to push F, but to find a viable method of morphemic tokenization}
+Following a revised principle of the interaction hypothesis that - put simply - \textit{input quality is crucial for ouput quality} (\cite[114]{inputoutput}) not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
+Underlying is the notion not to just push F scores, but to explore a method of morphemic tokenization.
 
 
 \section{Hypotheses}
 \label{sec:hypothesis}
 
-The following research questions will be formulated for testing:
+\centerline{The following research questions will be formulated for testing:}
 \begin{framed}
+    \hypertarget{hyp1}{}
     \begin{itemize}[itemindent=1em]
-        \item[HYP1:] Adjustments to tokenization have significant impact the performance of a language model in different tasks.
+        \item[HYP1:] Targeting a Part-of-Speech class during tokenization affects model performance.
     \end{itemize}
 \end{framed}
-How to achieve this hypothesis?
+\noindent This is tested through designing a tokenization process with POS overhead, fine-tuning a model on that tokenization and running a sequence classification task.
 \begin{framed}
+    \hypertarget{hyp2}{}
     \begin{itemize}[itemindent=1em]
-        \item[HYP2:] Providing lexical information to a tokenizer increases benchmark accuracy on MLM tasks.
+        \item[HYP2:] Separating lexical from functional morphemes improves segmentation in tokenization.
     \end{itemize}
 \end{framed}
-How to achieve this hypothesis?
+\noindent The design for hypothesis 1 includes creating a separate POS vocabulary.
+Model scores and qualitative evaluation will determine the plausibility of hypothesis 2.
 
 \section{Scope and Structure}
 \label{sec:scope-and-structure}
 
-The following chapters are sorted into three parts.
-To outline the research domain, a brief summary of the current state of morphological language modeling is given.
+To outline the research domain, a brief summary of the current state of morphological language modeling is given first.
 Next, german is described paying special attention to its morphological complexity and peer languages.
+German is declared as target language, \ac{pos} classified tokens are the subject of interest.
 This serves as preface to the methodology, connecting characteristically matching languages to form a pool of possible  target languages.
-
 As main part of this thesis the methodology for a new tokenization method is layed out.
 It is sectioned into a theoretical part which focuses on the architecture of its components and the value they hold towards lexicalizing a tokenizer.
 The implementation of each part in the tokenization process is explained next.
-
-What is covered and what not?
-What is the shape of this thesis and what order does it have?
+Subsequently, model training and testing are described as last step before moving on to the summary of results.
+Results are then presented, to be discussed along with possible effects in the discussion chapter.
+A final conclusion is drawn, putting the benchmark results and tokenization method into perspective.
