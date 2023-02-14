@@ -59,7 +59,16 @@ The problem of identifying segments and discarding characters that do not belong
 For Wordmap this poses the greatest challenge, leading to most of the unwanted fragments in both functional and lexemic vocabulary.
 A suggestion is to do character sampling for retrieving (maybe even POS specific) character frequencies and using those as dampening for the Wordmap segment detection.
 The detection itself is still binary and should be revised to detect segment counts that are in a range instead.
-During development, a good indicator of segment boundaries where values around the mean, which almost are almost consistently in proximity of each other.
+During development, a good indicator of segment boundaries where values around the mean, which almost are consistently in proximity of each other.
+Other interesting operations with Wordmaps worth mentioning are derivatives.
+In general, the first (mathematic) derivative of a word map seems to coincide with a segment boundary.
+The second derivative can also mark morpheme boundaries, though this is just a presumption based on observations during plotting.
+In most cases the resolution of the Wordmap is too volatile.
 The application scope and testing cycle determine each other.
 Examining Wordmap performance for more POS categories and languages would broaden its scope and probably reach their limit at the domain of incorporating languages, at which point the method needs fundamental expansion.
-\hyperlink{hyp2}{hypothesis 2}
+At the given the test scores are the only statistical measure provided that may be used to verify \hyperlink{hyp2}{hypothesis 2}, except for the test scores.
+The previous discussion of these scores revealed that they cannot be used to draw reliable conclusions about the Wordmap tokenizer performance.
+A qualitative assessment suggests that segmentations are less noisy for the intended \ac{pos} class.
+It would be in good faith to say that the tokenization is improved with Wordmap.
+H0 stands unfalsified.
+

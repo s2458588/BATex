@@ -1,58 +1,59 @@
-Morphological tokenization can be defined as the process of identifying segments in text that are a productive in a given language, carrying meaning and hence also fitting the definition of a morpheme.
+Morphological tokenization can be defined as the process of identifying segments in text that are productive in a given language, carrying meaning and hence fitting the definition of a morpheme.
 Recent or relevant findings on morphologically pretrained models in machine learning literature are discussed in this chapter.
 
 \section{Related Works}
 \label{sec:related-works}
 
-This thesis was mainly inspired through a paper by \citeauthor{FLOTA}, which proposes more flexible segmentation with respect to preserving morphological structure.
+This thesis is mainly inspired through a paper by \citeauthor{FLOTA}, proposing more flexible segmentation with respect to preserving morphological structure (\cite{FLOTA}).
 In the past, many efforts towards morphological tokenization have been made.
-Earlier generalized attempts like morfessor (\cite{morfessor}) have been outperformed by Sequence based models that also use linguistic morphology ~\cite{subwordvsmorfessor} .
-Notably, top-down generation of subword vocabularies has shown promising results for tokenization in fusional languages.
-This aligns with the notion that standard BPE (\cite{BPE}) or WordPiece ~\cite{WORDPIECEGOOGLE} tokenization effectivity suffers from complex morphology causing a big vocabulary.
-The overall comparison ~\cite[134]{subwordvsmorfessor} shows an increase in performance for languages of similar morphological complexity.
-It is interesting to see that this form of tokenization performs less well for English, a language that has seen a decline in morphology.
-Much better benchmarks are reached applying  its agglutinative fusional peers, e.g.\ Italian, Latin, Spanish, Russian
-\citeauthor{TOKENIZATIONIMPACT} find that the vocabulary size plays a special role in morphological tokenization and even define a ratio vocabulary size ratio between 20 to 40\% to the number of model parameters depending on the type of tokenizer (~\cite[11--12]{TOKENIZATIONIMPACT}).
+Earlier generalized attempts like morfessor (\cite{morfessor}) have been outperformed by sequence based models that also use linguistic morphology (\cite{subwordvsmorfessor}).
+Notably, the top-down generation of subword vocabularies has shown promising results for tokenization in fusional languages.
+This aligns with the notion that standard \ac{bpe} (\cite{BPE}) or WordPiece (\cite{WORDPIECEGOOGLE}) tokenization effectivity suffers from complex morphology causing a big vocabulary.
+
+The overall comparison (\cite[134]{subwordvsmorfessor}) shows an increase in performance for languages of similar morphological complexity.
+Good benchmarks are reached for the agglutinative fusional peers, e.g.\ Italian, Latin, Spanish, Russian.
+However, the performance of this type of tokenization decreases with English.
+This effect could be attributed to the decline of English morphology in the last centuries. %TODO: quelle morphology loss
+\citeauthor{TOKENIZATIONIMPACT} find that the vocabulary size plays a special role in morphological tokenization and even define a vocabulary size ratio between 20\% to 40\% of the number of model parameters depending on the type of tokenizer (\citeyear[11--12]{TOKENIZATIONIMPACT}).
 Since tokenization and vocabulary are obviously interdependent, the vast amount of typological variety seen in languages raises the question: is there a right way of tokenizing?
 This issue is addressed by \citeauthor{MONOLINGUAL}, where a mid-scale investigation was done to see whether different languages actually need more specific tokenizers compared to generalized tokenizers.
-They report an improvement of model accuracy and F-score across all tasks and languages (\cite{MONOLINGUAL}).
-While this sketches a commission for \ac{nlp} to always consider choosing a method tailored for single languages, the answer to the problem of performance versus maintenance in models might not be as elaborate as treating every language singularly.
-Every language is undoubtedly unique, but that does not rule out simplification by means of further classifying and grouping target languages.
-In an effort to explain the provenience and relatedness of languages many tools in the domain of typology, \ac{nlp} and indo-european studies have been constructed.
+They report an improvement of model accuracy and F score across all tasks and languages (\cite{MONOLINGUAL}).
+While this suggests to always consider choosing a method tailored for single languages in \ac{nlp}, the answer to the problem of performance versus maintenance in models might be more straightforward than treating every language singularly.
+Every language is undoubtedly unique, however, that does not rule out simplification by means of further classifying and grouping target languages.
+In an effort to explain the provenience and relatedness of languages, many tools in the domain of typology, \ac{nlp} and indo-european studies have been constructed.
 
 Whether it be identification of morphological features (\cite[42--56]{comrie1989}), complexity measures (\cite{measuresofMC}) or connection through reconstruction (\cite{INDOEUROPE}),
 the different linguistic disciplines suggest observable regularities by which to morphologically group languages.
-Leveraging the relatedness of languages in NLP is not a new idea in tokenization or \ac{pos}\hyphen tagging, but is seeing mixed results up to this day, even with augmentation methods (\cite{mixednoiseinterlanguage}).
+Leveraging the relatedness of languages in NLP is not a new idea in tokenization or \ac{pos}\hyphen tagging, but is showing mixed results up to this day, even when using augmentation methods (\cite{mixednoiseinterlanguage}).
 The options seem to branch out quickly, but the mechanism of clearly separating lexemic and functional information seems inherent to most languages.
-The way they differ is in they combine grammatical functions in morphemes (fusion) and bind them to lexemic morphemes (synthesis).
-This may be why approaches with stemming, lemmatization or other morphological analyses are very relevant to building good tokenizers for all languages on the isolating to synthetic spectrum (\cite[51--53]{POLYSYNTHLM}).
+They differ in how they combine grammatical functions in morphemes (fusion) and bind them to lexemic morphemes (synthesis).
+This seems to be the reason why stemming, lemmatization or other morphological analyses are very relevant to building good tokenizers for all languages on the isolating to synthetic spectrum (\cite[51--53]{POLYSYNTHLM}).
 
 
 \section{Target Languages}
 \label{sec:target-languages}
 This section identifies target languages that share common morphological features with German.
-It is assumed that languages of the same morphological type will behave similarly when analyzed morphologically.
-German was selected to serve as example language within the family of fusional languages.
+It is assumed that, languages of the same morphological type will behave similarly when analyzed morphologically.
+German was selected to serve as the example language within the family of fusional languages.
 The aim is not to propose yet another case study of German, but to introduce German as a surrogate to further the scope of application on other languages of similar morphological complexity.
 
-German (ISO639-3: \texttt{deu}) is a west-germanic language and the official language of Germany, Austria, Switzerland, Liechtenstein and Luxemburg (\cite{METZLER2016}).
+German (ISO639-3: \texttt{deu}) is a West Germanic language and the official language of Germany, Austria, Switzerland, Liechtenstein and Luxemburg (\cite{METZLER2016}).
 It is an inflectional synthetic language with approximately 130 million speakers\footnote{https://de.statista.com/statistik/daten/studie/1119851/umfrage/deutschsprachige-menschen-weltweit/ Last accessed: 09.01.23}.
 German is largely researched and is still paid much attention to in the domain of (computational) linguistics.
 
-
-On one side, linguistic typology has come up with many useful classifications for languages.
-On the other, in the pursuit of reconstructing languages Indo-European studies have established a widely accepted phylogenetic model of the diachronic dependecy of Indo-European languages.
-Both disciplines contribute to language classicifications that are used in this subsection.
+On the one side, linguistic typology has come up with many useful classifications for languages.
+On the other side, in the pursuit of reconstructing languages, Indo-European studies have established a widely accepted phylogenetic model of the diachronic dependency of Indo-European languages.
+Both disciplines contribute to language classifications that are used in this subsection.
 
 Morphological complexity is a term to describe how languages use paradigms to connect grammatical information with lexemic information (\cite{MORPHOLOGICALCOMPLEXITY}).
-Mind that morphological complexity is a classifying category to describe gradients of function-to-morpheme correspondence and measure of morphematic agreement, not a qualitative assessment.
+Nevertheless, it needs to be taken into consideration that morphological complexity is a classifying category to describe gradients of function-to-morpheme correspondence and measure of morphematic agreement, not a qualitative assessment.
 The common denominators that make languages morphologically complex are their morphological features.
-Those languages that use affixation, fusion, composition and derivation (among others) are all fit candidates compared to german.
-A summary of morphological typology is provided by ~\textcite[78--93]{LINGUISTICTYPOLOGY}).
+The languages that use affixation, fusion, composition and derivation (among others) are all fit candidates compared to German.
+A summary of morphological typology is provided by ~\textcite[78--93]{LINGUISTICTYPOLOGY}.
 
-Due to the scope of this thesis, German will be the exemplary target language for the experimental setup.
+Within the scope of this thesis, German will be the exemplary target language for the experimental setup.
 Its morphological complexity can be compared to other related or non-related languages as shown in \autoref{tab:similarity} (ISO identifiers provided at WALS.\footnote{https://wals.info/languoid}).
-There still is no universally accepted measure the complexity of a language, but groupings exist on different parameters:
+To this date, there is no universally accepted measure for the complexity of a language, but groupings exist on different parameters:
 \\
 \begin{table}[h]
     \centering
@@ -77,8 +78,9 @@ There still is no universally accepted measure the complexity of a language, but
 
 \end{table}
 
-There have been interpolations between human judgements and statistical measures (on similarity of languages) which can be taken into consideration (\cite{bentz-etal-2016-comparison}).
-The point to be taken is that while there is no definite proof of concept for tokenizations being effective when connecting target languages through morphological parameters, there is a strong suggestion in data and intuition of researchers that tokenization for morphologically similar languages should profit from these similarities.
+There have been interpolations between human judgement and statistical measures (on similarity of languages) which can be taken into consideration (\cite{bentz-etal-2016-comparison}).
+It should be emphasized, that while there is no definite proof of concept for tokenizations being effective when connecting target languages through morphological parameters, there is a strong suggestion in data and intuition of researchers that tokenization for morphologically similar languages should profit from these similarities.
+\\
 
 With an arguable exception to English, the languages in \autoref{tab:similarity} treat their lexemes with similar morphological processes.
 The upcoming interlinear glossings (as per Leipzig Glossing Rules\footnote{https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf}) provide examples for inflectional morphology in verbs within this group of languages.
@@ -102,7 +104,7 @@ The functional morphemes in example (1) follow the word to be inflected.
 With many more functional morphemes present in Finnish, \citeauthor{finverbs} reports that there is an order in which inflectional morphemes usually appear.
 In consequence, analyzing Finnish verbs results in different but reoccuring patterns depending on the degree of inflection.
 The lexemic morpheme \{istu\} can be modified by \{i\} alone to just express past tense and still be productive.
-Following up on the idea of agglutination, Hungarian applies an slightly different strategy to achieve inflection:
+Following up on the idea of agglutination, Hungarian applies a slightly different strategy to achieve inflection:
 
 \begin{figure}[h]
 \centering
@@ -118,11 +120,11 @@ Following up on the idea of agglutination, Hungarian applies an slightly differe
 
 Hungarian is also classifed as an agglutinative language for its frequent use of affixes.
 It is additionally known to combine several grammatical functions into one morphene as can be seen in example (2) as given by \textcite[262]{hunverbs}, making it a hybrid of agglutinative and fusional.
-The analysis of the verb in (2) does not allow canonical segmentation to the stem although there is an underlying form \{hall;\textasteriskcentered\} meaning \textquotedblleft hear \textquotedblright.
+The analysis of the verb in (2) does not allow canonical segmentation to the stem although there is an underlying form \{hall;\textasteriskcentered\} meaning \textquotedblleft hear\textquotedblright.
 Instead, it exists in inflection paradigms like the given example \{hallgatunk\} combining the grammatical categories past tense and first person plural.
 The morphemes addressed so far where either suffixed or not segmentable.
 As lexical part \{hallgatunk\} receives a prefix \{meg\} expressing perfect tense.
-This use of morphemes can also be seen in germanic or romance languages, like Italian (adapted from ~\textcite[163]{itaverbs}):
+This use of morphemes can also be seen in Germanic or Romance languages, like Italian (adapted from ~\textcite[163]{itaverbs}):
 
 \begin{figure}[H]
 \centering
@@ -139,7 +141,7 @@ Here the \{se\} and \{la\} carry two functions each and are suffixed to \{far\},
 Arguably, \{se\} being a clitic pronoun that will appear in different positions acting as indirect object, but never independent of the verb.
 
 
-After a partial look on the classified languages two important empirical descriptive caveats remain: there are exceptions to almost every regularity in languages.
-No language is entirely consistent in following a morphosyntactical paradigm, meaning no language is entirely fusional or agglutinative (same applies to the synthetic and isoling spectrum).
+After a partial look on the classified languages, two important empirical descriptive caveats remain: there are exceptions to almost every regularity in languages.
+No language is entirely consistent in following a morphosyntactical paradigm, meaning no language is entirely fusional or agglutinative (same applies to the synthetic and isolating spectrum).
 Judging from the word shapes in the data and literature, the way languages modify their stems or lexemic morphemes is largely based on affixation.
 In a tokenizer acknowledging lexemic parts of words, the knowledge of word formation in the target language should be conveyed.

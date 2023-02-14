@@ -1,35 +1,28 @@
-What was done?
-How did it go?
-What went wrong?
-What went well?
-What was learned from this?
-What are future applications?
+In this thesis a data-driven tokenization method was explored to see whether the distinction of lexical and functional morphemes is beneficial towards tokenization.
+The scope of the thesis was set to a single language and a single Part-of-Speech category, comparing word shapes and morphological complexity in similar languages.
+Crawled and sanitized verbs were used to heuristically generate separate vocabularies that where then modified to remove competing subwords.
+A segmentation algorithm was implemented to judge varying segmentations by a maximization function based around the token coverage, subword length and number of segments.
+These procedures were integrated into a pre-trained BERT WordPiece tokenizer.
+Different versions (standard and Wordmap) of the same BERT base model were fine-tuned as masked language model on two datasets and tested on a sequence classification task.
+The model benchmark results were inconclusive and the below-average performance was partly accounted for.
+The tokenization process was found to be functional and seemed to produce results comparable to standard tokenization methods.
+Final measurements of effectiveness have yet to be determined to confirm this.
+Neither hypothesis was verified in the process.
 
+When conducting further research on morphological tokenization the linguistic split of data is encouraged.
+Optimizing the maximization function was a small part playing a core role: its weights are numerical characteristic of morphemes and finding appropriate characteristics was a welcomed challenge that offers deep research potential for every language.
+It is advised to apply loss control while fine-tuning and testing to ensure the model parameters update in favor of the desired learnable feature.
+This way the results will be much better interpretable.
 
-This thesis
+In all statistical modeling the goal is to model reality as precisely as feasible.
+Language models are no exception, and compromises are always made.
+Human language understanding builds on maximizing relevant input, without it there is no way to generate meaningful output.
+Machine learning and human learning offer different levers to achieve this goal.
+While computation cost is an upcoming problem in natural language processing and machine learning, it does not take much space to split language model input into more classified sets of data.
+The domain of language modeling will keep evolving as will language.
+Though maturity is in arm's reach at the presence of highly parameterized or specialized models, the data they are performing on ultimately traces back to humans.
+Our tendencies to organize language data are a basic property of our cognition, just like the distinction between what expresses a grammatical function and what is a lexical reference.
+The discriminatory functions we have learned to speak, write and read by do not have to be learned from scratch.
+They can be an integral part of how to accelerate neural networks and an opportunity to keep a close eye on the data we select for machine learning.
 
-In almost all statistical modeling the goal is to model reality as precisely as feasible.
-Language models are no exception.
-The accuracy of a model should increase with the number of functional components of natural language being integrated into the model.
-This is seen in e.g.\ the implementation of vocabularies, just one of many attempts to automatically identify meaningful units in language.
-Even higher levels of language found in domains from ordinary pragmatics to scientific reasoning are sought after in language modeling.
-While languages are observed to change slowly over time, sometimes dropping and adding features of their inventory, computational linguistics has to keep producing models that keep up with the reality of language.
-The supervised tokenization in this thesis illustrates just a small part of the potential in tailored modeling.
-
-
-
-reanalysis -> lexicalization challenges this method?
-lexeme detection very close to the mean in wormaps!
-
-
-encourage the formal characterization of functional and lexical morphemes
-
-
-whole integrated system with overhead pos for all lexical categories
-scaled with the degree of fusion and inflection that language has
-
-use \ac{cl}
-holistic
-
-analog to the interaction hypothesis we have to stimulate models with selective input alongside generic input data to come closer
-menschen lernen / sprechen /speichern sprache mit lexikon, und ML macht eine krücke über tokenizer. man sollte beides so nah aneinander bringen wie möglich
+The methods presented in this thesis are minute in the face of this vision, but hopefully every morphologcal tokenizer is a step towards it.

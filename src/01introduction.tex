@@ -1,43 +1,41 @@
 
-This thesis showcases the use of specific intervention in tokenization subsystems of language modeling in machine learning.
-The intent of this thesis is to inject linguistic bias into the machine learning framework of \ac{bert} to sharpen the analytical capacities of a masked language model.
-In this chapter motivation and intentions are given alongside the resulting hypotheses and scope of the thesis.
-
+This thesis investigates the use of specific intervention in tokenization subsystems of language modeling in machine learning.
+The intent of this thesis is to inject linguistic bias into the machine learning framework of \ac{bert} to sharpen the analytical capacities of a \ac{mlm}.
+This introduction includes the research motivation and intentions, the resulting hypotheses and the scope of the thesis.
 
 \section{Motivation}
 \label{sec:motivation}
-There is an ongoing urge in the \acf{cl} community to understand natural language.
-Research in the past decades shows use of frequentist and statistical methods such as \ac{gpt} (\cite{gpt}) and \ac{bert} (\cite{ATTENTION}) to their advantage, leading to the emergence of the powerful, problem solving \ac{ml} models.
-It became apparent that these ML models are the best currently available approach to an automated understanding of natural language.
-The structural parallels of machine learning to human learning have often been drawn (\citeauthor{humanmachinelearning1}; ~\cite{humanmachinelearning2}) to demonstrate how similar and also how different both can be.
+There is a long-standing ambition in the \acf{cl} community to understand natural language.
+Research in the past decades shows promising use of frequentist and statistical methods such as \ac{gpt} (\cite{gpt}) and \ac{bert} (\cite{ATTENTION}), leading to emergence of the powerful, problem solving \ac{ml} models.
+It became apparent that these ML models are the state-of-the-art approach to an automated understanding of natural language.
+The structural parallels of machine learning to human learning have often been drawn (\textcite{humanmachinelearning1}; \textcite{humanmachinelearning2}) to demonstrate their similarities and differences.
 An essential feature of \ac{ml} (as opposed to human learning) is the possibility of actively controlling the learning parameters in a supervised environment.
-To test the efficiency of  \ac{ml} a variety of tasks (e.g.\ classification, clustering, detection) are designed and applied.
-A trained model will yield performance scores based on the quality of its training, much like humans on language tests.
-Yet, automated modeling of language is not the first instance of language modelling in a broader sense.
-Traditional linguistics has produced fundamental research prior to the discovery of \ac{ml} architectures and their implementation.
-While generic \ac{ml} frameworks seem appealing in the presumption that they require less work to reach somewhat satisfactoy results,
-their performance is still incomplete.
-The integration of aforementioned traditional linguistic knowledge into learning processes for machine learning is the underlying motivation of this thesis.
+To test the efficiency of  \ac{ml} applications, a variety of tasks (e.g.\ classification, clustering, detection) are designed and applied.
+A trained model will yield performance scores based on the quality of its training, much like humans in language tests.
+Yet, statistical language modeling is not the first variant of language modeling.
+Traditional linguistics has accumulated extensive fundamental research prior to the discovery of \ac{ml} architectures and their implementation.
+While generic \ac{ml} frameworks seem appealing in the presumption that they require less work to reach fairly acceptable results, their performance is still unsatisfactory.
+The integration of aforementioned traditional linguistic knowledge into the learning processes for machine learning is the underlying motivation of this thesis.
 
-While the research on neurophysical intake and representation of language is not entirely conclusive (\textcite[1--3]{n400}; \textcite{L2morphology}), it is assumed that language learners usually build up a lexicon consisting of lexemes (\cite[82 -- 100]{brennan2022language}) which they will have to analyze accurately in order to be proficient in that target language.
-A language model relies on a tokenizer to create such a vocabularies (attemps at bypassing this exist as well, e.g. \ \textcite{handsfreesegmentation}).
-It is programmed to segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
-Ideally those subwords will be part of the functional vocabulary in the target language, which would make them a morpheme.
+While the research on neurophysical intake and representation of language is not entirely conclusive (\textcite[1--3]{n400}; \textcite{L2morphology}), it is assumed that language learners typically build up a lexicon consisting of lexemes (\cite[82 -- 100]{brennan2022language}), which they have to analyze accurately in order to be proficient in that target language.
+A language model relies on a tokenizer to create such a vocabulary (attempts that bypass the vocabulary mechanism exist as well, e.g. \ \textcite{handsfreesegmentation}).
+String-based tokenizers generally segment tokens into subwords (if possible) and provide a vocabulary comprising all the components needed to analyze a given string.
+Ideally, those subwords are part of the functional vocabulary in the target language, which would make them a morpheme.
 A morpheme is canonically defined as the smallest unit carrying meaning in a language (\cite{morpheme}).
-The problem of captchuring lexical morphemes at the tokenization level is a problem of morphological analysis.
-A standard approach implemented in the BERT architecture is WordPiece tokenization, which takes pairs of ngrams and calculates a score based on the overall frequency in the text as well as cooccurrences.
-This was idea pioneered by Schuster and Nakajima (\citeyear{WORDPIECEOG}) to deal with the problem of near infinite vocabularies and was later adopted in a google research project designing the final WordPiece algorithm ~\cite{WORDPIECEGOOGLE}.
+Capturing lexical morphemes at the tokenization level is a problem of morphological analysis.
+A standard approach implemented in the BERT architecture is WordPiece tokenization, which takes pairs of n-grams and calculates a score based on the overall frequency in the text as well as cooccurrences.
+This idea was pioneered by Schuster and Nakajima (\citeyear{WORDPIECEOG}) in order to deal with the problem of near infinite vocabularies and was later adopted in a Google research project designing the final WordPiece algorithm (\cite{WORDPIECEGOOGLE}).
 WordPiece is designed to find the most effective pairs of subwords in a corpus to optimize vocabulary size.
-Subwords however are not necessarily a productive component of inventory that is used for inflectional morphology.
-In fact, the morphemes of a language and its generated tokenizer vocabulary  coincide.
-Following a revised principle of the interaction hypothesis that - put simply - \textit{input quality is crucial for ouput quality} (\cite[114]{inputoutput}) not only in language learning, the morpheme vocabulary is identified as the point of leverage in the upcoming section.
-Underlying is the notion not to just push F scores, but to explore a method of morphemic tokenization.
+Subwords, however, are not necessarily a productive component of inventory used in inflectional morphology.
+In practical use, the morphemes of a language and its generated tokenizer vocabulary rarely totally coincide.
+Following a revised principle of the interaction hypothesis that - put simply - \textit{input quality is crucial for output quality} (\cite[114]{inputoutput}), the morpheme vocabulary is identified as the point of leverage in the upcoming chapter.
+Underlying is the notion not to just \textquotedblleft push F scores\textquotedblright, but to explore a method of morphemic tokenization.
 
 
 \section{Hypotheses}
 \label{sec:hypothesis}
 
-\centerline{The following research questions will be formulated for testing:}
+\centerline{The following research questions are formulated:}
 \begin{framed}
     \hypertarget{hyp1}{}
     \begin{itemize}[itemindent=1em]
@@ -48,7 +46,7 @@ Underlying is the notion not to just push F scores, but to explore a method of m
 \begin{framed}
     \hypertarget{hyp2}{}
     \begin{itemize}[itemindent=1em]
-        \item[HYP2:] Separating lexical from functional morphemes improves segmentation in tokenization.
+        \item[HYP2:] Separating lexical from functional morphemes improves segmentation in lexemic tokens.
     \end{itemize}
 \end{framed}
 \noindent The design for hypothesis 1 includes creating a separate POS vocabulary.
@@ -56,14 +54,16 @@ Model scores and qualitative evaluation will determine the plausibility of hypot
 
 \section{Scope and Structure}
 \label{sec:scope-and-structure}
-
-To outline the research domain, a brief summary of the current state of morphological language modeling is given first.
-Next, german is described paying special attention to its morphological complexity and peer languages.
-German is declared as target language, \ac{pos} classified tokens are the subject of interest.
+The upcoming \autoref{ch:overview} provides an overview of the current state of morphological tokenization to outline the research domain.
+German is declared as target language, verbs being the classified tokens of interest.
+The language is described paying special attention to its morphological complexity and peer languages.
 This serves as preface to the methodology, connecting characteristically matching languages to form a pool of possible  target languages.
-As main part of this thesis the methodology for a new tokenization method is layed out.
-It is sectioned into a theoretical part which focuses on the architecture of its components and the value they hold towards lexicalizing a tokenizer.
-The implementation of each part in the tokenization process is explained next.
-Subsequently, model training and testing are described as last step before moving on to the summary of results.
-Results are then presented, to be discussed along with possible effects in the discussion chapter.
-A final conclusion is drawn, putting the benchmark results and tokenization method into perspective.
+
+As the main part of this thesis, \autoref{ch:methodology} presents the methodology for a new tokenization method.
+It is sectioned into a theoretical part and the practical implementation of the process.
+The theoretical part focuses on the architecture of its components and the value they hold towards lexicalizing a tokenizer.
+In the implementation, each part of the tokenization process is explained, providing algorithms and their integration into the machine learning framework.
+Model training and testing are described.
+Results are presented in \autoref{ch:results}, followed by a discussion of possible effects in \autoref{ch:discussion}.
+The conclusion in \autoref{ch:conclusion} puts the benchmark results and tokenization method into perspective and .
+%TODO: halbsätze result und discussion-> outlook potential optimization iteration loops

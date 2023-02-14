@@ -3,7 +3,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces Schematic integration of Wordmap segmentation into the BERT architecture.}}{10}{figure.3.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Segmenter output for \texttt {verstehen}}}{17}{figure.3.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Segmenter output for \textquotesingle verstehen\textquotesingle }}{17}{figure.3.2}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3}{\ignorespaces Wordmap for \textquotesingle viertelt\textquotesingle }}{23}{figure.4.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Wordmap for \textquotesingle anschauen\textquotesingle }}{24}{figure.4.4}%

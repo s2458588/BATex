@@ -1,40 +1,39 @@
-This chapter first outlines the theoretical framework together with necessary data.
-After that, the implementation is explained with references to methodological implications of the choices made.
+This chapter first outlines the theoretical framework as well as required input data.
+Subsequently, the implementation is explained with references to methodological implications of the choices made.
 
 \section{Requirements}
 \label{sec:requirements}
 A series of tools will help to achieve lexicalized tokenization.
-They will be explained in this section along with their methodological edge.
+They will be described in this section along with their methodological edge.
 
 \subsection{Pipeline Structure \& Transformers Library}
 \label{subsec:architecture}
 
 \ac{bert} is a language learning transformer model designed for \ac{nlp} tasks (\cite{ATTENTION}).
-Upon release it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{BERTHIGH1}).
-Two main model characteristics can be observed for \ac{bert}.
-Firstly, it is the first \ac{lm} to implement simultaneous attention heads, allowing for bidirectional reading.
+Upon release, it achieved higher performance scores compared to previously used \ac{lstm} models (\cite{BERTHIGH1}).
+Two main model characteristics can be observed for \ac{bert}:
+it is the first \ac{lm} to implement simultaneous attention heads, allowing for bidirectional reading.
 The methodological implication of reading to the left and right of a token is to include more information about the language in single embeddings.
-Secondly, \ac{bert} introduced the (at the time novel) \ac{mlm} method for training.
+Secondly, \ac{bert} introduced the still relevant \ac{mlm} method for training.
 The method involves masking a specified amount (default 15\%) of random tokens in the input sequence.
-Masked tokens are guessed by the model which can then update its weights according to success or failure.
+Masked tokens are guessed by the model, which can then update its weights according to success or failure.
 Bert-base-german-case is a \ac{bert}-base model with 12 encoding layers, 768 hidden layers, 12 heads and 110M parameters\footnote{https://huggingface.co/transformers/v2.9.1/pretrained_models.html}.
 
-The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (e.g. \ roberta, germanbert, mbert).
-Its wide support, comparability and versatility make \ac{bert} the model of choice for this thesis.
+The \ac{nlp} community has since developed \ac{bert} and adapted it to the needs of contemporary \ac{nlp} problems (e.g.\ roberta, germanbert, mbert).
+Its extensive support, comparability and versatility make \ac{bert} the model of choice for this thesis.
 Another notable feature in \uppercase{bert} is the implementation of the WordPiece tokenizer module\footnote{The source code was not published but is inferred on \href{https://huggingface.co/course/chapter6/6?fw=pt}{huggingface}}.
 Default BERT WordPiece tokenization is predominantly heuristic by combining strings based on a precalculated score.
-A variety of pre-trained tokenizers are available, although they come with a caveat.
-Once a tokenizer is trained on a dataset it is specific to that dataset.
-This means the application of a tokenizer on another dataset may result in out-of-vocabulary issues and different token/subtoken distributions.
+A variety of pre-trained tokenizers are available, although they come with a caveat: once a tokenizer is trained on a dataset, it is specific to that dataset.
+This means that the application of a tokenizer on another dataset may result in out-of-vocabulary issues and different token/subtoken distributions.
 
-Particularly relevant to this thesis is the option to train an own tokenizer from the base module, which the \ac{bbgc} model did using German data.
+Particularly relevant to this thesis is the option to train an individual tokenizer from the base module, which the \ac{bbgc} model implemented with German data.
 Usually, WordPiece generates its own set of subtokens called \textit{vocabulary}, which is used by the standard tokenizer to generate unique numerical input IDs.
 These identifiers correspond to tokens or parts of tokens found in the original dataset that the model was trained on.
 Wordmap partly takes over the tokenization depending on the the type of input it receives, the exact process is given in \autoref{subsec:tokenizer}.
-Once a string is tokenized it gets passed on to the transformer model for contextualized embedding.
+Once a string is tokenized, it is passed on to the transformer model for contextualized embedding.
 \autoref{fig:pipeline} shows the processing of data up until token encoding.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
 
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
@@ -107,30 +106,29 @@ Once a string is tokenized it gets passed on to the transformer model for contex
     \label{fig:pipeline}
 \end{figure}
 
-In \autoref{fig:pipeline}, Datafiles contains the raw unprocessed data coming from corpora.
-The input is provided in txt-files holding sentences line by line.
-Two datasets are generated from this input, each amounting to 500000 sentences per corpus for fine-tuning.
-POS Datafiles ideally contains only words that are identified as the same \ac{pos} category.
-To increase the resulting POS vocabulary, POS Datafiles can be augmented by two channels: input can come from the corpus itself, but would need to be tagged first.
-Otherwise a predefined list of words can be used as an external and generic source for Wordmap generation.
-In POS Vocabulary, adjustments like removing outliers and interferences are performed on the set of subwords yielded by Wordmap generation.
-It is important to note that the POS vocabulary is separate from the the tokenizer vocabulary.
+In \autoref{fig:pipeline}, \fbox{Datafiles} contains the raw unprocessed data coming from corpora.
+The input is provided in txt-files containing sentences line by line.
+Two datasets are generated from this input, each amounting to 500k sentences per corpus for fine-tuning.
+\fbox{POS Datafiles} ideally contains only words that are identified as the same \ac{pos} category.
+To increase the resulting \fbox{POS vocabulary}, \fbox{POS Datafiles} can be augmented by two channels: input can come from the corpus itself, but would need to be tagged first.
+Alternatively, a predefined list of words can be used as an external and generic source for Wordmap generation.
+In \fbox{POS Vocabulary}, adjustments like removing outliers and interferences are performed on the set of subwords yielded by Wordmap generation.
+It is important to note that the \fbox{POS vocabulary} is separate from the the tokenizer vocabulary.
 This serves the specific purpose of keeping the vocabulary on which the model is trained clean from unwanted or unused subwords.
-Machine learning practice generally points to the trade-off between vocabulary size and model performance, hence the addition of POS Vocabulary to the BERT Tokenizer vocabulary is used only when necessary.
-Datasets are then passed through \ac{hanta} to provide WMTokenizer with flagged data to tokenize only selected tokens.
-Lastly BERT Tokenizer returns the current standard encodings used in \ac{bert} language modeling.
+Machine learning practice generally points out the trade-off between vocabulary size and model performance, hence the addition of \fbox{POS Vocabulary} to the \fbox{BERT Tokenizer} vocabulary is done only when necessary.
+\fbox{Datasets} are then passed through \fbox{\ac{hanta}} to provide \fbox{WMTokenizer} with flagged data to tokenize only selected tokens.
+Lastly, \fbox{BERT Tokenizer} returns the current standard encodings used in \ac{bert} language modeling.
 
 \subsection{Data}
 \label{subsec:data}
-Two corpora where selected for fine-tuning: \ac{gerparcor} and oscar (\cite{oscar}).
-FLOTA was trained on 12000 samples per  category ~\cite{FLOTA}, which is why for this fine-tuning a sample size of 500000 seems sufficient.
-GerParCor is a \enquote{GerParCor genre-specific corpus of (predominantly historical) German-language parliamentary protocols from three centuries and four countries, including state and federal level data.} (\cite[1]{GERPARCOR}).
-Of all subcorpora included in \ac{gerparcor}, one specifically texts and transcripts of the german parliament.
+Two corpora where selected for fine-tuning: \ac{gerparcor} and Oscar (\cite{oscar}).
+FLOTA was trained on 12k samples per  category (\cite{FLOTA}), which is why a sample size of 500k is deemed sufficient for this for this fine-tuning.
+GerParCor is a \enquote{genre-specific corpus of (predominantly historical) German-language parliamentary protocols from three centuries and four countries, including state and federal level data.} (\cite[1]{GERPARCOR}).
+Of all subcorpora included in \ac{gerparcor}, one specifically includes texts and transcripts of the German Parliament.
 All 500k samples in the \ac{gerparcor} dataset used for this thesis are found in the \texttt{Bundestag} subcorpus of \ac{gerparcor}.
 Oscar offers other subcorpora partly hosted on huggingface.
-In this case, a web-crawled german corpus called \texttt{unshuffled\_deduplicated\_de} was chosen, as introduced by its curators (\textcite{oscarsub2}; (\textcite{oscarsub1}).
-
-The POS vocabulary put throuh the Wordmapping pipelines comes from ~\textcite{wiktionary} and \ac{hanta}-crawled verbs of gerparcor ~\cite{hanta}
+In this case, a web-crawled German corpus called \texttt{unshuffled\_deduplicated\_de} was chosen, as introduced by its curators (\textcite{oscarsub2}; (\textcite{oscarsub1}).
+The POS vocabulary put throuh the Wordmapping pipelines comes from \textcite{wiktionary} and \ac{hanta}-crawled verbs of GerParCor.
 
 
 \section{Implementation}
@@ -138,14 +136,14 @@ The POS vocabulary put throuh the Wordmapping pipelines comes from ~\textcite{wi
 
 The implementation of aforementioned methodology is presented in this section.
 The core part is the conceptualization and implementation of the tokenizer, which is explained in three steps:
-the wordmap algorithm generating a vocabulary, the segmentation algorithm for token segmentation and maximization, and the integration into \ac{bert}.
-After that a short description of model hyperparameterization and training is given.
+the Wordmap algorithm generating a vocabulary, the segmentation algorithm for token segmentation and maximization, and the integration into \ac{bert}.
+After that, a short description of model hyperparameterization and training is given.
 The same is done for the model evaluation task in the last subsection of this chapter.
 
 \subsection{Tokenizer}
 \label{subsec:tokenizer}
-The methods of tokenization are explained in the following subsection.
-This is also the main part of the thesis, containing two algorithms - one for vocabulary generation and one for token segmentation.
+Being the main subject of the thesis, the methods of tokenization are explained more in detail in the upcoming subsection.
+It contains two algorithms - one for vocabulary generation and one for token segmentation.
 Throughout this section, the words $target$ and $token$ are used to describe a word that is analyzed.
 One denotes the argument of the wordmapping and segmenter function ($target$), the other describes a word occurring in the corpus ($token$).
 
@@ -359,7 +357,7 @@ The recursion can be seen as n-ary a trees containing every permutation of the s
 
 
 \end{forest}
-\caption[Segmenter output for \texttt{verstehen}]{Permutations \textsc{segmenter} generates from target i.e. \texttt{verstehen}. Dotted segments mark the segmentation chosen later by the maximization function during tokenization.}
+\caption[Segmenter output for \textquotesingle verstehen\textquotesingle ]{Permutations \textsc{segmenter} generates from target i.e. \texttt{verstehen}. Dotted segments mark the segmentation chosen later by the maximization function during tokenization.}
 \label{fig:segmentationtree}
 \end{figure}
 
