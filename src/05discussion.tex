@@ -2,7 +2,6 @@ Results of the pre-trained model benchmarks and tokenization are analyzed in thi
 A closer look is taken at the training procedure and the benchmark results to identify possible effects in data or model architecture.
 For purposes of readability the models are referred to by their IDs introduced in \autoref{subsec:masked-language-model}.\\
 
-scores
 The first apparent difference when comparing the models presented in this study are the test scores.
 An overall sub-par performance can be observed for the non-ggbc models, while their baseline model clearly performed better at the task.
 There are many causes for low model performance.
@@ -14,7 +13,7 @@ However, there are enough accounts for outstanding performances in current machi
 \citeauthor{scalinglaws} provide an extensive study of model scaling stating that while larger models tend to be more sample-efficient, any of the factors computational capacity, model size and amount of data can compensate for the other ~\citeyear[3]{scalinglaws}.
 As a consequence the smaller models trained on Oscar and GerParCor should generally be able to achieve better scores than their evaluation indicates.
 
-The impact of modifying the tokenization on a single \ac{pos} category in masked language learning must be close to none.
+The impact of modifying the tokenization on a single \ac{pos} category in masked language learning must be close to none, given that the tasks do not explicitly focus on that category.
 In other endeavors ~\citeauthor{BITE} used the Penn Treebank to model each inflection with designated tokens instead of analyzing the textual surface form, showing that an improvement of WordPiece tokenization is morphologically augmentable with \ac{POS} ~\citeyear{BITE}.
 Their preceeding use of morphological concepts in language learning is found in their previous research through adversarial shifting of morphological paradigms to improve robustness of existing language models (~\cite[2927]{adversarialmorphin}).
 Implemening supporting processes for morphological modeling on an integral scale seems to be a condition for training impactful models.
@@ -36,13 +35,21 @@ Whether this can be ascribed to the aforementioned sample imbalance or learning 
 Positively the transfer of new subwords from the POS vocabulary to the BERT tokenizer vocabulary does not visibly impair performance.
 All the input verbs come from sanitized data and GerParCor, and since mwo5 (fine-tuned on Oscar) was the best performing small model there is even an argument for saying it did not carry over a vocabulary bias.
 Ultimately it is hard to classify the performance in this iteration of fine-tuning and testing.
-Judging solely by the scores it should not be compared to recent methods like the original inspiration FLOTA (\citeauthor{FLOTA}).
-
-Concerning the Wordmap vocabulary generation it can be said that
-algorithm doesnt see circumfixes like ge---t) but only affixes, this could be possible with better noise control and map interpolation
-Characterizing the functional and lexical morphemes by their respective average length has had a positibe impact on segmentation, seem to have impacted the models performance very much.
+Judging solely by the scores it should not be compared to recent methods like the original inspiration FLOTA (\citeauthor{FLOTA}).\\
 
 
+Concerning the Wordmap vocabulary generation it can be said that Wordmap shows effective extraction and analysis of segments in german verbs.
+Its segmenting capabilities hold up to the FLOTA algorithm under the assumption that other lexical POS categories yield similar results.
+This assumption is favored by the idea of morphological complexity given in \autoref{sec:target-languages}.
+From a linguistic point of view there are a few reservations that shoudl be adressed.
+The Wordmap algorithm does not work on any grammatical framework and is unable to connect morphemes that would otherwise be analyzed as one, for example circumfixes.
+This makes for lighter and easier implementation but outsources the connection of spatially separated and their functional exponence to the layers of the neural network (unlike e.g.\ \textcite{BITE}).
+Recent language models deliver for languages with allomorphisms or multiple exponence\footnote{Brief summary on morphological exponence: https://home.uni-leipzig.de/jtrommer/netzwerk_antrag.pdf} despite not analyzing segmental dependencies at all and perform very well (this does not mean they cannot be improved by doing so).
 
 
-
+Naturally there is still room for improvement regarding the maximization function, scope and especially testing.
+As of now the segmentation algorithm behaves similar to FLOTA in that it discrimates subwords by length, among other features.
+The lexical bias is mainly provided the by the stand-alone vocabulary generated beforehand.
+This can most likely be improved by incorporating relative subword frequency into the maximization weight, following the example of succesful tokenizers like \ac{wp} and \ac{bpe} do nowadays.
+The application scope and testing cycle determine each other.
+Examining Wordmap performance for more POS categories and languages would broaden its scope and probably reach their limit at the domain of incorporating languages, at which point the method needs fundamental expansion.

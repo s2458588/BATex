@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  14 FEB 2023 00:26
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.12.5)  14 FEB 2023 01:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2011,7 +2011,27 @@ Overfull \hbox (3.93304pt too wide) in paragraph at lines 23--33
 anced sampling ([]).
  []
 
-) [27] [28]
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--40
+
+ []
+
+
+LaTeX Warning: Citation 'BITE' on page 27 undefined on input line 47.
+
+[27]
+Package acronym Info: Label `acro:wp' newly defined as it shall be overridden
+although it is yet undefined on input line 54.
+
+
+Package acronym Warning: Acronym `wp' is not defined on input line 54.
+
+
+Package acronym Warning: Acronym `wp' is not defined on input line 54.
+
+Package acronym Info: Label `acro:bpe' newly defined as it shall be overridden
+although it is yet undefined on input line 54.
+) [28]
 chapter 6.
 (./06conclusion.tex
 
@@ -3256,10 +3276,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52131 strings out of 476156
- 1143338 string characters out of 5814963
- 1993185 words of memory out of 5000000
- 72149 multiletter control sequences out of 15000+600000
+ 52139 strings out of 476156
+ 1143429 string characters out of 5814963
+ 1993246 words of memory out of 5000000
+ 72157 multiletter control sequences out of 15000+600000
  480708 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  146i,12n,134p,10600b,5015s stack positions out of 5000i,500n,10000p,200000b,80000s
